@@ -1,0 +1,16 @@
+PODS:
+  - ECSlidingViewController (2.0.3)
+  - iCarousel (1.7.6)
+  - STTwitter (0.1.8)
+
+DEPENDENCIES:
+  - ECSlidingViewController (~> 2.0.2)
+  - iCarousel (~> 1.7.6)
+  - STTwitter (= 0.1.8)
+
+SPEC CHECKSUMS:
+  ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
+  iCarousel: ddd7f142c7c2f3429b0ce5fb8ea37f4a059394cd
+  STTwitter: 2b05662fecfc8552626c464cc06c735153720974
+
+COCOAPODS: 0.38.2
