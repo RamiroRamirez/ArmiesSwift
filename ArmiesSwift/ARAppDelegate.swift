@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ARAppDelegate.swift
 //  ArmiesSwift
 //
 //  Created by Ramiro Ramirez on 12/09/15.
@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class ARAppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 

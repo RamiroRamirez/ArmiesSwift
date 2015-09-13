@@ -7,22 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28AAF2E41BA38BF00079A936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF2E31BA38BF00079A936 /* AppDelegate.swift */; };
-		28AAF2E61BA38BF00079A936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF2E51BA38BF00079A936 /* ViewController.swift */; };
+		28614F5F1BA60B780095FC87 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28614F5E1BA60B780095FC87 /* ARViewController.swift */; };
+		28AAF2E41BA38BF00079A936 /* ARAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF2E31BA38BF00079A936 /* ARAppDelegate.swift */; };
 		28AAF2E91BA38BF00079A936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF2E71BA38BF00079A936 /* Main.storyboard */; };
 		28AAF2EB1BA38BF00079A936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF2EA1BA38BF00079A936 /* Images.xcassets */; };
 		28AAF2EE1BA38BF00079A936 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF2EC1BA38BF00079A936 /* LaunchScreen.xib */; };
+		28AAF3071BA3992F0079A936 /* ARMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3061BA3992F0079A936 /* ARMenuViewController.swift */; };
+		28AAF30A1BA399720079A936 /* ARHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3091BA399720079A936 /* ARHomeViewController.swift */; };
+		28AAF30C1BA399970079A936 /* ARBiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF30B1BA399970079A936 /* ARBiographyViewController.swift */; };
+		28AAF30E1BA399B50079A936 /* ARVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF30D1BA399B50079A936 /* ARVideosViewController.swift */; };
+		28AAF3101BA399DD0079A936 /* ARImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF30F1BA399DD0079A936 /* ARImagesViewController.swift */; };
+		28AAF3121BA39A010079A936 /* ARInstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3111BA39A010079A936 /* ARInstagramViewController.swift */; };
+		28AAF3141BA39A280079A936 /* ARSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3131BA39A280079A936 /* ARSettingsViewController.swift */; };
+		28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */; };
+		28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF3211BA39CFB0079A936 /* Localizable.strings */; };
+		28AAF3251BA3A3C30079A936 /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3241BA3A3C30079A936 /* ARConstants.swift */; };
 		AD990A1B669D4482A8136963 /* libPods-ArmiesSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEEBBFB2B36760DA6849CA9 /* libPods-ArmiesSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28614F5E1BA60B780095FC87 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARViewController.swift; path = ViewControllers/ARViewController.swift; sourceTree = "<group>"; };
 		28AAF2DE1BA38BF00079A936 /* ArmiesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmiesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AAF2E21BA38BF00079A936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28AAF2E31BA38BF00079A936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28AAF2E51BA38BF00079A936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28AAF2E31BA38BF00079A936 /* ARAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARAppDelegate.swift; sourceTree = "<group>"; };
 		28AAF2E81BA38BF00079A936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28AAF2EA1BA38BF00079A936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		28AAF2ED1BA38BF00079A936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		28AAF3041BA38FD70079A936 /* Armies-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Armies-Bridging-Header.h"; path = "Headers/Armies-Bridging-Header.h"; sourceTree = "<group>"; };
+		28AAF3061BA3992F0079A936 /* ARMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARMenuViewController.swift; path = ViewControllers/ARMenuViewController.swift; sourceTree = "<group>"; };
+		28AAF3091BA399720079A936 /* ARHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARHomeViewController.swift; path = ViewControllers/ARHomeViewController.swift; sourceTree = "<group>"; };
+		28AAF30B1BA399970079A936 /* ARBiographyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARBiographyViewController.swift; path = ViewControllers/ARBiographyViewController.swift; sourceTree = "<group>"; };
+		28AAF30D1BA399B50079A936 /* ARVideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARVideosViewController.swift; sourceTree = "<group>"; };
+		28AAF30F1BA399DD0079A936 /* ARImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARImagesViewController.swift; path = ViewControllers/ARImagesViewController.swift; sourceTree = "<group>"; };
+		28AAF3111BA39A010079A936 /* ARInstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARInstagramViewController.swift; path = ViewControllers/ARInstagramViewController.swift; sourceTree = "<group>"; };
+		28AAF3131BA39A280079A936 /* ARSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSettingsViewController.swift; path = ViewControllers/ARSettingsViewController.swift; sourceTree = "<group>"; };
+		28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTwitterViewController.swift; path = ViewControllers/ARTwitterViewController.swift; sourceTree = "<group>"; };
+		28AAF3201BA39CFB0079A936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		28AAF3221BA39D720079A936 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		28AAF3231BA39D7E0079A936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		28AAF3241BA3A3C30079A936 /* ARConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
 		5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		8BEEBBFB2B36760DA6849CA9 /* libPods-ArmiesSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArmiesSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,12 +92,11 @@
 		28AAF2E01BA38BF00079A936 /* ArmiesSwift */ = {
 			isa = PBXGroup;
 			children = (
-				28AAF2E31BA38BF00079A936 /* AppDelegate.swift */,
-				28AAF2E51BA38BF00079A936 /* ViewController.swift */,
-				28AAF2E71BA38BF00079A936 /* Main.storyboard */,
-				28AAF2EA1BA38BF00079A936 /* Images.xcassets */,
-				28AAF2EC1BA38BF00079A936 /* LaunchScreen.xib */,
+				28AAF2E31BA38BF00079A936 /* ARAppDelegate.swift */,
+				28AAF3241BA3A3C30079A936 /* ARConstants.swift */,
+				28AAF3081BA399420079A936 /* ViewControllers */,
 				28AAF2E11BA38BF00079A936 /* Supporting Files */,
+				28AAF3051BA391090079A936 /* Headers */,
 			);
 			path = ArmiesSwift;
 			sourceTree = "<group>";
@@ -82,9 +104,37 @@
 		28AAF2E11BA38BF00079A936 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28AAF2EA1BA38BF00079A936 /* Images.xcassets */,
+				28AAF2EC1BA38BF00079A936 /* LaunchScreen.xib */,
+				28AAF2E71BA38BF00079A936 /* Main.storyboard */,
 				28AAF2E21BA38BF00079A936 /* Info.plist */,
+				28AAF3211BA39CFB0079A936 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28AAF3051BA391090079A936 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				28AAF3041BA38FD70079A936 /* Armies-Bridging-Header.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		28AAF3081BA399420079A936 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28AAF3061BA3992F0079A936 /* ARMenuViewController.swift */,
+				28AAF3091BA399720079A936 /* ARHomeViewController.swift */,
+				28AAF30B1BA399970079A936 /* ARBiographyViewController.swift */,
+				28AAF30D1BA399B50079A936 /* ARVideosViewController.swift */,
+				28AAF30F1BA399DD0079A936 /* ARImagesViewController.swift */,
+				28AAF3111BA39A010079A936 /* ARInstagramViewController.swift */,
+				28AAF3131BA39A280079A936 /* ARSettingsViewController.swift */,
+				28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */,
+				28614F5E1BA60B780095FC87 /* ARViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		66E3A84C9E3375E68F4FC5AE /* Pods */ = {
@@ -137,8 +187,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"es-MX",
+				en,
 			);
 			mainGroup = 28AAF2D51BA38BF00079A936;
 			productRefGroup = 28AAF2DF1BA38BF00079A936 /* Products */;
@@ -156,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AAF2E91BA38BF00079A936 /* Main.storyboard in Resources */,
+				28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */,
 				28AAF2EE1BA38BF00079A936 /* LaunchScreen.xib in Resources */,
 				28AAF2EB1BA38BF00079A936 /* Images.xcassets in Resources */,
 			);
@@ -201,8 +253,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AAF2E61BA38BF00079A936 /* ViewController.swift in Sources */,
-				28AAF2E41BA38BF00079A936 /* AppDelegate.swift in Sources */,
+				28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */,
+				28AAF3071BA3992F0079A936 /* ARMenuViewController.swift in Sources */,
+				28AAF30C1BA399970079A936 /* ARBiographyViewController.swift in Sources */,
+				28AAF2E41BA38BF00079A936 /* ARAppDelegate.swift in Sources */,
+				28AAF30E1BA399B50079A936 /* ARVideosViewController.swift in Sources */,
+				28AAF3141BA39A280079A936 /* ARSettingsViewController.swift in Sources */,
+				28AAF3251BA3A3C30079A936 /* ARConstants.swift in Sources */,
+				28AAF30A1BA399720079A936 /* ARHomeViewController.swift in Sources */,
+				28AAF3121BA39A010079A936 /* ARInstagramViewController.swift in Sources */,
+				28AAF3101BA399DD0079A936 /* ARImagesViewController.swift in Sources */,
+				28614F5F1BA60B780095FC87 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +284,17 @@
 				28AAF2ED1BA38BF00079A936 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		28AAF3211BA39CFB0079A936 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AAF3201BA39CFB0079A936 /* Base */,
+				28AAF3221BA39D720079A936 /* es-MX */,
+				28AAF3231BA39D7E0079A936 /* en */,
+			);
+			name = Localizable.strings;
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -317,6 +389,7 @@
 				INFOPLIST_FILE = ArmiesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArmiesSwift/Headers/Armies-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -328,6 +401,7 @@
 				INFOPLIST_FILE = ArmiesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArmiesSwift/Headers/Armies-Bridging-Header.h";
 			};
 			name = Release;
 		};
