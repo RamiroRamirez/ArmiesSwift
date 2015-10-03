@@ -8,7 +8,12 @@
 
 import UIKit
 
-class ARHomeViewController: ARViewController {
+class ARHomeViewController		: ARViewController, iCarouselDelegate, iCarouselDataSource {
+
+	//MARK: - Outlets
+
+	@IBOutlet var carousel		: iCarousel?
+	@IBOutlet var pageControl	: UIPageControl?
 
 	//MARK: - View Life Cycle
 
@@ -21,8 +26,45 @@ class ARHomeViewController: ARViewController {
 
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Home.titleMenu()
+		self.setupCarousel()
+
+		// setup page control
+		self.pageControl?.numberOfPages = Int(ARHarcodedConstants.numberOfImagesHomeView)
+		self.pageControl?.currentPage = 0
 	}
 
-	//MARK: - Actions
+	private func setupCarousel() {
+		self.carousel?.type = iCarouselTypeRotary
+		self.carousel?.bounces = false;
+		self.carousel?.clipsToBounds = true;
+		self.carousel?.backgroundColor = UIColor.grayColor()
 
+		self.carousel?.delegate = self
+		self.carousel?.dataSource = self
+	}
+
+	//MARK: - Implementation iCarouselDataSource Protocol
+
+	func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
+		return ARHarcodedConstants.numberOfImagesHomeView
+	}
+
+	func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
+		// if the view is nil, create a new one with the frame of the carousel view
+		if (view == nil) {
+			var imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
+			imageView.image = UIImage(named: "MuestraCarousel.jpg")
+			return imageView
+		} else {
+			var imageView = view as? UIImageView
+			imageView?.image = UIImage(named: "MuestraCarousel.jpg")
+			return imageView
+		}
+	}
+
+	//MARK: - Implementation iCarouselDelegate Protocol
+
+	func carouselCurrentItemIndexDidChange(carousel: iCarousel!) {
+		self.pageControl?.currentPage = carousel.currentItemIndex
+	}
 }

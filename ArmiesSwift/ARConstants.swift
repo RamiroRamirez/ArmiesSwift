@@ -21,3 +21,7 @@ enum ARStoryboardIds	                 	: String {
 enum ARCellReuseIdentifier					: String {
 	case MenuCell							= "ARMenuCellId"
 }
+
+struct ARHarcodedConstants {
+	static let numberOfImagesHomeView		: UInt	= 5
+}

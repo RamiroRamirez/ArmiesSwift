@@ -25,6 +25,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MZ9-Ne-8VJ">
@@ -273,7 +274,29 @@
                     <view key="view" contentMode="scaleToFill" id="DT6-WL-eEc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ts-p2-yNO" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-Sm-XZ5">
+                                <rect key="frame" x="0.0" y="563" width="600" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="N7A-94-u7w"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.078431372550000003" green="0.2274509804" blue="0.35294117650000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Ts-p2-yNO" firstAttribute="leading" secondItem="DT6-WL-eEc" secondAttribute="leading" id="0ko-aX-0Cd"/>
+                            <constraint firstItem="9Ts-p2-yNO" firstAttribute="top" secondItem="DT6-WL-eEc" secondAttribute="top" id="CxG-NO-4cc"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ts-p2-yNO" secondAttribute="trailing" id="XcS-Yb-1Cx"/>
+                            <constraint firstItem="tcE-Sm-XZ5" firstAttribute="leading" secondItem="DT6-WL-eEc" secondAttribute="leading" id="g1V-oM-mtC"/>
+                            <constraint firstItem="zyG-9S-izg" firstAttribute="top" secondItem="9Ts-p2-yNO" secondAttribute="bottom" id="il7-3G-Vsw"/>
+                            <constraint firstAttribute="trailing" secondItem="tcE-Sm-XZ5" secondAttribute="trailing" id="oth-dn-M7H"/>
+                            <constraint firstItem="zyG-9S-izg" firstAttribute="top" secondItem="tcE-Sm-XZ5" secondAttribute="bottom" id="r7d-iZ-iMY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cdS-l8-d4K">
                         <barButtonItem key="leftBarButtonItem" title="Menú" id="ob4-Ca-LZD">
@@ -283,7 +306,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="carousel" destination="9Ts-p2-yNO" id="A2g-yC-HnZ"/>
                         <outlet property="menuButton" destination="ob4-Ca-LZD" id="CJt-98-xsV"/>
+                        <outlet property="pageControl" destination="tcE-Sm-XZ5" id="LBX-zt-oK1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOH-Cw-Y3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>

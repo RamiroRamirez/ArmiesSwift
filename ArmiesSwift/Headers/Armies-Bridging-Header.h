@@ -16,5 +16,6 @@
 
 // Pods
 #import "UIViewController+ECSlidingViewController.h"
+#import "iCarousel.h"
 
 #endif

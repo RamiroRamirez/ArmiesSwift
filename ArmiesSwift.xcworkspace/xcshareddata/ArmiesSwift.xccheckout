@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8EFE1DAF-7C58-493D-BAC4-C3723038B9C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ArmiesSwift</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CA294C9928FE4075FFD3D36FAE1171EA1A321F7C</key>
+		<string>https://github.com/RamiroRamirez/ArmiesSwift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ArmiesSwift.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CA294C9928FE4075FFD3D36FAE1171EA1A321F7C</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RamiroRamirez/ArmiesSwift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA294C9928FE4075FFD3D36FAE1171EA1A321F7C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA294C9928FE4075FFD3D36FAE1171EA1A321F7C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ArmiesSwift</string>
+		</dict>
+	</array>
+</dict>
+</plist>

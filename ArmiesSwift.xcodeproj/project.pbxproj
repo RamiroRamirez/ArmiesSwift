@@ -22,6 +22,7 @@
 		28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */; };
 		28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF3211BA39CFB0079A936 /* Localizable.strings */; };
 		28AAF3251BA3A3C30079A936 /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3241BA3A3C30079A936 /* ARConstants.swift */; };
+		28F0B5EE1BBF1D45006D0A7A /* MuestraCarousel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F0B5ED1BBF1D45006D0A7A /* MuestraCarousel.jpg */; };
 		AD990A1B669D4482A8136963 /* libPods-ArmiesSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BEEBBFB2B36760DA6849CA9 /* libPods-ArmiesSwift.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		28AAF3221BA39D720079A936 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		28AAF3231BA39D7E0079A936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28AAF3241BA3A3C30079A936 /* ARConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
+		28F0B5ED1BBF1D45006D0A7A /* MuestraCarousel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MuestraCarousel.jpg; sourceTree = "<group>"; };
 		5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		8BEEBBFB2B36760DA6849CA9 /* libPods-ArmiesSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArmiesSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 		28AAF2E11BA38BF00079A936 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28F0B5ED1BBF1D45006D0A7A /* MuestraCarousel.jpg */,
 				28AAF2EA1BA38BF00079A936 /* Images.xcassets */,
 				28AAF2EC1BA38BF00079A936 /* LaunchScreen.xib */,
 				28AAF2E71BA38BF00079A936 /* Main.storyboard */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AAF2E91BA38BF00079A936 /* Main.storyboard in Resources */,
+				28F0B5EE1BBF1D45006D0A7A /* MuestraCarousel.jpg in Resources */,
 				28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */,
 				28AAF2EE1BA38BF00079A936 /* LaunchScreen.xib in Resources */,
 				28AAF2EB1BA38BF00079A936 /* Images.xcassets in Resources */,
