@@ -75,27 +75,27 @@ class ARBiographyViewController: UIViewController, UITableViewDataSource, UITabl
 	}
 
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		var cellType = ARBiographyCell.allValues()[indexPath.row]
+		let cellType = ARBiographyCell.allValues()[indexPath.row]
 		switch cellType {
 		case .ProfileImagesCell:
-			var cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
+			let cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
 			cell?.setCell()
 			return (cell ?? UITableViewCell())
 		case .InfoCell:
-			var cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
+			let cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
 			return (cell ?? UITableViewCell())
 		case .PhotosCell:
-			var cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
+			let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
 			cell?.setCell()
 			return (cell ?? UITableViewCell())
 		case .VideosCell:
-			var cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
+			let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
 			return (cell ?? UITableViewCell())
 		}
 	}
 
 	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		var cellType = ARBiographyCell.allValues()[indexPath.row]
+		let cellType = ARBiographyCell.allValues()[indexPath.row]
 		return cellType.cellHeight()
 	}
 }

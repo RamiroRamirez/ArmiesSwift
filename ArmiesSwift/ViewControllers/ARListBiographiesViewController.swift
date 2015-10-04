@@ -23,7 +23,7 @@ class ARListBiographiesViewController	: ARViewController, UITableViewDataSource,
 	}
 
 	private func temporalSkaterCreator() {
-		var skater1 = ARSkater()
+		let skater1 = ARSkater()
 		skater1.createSkater("Rene de la Fuente", city: "Monterrey, Nvo. León", yearsOld: "17", yearsSkating: "10")
 	}
 

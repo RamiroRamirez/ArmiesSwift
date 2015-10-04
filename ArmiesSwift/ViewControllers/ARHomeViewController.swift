@@ -52,11 +52,11 @@ class ARHomeViewController		: ARViewController, iCarouselDelegate, iCarouselData
 	func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
 		// if the view is nil, create a new one with the frame of the carousel view
 		if (view == nil) {
-			var imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
+			let imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
 			imageView.image = UIImage(named: "MuestraCarousel.jpg")
 			return imageView
 		} else {
-			var imageView = view as? UIImageView
+			let imageView = view as? UIImageView
 			imageView?.image = UIImage(named: "MuestraCarousel.jpg")
 			return imageView
 		}

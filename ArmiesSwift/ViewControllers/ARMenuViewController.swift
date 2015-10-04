@@ -68,8 +68,8 @@ class ARMenuViewController: UIViewController, UITableViewDelegate, UITableViewDa
 	//MARK: - Private methods
 
 	private func initialConfigurations() {
-		self.slidingViewController().topViewAnchoredGesture = ECSlidingViewControllerAnchoredGesture.Tapping | ECSlidingViewControllerAnchoredGesture.Custom
-	}
+        self.slidingViewController().topViewAnchoredGesture = [.Tapping, .Custom]
+    }
 
 	private func showTopView(menuOption: ARMenuOption?) {
 		if let _topViewToShow = menuOption?.topViewToShow() {
