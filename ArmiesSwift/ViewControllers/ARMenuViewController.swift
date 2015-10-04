@@ -31,6 +31,17 @@ enum ARMenuOption 		: Int {
 		}
 	}
 
+	func iconMenu() -> String? {
+		switch (self) {
+		case .Home			: return "MuestraCarousel.jpg"
+		case .Biographies	: return "MuestraCarousel.jpg"
+		case .Videos 		: return "MuestraCarousel.jpg"
+		case .Images		: return "MuestraCarousel.jpg"
+		case .Instagram		: return "MuestraCarousel.jpg"
+		case .Settings		: return "MuestraCarousel.jpg"
+		}
+	}
+
 	func topViewToShow() -> String {
 		switch self {
 		case .Home 			: return ARStoryboardIds.HomeViewController.rawValue
@@ -73,19 +84,25 @@ class ARMenuViewController: UIViewController, UITableViewDelegate, UITableViewDa
 	}
 
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  UITableViewCell
+		var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  ARMenuCell
 		if (cell == nil) {
-			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue)
+			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as? ARMenuCell
 		}
-		cell?.textLabel?.text = ARMenuOption.allValues()[indexPath.row].titleMenu()
+		cell?.typeMenu = ARMenuOption.allValues()[indexPath.row]
+		cell?.setCell()
 		return (cell ?? UITableViewCell())
 	}
 
 	//MARK: -Implementation UITableViewDelegate Protocol
 
 	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		tableView.deselectRowAtIndexPath(indexPath, animated: true)
 		self.showTopView(ARMenuOption.allValues()[indexPath.row])
 		self.slidingViewController().resetTopViewAnimated(true)
+	}
+
+	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		return ARCellHeightConstants.MenuCells.MenuCell.rawValue
 	}
 
 }

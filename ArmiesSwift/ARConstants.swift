@@ -26,10 +26,12 @@ enum ARSegues								: String	{
 enum ARCellReuseIdentifier				 				{
 
 	enum MenuCells							: String 	{
+
 		case MenuCell						= "ARMenuCellId"
 	}
 
 	enum BiographyCells						: String 	{
+
 		case ProfileImageCell				= "ARProfileImageCell"
 		case InfoCell						= "ARInfoCell"
 		case PhotosCell						= "ARPhotosCell"
@@ -37,23 +39,33 @@ enum ARCellReuseIdentifier				 				{
 	}
 
 	enum SkaterCells						: String 	{
+
 		case SkaterCell						= "ARSkaterCell"
 	}
 }
 
 enum ARCellHeightConstants {
+
+	enum MenuCells 							: CGFloat {
+
+		case MenuCell						= 60
+	}
+
 	enum BiographyCells						: CGFloat {
+
 		case ProfileImageCell				= 230
 		case InfoCell						= 224
 		case ImagesCell						= 400
 		case VideosCell						= 253
 	}
 	enum SkaterCells						: CGFloat {
+
 		case SkaterCell						= 90
 	}
 }
 
 struct ARHarcodedConstants {
+	
 	static let numberOfImagesHomeView		: UInt	= 5
 	static let numberOfImagesBiography		: UInt = 10
 }

@@ -37,7 +37,7 @@ class ARHomeViewController		: ARViewController, iCarouselDelegate, iCarouselData
 		self.carousel?.type = iCarouselTypeRotary
 		self.carousel?.bounces = false;
 		self.carousel?.clipsToBounds = true;
-		self.carousel?.backgroundColor = UIColor.grayColor()
+		self.carousel?.backgroundColor = UIColor.whiteColor()
 
 		self.carousel?.delegate = self
 		self.carousel?.dataSource = self
