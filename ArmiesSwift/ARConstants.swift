@@ -8,20 +8,52 @@
 
 import Foundation
 
-enum ARStoryboardIds	                 	: String {
+enum ARStoryboardIds	                 	: String 	{
 	
 	case HomeViewController              	= "ARHomeViewController"
-	case BiographiesViewController 	   		= "ARBiographiesViewController"
+	case BiographiesViewController 	   		= "ARBiographiesListViewController"
 	case VideosViewController      	 		= "ARVideosViewController"
 	case ImagesViewController          	 	= "ARImagesViewController"
 	case InstagramViewController       		= "ARInstagramViewController"
 	case SettingsViewController				= "ARSettingsViewController"
 }
 
-enum ARCellReuseIdentifier					: String {
-	case MenuCell							= "ARMenuCellId"
+enum ARSegues								: String	{
+
+	case OpenBiography						= "openBiography"
+}
+
+enum ARCellReuseIdentifier				 				{
+
+	enum MenuCells							: String 	{
+		case MenuCell						= "ARMenuCellId"
+	}
+
+	enum BiographyCells						: String 	{
+		case ProfileImageCell				= "ARProfileImageCell"
+		case InfoCell						= "ARInfoCell"
+		case PhotosCell						= "ARPhotosCell"
+		case VideosCell						= "ARVideosCell"
+	}
+
+	enum SkaterCells						: String 	{
+		case SkaterCell						= "ARSkaterCell"
+	}
+}
+
+enum ARCellHeightConstants {
+	enum BiographyCells						: CGFloat {
+		case ProfileImageCell				= 230
+		case InfoCell						= 224
+		case ImagesCell						= 400
+		case VideosCell						= 253
+	}
+	enum SkaterCells						: CGFloat {
+		case SkaterCell						= 90
+	}
 }
 
 struct ARHarcodedConstants {
 	static let numberOfImagesHomeView		: UInt	= 5
+	static let numberOfImagesBiography		: UInt = 10
 }

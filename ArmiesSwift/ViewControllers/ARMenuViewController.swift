@@ -73,9 +73,9 @@ class ARMenuViewController: UIViewController, UITableViewDelegate, UITableViewDa
 	}
 
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCell.rawValue) as?  UITableViewCell
+		var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  UITableViewCell
 		if (cell == nil) {
-			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCell.rawValue)
+			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue)
 		}
 		cell?.textLabel?.text = ARMenuOption.allValues()[indexPath.row].titleMenu()
 		return (cell ?? UITableViewCell())
