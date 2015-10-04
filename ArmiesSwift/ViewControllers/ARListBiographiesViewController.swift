@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ARListBiographiesViewController: ARViewController, UITableViewDataSource, UITableViewDelegate {
+class ARListBiographiesViewController	: ARViewController, UITableViewDataSource, UITableViewDelegate {
+
+	var skaters							: [ARSkater] = []
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -20,10 +22,15 @@ class ARListBiographiesViewController: ARViewController, UITableViewDataSource, 
 		self.title = ARMenuOption.Biographies.titleMenu()
 	}
 
+	private func temporalSkaterCreator() {
+		var skater1 = ARSkater()
+		skater1.createSkater("Rene de la Fuente", city: "Monterrey, Nvo. León", yearsOld: "17", yearsSkating: "10")
+	}
+
 	// MARK: - Implementation UITableViewDataSource Protocol
 
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 1
+		return 5
 	}
 
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
