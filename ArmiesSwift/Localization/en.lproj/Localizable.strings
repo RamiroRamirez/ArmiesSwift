@@ -7,10 +7,13 @@
 */
 
 "MENU_HOME"         =       "Home";
-"MENU_BIOGRAPHY"    =       "Biographies";
+"MENU_BIOGRAPHY"    =       "Skaters";
 "MENU_VIDEOS"       =       "Videos";
 "MENU_IMAGES"       =       "Images";
 "MENU_INSTAGRAM"    =       "Instagram";
 "MENU_SETTINGS"     =       "Settings";
 
 "MENU"				=		"Menu";
+
+"BIOGRAPHY_PHOTOS" 	= 		"Photos";
+"BIOGRAPHY_VIDEOS"	=		"Videos";

@@ -15,6 +15,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 // Pods
-#import "UIViewController+ECSlidingViewController.h"
+#import <iCarousel/iCarousel.h>
+#import <ECSlidingViewController/UIViewController+ECSlidingViewController.h>
 
 #endif

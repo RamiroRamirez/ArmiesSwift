@@ -1,5 +1,6 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/ECSlidingViewController" "${PODS_ROOT}/Headers/Public/STTwitter" "${PODS_ROOT}/Headers/Public/iCarousel"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/ECSlidingViewController" -isystem "${PODS_ROOT}/Headers/Public/STTwitter" -isystem "${PODS_ROOT}/Headers/Public/iCarousel"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"ECSlidingViewController" -l"STTwitter" -l"iCarousel" -framework "Accounts" -framework "CoreGraphics" -framework "Foundation" -framework "QuartzCore" -framework "Twitter" -framework "UIKit" -weak_framework "Social"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/ECSlidingViewController.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/STTwitter.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/iCarousel.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/youtube_ios_player_helper.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "ECSlidingViewController" -framework "STTwitter" -framework "iCarousel" -framework "youtube_ios_player_helper"
+PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-ArmiesSwift
 PODS_ROOT = ${SRCROOT}/Pods

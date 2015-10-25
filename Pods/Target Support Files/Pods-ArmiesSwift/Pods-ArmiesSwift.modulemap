@@ -1,0 +1,6 @@
+framework module Pods_ArmiesSwift {
+  umbrella header "Pods-ArmiesSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
