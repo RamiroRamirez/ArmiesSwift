@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
 
 class ARVideosCell						: UITableViewCell {
 
 	@IBOutlet var videosTitleLabel		: UILabel?
+    @IBOutlet var youTubePlayerView     : YTPlayerView?
 
 	// MARK: - Public Methods
 
 	func setCell() {
 		self.videosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_VIDEOS", comment: "")
+        self.youTubePlayerView?.loadWithVideoId("Rcn6tue26PQ")
 	}
 }

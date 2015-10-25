@@ -56,11 +56,11 @@ enum ARCellHeightConstants {
 		case ProfileImageCell				= 230
 		case InfoCell						= 224
 		case ImagesCell						= 400
-		case VideosCell						= 253
+		case VideosCell						= 401
 	}
 	enum SkaterCells						: CGFloat {
 
-		case SkaterCell						= 90
+		case SkaterCell						= 70
 	}
 }
 

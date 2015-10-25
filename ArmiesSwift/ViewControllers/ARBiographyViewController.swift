@@ -90,6 +90,7 @@ class ARBiographyViewController: UIViewController, UITableViewDataSource, UITabl
 			return (cell ?? UITableViewCell())
 		case .VideosCell:
 			let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
+            cell?.setCell()
 			return (cell ?? UITableViewCell())
 		}
 	}

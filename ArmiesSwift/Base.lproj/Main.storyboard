@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -217,23 +218,25 @@
                         <viewControllerLayoutGuide type="bottom" id="b74-A6-CKg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xvh-eq-SKa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-ma-Ydb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="2000"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARProfileImageCell" rowHeight="180" id="wcq-YS-zMf" customClass="ARProfileViewCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wcq-YS-zMf" id="mQy-6F-ckg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R46-DH-j6M">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9yD-xr-lon">
-                                                    <rect key="frame" x="230" y="39.5" width="140" height="140"/>
+                                                    <rect key="frame" x="230" y="40" width="140" height="140"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="140" id="0gI-jq-QiS"/>
                                                         <constraint firstAttribute="width" constant="140" id="Qud-6i-qMf"/>
@@ -255,8 +258,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARInfoCell" rowHeight="224" id="t0k-Lh-O8M" userLabel="ARInfosCell" customClass="ARInfosCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="266" width="600" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t0k-Lh-O8M" id="BhA-XX-ISu">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rene de la Fuente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4K-gH-2qM">
@@ -264,7 +269,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="42" id="Iwm-rl-tQc"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -319,17 +324,19 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARPhotosCell" rowHeight="400" id="2Y9-Ew-jyZ" userLabel="ARImagesCell" customClass="ARImagesCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="490" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Y9-Ew-jyZ" id="Cqd-Yx-85E">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1R-kJ-Pfc" customClass="iCarousel">
-                                                    <rect key="frame" x="0.0" y="54" width="600" height="346"/>
+                                                    <rect key="frame" x="0.0" y="42" width="600" height="358"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fotos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-Z1-1JC">
-                                                    <rect key="frame" x="8" y="13" width="584" height="36"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <rect key="frame" x="8" y="13" width="584" height="24"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -349,9 +356,11 @@
                                             <outlet property="photosTitleLabel" destination="FKc-Z1-1JC" id="y8R-Jj-GVz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARVideosCell" rowHeight="253" id="2Wd-RQ-seU" userLabel="ARVideosCell" customClass="ARVideosCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARVideosCell" rowHeight="400" id="2Wd-RQ-seU" userLabel="ARVideosCell" customClass="ARVideosCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="890" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Wd-RQ-seU" id="bHi-oO-yaF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-me-21A">
@@ -359,19 +368,28 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="U3h-RK-uOH"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9R-ax-VDm" customClass="YTPlayerView">
+                                                    <rect key="frame" x="0.0" y="46" width="600" height="354"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="b9R-ax-VDm" secondAttribute="trailing" id="4WW-jF-2os"/>
                                                 <constraint firstItem="ue4-me-21A" firstAttribute="trailing" secondItem="bHi-oO-yaF" secondAttribute="trailingMargin" id="6QE-ZF-4C7"/>
+                                                <constraint firstItem="b9R-ax-VDm" firstAttribute="top" secondItem="ue4-me-21A" secondAttribute="bottom" constant="8" id="7Wh-om-EUD"/>
+                                                <constraint firstItem="b9R-ax-VDm" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leading" id="8FO-of-p4b"/>
                                                 <constraint firstItem="ue4-me-21A" firstAttribute="top" secondItem="bHi-oO-yaF" secondAttribute="topMargin" constant="9" id="VXX-Oa-mye"/>
                                                 <constraint firstItem="ue4-me-21A" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leadingMargin" id="aMe-WU-Hmx"/>
+                                                <constraint firstAttribute="bottom" secondItem="b9R-ax-VDm" secondAttribute="bottom" id="jG9-uq-NGj"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="videosTitleLabel" destination="ue4-me-21A" id="o0Z-jA-uu3"/>
+                                            <outlet property="youTubePlayerView" destination="b9R-ax-VDm" id="92p-xX-1u3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -391,6 +409,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yv9-0g-rnO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="2000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ejz-4u-agP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -412,33 +432,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARSkaterCell" rowHeight="90" id="OIC-Ly-JKA" customClass="ARSkaterCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARSkaterCell" rowHeight="70" id="OIC-Ly-JKA" customClass="ARSkaterCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OIC-Ly-JKA" id="53q-xU-kxi">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-qN-rom">
-                                                    <rect key="frame" x="10" y="2" width="85" height="85"/>
+                                                    <rect key="frame" x="10" y="5" width="60" height="60"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="85" id="Qhc-Na-7OE"/>
-                                                        <constraint firstAttribute="height" constant="85" id="b14-FE-SJC"/>
+                                                        <constraint firstAttribute="width" constant="60" id="Qhc-Na-7OE"/>
+                                                        <constraint firstAttribute="height" constant="60" id="b14-FE-SJC"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rene de la Fuente" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnO-yT-74c">
-                                                    <rect key="frame" x="113" y="16" width="479" height="21"/>
+                                                    <rect key="frame" x="88" y="16" width="504" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="T3V-tJ-TzS"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monterrey, Nvo Leon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbv-Vn-iOC">
-                                                    <rect key="frame" x="113" y="46" width="479" height="21"/>
+                                                    <rect key="frame" x="88" y="37" width="504" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="D35-1B-aMg"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -450,7 +472,7 @@
                                                 <constraint firstAttribute="centerY" secondItem="32Q-qN-rom" secondAttribute="centerY" id="VPg-xz-wj9"/>
                                                 <constraint firstItem="MnO-yT-74c" firstAttribute="top" secondItem="53q-xU-kxi" secondAttribute="top" constant="16" id="X7a-fc-hat"/>
                                                 <constraint firstItem="32Q-qN-rom" firstAttribute="leading" secondItem="53q-xU-kxi" secondAttribute="leading" constant="10" id="fo5-ED-v3W"/>
-                                                <constraint firstItem="Lbv-Vn-iOC" firstAttribute="top" secondItem="MnO-yT-74c" secondAttribute="bottom" constant="9" id="rnv-7q-wKX"/>
+                                                <constraint firstItem="Lbv-Vn-iOC" firstAttribute="top" secondItem="MnO-yT-74c" secondAttribute="bottom" id="rnv-7q-wKX"/>
                                                 <constraint firstItem="Lbv-Vn-iOC" firstAttribute="leading" secondItem="32Q-qN-rom" secondAttribute="trailing" constant="18" id="zX7-A3-gUu"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -588,11 +610,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARMenuCellId" rowHeight="60" id="no7-cV-2L4" customClass="ARMenuCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="no7-cV-2L4" id="aaO-Gm-bhD">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-3b-1Z4">
+                                                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-3b-1Z4">
                                                     <rect key="frame" x="0.0" y="59" width="600" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -600,7 +624,7 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vwa-Dy-bmz">
-                                                    <rect key="frame" x="8" y="12.5" width="35" height="35"/>
+                                                    <rect key="frame" x="8" y="13" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="ic6-rf-Jrh"/>
                                                         <constraint firstAttribute="width" constant="35" id="xq3-y7-Aaf"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iCarousel
 
 class ARImagesCell						: UITableViewCell, iCarouselDataSource, iCarouselDelegate {
 

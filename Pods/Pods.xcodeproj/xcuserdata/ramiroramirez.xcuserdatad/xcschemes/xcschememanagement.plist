@@ -6,43 +6,63 @@
 	<dict>
 		<key>ECSlidingViewController.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ArmiesSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>STTwitter.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>iCarousel.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>youtube-ios-player-helper-Assets.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>youtube-ios-player-helper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0EE18CDF65A46076443BB21174E5EC6F</key>
+		<key>2167827FAC6700ABBC76650BD76474F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1D1C6567190D59EB789D98415C5183D3</key>
+		<key>3634ABA74A6F41DB3C7516A583373EE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9494390523250106847516AB47E5F9FF</key>
+		<key>715B78028FBCE102D3A2E08950FF2021</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE805E7E5888741C0578917236FEAF8F</key>
+		<key>8A1599E2467E3C0FE576A8C4624C54A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9592A9C4C80F636073F083B90B69C09</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA965E4750787271F19201284E9E5C7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

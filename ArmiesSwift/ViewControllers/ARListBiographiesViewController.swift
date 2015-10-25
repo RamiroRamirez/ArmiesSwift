@@ -14,6 +14,7 @@ class ARListBiographiesViewController	: ARViewController, UITableViewDataSource,
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        self.initialConfigurations()
 	}
 
 	// MARK: - Private Methods
