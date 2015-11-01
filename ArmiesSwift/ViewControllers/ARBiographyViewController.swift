@@ -51,7 +51,7 @@ enum ARBiographyCell : Int {
 
 }
 
-class ARBiographyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ARBiographyViewController: UIViewController {
 
 	//MARK: - View Life Cycle
 
@@ -68,35 +68,39 @@ class ARBiographyViewController: UIViewController, UITableViewDataSource, UITabl
 
 	//MARK: - Actions
 
-	//MARK: - Implementation UITableViewDataSource Protocol
+}
 
-	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return ARBiographyCell.allValues().count
-	}
-
-	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cellType = ARBiographyCell.allValues()[indexPath.row]
-		switch cellType {
-		case .ProfileImagesCell:
-			let cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
-			cell?.setCell()
-			return (cell ?? UITableViewCell())
-		case .InfoCell:
-			let cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
-			return (cell ?? UITableViewCell())
-		case .PhotosCell:
-			let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
-			cell?.setCell()
-			return (cell ?? UITableViewCell())
-		case .VideosCell:
-			let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
+extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    //MARK: - Implementation UITableViewDataSource Protocol
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ARBiographyCell.allValues().count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellType = ARBiographyCell.allValues()[indexPath.row]
+        switch cellType {
+        case .ProfileImagesCell:
+            let cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
             cell?.setCell()
-			return (cell ?? UITableViewCell())
-		}
-	}
-
-	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		let cellType = ARBiographyCell.allValues()[indexPath.row]
-		return cellType.cellHeight()
-	}
+            return (cell ?? UITableViewCell())
+        case .InfoCell:
+            let cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
+            return (cell ?? UITableViewCell())
+        case .PhotosCell:
+            let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
+            cell?.setCell()
+            return (cell ?? UITableViewCell())
+        case .VideosCell:
+            let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
+            cell?.setCell()
+            return (cell ?? UITableViewCell())
+        }
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let cellType = ARBiographyCell.allValues()[indexPath.row]
+        return cellType.cellHeight()
+    }
 }
