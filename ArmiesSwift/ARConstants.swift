@@ -67,5 +67,13 @@ enum ARCellHeightConstants {
 struct ARHarcodedConstants {
 	
 	static let numberOfImagesHomeView		: UInt	= 5
-	static let numberOfImagesBiography		: UInt = 10
+	static let numberOfImagesBiography		: UInt  = 10
+}
+
+struct ARTwitterKeys {
+    
+    static let consumerKey                  : String = "5i97w3KY8DpmMW9lfMmtj5iBx"
+    static let consumerSecret               : String = "cfOwwSLE3Zy9Oo2p7cQcX5tPdDit7ZvfTlsmYJFN5bh3RCKcSA"
+    static let armiesScreenName             : String = "Armiescompany"
+    static let numberOfTwitters             : Int    = 20   
 }

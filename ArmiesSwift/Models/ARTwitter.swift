@@ -6,4 +6,10 @@
 //  Copyright © 2015 RAM. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ARTwitter		: NSObject {
+    
+    var text        : String?
+    var urlImage    : String?
+}

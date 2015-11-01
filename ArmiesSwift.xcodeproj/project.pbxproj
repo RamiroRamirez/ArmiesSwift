@@ -35,6 +35,11 @@
 		28F0B6051BC14F8D006D0A7A /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F0B6041BC14F8D006D0A7A /* photo.jpg */; };
 		28F0B6071BC153CD006D0A7A /* ARExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6061BC153CD006D0A7A /* ARExtensions.swift */; };
 		28F0B60A1BC15742006D0A7A /* ARSkater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6091BC15742006D0A7A /* ARSkater.swift */; };
+		B64B61C01BE6C89A0074E029 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61BF1BE6C89A0074E029 /* Accounts.framework */; };
+		B64B61C21BE6C8A00074E029 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C11BE6C8A00074E029 /* Twitter.framework */; };
+		B64B61C41BE6C8A70074E029 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C31BE6C8A70074E029 /* Social.framework */; };
+		B64B61C61BE6C8B10074E029 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C51BE6C8B10074E029 /* Security.framework */; };
+		B64B61C81BE6D29C0074E029 /* ARTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B61C71BE6D29C0074E029 /* ARTwitter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		28F0B6091BC15742006D0A7A /* ARSkater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkater.swift; path = Models/ARSkater.swift; sourceTree = "<group>"; };
 		5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B64B61BF1BE6C89A0074E029 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B64B61C11BE6C8A00074E029 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		B64B61C31BE6C8A70074E029 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B64B61C51BE6C8B10074E029 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B64B61C71BE6D29C0074E029 /* ARTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTwitter.swift; path = Models/ARTwitter.swift; sourceTree = "<group>"; };
 		DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64B61C61BE6C8B10074E029 /* Security.framework in Frameworks */,
+				B64B61C41BE6C8A70074E029 /* Social.framework in Frameworks */,
+				B64B61C21BE6C8A00074E029 /* Twitter.framework in Frameworks */,
+				B64B61C01BE6C89A0074E029 /* Accounts.framework in Frameworks */,
 				200E9C9150BC84C498AF07E2 /* Pods_ArmiesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +104,10 @@
 		0CCF9FA5C3465A55B1EE5757 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B64B61C51BE6C8B10074E029 /* Security.framework */,
+				B64B61C31BE6C8A70074E029 /* Social.framework */,
+				B64B61C11BE6C8A00074E029 /* Twitter.framework */,
+				B64B61BF1BE6C89A0074E029 /* Accounts.framework */,
 				DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */,
 			);
 			name = Frameworks;
@@ -193,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				28F0B6091BC15742006D0A7A /* ARSkater.swift */,
+				B64B61C71BE6D29C0074E029 /* ARTwitter.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -337,6 +356,7 @@
 				28F0B6071BC153CD006D0A7A /* ARExtensions.swift in Sources */,
 				28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */,
 				28AAF3071BA3992F0079A936 /* ARMenuViewController.swift in Sources */,
+				B64B61C81BE6D29C0074E029 /* ARTwitter.swift in Sources */,
 				28AAF30C1BA399970079A936 /* ARBiographyViewController.swift in Sources */,
 				28AAF2E41BA38BF00079A936 /* ARAppDelegate.swift in Sources */,
 				28F0B5F61BC05A7D006D0A7A /* ARInfosCell.swift in Sources */,
