@@ -154,6 +154,7 @@
 		28AAF3081BA399420079A936 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				28614F5E1BA60B780095FC87 /* ARViewController.swift */,
 				28AAF3061BA3992F0079A936 /* ARMenuViewController.swift */,
 				28AAF3091BA399720079A936 /* ARHomeViewController.swift */,
 				28AAF30B1BA399970079A936 /* ARBiographyViewController.swift */,
@@ -162,7 +163,6 @@
 				28AAF3111BA39A010079A936 /* ARInstagramViewController.swift */,
 				28AAF3131BA39A280079A936 /* ARSettingsViewController.swift */,
 				28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */,
-				28614F5E1BA60B780095FC87 /* ARViewController.swift */,
 				28F0B6001BC08740006D0A7A /* ARListBiographiesViewController.swift */,
 			);
 			name = ViewControllers;

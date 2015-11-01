@@ -43,6 +43,12 @@ class ARHomeViewController		: ARViewController {
 		self.carousel?.delegate = self
 		self.carousel?.dataSource = self
 	}
+    
+    //MARK: - Actions
+    
+    @IBAction func twitterButtonPressed(sender: AnyObject) {
+        self.slidingViewController().anchorTopViewToLeftAnimated(true)
+    }
 }
 
 extension ARHomeViewController: iCarouselDataSource, iCarouselDelegate {
