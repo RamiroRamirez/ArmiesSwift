@@ -29,36 +29,37 @@ class ARTwitterViewController       : UIViewController {
 
 	private func initialConfigurations() {
         self.configurateTwitter(nil)
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
-        self.tableView?.addSubview(refreshControl)
+       
 	}
-    
-    func refresh(refreshControl: UIRefreshControl) {
-        // Do your job, when done:
-        self.configurateTwitter(refreshControl)
-        refreshControl.endRefreshing()
-    }
     
     private func configurateTwitter(refreshControl: UIRefreshControl?) {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.consumerKey, consumerSecret: ARTwitterKeys.consumerSecret)
         // Verify credentials
         twitter.verifyCredentialsWithSuccessBlock({ (bearerToken) -> Void in
-            twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) -> Void in
+            twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) in
                 // reset twitters array
                 self.twitters?.removeAll()
+                // the information was received from twitter endpoint
+                // get the useful infos and display them in table view
                 self.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
                 refreshControl?.endRefreshing()
                 self.tableView?.reloadData()
-                // the information was received from twitter endpoint
-                // get the useful infos and displaz them in table view
-                }, errorBlock: { (error) -> Void in
+                
+                }, errorBlock: { (error) in
+                    // TODO: Handle error
                     print(error)
             })
-            }) { (error) -> Void in
+            }) { (error) in
+                // TODO: Handle error
                 
         }
+    }
+    
+    private func configurateRefreshControl() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        self.tableView?.addSubview(refreshControl)
     }
     
     private func fetchInfosFromTwitter(twitterInfos: [[String: AnyObject]]?) {
@@ -73,6 +74,12 @@ class ARTwitterViewController       : UIViewController {
             twitter.urlImage = userDictionary?["profile_image_url"] as? String
             self.twitters?.append(twitter)
         }
+    }
+    
+    private func refresh(refreshControl: UIRefreshControl) {
+        // Do your job, when done:
+        self.configurateTwitter(refreshControl)
+        refreshControl.endRefreshing()
     }
 }
 
