@@ -30,8 +30,7 @@ class ARTwitterViewController   : UIViewController {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.consumerKey, consumerSecret: ARTwitterKeys.consumerSecret)
         // Verify credentials
-        twitter.verifyCredentialsWithUserSuccessBlock({ (userName, userID) -> Void in
-            
+        twitter.verifyCredentialsWithSuccessBlock({ (algo) -> Void in
             twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) -> Void in
                 self.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
                 // the information was received from twitter endpoint
@@ -40,8 +39,20 @@ class ARTwitterViewController   : UIViewController {
                     print(error)
             })
             }) { (error) -> Void in
-                print(error)
+                
         }
+//        twitter.verifyCredentialsWithUserSuccessBlock({ (userName, userID) -> Void in
+//            
+//            twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) -> Void in
+//                self.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
+//                // the information was received from twitter endpoint
+//                // get the useful infos and displaz them in table view
+//                }, errorBlock: { (error) -> Void in
+//                    print(error)
+//            })
+//            }) { (error) -> Void in
+//                print(error)
+//        }
     }
     
     private func fetchInfosFromTwitter(twitterInfos: [[String: AnyObject]]?) {
