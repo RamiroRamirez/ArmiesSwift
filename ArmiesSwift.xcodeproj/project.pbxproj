@@ -40,6 +40,7 @@
 		B64B61C41BE6C8A70074E029 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C31BE6C8A70074E029 /* Social.framework */; };
 		B64B61C61BE6C8B10074E029 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C51BE6C8B10074E029 /* Security.framework */; };
 		B64B61C81BE6D29C0074E029 /* ARTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B61C71BE6D29C0074E029 /* ARTwitter.swift */; };
+		B64B61CA1BE6DC2A0074E029 /* ARTwitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B61C91BE6DC2A0074E029 /* ARTwitterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		B64B61C31BE6C8A70074E029 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		B64B61C51BE6C8B10074E029 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B64B61C71BE6D29C0074E029 /* ARTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTwitter.swift; path = Models/ARTwitter.swift; sourceTree = "<group>"; };
+		B64B61C91BE6DC2A0074E029 /* ARTwitterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTwitterCell.swift; path = AdditionalViews/ARTwitterCell.swift; sourceTree = "<group>"; };
 		DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -189,6 +191,7 @@
 		28F0B5F11BC0548D006D0A7A /* AdditionalViews */ = {
 			isa = PBXGroup;
 			children = (
+				B64B61C91BE6DC2A0074E029 /* ARTwitterCell.swift */,
 				28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */,
 				28F0B5FE1BC085D2006D0A7A /* ARSkaterCell.swift */,
 				28F0B5F41BC054E3006D0A7A /* BiographyCells */,
@@ -359,6 +362,7 @@
 				B64B61C81BE6D29C0074E029 /* ARTwitter.swift in Sources */,
 				28AAF30C1BA399970079A936 /* ARBiographyViewController.swift in Sources */,
 				28AAF2E41BA38BF00079A936 /* ARAppDelegate.swift in Sources */,
+				B64B61CA1BE6DC2A0074E029 /* ARTwitterCell.swift in Sources */,
 				28F0B5F61BC05A7D006D0A7A /* ARInfosCell.swift in Sources */,
 				28AAF30E1BA399B50079A936 /* ARVideosViewController.swift in Sources */,
 				28F0B5F31BC054DA006D0A7A /* ARProfileViewCell.swift in Sources */,

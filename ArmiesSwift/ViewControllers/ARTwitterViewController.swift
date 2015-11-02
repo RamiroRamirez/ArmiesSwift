@@ -9,9 +9,13 @@
 import UIKit
 import STTwitter
 
-class ARTwitterViewController   : UIViewController {
+class ARTwitterViewController       : UIViewController {
     
-    var twitters                : [ARTwitter]? = []
+    var twitters                    : [ARTwitter]? = []
+    
+    // Oultlets
+    
+    @IBOutlet weak var tableView    : UITableView?
 
 	//MARK: - View Life Cycle
 
@@ -67,5 +71,24 @@ class ARTwitterViewController   : UIViewController {
             twitter.urlImage = userDictionary?["profile_image_url"] as? String
             self.twitters?.append(twitter)
         }
+        self.tableView?.reloadData()
     }
+}
+
+extension ARTwitterViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    //MARK: - Implementation UITAbleViewDataSource Protocol
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (self.twitters?.count ?? 0)
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
+        if (cell == nil) {
+            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
+        }
+        cell?.twitterTextField?.text = self.twitters?[indexPath.row].text
+        return (cell ?? UITableViewCell())
+    }
+    
 }

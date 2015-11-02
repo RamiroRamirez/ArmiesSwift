@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -743,23 +744,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yL-f9-1Z1">
-                                <rect key="frame" x="532" y="112" width="48" height="30"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PVg-d4-ZQU">
+                                <rect key="frame" x="50" y="0.0" width="550" height="600"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="C8M-8X-o1A"/>
-                                    <constraint firstAttribute="width" constant="48" id="w1w-cj-LeG"/>
-                                </constraints>
-                                <state key="normal" title="Twitter"/>
-                            </button>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ARTwitterCell" rowHeight="65" id="Z4S-XG-hEA" customClass="ARTwitterCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="550" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z4S-XG-hEA" id="ez4-X2-L6V">
+                                            <rect key="frame" x="0.0" y="0.0" width="550" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dea-XD-u2K">
+                                                    <rect key="frame" x="18" y="8" width="48" height="48"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="2wF-OA-oE6"/>
+                                                        <constraint firstAttribute="width" secondItem="Dea-XD-u2K" secondAttribute="height" multiplier="1:1" id="Jx4-As-pBk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Foi-p4-RBV">
+                                                    <rect key="frame" x="81" y="0.0" width="461" height="64"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Foi-p4-RBV" secondAttribute="trailing" constant="8" id="C2P-YK-jMD"/>
+                                                <constraint firstItem="Foi-p4-RBV" firstAttribute="top" secondItem="ez4-X2-L6V" secondAttribute="top" id="HN6-00-mFm"/>
+                                                <constraint firstItem="Foi-p4-RBV" firstAttribute="leading" secondItem="Dea-XD-u2K" secondAttribute="trailing" constant="15" id="JVw-7M-nhP"/>
+                                                <constraint firstItem="Dea-XD-u2K" firstAttribute="leading" secondItem="ez4-X2-L6V" secondAttribute="leading" constant="18" id="Lh3-WS-iyq"/>
+                                                <constraint firstItem="Dea-XD-u2K" firstAttribute="centerY" secondItem="ez4-X2-L6V" secondAttribute="centerY" id="WUA-hZ-cnf"/>
+                                                <constraint firstAttribute="bottom" secondItem="Foi-p4-RBV" secondAttribute="bottom" id="hIk-tK-Z71"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <outlet property="armieImageView" destination="Dea-XD-u2K" id="2RC-ZK-faE"/>
+                                            <outlet property="twitterTextField" destination="Foi-p4-RBV" id="dbf-eR-A6o"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fl4-0n-Tiq" id="8ad-7m-ryj"/>
+                                    <outlet property="delegate" destination="fl4-0n-Tiq" id="0R5-Eg-wn1"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="1yL-f9-1Z1" secondAttribute="trailing" constant="20" id="HC7-6q-D9i"/>
-                            <constraint firstItem="1yL-f9-1Z1" firstAttribute="top" secondItem="o9u-EX-bhi" secondAttribute="bottom" constant="92" id="jha-bo-bOP"/>
+                            <constraint firstItem="PVg-d4-ZQU" firstAttribute="top" secondItem="1Ob-BT-bMr" secondAttribute="top" id="N25-oF-81d"/>
+                            <constraint firstAttribute="trailing" secondItem="PVg-d4-ZQU" secondAttribute="trailing" id="PJ6-Gb-tBs"/>
+                            <constraint firstItem="PVg-d4-ZQU" firstAttribute="leading" secondItem="1Ob-BT-bMr" secondAttribute="leading" constant="50" id="dag-fL-9YW"/>
+                            <constraint firstItem="zOZ-LE-5PZ" firstAttribute="top" secondItem="PVg-d4-ZQU" secondAttribute="bottom" id="gj0-bW-T7B"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="PVg-d4-ZQU" id="wqX-rm-7LM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2m3-8m-v5P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

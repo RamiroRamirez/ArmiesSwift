@@ -37,6 +37,11 @@ enum ARCellReuseIdentifier				 				{
 		case PhotosCell						= "ARPhotosCell"
 		case VideosCell						= "ARVideosCell"
 	}
+    
+    enum TwitterCells                       : String    {
+        
+        case TwitterCell                    = "ARTwitterCell"
+    }
 
 	enum SkaterCells						: String 	{
 
