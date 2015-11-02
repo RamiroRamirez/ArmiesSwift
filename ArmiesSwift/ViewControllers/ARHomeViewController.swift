@@ -9,7 +9,7 @@
 import UIKit
 import iCarousel
 
-class ARHomeViewController		: ARViewController, iCarouselDelegate, iCarouselDataSource {
+class ARHomeViewController		: ARViewController {
 
 	//MARK: - Outlets
 
@@ -43,29 +43,38 @@ class ARHomeViewController		: ARViewController, iCarouselDelegate, iCarouselData
 		self.carousel?.delegate = self
 		self.carousel?.dataSource = self
 	}
+    
+    //MARK: - Actions
+    
+    @IBAction func twitterButtonPressed(sender: AnyObject) {
+        self.slidingViewController().anchorTopViewToLeftAnimated(true)
+    }
+}
 
-	//MARK: - Implementation iCarouselDataSource Protocol
-
-	func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
-		return ARHarcodedConstants.numberOfImagesHomeView
-	}
-
-	func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
-		// if the view is nil, create a new one with the frame of the carousel view
-		if (view == nil) {
-			let imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
-			imageView.image = UIImage(named: "MuestraCarousel.jpg")
-			return imageView
-		} else {
-			let imageView = view as? UIImageView
-			imageView?.image = UIImage(named: "MuestraCarousel.jpg")
-			return imageView
-		}
-	}
-
-	//MARK: - Implementation iCarouselDelegate Protocol
-
-	func carouselCurrentItemIndexDidChange(carousel: iCarousel!) {
-		self.pageControl?.currentPage = carousel.currentItemIndex
-	}
+extension ARHomeViewController: iCarouselDataSource, iCarouselDelegate {
+    
+    //MARK: - Implementation iCarouselDataSource Protocol
+    
+    func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
+        return ARHarcodedConstants.numberOfImagesHomeView
+    }
+    
+    func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
+        // if the view is nil, create a new one with the frame of the carousel view
+        if (view == nil) {
+            let imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
+            imageView.image = UIImage(named: "MuestraCarousel.jpg")
+            return imageView
+        } else {
+            let imageView = view as? UIImageView
+            imageView?.image = UIImage(named: "MuestraCarousel.jpg")
+            return imageView
+        }
+    }
+    
+    //MARK: - Implementation iCarouselDelegate Protocol
+    
+    func carouselCurrentItemIndexDidChange(carousel: iCarousel!) {
+        self.pageControl?.currentPage = carousel.currentItemIndex
+    }
 }

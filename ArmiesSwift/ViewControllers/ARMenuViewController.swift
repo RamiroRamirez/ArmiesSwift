@@ -54,7 +54,9 @@ enum ARMenuOption 		: Int {
 	}
 }
 
-class ARMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ARMenuViewController: UIViewController {
+    
+    //MARK: - IBOutlets
 
 	@IBOutlet var tableView: UITableView?
 
@@ -76,33 +78,35 @@ class ARMenuViewController: UIViewController, UITableViewDelegate, UITableViewDa
 			self.slidingViewController().topViewController = self.storyboard?.instantiateViewControllerWithIdentifier(_topViewToShow) as? UINavigationController
 		}
 	}
+}
 
-	//MARK: -Implementation UITableViewDataSource Protocol
-
-	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return ARMenuOption.allValues().count
-	}
-
-	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  ARMenuCell
-		if (cell == nil) {
-			cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as? ARMenuCell
-		}
-		cell?.typeMenu = ARMenuOption.allValues()[indexPath.row]
-		cell?.setCell()
-		return (cell ?? UITableViewCell())
-	}
-
-	//MARK: -Implementation UITableViewDelegate Protocol
-
-	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-		tableView.deselectRowAtIndexPath(indexPath, animated: true)
-		self.showTopView(ARMenuOption.allValues()[indexPath.row])
-		self.slidingViewController().resetTopViewAnimated(true)
-	}
-
-	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-		return ARCellHeightConstants.MenuCells.MenuCell.rawValue
-	}
-
+extension ARMenuViewController : UITableViewDelegate, UITableViewDataSource {
+    
+    //MARK: -Implementation UITableViewDataSource Protocol
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ARMenuOption.allValues().count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  ARMenuCell
+        if (cell == nil) {
+            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as? ARMenuCell
+        }
+        cell?.typeMenu = ARMenuOption.allValues()[indexPath.row]
+        cell?.setCell()
+        return (cell ?? UITableViewCell())
+    }
+    
+    //MARK: -Implementation UITableViewDelegate Protocol
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        self.showTopView(ARMenuOption.allValues()[indexPath.row])
+        self.slidingViewController().resetTopViewAnimated(true)
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return ARCellHeightConstants.MenuCells.MenuCell.rawValue
+    }
 }

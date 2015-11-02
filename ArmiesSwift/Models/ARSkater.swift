@@ -17,7 +17,7 @@ class ARSkater		: NSObject {
 	var profileImage	: String?
 
 	func createSkater(name: String?, city: String?, yearsOld: String?, yearsSkating: String?) -> ARSkater? {
-		var skater = ARSkater()
+		let skater = ARSkater()
 		skater.name = name
 		skater.city = city
 		skater.yearsOld = yearsOld
