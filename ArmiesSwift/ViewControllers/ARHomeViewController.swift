@@ -37,6 +37,7 @@ class ARHomeViewController		: ARViewController {
 	private func setupCarousel() {
 		self.carousel?.type = iCarouselTypeRotary
 		self.carousel?.bounces = false;
+        self.carousel?.scrollSpeed = 0.2
 		self.carousel?.clipsToBounds = true;
 		self.carousel?.backgroundColor = UIColor.defaultColor()
 

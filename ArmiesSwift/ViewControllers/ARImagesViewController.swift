@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ARImagesViewController: ARViewController {
+class ARImagesViewController            : ARViewController {
+    
+    var imageArray                      : [UIImage]? = []
+    
+    //MARK: - Outlets
 
+    @IBOutlet weak var collectionView   : UICollectionView?
+    
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
@@ -21,8 +27,42 @@ class ARImagesViewController: ARViewController {
 
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Images.titleMenu()
+        self.createImageArray()
 	}
+    
+    private func createImageArray() {
+        let basicString = "InstagramArmies"
+        for var i = 1; i < ARHarcodedConstants.numberOfImagesInstagram; i++ {
+            let imageName = basicString + String(i) + ".jpg"
+            if let _image = UIImage(named: imageName) {
+                self.imageArray?.append(_image)
+            }
+        }
+        self.collectionView?.reloadData()
+    }
 	
 	//MARK: - Actions
 
+}
+
+extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return (self.imageArray?.count ?? 0)
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.ImageCells.ImageCell.rawValue, forIndexPath: indexPath) as? ARImageCell
+        cell?.backgroundColor = UIColor.blackColor()
+        cell?.instagramImageView?.image = self.imageArray?[indexPath.row]
+        // Configure the cell
+        return (cell ?? UICollectionViewCell())
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        //get the width of the screen device
+        let widthOfImage = (self.view.frame.width ?? 0) / ARHarcodedConstants.numberOfImagesCollectionInstagram
+        return CGSizeMake(widthOfImage, widthOfImage)
+    }
 }

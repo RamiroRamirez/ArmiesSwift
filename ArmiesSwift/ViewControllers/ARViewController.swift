@@ -10,7 +10,7 @@ import UIKit
 
 class ARViewController: UIViewController {
 
-	@IBOutlet weak var menuButton: UIBarButtonItem!
+	@IBOutlet weak var menuButton: UIBarButtonItem?
 
 	//MARK: - View Life cycle
 
@@ -22,7 +22,7 @@ class ARViewController: UIViewController {
 	//MARK: - Private Methods
 
 	private func initialConfigurations() {
-		self.menuButton.title = NSLocalizedString("MENU", comment: "")
+		self.menuButton?.title = NSLocalizedString("MENU", comment: "")
 	}
 
 	//MARK: - Actions
