@@ -23,8 +23,6 @@
 		28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */; };
 		28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF3211BA39CFB0079A936 /* Localizable.strings */; };
 		28AAF3251BA3A3C30079A936 /* ARConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF3241BA3A3C30079A936 /* ARConstants.swift */; };
-		28F0B5EE1BBF1D45006D0A7A /* MuestraCarousel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F0B5ED1BBF1D45006D0A7A /* MuestraCarousel.jpg */; };
-		28F0B5F01BC0524C006D0A7A /* reniArmies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F0B5EF1BC0524C006D0A7A /* reniArmies.jpg */; };
 		28F0B5F31BC054DA006D0A7A /* ARProfileViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B5F21BC054DA006D0A7A /* ARProfileViewCell.swift */; };
 		28F0B5F61BC05A7D006D0A7A /* ARInfosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B5F51BC05A7D006D0A7A /* ARInfosCell.swift */; };
 		28F0B5F81BC05A9C006D0A7A /* ARImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B5F71BC05A9C006D0A7A /* ARImagesCell.swift */; };
@@ -32,7 +30,6 @@
 		28F0B5FF1BC085D2006D0A7A /* ARSkaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B5FE1BC085D2006D0A7A /* ARSkaterCell.swift */; };
 		28F0B6011BC08740006D0A7A /* ARListBiographiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6001BC08740006D0A7A /* ARListBiographiesViewController.swift */; };
 		28F0B6031BC14D7E006D0A7A /* ARMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */; };
-		28F0B6051BC14F8D006D0A7A /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28F0B6041BC14F8D006D0A7A /* photo.jpg */; };
 		28F0B6071BC153CD006D0A7A /* ARExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6061BC153CD006D0A7A /* ARExtensions.swift */; };
 		28F0B60A1BC15742006D0A7A /* ARSkater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6091BC15742006D0A7A /* ARSkater.swift */; };
 		B64B61C01BE6C89A0074E029 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61BF1BE6C89A0074E029 /* Accounts.framework */; };
@@ -41,6 +38,37 @@
 		B64B61C61BE6C8B10074E029 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C51BE6C8B10074E029 /* Security.framework */; };
 		B64B61C81BE6D29C0074E029 /* ARTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B61C71BE6D29C0074E029 /* ARTwitter.swift */; };
 		B64B61CA1BE6DC2A0074E029 /* ARTwitterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B61C91BE6DC2A0074E029 /* ARTwitterCell.swift */; };
+		B64B61CC1BE8D6210074E029 /* ARImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B61CB1BE8D6210074E029 /* ARImageCell.swift */; };
+		B64B61D11BE8E2D10074E029 /* MuestraCarousel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61CE1BE8E2D10074E029 /* MuestraCarousel.jpg */; };
+		B64B61D21BE8E2D10074E029 /* photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61CF1BE8E2D10074E029 /* photo.jpg */; };
+		B64B61D31BE8E2D10074E029 /* reniArmies.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61D01BE8E2D10074E029 /* reniArmies.jpg */; };
+		B64B61DA1BE8E33A0074E029 /* ArmiesAll.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61D51BE8E33A0074E029 /* ArmiesAll.jpg */; };
+		B64B61DB1BE8E33A0074E029 /* ArmiesAll1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61D61BE8E33A0074E029 /* ArmiesAll1.jpg */; };
+		B64B61DC1BE8E33A0074E029 /* ArmiesAll2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61D71BE8E33A0074E029 /* ArmiesAll2.jpg */; };
+		B64B61DD1BE8E33A0074E029 /* ArmiesAll3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61D81BE8E33A0074E029 /* ArmiesAll3.jpg */; };
+		B64B61DE1BE8E33A0074E029 /* ArmiesAll4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61D91BE8E33A0074E029 /* ArmiesAll4.jpg */; };
+		B64B61F61BE8E3430074E029 /* InstagramArmies1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E01BE8E3430074E029 /* InstagramArmies1.jpg */; };
+		B64B61F71BE8E3430074E029 /* InstagramArmies10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E11BE8E3430074E029 /* InstagramArmies10.jpg */; };
+		B64B61F81BE8E3430074E029 /* InstagramArmies11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E21BE8E3430074E029 /* InstagramArmies11.jpg */; };
+		B64B61F91BE8E3430074E029 /* InstagramArmies12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E31BE8E3430074E029 /* InstagramArmies12.jpg */; };
+		B64B61FA1BE8E3430074E029 /* InstagramArmies13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E41BE8E3430074E029 /* InstagramArmies13.jpg */; };
+		B64B61FB1BE8E3430074E029 /* InstagramArmies14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E51BE8E3430074E029 /* InstagramArmies14.jpg */; };
+		B64B61FC1BE8E3430074E029 /* InstagramArmies15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E61BE8E3430074E029 /* InstagramArmies15.jpg */; };
+		B64B61FD1BE8E3430074E029 /* InstagramArmies16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E71BE8E3430074E029 /* InstagramArmies16.jpg */; };
+		B64B61FE1BE8E3430074E029 /* InstagramArmies17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E81BE8E3430074E029 /* InstagramArmies17.jpg */; };
+		B64B61FF1BE8E3430074E029 /* InstagramArmies18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61E91BE8E3430074E029 /* InstagramArmies18.jpg */; };
+		B64B62001BE8E3430074E029 /* InstagramArmies19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61EA1BE8E3430074E029 /* InstagramArmies19.jpg */; };
+		B64B62011BE8E3430074E029 /* InstagramArmies2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61EB1BE8E3430074E029 /* InstagramArmies2.jpg */; };
+		B64B62021BE8E3430074E029 /* InstagramArmies20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61EC1BE8E3430074E029 /* InstagramArmies20.jpg */; };
+		B64B62031BE8E3430074E029 /* InstagramArmies21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61ED1BE8E3430074E029 /* InstagramArmies21.jpg */; };
+		B64B62041BE8E3430074E029 /* InstagramArmies22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61EE1BE8E3430074E029 /* InstagramArmies22.jpg */; };
+		B64B62051BE8E3430074E029 /* InstagramArmies3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61EF1BE8E3430074E029 /* InstagramArmies3.jpg */; };
+		B64B62061BE8E3430074E029 /* InstagramArmies4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F01BE8E3430074E029 /* InstagramArmies4.jpg */; };
+		B64B62071BE8E3430074E029 /* InstagramArmies5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F11BE8E3430074E029 /* InstagramArmies5.jpg */; };
+		B64B62081BE8E3430074E029 /* InstagramArmies6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F21BE8E3430074E029 /* InstagramArmies6.jpg */; };
+		B64B62091BE8E3430074E029 /* InstagramArmies7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F31BE8E3430074E029 /* InstagramArmies7.jpg */; };
+		B64B620A1BE8E3430074E029 /* InstagramArmies8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F41BE8E3430074E029 /* InstagramArmies8.jpg */; };
+		B64B620B1BE8E3430074E029 /* InstagramArmies9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F51BE8E3430074E029 /* InstagramArmies9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,8 +92,6 @@
 		28AAF3221BA39D720079A936 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		28AAF3231BA39D7E0079A936 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		28AAF3241BA3A3C30079A936 /* ARConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConstants.swift; sourceTree = "<group>"; };
-		28F0B5ED1BBF1D45006D0A7A /* MuestraCarousel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MuestraCarousel.jpg; sourceTree = "<group>"; };
-		28F0B5EF1BC0524C006D0A7A /* reniArmies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reniArmies.jpg; sourceTree = "<group>"; };
 		28F0B5F21BC054DA006D0A7A /* ARProfileViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARProfileViewCell.swift; path = AdditionalViews/BiographyCells/ARProfileViewCell.swift; sourceTree = "<group>"; };
 		28F0B5F51BC05A7D006D0A7A /* ARInfosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARInfosCell.swift; path = AdditionalViews/BiographyCells/ARInfosCell.swift; sourceTree = "<group>"; };
 		28F0B5F71BC05A9C006D0A7A /* ARImagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARImagesCell.swift; path = AdditionalViews/BiographyCells/ARImagesCell.swift; sourceTree = "<group>"; };
@@ -73,7 +99,6 @@
 		28F0B5FE1BC085D2006D0A7A /* ARSkaterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkaterCell.swift; path = AdditionalViews/ARSkaterCell.swift; sourceTree = "<group>"; };
 		28F0B6001BC08740006D0A7A /* ARListBiographiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARListBiographiesViewController.swift; path = ViewControllers/ARListBiographiesViewController.swift; sourceTree = "<group>"; };
 		28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARMenuCell.swift; path = AdditionalViews/ARMenuCell.swift; sourceTree = "<group>"; };
-		28F0B6041BC14F8D006D0A7A /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpg; sourceTree = "<group>"; };
 		28F0B6061BC153CD006D0A7A /* ARExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARExtensions.swift; sourceTree = "<group>"; };
 		28F0B6091BC15742006D0A7A /* ARSkater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkater.swift; path = Models/ARSkater.swift; sourceTree = "<group>"; };
 		5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +109,37 @@
 		B64B61C51BE6C8B10074E029 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B64B61C71BE6D29C0074E029 /* ARTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTwitter.swift; path = Models/ARTwitter.swift; sourceTree = "<group>"; };
 		B64B61C91BE6DC2A0074E029 /* ARTwitterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTwitterCell.swift; path = AdditionalViews/ARTwitterCell.swift; sourceTree = "<group>"; };
+		B64B61CB1BE8D6210074E029 /* ARImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARImageCell.swift; path = AdditionalViews/ARImageCell.swift; sourceTree = "<group>"; };
+		B64B61CE1BE8E2D10074E029 /* MuestraCarousel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = MuestraCarousel.jpg; path = Images/MuestraCarousel.jpg; sourceTree = "<group>"; };
+		B64B61CF1BE8E2D10074E029 /* photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo.jpg; path = Images/photo.jpg; sourceTree = "<group>"; };
+		B64B61D01BE8E2D10074E029 /* reniArmies.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = reniArmies.jpg; path = Images/reniArmies.jpg; sourceTree = "<group>"; };
+		B64B61D51BE8E33A0074E029 /* ArmiesAll.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArmiesAll.jpg; sourceTree = "<group>"; };
+		B64B61D61BE8E33A0074E029 /* ArmiesAll1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArmiesAll1.jpg; sourceTree = "<group>"; };
+		B64B61D71BE8E33A0074E029 /* ArmiesAll2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArmiesAll2.jpg; sourceTree = "<group>"; };
+		B64B61D81BE8E33A0074E029 /* ArmiesAll3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArmiesAll3.jpg; sourceTree = "<group>"; };
+		B64B61D91BE8E33A0074E029 /* ArmiesAll4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArmiesAll4.jpg; sourceTree = "<group>"; };
+		B64B61E01BE8E3430074E029 /* InstagramArmies1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies1.jpg; sourceTree = "<group>"; };
+		B64B61E11BE8E3430074E029 /* InstagramArmies10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies10.jpg; sourceTree = "<group>"; };
+		B64B61E21BE8E3430074E029 /* InstagramArmies11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies11.jpg; sourceTree = "<group>"; };
+		B64B61E31BE8E3430074E029 /* InstagramArmies12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies12.jpg; sourceTree = "<group>"; };
+		B64B61E41BE8E3430074E029 /* InstagramArmies13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies13.jpg; sourceTree = "<group>"; };
+		B64B61E51BE8E3430074E029 /* InstagramArmies14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies14.jpg; sourceTree = "<group>"; };
+		B64B61E61BE8E3430074E029 /* InstagramArmies15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies15.jpg; sourceTree = "<group>"; };
+		B64B61E71BE8E3430074E029 /* InstagramArmies16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies16.jpg; sourceTree = "<group>"; };
+		B64B61E81BE8E3430074E029 /* InstagramArmies17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies17.jpg; sourceTree = "<group>"; };
+		B64B61E91BE8E3430074E029 /* InstagramArmies18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies18.jpg; sourceTree = "<group>"; };
+		B64B61EA1BE8E3430074E029 /* InstagramArmies19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies19.jpg; sourceTree = "<group>"; };
+		B64B61EB1BE8E3430074E029 /* InstagramArmies2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies2.jpg; sourceTree = "<group>"; };
+		B64B61EC1BE8E3430074E029 /* InstagramArmies20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies20.jpg; sourceTree = "<group>"; };
+		B64B61ED1BE8E3430074E029 /* InstagramArmies21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies21.jpg; sourceTree = "<group>"; };
+		B64B61EE1BE8E3430074E029 /* InstagramArmies22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies22.jpg; sourceTree = "<group>"; };
+		B64B61EF1BE8E3430074E029 /* InstagramArmies3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies3.jpg; sourceTree = "<group>"; };
+		B64B61F01BE8E3430074E029 /* InstagramArmies4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies4.jpg; sourceTree = "<group>"; };
+		B64B61F11BE8E3430074E029 /* InstagramArmies5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies5.jpg; sourceTree = "<group>"; };
+		B64B61F21BE8E3430074E029 /* InstagramArmies6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies6.jpg; sourceTree = "<group>"; };
+		B64B61F31BE8E3430074E029 /* InstagramArmies7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies7.jpg; sourceTree = "<group>"; };
+		B64B61F41BE8E3430074E029 /* InstagramArmies8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies8.jpg; sourceTree = "<group>"; };
+		B64B61F51BE8E3430074E029 /* InstagramArmies9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies9.jpg; sourceTree = "<group>"; };
 		DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,9 +207,7 @@
 		28AAF2E11BA38BF00079A936 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				28F0B6041BC14F8D006D0A7A /* photo.jpg */,
-				28F0B5EF1BC0524C006D0A7A /* reniArmies.jpg */,
-				28F0B5ED1BBF1D45006D0A7A /* MuestraCarousel.jpg */,
+				B64B61CD1BE8E29C0074E029 /* Images */,
 				28AAF2EA1BA38BF00079A936 /* Images.xcassets */,
 				28AAF2EC1BA38BF00079A936 /* LaunchScreen.xib */,
 				28AAF2E71BA38BF00079A936 /* Main.storyboard */,
@@ -194,6 +248,7 @@
 				B64B61C91BE6DC2A0074E029 /* ARTwitterCell.swift */,
 				28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */,
 				28F0B5FE1BC085D2006D0A7A /* ARSkaterCell.swift */,
+				B64B61CB1BE8D6210074E029 /* ARImageCell.swift */,
 				28F0B5F41BC054E3006D0A7A /* BiographyCells */,
 			);
 			name = AdditionalViews;
@@ -226,6 +281,61 @@
 				5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B64B61CD1BE8E29C0074E029 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B64B61DF1BE8E3430074E029 /* ImagesInstagram */,
+				B64B61D41BE8E33A0074E029 /* ImagesAll */,
+				B64B61CE1BE8E2D10074E029 /* MuestraCarousel.jpg */,
+				B64B61CF1BE8E2D10074E029 /* photo.jpg */,
+				B64B61D01BE8E2D10074E029 /* reniArmies.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B64B61D41BE8E33A0074E029 /* ImagesAll */ = {
+			isa = PBXGroup;
+			children = (
+				B64B61D51BE8E33A0074E029 /* ArmiesAll.jpg */,
+				B64B61D61BE8E33A0074E029 /* ArmiesAll1.jpg */,
+				B64B61D71BE8E33A0074E029 /* ArmiesAll2.jpg */,
+				B64B61D81BE8E33A0074E029 /* ArmiesAll3.jpg */,
+				B64B61D91BE8E33A0074E029 /* ArmiesAll4.jpg */,
+			);
+			name = ImagesAll;
+			path = Images/ImagesAll;
+			sourceTree = "<group>";
+		};
+		B64B61DF1BE8E3430074E029 /* ImagesInstagram */ = {
+			isa = PBXGroup;
+			children = (
+				B64B61E01BE8E3430074E029 /* InstagramArmies1.jpg */,
+				B64B61E11BE8E3430074E029 /* InstagramArmies10.jpg */,
+				B64B61E21BE8E3430074E029 /* InstagramArmies11.jpg */,
+				B64B61E31BE8E3430074E029 /* InstagramArmies12.jpg */,
+				B64B61E41BE8E3430074E029 /* InstagramArmies13.jpg */,
+				B64B61E51BE8E3430074E029 /* InstagramArmies14.jpg */,
+				B64B61E61BE8E3430074E029 /* InstagramArmies15.jpg */,
+				B64B61E71BE8E3430074E029 /* InstagramArmies16.jpg */,
+				B64B61E81BE8E3430074E029 /* InstagramArmies17.jpg */,
+				B64B61E91BE8E3430074E029 /* InstagramArmies18.jpg */,
+				B64B61EA1BE8E3430074E029 /* InstagramArmies19.jpg */,
+				B64B61EB1BE8E3430074E029 /* InstagramArmies2.jpg */,
+				B64B61EC1BE8E3430074E029 /* InstagramArmies20.jpg */,
+				B64B61ED1BE8E3430074E029 /* InstagramArmies21.jpg */,
+				B64B61EE1BE8E3430074E029 /* InstagramArmies22.jpg */,
+				B64B61EF1BE8E3430074E029 /* InstagramArmies3.jpg */,
+				B64B61F01BE8E3430074E029 /* InstagramArmies4.jpg */,
+				B64B61F11BE8E3430074E029 /* InstagramArmies5.jpg */,
+				B64B61F21BE8E3430074E029 /* InstagramArmies6.jpg */,
+				B64B61F31BE8E3430074E029 /* InstagramArmies7.jpg */,
+				B64B61F41BE8E3430074E029 /* InstagramArmies8.jpg */,
+				B64B61F51BE8E3430074E029 /* InstagramArmies9.jpg */,
+			);
+			name = ImagesInstagram;
+			path = Images/ImagesInstagram;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,13 +401,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F0B6051BC14F8D006D0A7A /* photo.jpg in Resources */,
 				28AAF2E91BA38BF00079A936 /* Main.storyboard in Resources */,
-				28F0B5EE1BBF1D45006D0A7A /* MuestraCarousel.jpg in Resources */,
-				28F0B5F01BC0524C006D0A7A /* reniArmies.jpg in Resources */,
+				B64B62091BE8E3430074E029 /* InstagramArmies7.jpg in Resources */,
+				B64B62001BE8E3430074E029 /* InstagramArmies19.jpg in Resources */,
+				B64B620A1BE8E3430074E029 /* InstagramArmies8.jpg in Resources */,
+				B64B62041BE8E3430074E029 /* InstagramArmies22.jpg in Resources */,
+				B64B61F61BE8E3430074E029 /* InstagramArmies1.jpg in Resources */,
+				B64B61FB1BE8E3430074E029 /* InstagramArmies14.jpg in Resources */,
+				B64B61FA1BE8E3430074E029 /* InstagramArmies13.jpg in Resources */,
 				28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */,
+				B64B61D21BE8E2D10074E029 /* photo.jpg in Resources */,
+				B64B61DD1BE8E33A0074E029 /* ArmiesAll3.jpg in Resources */,
+				B64B61FC1BE8E3430074E029 /* InstagramArmies15.jpg in Resources */,
 				28AAF2EE1BA38BF00079A936 /* LaunchScreen.xib in Resources */,
+				B64B61D11BE8E2D10074E029 /* MuestraCarousel.jpg in Resources */,
+				B64B61DB1BE8E33A0074E029 /* ArmiesAll1.jpg in Resources */,
+				B64B620B1BE8E3430074E029 /* InstagramArmies9.jpg in Resources */,
+				B64B62011BE8E3430074E029 /* InstagramArmies2.jpg in Resources */,
+				B64B61F81BE8E3430074E029 /* InstagramArmies11.jpg in Resources */,
+				B64B61D31BE8E2D10074E029 /* reniArmies.jpg in Resources */,
+				B64B61DC1BE8E33A0074E029 /* ArmiesAll2.jpg in Resources */,
+				B64B62031BE8E3430074E029 /* InstagramArmies21.jpg in Resources */,
+				B64B61F71BE8E3430074E029 /* InstagramArmies10.jpg in Resources */,
+				B64B61DA1BE8E33A0074E029 /* ArmiesAll.jpg in Resources */,
+				B64B61FF1BE8E3430074E029 /* InstagramArmies18.jpg in Resources */,
+				B64B62061BE8E3430074E029 /* InstagramArmies4.jpg in Resources */,
+				B64B62051BE8E3430074E029 /* InstagramArmies3.jpg in Resources */,
+				B64B62081BE8E3430074E029 /* InstagramArmies6.jpg in Resources */,
 				28AAF2EB1BA38BF00079A936 /* Images.xcassets in Resources */,
+				B64B62021BE8E3430074E029 /* InstagramArmies20.jpg in Resources */,
+				B64B61FE1BE8E3430074E029 /* InstagramArmies17.jpg in Resources */,
+				B64B61F91BE8E3430074E029 /* InstagramArmies12.jpg in Resources */,
+				B64B62071BE8E3430074E029 /* InstagramArmies5.jpg in Resources */,
+				B64B61FD1BE8E3430074E029 /* InstagramArmies16.jpg in Resources */,
+				B64B61DE1BE8E33A0074E029 /* ArmiesAll4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +511,7 @@
 				28AAF3121BA39A010079A936 /* ARInstagramViewController.swift in Sources */,
 				28F0B6011BC08740006D0A7A /* ARListBiographiesViewController.swift in Sources */,
 				28AAF3101BA399DD0079A936 /* ARImagesViewController.swift in Sources */,
+				B64B61CC1BE8D6210074E029 /* ARImageCell.swift in Sources */,
 				28F0B5F81BC05A9C006D0A7A /* ARImagesCell.swift in Sources */,
 				28F0B6031BC14D7E006D0A7A /* ARMenuCell.swift in Sources */,
 				28F0B5FC1BC05ACD006D0A7A /* ARVideosCell.swift in Sources */,

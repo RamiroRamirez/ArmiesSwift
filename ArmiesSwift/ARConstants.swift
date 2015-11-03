@@ -47,6 +47,11 @@ enum ARCellReuseIdentifier				 				{
 
 		case SkaterCell						= "ARSkaterCell"
 	}
+    
+    enum ImageCells                         : String    {
+        
+        case ImageCell                      = "ARImageCell"
+    }
 }
 
 enum ARCellHeightConstants {
@@ -73,6 +78,8 @@ struct ARHarcodedConstants {
 	
 	static let numberOfImagesHomeView		: UInt	= 5
 	static let numberOfImagesBiography		: UInt  = 10
+    static let numberOfImagesCollectionInstagram    : CGFloat  = 23
+    static let numberOfImagesInstagram      : Int   = 3
 }
 
 struct ARTwitterKeys {

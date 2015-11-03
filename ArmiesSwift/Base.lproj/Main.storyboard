@@ -110,8 +110,60 @@
                     <view key="view" contentMode="scaleToFill" id="HEt-Yi-h9b">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LB8-se-H2g">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CHd-8x-rBu">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="ARImageCell" id="KMT-bY-EiC" customClass="ARImageCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="64" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tIX-md-UJD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <animations/>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="tIX-md-UJD" firstAttribute="leading" secondItem="KMT-bY-EiC" secondAttribute="leading" id="DoX-5o-zEq"/>
+                                            <constraint firstItem="tIX-md-UJD" firstAttribute="top" secondItem="KMT-bY-EiC" secondAttribute="top" id="TU6-Vg-amq"/>
+                                            <constraint firstAttribute="bottom" secondItem="tIX-md-UJD" secondAttribute="bottom" id="dke-XC-qHc"/>
+                                            <constraint firstAttribute="trailing" secondItem="tIX-md-UJD" secondAttribute="trailing" id="qBp-4A-6uP"/>
+                                        </constraints>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="instagramImageView" destination="tIX-md-UJD" id="BTZ-Kv-ZM2"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="DZA-6m-vxr" id="gzz-0P-rMP"/>
+                                    <outlet property="delegate" destination="DZA-6m-vxr" id="U6Q-He-74B"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LB8-se-H2g" firstAttribute="leading" secondItem="HEt-Yi-h9b" secondAttribute="leading" id="9vw-Wy-hah"/>
+                            <constraint firstItem="DAZ-4a-DRH" firstAttribute="top" secondItem="LB8-se-H2g" secondAttribute="bottom" id="ZD7-fa-PHZ"/>
+                            <constraint firstItem="LB8-se-H2g" firstAttribute="top" secondItem="lms-WF-A3D" secondAttribute="bottom" constant="-64" id="iP1-GK-WYE"/>
+                            <constraint firstAttribute="trailing" secondItem="LB8-se-H2g" secondAttribute="trailing" id="kph-7O-acc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l6c-xA-5W9">
                         <barButtonItem key="leftBarButtonItem" title="Menú" id="rxU-rm-Wvu">
@@ -121,6 +173,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="LB8-se-H2g" id="PZp-Ob-zre"/>
                         <outlet property="menuButton" destination="rxU-rm-Wvu" id="asP-rt-Ee3"/>
                     </connections>
                 </viewController>
