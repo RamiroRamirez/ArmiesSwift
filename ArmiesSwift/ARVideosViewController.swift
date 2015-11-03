@@ -8,6 +8,27 @@
 
 import UIKit
 
+enum ARVideoSection : Int {
+    
+    case BestTricks = 0
+    case TrickTips
+    case Translation
+    case Film
+    
+    static func allValues() -> [ARVideoSection] {
+        return [.BestTricks, .TrickTips, .Translation, .Film]
+    }
+    
+    func title() -> String? {
+        switch(self) {
+        case .BestTricks:       return ""
+        case .TrickTips:        return ""
+        case .Translation:      return ""
+        case .Film:             return ""
+        }
+    }
+}
+
 class ARVideosViewController: ARViewController {
 
 	//MARK: - View Life Cycle
@@ -24,4 +45,17 @@ class ARVideosViewController: ARViewController {
 	}
 
 	//MARK: - Actions
+}
+
+extension ARVideosViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    //MARK: - Implementation UITAbleViewDataSource Protocol
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
