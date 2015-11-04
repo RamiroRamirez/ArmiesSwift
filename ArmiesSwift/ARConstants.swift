@@ -14,8 +14,6 @@ enum ARStoryboardIds	                 	: String 	{
 	case BiographiesViewController 	   		= "ARBiographiesListViewController"
 	case VideosViewController      	 		= "ARVideosViewController"
 	case ImagesViewController          	 	= "ARImagesViewController"
-	case InstagramViewController       		= "ARInstagramViewController"
-	case SettingsViewController				= "ARSettingsViewController"
 }
 
 enum ARSegues								: String	{
