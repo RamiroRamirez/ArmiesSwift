@@ -6,14 +6,19 @@
   Copyright (c) 2015 RAM. All rights reserved.
 */
 
-"MENU_HOME"         =       "Home";
-"MENU_BIOGRAPHY"    =       "Skaters";
-"MENU_VIDEOS"       =       "Videos";
-"MENU_IMAGES"       =       "Imagenes";
-"MENU_INSTAGRAM"    =       "Instagram";
-"MENU_SETTINGS"     =       "Configuraciones";
+"MENU_HOME"                 =       "Home";
+"MENU_BIOGRAPHY"            =       "Skaters";
+"MENU_VIDEOS"               =       "Videos";
+"MENU_IMAGES"               =       "Imagenes";
+"MENU_INSTAGRAM"            =       "Instagram";
+"MENU_SETTINGS"             =       "Configuraciones";
 
-"MENU"				=		"Menú";
+"MENU"                      =		"Menú";
 
-"BIOGRAPHY_PHOTOS" 	= 		"Fotos";
-"BIOGRAPHY_VIDEOS"	=		"Videos";
+"BIOGRAPHY_PHOTOS"          = 		"Fotos";
+"BIOGRAPHY_VIDEOS"          =		"Videos";
+
+"VIDEOS_BEST_TRICKS_TITLE"  =       "Los mejores trucos";
+"VIDEOS_TRICK_TIPS_TITLE"   =       "Trick Tips";
+"VIDEOS_TRADUCTIONS_TITLE"  =       "Traducciones";
+"VIDEOS_FILM_TITLE"         =       "Ahora o nunca, la película";
