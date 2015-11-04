@@ -21,6 +21,7 @@ enum ARStoryboardIds	                 	: String 	{
 enum ARSegues								: String	{
 
 	case OpenBiography						= "openBiography"
+    case OpenVideoList                      = "openVideoList"
 }
 
 enum ARCellReuseIdentifier				 				{
@@ -52,6 +53,13 @@ enum ARCellReuseIdentifier				 				{
         
         case ImageCell                      = "ARImageCell"
     }
+    
+    enum SectionVideoCells                  : String    {
+        
+        case SectionVideoCell               = "ARSectionVideoCell"
+        case TitleSectionVideoCell          = "ARTitleSectionVideoCell"
+        case VideoCell                      = "ARVideoCell"
+    }
 }
 
 enum ARCellHeightConstants {
@@ -68,18 +76,25 @@ enum ARCellHeightConstants {
 		case ImagesCell						= 400
 		case VideosCell						= 401
 	}
+    
 	enum SkaterCells						: CGFloat {
 
 		case SkaterCell						= 70
 	}
+    
+    enum VideoCells                         : CGFloat {
+        
+        case TitleCell                      = 70
+        case VideoCell                      = 350
+    }
 }
 
 struct ARHarcodedConstants {
 	
 	static let numberOfImagesHomeView		: UInt	= 5
 	static let numberOfImagesBiography		: UInt  = 10
-    static let numberOfImagesCollectionInstagram    : CGFloat  = 23
-    static let numberOfImagesInstagram      : Int   = 3
+    static let numberOfImagesCollectionInstagram    : CGFloat  = 3
+    static let numberOfImagesInstagram      : Int   = 23
 }
 
 struct ARTwitterKeys {

@@ -69,6 +69,10 @@
 		B64B62091BE8E3430074E029 /* InstagramArmies7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F31BE8E3430074E029 /* InstagramArmies7.jpg */; };
 		B64B620A1BE8E3430074E029 /* InstagramArmies8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F41BE8E3430074E029 /* InstagramArmies8.jpg */; };
 		B64B620B1BE8E3430074E029 /* InstagramArmies9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B64B61F51BE8E3430074E029 /* InstagramArmies9.jpg */; };
+		B64B62131BE94D2C0074E029 /* ARPeliculaTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62111BE94D2C0074E029 /* ARPeliculaTitleCell.swift */; };
+		B64B62141BE94D2C0074E029 /* ARVideoSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62121BE94D2C0074E029 /* ARVideoSectionCell.swift */; };
+		B64B62161BE94D860074E029 /* ARVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62151BE94D860074E029 /* ARVideoCell.swift */; };
+		B64B62181BE953C90074E029 /* ARVideoSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +144,10 @@
 		B64B61F31BE8E3430074E029 /* InstagramArmies7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies7.jpg; sourceTree = "<group>"; };
 		B64B61F41BE8E3430074E029 /* InstagramArmies8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies8.jpg; sourceTree = "<group>"; };
 		B64B61F51BE8E3430074E029 /* InstagramArmies9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = InstagramArmies9.jpg; sourceTree = "<group>"; };
+		B64B62111BE94D2C0074E029 /* ARPeliculaTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARPeliculaTitleCell.swift; path = AdditionalViews/VideosCells/ARPeliculaTitleCell.swift; sourceTree = "<group>"; };
+		B64B62121BE94D2C0074E029 /* ARVideoSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoSectionCell.swift; path = AdditionalViews/VideosCells/ARVideoSectionCell.swift; sourceTree = "<group>"; };
+		B64B62151BE94D860074E029 /* ARVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoCell.swift; path = AdditionalViews/VideosCells/ARVideoCell.swift; sourceTree = "<group>"; };
+		B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoSectionViewController.swift; path = ViewControllers/ARVideoSectionViewController.swift; sourceTree = "<group>"; };
 		DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -238,6 +246,7 @@
 				28AAF3131BA39A280079A936 /* ARSettingsViewController.swift */,
 				28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */,
 				28F0B6001BC08740006D0A7A /* ARListBiographiesViewController.swift */,
+				B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -249,6 +258,7 @@
 				28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */,
 				28F0B5FE1BC085D2006D0A7A /* ARSkaterCell.swift */,
 				B64B61CB1BE8D6210074E029 /* ARImageCell.swift */,
+				B64B620E1BE94C5B0074E029 /* VideosCell */,
 				28F0B5F41BC054E3006D0A7A /* BiographyCells */,
 			);
 			name = AdditionalViews;
@@ -336,6 +346,16 @@
 			);
 			name = ImagesInstagram;
 			path = Images/ImagesInstagram;
+			sourceTree = "<group>";
+		};
+		B64B620E1BE94C5B0074E029 /* VideosCell */ = {
+			isa = PBXGroup;
+			children = (
+				B64B62111BE94D2C0074E029 /* ARPeliculaTitleCell.swift */,
+				B64B62121BE94D2C0074E029 /* ARVideoSectionCell.swift */,
+				B64B62151BE94D860074E029 /* ARVideoCell.swift */,
+			);
+			name = VideosCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +515,7 @@
 			files = (
 				28F0B6071BC153CD006D0A7A /* ARExtensions.swift in Sources */,
 				28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */,
+				B64B62181BE953C90074E029 /* ARVideoSectionViewController.swift in Sources */,
 				28AAF3071BA3992F0079A936 /* ARMenuViewController.swift in Sources */,
 				B64B61C81BE6D29C0074E029 /* ARTwitter.swift in Sources */,
 				28AAF30C1BA399970079A936 /* ARBiographyViewController.swift in Sources */,
@@ -509,8 +530,11 @@
 				28AAF30A1BA399720079A936 /* ARHomeViewController.swift in Sources */,
 				28F0B5FF1BC085D2006D0A7A /* ARSkaterCell.swift in Sources */,
 				28AAF3121BA39A010079A936 /* ARInstagramViewController.swift in Sources */,
+				B64B62141BE94D2C0074E029 /* ARVideoSectionCell.swift in Sources */,
+				B64B62131BE94D2C0074E029 /* ARPeliculaTitleCell.swift in Sources */,
 				28F0B6011BC08740006D0A7A /* ARListBiographiesViewController.swift in Sources */,
 				28AAF3101BA399DD0079A936 /* ARImagesViewController.swift in Sources */,
+				B64B62161BE94D860074E029 /* ARVideoCell.swift in Sources */,
 				B64B61CC1BE8D6210074E029 /* ARImageCell.swift in Sources */,
 				28F0B5F81BC05A9C006D0A7A /* ARImagesCell.swift in Sources */,
 				28F0B6031BC14D7E006D0A7A /* ARMenuCell.swift in Sources */,
