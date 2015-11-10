@@ -55,7 +55,6 @@ enum ARCellReuseIdentifier				 				{
     enum SectionVideoCells                  : String    {
         
         case SectionVideoCell               = "ARSectionVideoCell"
-        case TitleSectionVideoCell          = "ARTitleSectionVideoCell"
         case VideoCell                      = "ARVideoCell"
     }
 }

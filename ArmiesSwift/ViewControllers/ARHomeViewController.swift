@@ -13,8 +13,8 @@ class ARHomeViewController		: ARViewController {
 
 	//MARK: - Outlets
 
-	@IBOutlet var carousel		: iCarousel?
-	@IBOutlet var pageControl	: UIPageControl?
+    @IBOutlet weak var tableView: UITableView!
+    
 
 	//MARK: - View Life Cycle
 
@@ -27,55 +27,11 @@ class ARHomeViewController		: ARViewController {
 
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Home.titleMenu()
-		self.setupCarousel()
-
-		// setup page control
-		self.pageControl?.numberOfPages = Int(ARHarcodedConstants.numberOfImagesHomeView)
-		self.pageControl?.currentPage = 0
-	}
-
-	private func setupCarousel() {
-		self.carousel?.type = iCarouselTypeRotary
-		self.carousel?.bounces = false;
-        self.carousel?.scrollSpeed = 0.2
-		self.carousel?.clipsToBounds = true;
-		self.carousel?.backgroundColor = UIColor.defaultColor()
-
-		self.carousel?.delegate = self
-		self.carousel?.dataSource = self
 	}
     
     //MARK: - Actions
     
     @IBAction func twitterButtonPressed(sender: AnyObject) {
         self.slidingViewController().anchorTopViewToLeftAnimated(true)
-    }
-}
-
-extension ARHomeViewController: iCarouselDataSource, iCarouselDelegate {
-    
-    //MARK: - Implementation iCarouselDataSource Protocol
-    
-    func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
-        return ARHarcodedConstants.numberOfImagesHomeView
-    }
-    
-    func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
-        // if the view is nil, create a new one with the frame of the carousel view
-        if (view == nil) {
-            let imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
-            imageView.image = UIImage(named: "MuestraCarousel.jpg")
-            return imageView
-        } else {
-            let imageView = view as? UIImageView
-            imageView?.image = UIImage(named: "MuestraCarousel.jpg")
-            return imageView
-        }
-    }
-    
-    //MARK: - Implementation iCarouselDelegate Protocol
-    
-    func carouselCurrentItemIndexDidChange(carousel: iCarousel!) {
-        self.pageControl?.currentPage = carousel.currentItemIndex
     }
 }

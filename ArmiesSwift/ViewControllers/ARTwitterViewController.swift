@@ -32,6 +32,12 @@ class ARTwitterViewController       : UIViewController {
        
 	}
     
+    private func configurateRefreshElement() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        self.tableView?.addSubview(refreshControl)
+    }
+    
     private func configurateTwitter(refreshControl: UIRefreshControl?) {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.consumerKey, consumerSecret: ARTwitterKeys.consumerSecret)
