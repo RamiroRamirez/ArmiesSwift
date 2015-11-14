@@ -29,31 +29,30 @@ class ARTwitterViewController       : UIViewController {
 
 	private func initialConfigurations() {
         self.configurateTwitter(nil)
-       
+        self.configurateRefreshControl()
 	}
     
     private func configurateTwitter(refreshControl: UIRefreshControl?) {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.consumerKey, consumerSecret: ARTwitterKeys.consumerSecret)
         // Verify credentials
-        twitter.verifyCredentialsWithSuccessBlock({ (bearerToken) -> Void in
+        twitter.verifyCredentialsWithSuccessBlock({ [weak self] (bearerToken) in
             twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) in
                 // reset twitters array
-                self.twitters?.removeAll()
+                self?.twitters?.removeAll()
                 // the information was received from twitter endpoint
                 // get the useful infos and display them in table view
-                self.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
+                self?.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
                 refreshControl?.endRefreshing()
-                self.tableView?.reloadData()
+                self?.tableView?.reloadData()
                 
                 }, errorBlock: { (error) in
                     // TODO: Handle error
                     print(error)
             })
-            }) { (error) in
+            }, errorBlock:  { (error) in
                 // TODO: Handle error
-                
-        }
+        })
     }
     
     private func configurateRefreshControl() {
@@ -76,7 +75,9 @@ class ARTwitterViewController       : UIViewController {
         }
     }
     
-    private func refresh(refreshControl: UIRefreshControl) {
+    // MARK: - Public methods
+    
+    func refresh(refreshControl: UIRefreshControl) {
         // Do your job, when done:
         self.configurateTwitter(refreshControl)
         refreshControl.endRefreshing()
@@ -110,7 +111,7 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
     //MARK: - Implementation UITableViewDelegate Protocol
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 70
+        return ARCellHeightConstants.TwitterCells.TwitterCell.rawValue
     }
     
 }

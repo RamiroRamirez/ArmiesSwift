@@ -13,11 +13,9 @@ enum ARMenuOption 		: Int {
 	case Biographies
 	case Videos
 	case Images
-	case Instagram
-	case Settings
 
 	static func allValues() -> [ARMenuOption] {
-		return [.Home, .Biographies, .Videos, .Images, .Instagram, .Settings]
+		return [.Home, .Biographies, .Videos, .Images]
 	}
 
 	func titleMenu() -> String? {
@@ -26,8 +24,6 @@ enum ARMenuOption 		: Int {
 		case .Biographies	: return NSLocalizedString("MENU_BIOGRAPHY", comment: "")
 		case .Videos 		: return NSLocalizedString("MENU_VIDEOS", comment: "")
 		case .Images		: return NSLocalizedString("MENU_IMAGES", comment: "")
-		case .Instagram		: return NSLocalizedString("MENU_INSTAGRAM", comment: "")
-		case .Settings		: return NSLocalizedString("MENU_SETTINGS", comment: "")
 		}
 	}
 
@@ -37,8 +33,6 @@ enum ARMenuOption 		: Int {
 		case .Biographies	: return "MuestraCarousel.jpg"
 		case .Videos 		: return "MuestraCarousel.jpg"
 		case .Images		: return "MuestraCarousel.jpg"
-		case .Instagram		: return "MuestraCarousel.jpg"
-		case .Settings		: return "MuestraCarousel.jpg"
 		}
 	}
 
@@ -48,8 +42,6 @@ enum ARMenuOption 		: Int {
 		case .Biographies	: return ARStoryboardIds.BiographiesViewController.rawValue
 		case .Videos		: return ARStoryboardIds.VideosViewController.rawValue
 		case .Images		: return ARStoryboardIds.ImagesViewController.rawValue
-		case .Instagram		: return ARStoryboardIds.InstagramViewController.rawValue
-		case .Settings		: return ARStoryboardIds.SettingsViewController.rawValue
 		}
 	}
 }

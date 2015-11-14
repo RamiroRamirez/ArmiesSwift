@@ -9,13 +9,75 @@
 import UIKit
 import iCarousel
 
-class ARHomeViewController		: ARViewController {
+enum ARHomeCell       : Int {
+    case FirstText = 0
+    case FirstImage
+    case SecondText
+    case SecondImage
+    case ThirdImage
+    
+    static func allValues() -> [ARHomeCell] {
+        return [.FirstText, .FirstImage, .SecondText, .SecondImage, .ThirdImage]
+    }
+    
+    func cell(tableView: UITableView?) -> UITableViewCell? {
+        switch self {
+        case .FirstText     : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .FirstImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .SecondText    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .SecondImage   : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .ThirdImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        }
+    }
+    
+    func reuseCell() -> UITableViewCell? {
+        switch self {
+        case .FirstText     : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .FirstImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .SecondText    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .SecondImage   : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .ThirdImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        }
+    }
+    
+    func text() -> String? {
+        // TODO: Needs to be localised!!! This is just temporal
+        switch self {
+        case .FirstText     : return "Armies es un grupo de patinadores mexicano radicando en la ciudad de Monterrey"
+        case .FirstImage    : return nil
+        case .SecondText    : return "Conoce nuestra app"
+        case .SecondImage   : return nil
+        case .ThirdImage    : return nil
+        }
+    }
+    
+    func image() -> UIImage? {
+        switch self {
+        case .FirstText     : return nil
+        case .FirstImage    : return UIImage(named: "ArmiesAll.jpg")
+        case .SecondText    : return nil
+        case .SecondImage   : return UIImage(named: "ArmiesAll2.jpg")
+        case .ThirdImage    : return UIImage(named: "ArmiesAll3.jpg")
+        }
+    }
+    
+    func heighCell() -> CGFloat {
+        switch self {
+        case .FirstText     : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .FirstImage    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .SecondText    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .SecondImage   : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .ThirdImage    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        }
+    }
+}
+
+class ARHomeViewController          : ARViewController {
 
 	//MARK: - Outlets
 
-	@IBOutlet var carousel		: iCarousel?
-	@IBOutlet var pageControl	: UIPageControl?
-
+    @IBOutlet weak var tableView    : UITableView?
+    
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
@@ -27,22 +89,6 @@ class ARHomeViewController		: ARViewController {
 
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Home.titleMenu()
-		self.setupCarousel()
-
-		// setup page control
-		self.pageControl?.numberOfPages = Int(ARHarcodedConstants.numberOfImagesHomeView)
-		self.pageControl?.currentPage = 0
-	}
-
-	private func setupCarousel() {
-		self.carousel?.type = iCarouselTypeRotary
-		self.carousel?.bounces = false;
-        self.carousel?.scrollSpeed = 0.2
-		self.carousel?.clipsToBounds = true;
-		self.carousel?.backgroundColor = UIColor.defaultColor()
-
-		self.carousel?.delegate = self
-		self.carousel?.dataSource = self
 	}
     
     //MARK: - Actions
@@ -52,30 +98,39 @@ class ARHomeViewController		: ARViewController {
     }
 }
 
-extension ARHomeViewController: iCarouselDataSource, iCarouselDelegate {
+extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
-    //MARK: - Implementation iCarouselDataSource Protocol
+    // MARK: - Implementation UITableViewDataSource Protocol
     
-    func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
-        return ARHarcodedConstants.numberOfImagesHomeView
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ARHomeCell.allValues().count
     }
     
-    func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
-        // if the view is nil, create a new one with the frame of the carousel view
-        if (view == nil) {
-            let imageView = UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0)))
-            imageView.image = UIImage(named: "MuestraCarousel.jpg")
-            return imageView
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellType = ARHomeCell.allValues()[indexPath.row]
+        if (cellType == ARHomeCell.FirstText || cellType == ARHomeCell.SecondText) {
+            var cell = cellType.cell(tableView) as? ARTextHomeCell
+            if (cell == nil) {
+                cell = cellType.reuseCell() as? ARTextHomeCell
+            }
+            cell?.armiesTextLabel?.text = cellType.text()
+            return (cell ?? UITableViewCell())
+        } else if (cellType == ARHomeCell.FirstImage || cellType == ARHomeCell.SecondImage || cellType == ARHomeCell.ThirdImage) {
+            var cell = cellType.cell(tableView) as? ARImageHomeCell
+            if (cell == nil) {
+                cell = cellType.reuseCell() as? ARImageHomeCell
+            }
+            cell?.armiesImageView?.image = cellType.image()
+            return (cell ?? UITableViewCell())
         } else {
-            let imageView = view as? UIImageView
-            imageView?.image = UIImage(named: "MuestraCarousel.jpg")
-            return imageView
+            return UITableViewCell()
         }
     }
     
-    //MARK: - Implementation iCarouselDelegate Protocol
+    // MARK: - Implementation UITableViewDelegate Protocol
     
-    func carouselCurrentItemIndexDidChange(carousel: iCarousel!) {
-        self.pageControl?.currentPage = carousel.currentItemIndex
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let cellType = ARHomeCell.allValues()[indexPath.row]
+        return cellType.heighCell()
     }
 }

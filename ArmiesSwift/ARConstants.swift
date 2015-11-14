@@ -14,8 +14,6 @@ enum ARStoryboardIds	                 	: String 	{
 	case BiographiesViewController 	   		= "ARBiographiesListViewController"
 	case VideosViewController      	 		= "ARVideosViewController"
 	case ImagesViewController          	 	= "ARImagesViewController"
-	case InstagramViewController       		= "ARInstagramViewController"
-	case SettingsViewController				= "ARSettingsViewController"
 }
 
 enum ARSegues								: String	{
@@ -57,8 +55,13 @@ enum ARCellReuseIdentifier				 				{
     enum SectionVideoCells                  : String    {
         
         case SectionVideoCell               = "ARSectionVideoCell"
-        case TitleSectionVideoCell          = "ARTitleSectionVideoCell"
         case VideoCell                      = "ARVideoCell"
+    }
+    
+    enum HomeCells                          : String    {
+        
+        case TextCell                       = "ARTextHomeCell"
+        case ImageCell                      = "ARImageHomeCell"
     }
 }
 
@@ -86,6 +89,17 @@ enum ARCellHeightConstants {
         
         case TitleCell                      = 70
         case VideoCell                      = 350
+    }
+    
+    enum TwitterCells                       : CGFloat {
+        
+        case TwitterCell                    = 70
+    }
+    
+    enum HomeCells                          : CGFloat {
+        
+        case TextCell                       = 100
+        case ImageCell                      = 350
     }
 }
 
