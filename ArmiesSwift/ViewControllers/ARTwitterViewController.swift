@@ -29,14 +29,8 @@ class ARTwitterViewController       : UIViewController {
 
 	private func initialConfigurations() {
         self.configurateTwitter(nil)
-       
+        self.configurateRefreshControl()
 	}
-    
-    private func configurateRefreshElement() {
-        let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
-        self.tableView?.addSubview(refreshControl)
-    }
     
     private func configurateTwitter(refreshControl: UIRefreshControl?) {
         // intit twitter api
@@ -81,7 +75,9 @@ class ARTwitterViewController       : UIViewController {
         }
     }
     
-    private func refresh(refreshControl: UIRefreshControl) {
+    // MARK: - Public methods
+    
+    func refresh(refreshControl: UIRefreshControl) {
         // Do your job, when done:
         self.configurateTwitter(refreshControl)
         refreshControl.endRefreshing()
