@@ -56,10 +56,9 @@ class ARTwitterViewController       : UIViewController {
                     // TODO: Handle error
                     print(error)
             })
-            }) { (error) in
+            }, errorBlock:  { (error) in
                 // TODO: Handle error
-                
-        }
+        })
     }
     
     private func configurateRefreshControl() {
