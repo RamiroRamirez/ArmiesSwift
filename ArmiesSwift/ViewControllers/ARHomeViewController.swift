@@ -9,13 +9,65 @@
 import UIKit
 import iCarousel
 
-class ARHomeViewController		: ARViewController {
+enum ARHomeCell       : Int {
+    case FirstText = 0
+    case FirstImage
+    case SecondText
+    case SecondImage
+    case ThirdImage
+    
+    static func allValues() -> [ARHomeCell] {
+        return [.FirstText, .FirstImage, .SecondText, .SecondImage, .ThirdImage]
+    }
+    
+    func cell(tableView: UITableView?) -> UITableViewCell? {
+        switch self {
+        case .FirstText     : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .FirstImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .SecondText    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .SecondImage   : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .ThirdImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        }
+    }
+    
+    func reuseCell() -> UITableViewCell? {
+        switch self {
+        case .FirstText     : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .FirstImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .SecondText    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .SecondImage   : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .ThirdImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        }
+    }
+    
+    func text() -> String? {
+        // TODO: Needs to be localised!!! This is just temporal
+        switch self {
+        case .FirstText     : return "Armies es un grupo de patinadores mexicano radicando en la ciudad de Monterrey"
+        case .FirstImage    : return nil
+        case .SecondText    : return "Conoce nuestra app"
+        case .SecondImage   : return nil
+        case .ThirdImage    : return nil
+        }
+    }
+    
+    func image() -> UIImage? {
+        switch self {
+        case .FirstText     : return nil
+        case .FirstImage    : return UIImage(named: "ArmiesAll.jpg")
+        case .SecondText    : return nil
+        case .SecondImage   : return UIImage(named: "ArmiesAll2.jpg")
+        case .ThirdImage    : return UIImage(named: "ArmiesAll3.jpg")
+        }
+    }
+}
+
+class ARHomeViewController          : ARViewController {
 
 	//MARK: - Outlets
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView    : UITableView?
     
-
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
@@ -33,5 +85,47 @@ class ARHomeViewController		: ARViewController {
     
     @IBAction func twitterButtonPressed(sender: AnyObject) {
         self.slidingViewController().anchorTopViewToLeftAnimated(true)
+    }
+}
+
+extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    // MARK: - Implementation UITableViewDataSource Protocol
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ARHomeCell.allValues().count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellType = ARHomeCell.allValues()[indexPath.row]
+        if (cellType == ARHomeCell.FirstText || cellType == ARHomeCell.SecondText) {
+            var cell = cellType.cell(tableView) as? ARTextHomeCell
+            if (cell == nil) {
+                cell = cellType.reuseCell() as? ARTextHomeCell
+            }
+            cell?.armiesTextLabel?.text = cellType.text()
+            return (cell ?? UITableViewCell())
+        } else if (cellType == ARHomeCell.FirstImage || cellType == ARHomeCell.SecondImage || cellType == ARHomeCell.ThirdImage) {
+            var cell = cellType.cell(tableView) as? ARImageHomeCell
+            if (cell == nil) {
+                cell = cellType.reuseCell() as? ARImageHomeCell
+            }
+            cell?.armiesImageView?.image = cellType.image()
+            return (cell ?? UITableViewCell())
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    // MARK: - Implementation UITableViewDelegate Protocol
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let cellType = ARHomeCell.allValues()[indexPath.row]
+        if (cellType == ARHomeCell.FirstText || cellType == ARHomeCell.SecondText) {
+            return 100
+        } else if (cellType == ARHomeCell.FirstImage || cellType == ARHomeCell.SecondImage || cellType == ARHomeCell.ThirdImage) {
+            return 350
+        }
+        return 42
     }
 }

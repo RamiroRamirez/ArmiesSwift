@@ -675,12 +675,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ylw-py-q3m">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ylw-py-q3m">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="Ls8-iZ-2BP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARTextHomeCell" rowHeight="100" id="Ls8-iZ-2BP" customClass="ARTextHomeCell" customModule="ArmiesSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ls8-iZ-2BP" id="Zxd-Ph-1hG">
@@ -704,42 +704,34 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="armiesTextLabel" destination="nDu-lC-iIb" id="aP7-tZ-2wx"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="350" id="Cnw-Dh-YDm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARImageHomeCell" rowHeight="350" id="Cnw-Dh-YDm" customClass="ARImageHomeCell" customModule="ArmiesSwift" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="192" width="600" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cnw-Dh-YDm" id="g7v-4v-KRe">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ArmiesAll.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qHc-NY-IgH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="249"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArmiesAll.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qHc-NY-IgH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
                                                     <animations/>
                                                 </imageView>
                                             </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="qHc-NY-IgH" firstAttribute="leading" secondItem="g7v-4v-KRe" secondAttribute="leading" id="K1n-PB-gZc"/>
+                                                <constraint firstAttribute="bottom" secondItem="qHc-NY-IgH" secondAttribute="bottom" id="TXg-Lj-HnT"/>
+                                                <constraint firstAttribute="trailing" secondItem="qHc-NY-IgH" secondAttribute="trailing" id="tFb-o3-z7m"/>
+                                                <constraint firstItem="qHc-NY-IgH" firstAttribute="top" secondItem="g7v-4v-KRe" secondAttribute="top" id="tl6-UW-J9t"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3RZ-dD-7nF">
-                                        <rect key="frame" x="0.0" y="542" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3RZ-dD-7nF" id="moo-jb-qgS">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KCG-fn-iRZ">
-                                        <rect key="frame" x="0.0" y="586" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KCG-fn-iRZ" id="No5-AE-ZdR">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <animations/>
-                                        </tableViewCellContentView>
-                                        <animations/>
+                                        <connections>
+                                            <outlet property="armiesImageView" destination="qHc-NY-IgH" id="LOW-vB-Tuh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -750,6 +742,12 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ylw-py-q3m" firstAttribute="leading" secondItem="DT6-WL-eEc" secondAttribute="leading" id="1oq-Qs-Hth"/>
+                            <constraint firstItem="zyG-9S-izg" firstAttribute="top" secondItem="Ylw-py-q3m" secondAttribute="bottom" id="Xz1-7b-9fE"/>
+                            <constraint firstAttribute="trailing" secondItem="Ylw-py-q3m" secondAttribute="trailing" id="YAT-FN-5Z5"/>
+                            <constraint firstItem="Ylw-py-q3m" firstAttribute="top" secondItem="DT6-WL-eEc" secondAttribute="top" id="qYi-aB-i3G"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cdS-l8-d4K">
                         <barButtonItem key="leftBarButtonItem" title="Menú" id="ob4-Ca-LZD">

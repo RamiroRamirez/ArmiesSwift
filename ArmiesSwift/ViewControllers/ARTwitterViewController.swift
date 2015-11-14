@@ -42,15 +42,15 @@ class ARTwitterViewController       : UIViewController {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.consumerKey, consumerSecret: ARTwitterKeys.consumerSecret)
         // Verify credentials
-        twitter.verifyCredentialsWithSuccessBlock({ (bearerToken) -> Void in
+        twitter.verifyCredentialsWithSuccessBlock({ [weak self] (bearerToken) in
             twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) in
                 // reset twitters array
-                self.twitters?.removeAll()
+                self?.twitters?.removeAll()
                 // the information was received from twitter endpoint
                 // get the useful infos and display them in table view
-                self.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
+                self?.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
                 refreshControl?.endRefreshing()
-                self.tableView?.reloadData()
+                self?.tableView?.reloadData()
                 
                 }, errorBlock: { (error) in
                     // TODO: Handle error

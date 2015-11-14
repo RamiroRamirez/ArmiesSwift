@@ -57,6 +57,12 @@ enum ARCellReuseIdentifier				 				{
         case SectionVideoCell               = "ARSectionVideoCell"
         case VideoCell                      = "ARVideoCell"
     }
+    
+    enum HomeCells                          : String    {
+        
+        case TextCell                       = "ARTextHomeCell"
+        case ImageCell                      = "ARImageHomeCell"
+    }
 }
 
 enum ARCellHeightConstants {
