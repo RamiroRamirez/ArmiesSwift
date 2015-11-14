@@ -60,6 +60,16 @@ enum ARHomeCell       : Int {
         case .ThirdImage    : return UIImage(named: "ArmiesAll3.jpg")
         }
     }
+    
+    func heighCell() -> CGFloat {
+        switch self {
+        case .FirstText     : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .FirstImage    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .SecondText    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .SecondImage   : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .ThirdImage    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        }
+    }
 }
 
 class ARHomeViewController          : ARViewController {
@@ -121,11 +131,6 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let cellType = ARHomeCell.allValues()[indexPath.row]
-        if (cellType == ARHomeCell.FirstText || cellType == ARHomeCell.SecondText) {
-            return 100
-        } else if (cellType == ARHomeCell.FirstImage || cellType == ARHomeCell.SecondImage || cellType == ARHomeCell.ThirdImage) {
-            return 350
-        }
-        return 42
+        return cellType.heighCell()
     }
 }

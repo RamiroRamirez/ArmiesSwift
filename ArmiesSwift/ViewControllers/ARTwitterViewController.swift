@@ -111,7 +111,7 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
     //MARK: - Implementation UITableViewDelegate Protocol
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 70
+        return ARCellHeightConstants.TwitterCells.TwitterCell.rawValue
     }
     
 }

@@ -90,6 +90,17 @@ enum ARCellHeightConstants {
         case TitleCell                      = 70
         case VideoCell                      = 350
     }
+    
+    enum TwitterCells                       : CGFloat {
+        
+        case TwitterCell                    = 70
+    }
+    
+    enum HomeCells                          : CGFloat {
+        
+        case TextCell                       = 100
+        case ImageCell                      = 350
+    }
 }
 
 struct ARHarcodedConstants {
