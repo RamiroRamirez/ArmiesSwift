@@ -20,6 +20,7 @@ enum ARSegues								: String	{
 
 	case OpenBiography						= "openBiography"
     case OpenVideoList                      = "openVideoList"
+    case OpenImageViewer                    = "openImageViewer"
 }
 
 enum ARCellReuseIdentifier				 				{
@@ -93,13 +94,13 @@ enum ARCellHeightConstants {
     
     enum TwitterCells                       : CGFloat {
         
-        case TwitterCell                    = 70
+        case TwitterCell                    = 120
     }
     
     enum HomeCells                          : CGFloat {
         
         case TextCell                       = 100
-        case ImageCell                      = 350
+        case ImageCell                      = 250
     }
 }
 

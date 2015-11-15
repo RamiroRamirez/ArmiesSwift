@@ -64,10 +64,10 @@ enum ARHomeCell       : Int {
     func heighCell() -> CGFloat {
         switch self {
         case .FirstText     : return ARCellHeightConstants.HomeCells.TextCell.rawValue
-        case .FirstImage    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .FirstImage    : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
         case .SecondText    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
-        case .SecondImage   : return ARCellHeightConstants.HomeCells.TextCell.rawValue
-        case .ThirdImage    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .SecondImage   : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
+        case .ThirdImage    : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
         }
     }
 }

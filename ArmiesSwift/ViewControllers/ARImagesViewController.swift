@@ -41,7 +41,15 @@ class ARImagesViewController            : ARViewController {
         self.collectionView?.reloadData()
     }
 	
-	//MARK: - Actions
+	//MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == ARSegues.OpenImageViewer.rawValue) {
+            let vc = segue.destinationViewController as? ARImageViewerViewController
+            let armiesImage = sender as? UIImage
+            vc?.armieImage = armiesImage
+        }
+    }
 
 }
 
@@ -64,5 +72,9 @@ extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDe
         //get the width of the screen device
         let widthOfImage = (self.view.frame.width ?? 0) / ARHarcodedConstants.numberOfImagesCollectionInstagram
         return CGSizeMake(widthOfImage, widthOfImage)
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier(ARSegues.OpenImageViewer.rawValue, sender: self.imageArray?[indexPath.row])
     }
 }
