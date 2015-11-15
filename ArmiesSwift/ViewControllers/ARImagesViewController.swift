@@ -32,7 +32,7 @@ class ARImagesViewController            : ARViewController {
     
     private func createImageArray() {
         let basicString = "InstagramArmies"
-        for var i = 1; i < ARHarcodedConstants.numberOfImagesInstagram; i++ {
+        for var i = 1; i < ARHarcodedConstants.NumberOfImagesInstagram; i++ {
             let imageName = basicString + String(i) + ".jpg"
             if let _image = UIImage(named: imageName) {
                 self.imageArray?.append(_image)
@@ -70,7 +70,7 @@ extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         //get the width of the screen device
-        let widthOfImage = (self.view.frame.width ?? 0) / ARHarcodedConstants.numberOfImagesCollectionInstagram
+        let widthOfImage = (self.view.frame.width ?? 0) / ARHarcodedConstants.NumberOfImagesCollectionInstagram
         return CGSizeMake(widthOfImage, widthOfImage)
     }
     

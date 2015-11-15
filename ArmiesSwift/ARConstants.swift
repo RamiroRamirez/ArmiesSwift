@@ -106,10 +106,14 @@ enum ARCellHeightConstants {
 
 struct ARHarcodedConstants {
 	
-	static let numberOfImagesHomeView		: UInt	= 5
-	static let numberOfImagesBiography		: UInt  = 10
-    static let numberOfImagesCollectionInstagram    : CGFloat  = 3
-    static let numberOfImagesInstagram      : Int   = 23
+	static let NumberOfImagesHomeView           : UInt	= 5
+	static let NumberOfImagesBiography          : UInt  = 10
+    static let NumberOfImagesCollectionInstagram: CGFloat  = 3
+    static let NumberOfImagesInstagram          : Int   = 23
+    static let MaxZoomImageScrollView           : CGFloat = 4
+    static let MinZommImageScrollView           : CGFloat = 1
+    static let CornerRadiusCloseButton          : CGFloat = 4
+    static let BorderWidthCloseButton           : CGFloat = 2
 }
 
 struct ARTwitterKeys {
