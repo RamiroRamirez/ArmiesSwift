@@ -322,11 +322,11 @@
                         <viewControllerLayoutGuide type="bottom" id="b74-A6-CKg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xvh-eq-SKa">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JiZ-ma-Ydb">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="2000"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -475,11 +475,11 @@
                                             <outlet property="photosTitleLabel" destination="FKc-Z1-1JC" id="y8R-Jj-GVz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARVideosCell" rowHeight="400" id="2Wd-RQ-seU" userLabel="ARVideosCell" customClass="ARVideosCell" customModule="ArmiesSwift" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="890" width="600" height="400"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARVideosCell" rowHeight="1101" id="2Wd-RQ-seU" userLabel="ARVideosCell" customClass="ARVideosCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="890" width="600" height="1101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Wd-RQ-seU" id="bHi-oO-yaF">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="1101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Videos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ue4-me-21A">
@@ -493,26 +493,52 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9R-ax-VDm" customClass="YTPlayerView">
-                                                    <rect key="frame" x="0.0" y="46" width="600" height="354"/>
+                                                    <rect key="frame" x="10" y="46" width="580" height="350"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="350" id="4TS-DK-17V"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="def-Zu-LbP" customClass="YTPlayerView">
+                                                    <rect key="frame" x="10" y="751" width="580" height="350"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="350" id="vnX-e3-576"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSN-Q5-ddR" customClass="YTPlayerView">
+                                                    <rect key="frame" x="10" y="399" width="580" height="350"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="350" id="Cc5-GK-9gc"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <animations/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="b9R-ax-VDm" secondAttribute="trailing" id="4WW-jF-2os"/>
+                                                <constraint firstAttribute="trailing" secondItem="b9R-ax-VDm" secondAttribute="trailing" constant="10" id="4WW-jF-2os"/>
+                                                <constraint firstAttribute="trailing" secondItem="def-Zu-LbP" secondAttribute="trailing" constant="10" id="68X-ax-bfK"/>
                                                 <constraint firstItem="ue4-me-21A" firstAttribute="trailing" secondItem="bHi-oO-yaF" secondAttribute="trailingMargin" id="6QE-ZF-4C7"/>
                                                 <constraint firstItem="b9R-ax-VDm" firstAttribute="top" secondItem="ue4-me-21A" secondAttribute="bottom" constant="8" id="7Wh-om-EUD"/>
-                                                <constraint firstItem="b9R-ax-VDm" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leading" id="8FO-of-p4b"/>
+                                                <constraint firstItem="b9R-ax-VDm" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leading" constant="10" id="8FO-of-p4b"/>
+                                                <constraint firstItem="def-Zu-LbP" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leading" constant="10" id="Tvd-6a-euI"/>
+                                                <constraint firstItem="wSN-Q5-ddR" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leading" constant="10" id="Ule-Tl-6gT"/>
                                                 <constraint firstItem="ue4-me-21A" firstAttribute="top" secondItem="bHi-oO-yaF" secondAttribute="topMargin" constant="9" id="VXX-Oa-mye"/>
                                                 <constraint firstItem="ue4-me-21A" firstAttribute="leading" secondItem="bHi-oO-yaF" secondAttribute="leadingMargin" id="aMe-WU-Hmx"/>
-                                                <constraint firstAttribute="bottom" secondItem="b9R-ax-VDm" secondAttribute="bottom" id="jG9-uq-NGj"/>
+                                                <constraint firstItem="def-Zu-LbP" firstAttribute="top" secondItem="wSN-Q5-ddR" secondAttribute="bottom" constant="2" id="hze-f8-eM6"/>
+                                                <constraint firstAttribute="trailing" secondItem="wSN-Q5-ddR" secondAttribute="trailing" constant="10" id="v8n-yZ-QUB"/>
+                                                <constraint firstItem="wSN-Q5-ddR" firstAttribute="top" secondItem="b9R-ax-VDm" secondAttribute="bottom" constant="3" id="zLs-wr-AM8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
                                         <connections>
+                                            <outlet property="firstVideoView" destination="b9R-ax-VDm" id="kj5-Gd-YZD"/>
+                                            <outlet property="secondVideoView" destination="wSN-Q5-ddR" id="gh8-d5-Ade"/>
+                                            <outlet property="thirdVideoView" destination="def-Zu-LbP" id="43p-bF-61l"/>
                                             <outlet property="videosTitleLabel" destination="ue4-me-21A" id="o0Z-jA-uu3"/>
-                                            <outlet property="youTubePlayerView" destination="b9R-ax-VDm" id="92p-xX-1u3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -533,6 +559,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yv9-0g-rnO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="2000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ejz-4u-agP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -739,11 +767,11 @@
                         <viewControllerLayoutGuide type="bottom" id="zyG-9S-izg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DT6-WL-eEc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ylw-py-q3m">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ylw-py-q3m">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -751,11 +779,11 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ls8-iZ-2BP" id="Zxd-Ph-1hG">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Armies es un grupo de patinadores mexicanos radicando en la ciudad  de Monterrey.  Conocenos!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDu-lC-iIb">
-                                                    <rect key="frame" x="21" y="8" width="558" height="83"/>
+                                                    <rect key="frame" x="21" y="8" width="558" height="84"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -779,11 +807,11 @@
                                         <rect key="frame" x="0.0" y="192" width="600" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cnw-Dh-YDm" id="g7v-4v-KRe">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArmiesAll.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qHc-NY-IgH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
                                                     <animations/>
                                                 </imageView>
                                             </subviews>
@@ -799,6 +827,85 @@
                                         <connections>
                                             <outlet property="armiesImageView" destination="qHc-NY-IgH" id="LOW-vB-Tuh"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ARSkatersCell" rowHeight="135" id="M2X-Ic-MkI" customClass="ARSkatersCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="542" width="600" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M2X-Ic-MkI" id="VLV-jY-Jzg">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Dg-Wp-Jwk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="goo-oU-cJe">
+                                                        <size key="itemSize" width="140" height="135"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ARSkaterCollectionCell" id="3I7-0g-G4K" customClass="ARSkaterCollectionCell" customModule="ArmiesSwift" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="140" height="135"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="140" height="135"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xic-nJ-ebB">
+                                                                        <rect key="frame" x="25" y="5" width="91" height="91"/>
+                                                                        <animations/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="xic-nJ-ebB" secondAttribute="height" multiplier="1:1" id="FG9-bt-9Df"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1o-n4-p9V">
+                                                                        <rect key="frame" x="8" y="99" width="124" height="28"/>
+                                                                        <animations/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <animations/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <animations/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstItem="c1o-n4-p9V" firstAttribute="trailing" secondItem="3I7-0g-G4K" secondAttribute="trailingMargin" id="KTV-m0-lF8"/>
+                                                                <constraint firstItem="xic-nJ-ebB" firstAttribute="top" secondItem="3I7-0g-G4K" secondAttribute="top" constant="5" id="M4i-x5-zWH"/>
+                                                                <constraint firstItem="c1o-n4-p9V" firstAttribute="top" secondItem="xic-nJ-ebB" secondAttribute="bottom" constant="3" id="RaY-MZ-Kb8"/>
+                                                                <constraint firstItem="xic-nJ-ebB" firstAttribute="centerX" secondItem="3I7-0g-G4K" secondAttribute="centerX" id="Z1s-ok-iK0"/>
+                                                                <constraint firstItem="c1o-n4-p9V" firstAttribute="bottom" secondItem="3I7-0g-G4K" secondAttribute="bottomMargin" id="g3J-w0-Ao3"/>
+                                                                <constraint firstItem="xic-nJ-ebB" firstAttribute="centerY" secondItem="3I7-0g-G4K" secondAttribute="centerY" constant="-17" id="gWO-yr-IO9"/>
+                                                                <constraint firstItem="c1o-n4-p9V" firstAttribute="leading" secondItem="3I7-0g-G4K" secondAttribute="leadingMargin" id="uZ1-aT-Ic9"/>
+                                                            </constraints>
+                                                            <size key="customSize" width="140" height="135"/>
+                                                            <connections>
+                                                                <outlet property="skaterImageView" destination="xic-nJ-ebB" id="uiO-XE-OGt"/>
+                                                                <outlet property="skaterNameLabel" destination="c1o-n4-p9V" id="IWS-5Y-Mix"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="AJl-b6-0Dm" id="OLu-XX-mQV"/>
+                                                        <outlet property="delegate" destination="AJl-b6-0Dm" id="Tyt-Hi-IEC"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="0Dg-Wp-Jwk" secondAttribute="trailing" id="cge-ji-Cur"/>
+                                                <constraint firstItem="0Dg-Wp-Jwk" firstAttribute="top" secondItem="VLV-jY-Jzg" secondAttribute="top" id="q5C-A5-Bm3"/>
+                                                <constraint firstItem="0Dg-Wp-Jwk" firstAttribute="leading" secondItem="VLV-jY-Jzg" secondAttribute="leading" id="qJw-YN-2k0"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Dg-Wp-Jwk" secondAttribute="bottom" id="yzy-W6-zYv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -828,9 +935,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="menuButton" destination="ob4-Ca-LZD" id="CJt-98-xsV"/>
                         <outlet property="tableView" destination="Ylw-py-q3m" id="4hr-Kk-bLO"/>
+                        <segue destination="XEr-41-WLO" kind="show" identifier="openBiography" id="XKV-25-aHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOH-Cw-Y3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1015,4 +1125,7 @@
         <image name="ArmiesAll.jpg" width="640" height="640"/>
         <image name="reniArmies.jpg" width="1769" height="1769"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wqX-nW-2vV"/>
+    </inferredMetricsTieBreakers>
 </document>

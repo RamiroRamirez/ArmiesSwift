@@ -15,9 +15,11 @@ enum ARHomeCell       : Int {
     case SecondText
     case SecondImage
     case ThirdImage
+    case ThirdText
+    case Skaters
     
     static func allValues() -> [ARHomeCell] {
-        return [.FirstText, .FirstImage, .SecondText, .SecondImage, .ThirdImage]
+        return [.FirstText, .FirstImage, .SecondText, .SecondImage, .ThirdImage, .ThirdText, .Skaters]
     }
     
     func cell(tableView: UITableView?) -> UITableViewCell? {
@@ -27,6 +29,8 @@ enum ARHomeCell       : Int {
         case .SecondText    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
         case .SecondImage   : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
         case .ThirdImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .ThirdText     : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .Skaters       : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.SkatersCell.rawValue)
         }
     }
     
@@ -37,6 +41,8 @@ enum ARHomeCell       : Int {
         case .SecondText    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
         case .SecondImage   : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
         case .ThirdImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .ThirdText     : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .Skaters       : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.SkatersCell.rawValue)
         }
     }
     
@@ -48,6 +54,8 @@ enum ARHomeCell       : Int {
         case .SecondText    : return "Conoce nuestra app"
         case .SecondImage   : return nil
         case .ThirdImage    : return nil
+        case .ThirdText     : return "Conoce a los Skaters de armies Company"
+        case .Skaters       : return nil
         }
     }
     
@@ -58,6 +66,8 @@ enum ARHomeCell       : Int {
         case .SecondText    : return nil
         case .SecondImage   : return UIImage(named: "ArmiesAll2.jpg")
         case .ThirdImage    : return UIImage(named: "ArmiesAll3.jpg")
+        case .ThirdText     : return nil
+        case .Skaters       : return nil
         }
     }
     
@@ -68,6 +78,8 @@ enum ARHomeCell       : Int {
         case .SecondText    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
         case .SecondImage   : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
         case .ThirdImage    : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
+        case .ThirdText     : return ARCellHeightConstants.HomeCells.TextCell.rawValue
+        case .Skaters       : return ARCellHeightConstants.HomeCells.SkatersCell.rawValue
         }
     }
 }
@@ -108,19 +120,25 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellType = ARHomeCell.allValues()[indexPath.row]
-        if (cellType == ARHomeCell.FirstText || cellType == ARHomeCell.SecondText) {
+        if (cellType == .FirstText || cellType == .SecondText || cellType == .ThirdText) {
             var cell = cellType.cell(tableView) as? ARTextHomeCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARTextHomeCell
             }
             cell?.armiesTextLabel?.text = cellType.text()
             return (cell ?? UITableViewCell())
-        } else if (cellType == ARHomeCell.FirstImage || cellType == ARHomeCell.SecondImage || cellType == ARHomeCell.ThirdImage) {
+        } else if (cellType == .FirstImage || cellType == .SecondImage || cellType == .ThirdImage) {
             var cell = cellType.cell(tableView) as? ARImageHomeCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARImageHomeCell
             }
             cell?.armiesImageView?.image = cellType.image()
+            return (cell ?? UITableViewCell())
+        } else if (cellType == .Skaters) {
+            var cell = cellType.cell(tableView) as? ARSkatersCell
+            if (cell == nil) {
+                cell = cellType.reuseCell() as? ARSkatersCell
+            }
             return (cell ?? UITableViewCell())
         } else {
             return UITableViewCell()
@@ -132,5 +150,26 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let cellType = ARHomeCell.allValues()[indexPath.row]
         return cellType.heighCell()
+    }
+}
+
+extension ARHomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.HomeCells.SkaterCollectionCell.rawValue, forIndexPath: indexPath) as? ARSkaterCollectionCell
+        cell?.backgroundColor = UIColor.blackColor()
+        cell?.setCell()
+        cell?.skaterImageView?.image = UIImage(named: "reniArmies.jpg")
+        cell?.skaterNameLabel?.text = "Rene de la Fuente"
+        // Configure the cell
+        return (cell ?? UICollectionViewCell())
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: nil)
     }
 }
