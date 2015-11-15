@@ -233,12 +233,11 @@
                         <constraints>
                             <constraint firstItem="AWx-RB-OdG" firstAttribute="centerY" secondItem="2BD-t6-YiG" secondAttribute="centerY" id="2iU-Vo-UR2"/>
                             <constraint firstAttribute="trailing" secondItem="a9c-Gm-gD6" secondAttribute="trailing" constant="20" id="9oV-YF-gaN"/>
-                            <constraint firstItem="a9c-Gm-gD6" firstAttribute="top" secondItem="elP-lM-s4Q" secondAttribute="bottom" constant="8" id="Fx5-s4-73h"/>
+                            <constraint firstItem="AWx-RB-OdG" firstAttribute="top" secondItem="elP-lM-s4Q" secondAttribute="bottom" constant="59" id="Ezg-iK-gMC"/>
                             <constraint firstAttribute="trailing" secondItem="AWx-RB-OdG" secondAttribute="trailing" id="IXC-0a-teh"/>
-                            <constraint firstItem="AWx-RB-OdG" firstAttribute="top" secondItem="a9c-Gm-gD6" secondAttribute="bottom" constant="21" id="R4C-kc-AAC"/>
                             <constraint firstItem="AWx-RB-OdG" firstAttribute="leading" secondItem="2BD-t6-YiG" secondAttribute="leading" id="R7O-0e-YWA"/>
                             <constraint firstItem="AWx-RB-OdG" firstAttribute="centerX" secondItem="2BD-t6-YiG" secondAttribute="centerX" id="byS-Pt-U4P"/>
-                            <constraint firstItem="qEh-xT-HsV" firstAttribute="top" secondItem="AWx-RB-OdG" secondAttribute="bottom" constant="78" id="csF-3t-tic"/>
+                            <constraint firstItem="a9c-Gm-gD6" firstAttribute="top" secondItem="elP-lM-s4Q" secondAttribute="bottom" constant="8" id="xhd-aS-PIr"/>
                         </constraints>
                     </view>
                     <connections>

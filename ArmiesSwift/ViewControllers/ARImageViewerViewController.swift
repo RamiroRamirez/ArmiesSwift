@@ -28,10 +28,20 @@ class ARImageViewerViewController           : UIViewController {
     private func initialConfigurations() {
         self.imageView?.image = self.armieImage
         
+        self.configurateCloseButton()
+        self.configurateScrollView()
+    }
+    
+    private func configurateCloseButton() {
+        
         self.closeButton?.layer.borderWidth = ARHarcodedConstants.BorderWidthCloseButton
         self.closeButton?.layer.borderColor = UIColor.whiteColor().CGColor
         self.closeButton?.layer.cornerRadius = ARHarcodedConstants.CornerRadiusCloseButton
         self.closeButton?.clipsToBounds = true
+        self.closeButton?.setTitle(NSLocalizedString("CLOSE_BUTTON", comment: ""), forState: .Normal)
+    }
+    
+    private func configurateScrollView() {
         
         self.scrollImageView?.maximumZoomScale = ARHarcodedConstants.MaxZoomImageScrollView
         self.scrollImageView?.minimumZoomScale = ARHarcodedConstants.MinZommImageScrollView

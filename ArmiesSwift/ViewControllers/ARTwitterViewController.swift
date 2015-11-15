@@ -34,10 +34,10 @@ class ARTwitterViewController       : UIViewController {
     
     private func configurateTwitter(refreshControl: UIRefreshControl?) {
         // intit twitter api
-        let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.consumerKey, consumerSecret: ARTwitterKeys.consumerSecret)
+        let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.ConsumerKey, consumerSecret: ARTwitterKeys.ConsumerSecret)
         // Verify credentials
         twitter.verifyCredentialsWithSuccessBlock({ [weak self] (bearerToken) in
-            twitter.getUserTimelineWithScreenName(ARTwitterKeys.armiesScreenName, count: 20, successBlock: { (statuses) in
+            twitter.getUserTimelineWithScreenName(ARTwitterKeys.ArmiesScreenName, count: ARTwitterKeys.NumberOfTwitters, successBlock: { (statuses) in
                 // reset twitters array
                 self?.twitters?.removeAll()
                 // the information was received from twitter endpoint
@@ -52,6 +52,7 @@ class ARTwitterViewController       : UIViewController {
             })
             }, errorBlock:  { (error) in
                 // TODO: Handle error
+                print(error)
         })
     }
     
@@ -66,11 +67,11 @@ class ARTwitterViewController       : UIViewController {
             
             // fetch text to dislay
             let twitter = ARTwitter()
-            twitter.text = dictionary["text"] as? String
+            twitter.text = dictionary[ARTwitterKeys.JSonKey.TwitterText] as? String
             
             // fetch image to display
-            let userDictionary = dictionary["user"] as? [String: AnyObject]
-            twitter.urlImage = userDictionary?["profile_image_url"] as? String
+            let userDictionary = dictionary[ARTwitterKeys.JSonKey.TwitterUser] as? [String: AnyObject]
+            twitter.urlImage = userDictionary?[ARTwitterKeys.JSonKey.TwitterProfileImageURL] as? String
             self.twitters?.append(twitter)
         }
     }
@@ -111,7 +112,12 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
     //MARK: - Implementation UITableViewDelegate Protocol
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return ARCellHeightConstants.TwitterCells.TwitterCell.rawValue
+        if (UIDevice.isBigDevice() == true) {
+            return ARCellHeightConstants.TwitterCells.TwitterCellBigDevice.rawValue
+        } else {
+            return ARCellHeightConstants.TwitterCells.TwitterCellSmallDevice.rawValue
+        }
+        
     }
     
 }

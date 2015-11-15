@@ -94,7 +94,8 @@ enum ARCellHeightConstants {
     
     enum TwitterCells                       : CGFloat {
         
-        case TwitterCell                    = 120
+        case TwitterCellSmallDevice         = 120
+        case TwitterCellBigDevice           = 85
     }
     
     enum HomeCells                          : CGFloat {
@@ -118,8 +119,14 @@ struct ARHarcodedConstants {
 
 struct ARTwitterKeys {
     
-    static let consumerKey                  : String = "5i97w3KY8DpmMW9lfMmtj5iBx"
-    static let consumerSecret               : String = "cfOwwSLE3Zy9Oo2p7cQcX5tPdDit7ZvfTlsmYJFN5bh3RCKcSA"
-    static let armiesScreenName             : String = "Armiescompany"
-    static let numberOfTwitters             : Int    = 20   
+    static let ConsumerKey                  : String = "5i97w3KY8DpmMW9lfMmtj5iBx"
+    static let ConsumerSecret               : String = "cfOwwSLE3Zy9Oo2p7cQcX5tPdDit7ZvfTlsmYJFN5bh3RCKcSA"
+    static let ArmiesScreenName             : String = "Armiescompany"
+    static let NumberOfTwitters             : UInt    = 20
+    
+    struct JSonKey {
+        static let TwitterText              : String = "text"
+        static let TwitterUser              : String = "user"
+        static let TwitterProfileImageURL   : String = "profile_image_url"
+    }
 }

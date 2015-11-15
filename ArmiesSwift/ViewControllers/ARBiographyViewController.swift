@@ -65,9 +65,6 @@ class ARBiographyViewController: UIViewController {
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Biographies.titleMenu()
 	}
-
-	//MARK: - Actions
-
 }
 
 extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate {
