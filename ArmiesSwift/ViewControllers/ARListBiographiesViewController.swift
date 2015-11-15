@@ -23,6 +23,7 @@ class ARListBiographiesViewController	: ARViewController {
 		self.title = ARMenuOption.Biographies.titleMenu()
 	}
 
+    // TODO: remove this function and create a skater generator (singleton or something)
 	private func temporalSkaterCreator() {
 		let skater1 = ARSkater()
 		skater1.createSkater("Rene de la Fuente", city: "Monterrey, Nvo. León", yearsOld: "17", yearsSkating: "10")
@@ -34,6 +35,7 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
     // MARK: - Implementation UITableViewDataSource Protocol
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: Remove this magic number, it is just temporal
         return 5
     }
     

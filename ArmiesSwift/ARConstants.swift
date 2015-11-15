@@ -20,6 +20,7 @@ enum ARSegues								: String	{
 
 	case OpenBiography						= "openBiography"
     case OpenVideoList                      = "openVideoList"
+    case OpenImageViewer                    = "openImageViewer"
 }
 
 enum ARCellReuseIdentifier				 				{
@@ -93,28 +94,39 @@ enum ARCellHeightConstants {
     
     enum TwitterCells                       : CGFloat {
         
-        case TwitterCell                    = 70
+        case TwitterCellSmallDevice         = 120
+        case TwitterCellBigDevice           = 85
     }
     
     enum HomeCells                          : CGFloat {
         
         case TextCell                       = 100
-        case ImageCell                      = 350
+        case ImageCell                      = 250
     }
 }
 
 struct ARHarcodedConstants {
 	
-	static let numberOfImagesHomeView		: UInt	= 5
-	static let numberOfImagesBiography		: UInt  = 10
-    static let numberOfImagesCollectionInstagram    : CGFloat  = 3
-    static let numberOfImagesInstagram      : Int   = 23
+	static let NumberOfImagesHomeView           : UInt	= 5
+	static let NumberOfImagesBiography          : UInt  = 10
+    static let NumberOfImagesCollectionInstagram: CGFloat  = 3
+    static let NumberOfImagesInstagram          : Int   = 23
+    static let MaxZoomImageScrollView           : CGFloat = 4
+    static let MinZommImageScrollView           : CGFloat = 1
+    static let CornerRadiusCloseButton          : CGFloat = 4
+    static let BorderWidthCloseButton           : CGFloat = 2
 }
 
 struct ARTwitterKeys {
     
-    static let consumerKey                  : String = "5i97w3KY8DpmMW9lfMmtj5iBx"
-    static let consumerSecret               : String = "cfOwwSLE3Zy9Oo2p7cQcX5tPdDit7ZvfTlsmYJFN5bh3RCKcSA"
-    static let armiesScreenName             : String = "Armiescompany"
-    static let numberOfTwitters             : Int    = 20   
+    static let ConsumerKey                  : String = "5i97w3KY8DpmMW9lfMmtj5iBx"
+    static let ConsumerSecret               : String = "cfOwwSLE3Zy9Oo2p7cQcX5tPdDit7ZvfTlsmYJFN5bh3RCKcSA"
+    static let ArmiesScreenName             : String = "Armiescompany"
+    static let NumberOfTwitters             : UInt    = 20
+    
+    struct JSonKey {
+        static let TwitterText              : String = "text"
+        static let TwitterUser              : String = "user"
+        static let TwitterProfileImageURL   : String = "profile_image_url"
+    }
 }

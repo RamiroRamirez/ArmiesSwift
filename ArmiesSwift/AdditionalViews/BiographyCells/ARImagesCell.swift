@@ -34,7 +34,7 @@ class ARImagesCell						: UITableViewCell, iCarouselDataSource, iCarouselDelegat
 	}
 
 	func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
-		return ARHarcodedConstants.numberOfImagesBiography
+		return ARHarcodedConstants.NumberOfImagesBiography
 	}
 
 	func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {

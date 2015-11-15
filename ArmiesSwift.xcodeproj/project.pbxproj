@@ -72,6 +72,7 @@
 		B64B62181BE953C90074E029 /* ARVideoSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */; };
 		B66E62831BF3F91C00D5EDFA /* ARTextHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E62821BF3F91C00D5EDFA /* ARTextHomeCell.swift */; };
 		B66E62861BF3F95200D5EDFA /* ARImageHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E62851BF3F95200D5EDFA /* ARImageHomeCell.swift */; };
+		B66E62A61BF7CCFF00D5EDFA /* ARImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E62A51BF7CCFF00D5EDFA /* ARImageViewerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +147,7 @@
 		B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoSectionViewController.swift; path = ViewControllers/ARVideoSectionViewController.swift; sourceTree = "<group>"; };
 		B66E62821BF3F91C00D5EDFA /* ARTextHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARTextHomeCell.swift; path = AdditionalViews/HomeCells/ARTextHomeCell.swift; sourceTree = "<group>"; };
 		B66E62851BF3F95200D5EDFA /* ARImageHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARImageHomeCell.swift; path = AdditionalViews/HomeCells/ARImageHomeCell.swift; sourceTree = "<group>"; };
+		B66E62A51BF7CCFF00D5EDFA /* ARImageViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARImageViewerViewController.swift; path = ViewControllers/ARImageViewerViewController.swift; sourceTree = "<group>"; };
 		DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -243,6 +245,7 @@
 				28AAF3151BA39A510079A936 /* ARTwitterViewController.swift */,
 				28F0B6001BC08740006D0A7A /* ARListBiographiesViewController.swift */,
 				B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */,
+				B66E62A51BF7CCFF00D5EDFA /* ARImageViewerViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				28AAF30E1BA399B50079A936 /* ARVideosViewController.swift in Sources */,
 				28F0B5F31BC054DA006D0A7A /* ARProfileViewCell.swift in Sources */,
 				28AAF3251BA3A3C30079A936 /* ARConstants.swift in Sources */,
+				B66E62A61BF7CCFF00D5EDFA /* ARImageViewerViewController.swift in Sources */,
 				28F0B60A1BC15742006D0A7A /* ARSkater.swift in Sources */,
 				28AAF30A1BA399720079A936 /* ARHomeViewController.swift in Sources */,
 				B66E62831BF3F91C00D5EDFA /* ARTextHomeCell.swift in Sources */,
