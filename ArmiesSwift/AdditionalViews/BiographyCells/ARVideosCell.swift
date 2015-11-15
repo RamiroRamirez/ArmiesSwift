@@ -12,16 +12,16 @@ import youtube_ios_player_helper
 class ARVideosCell						: UITableViewCell {
 
 	@IBOutlet var videosTitleLabel		: UILabel?
-    @IBOutlet weak var firstVideoView: YTPlayerView!
-    @IBOutlet weak var secondVideoView: YTPlayerView!
-    @IBOutlet weak var thirdVideoView: YTPlayerView!
+    @IBOutlet weak var firstVideoView   : YTPlayerView?
+    @IBOutlet weak var secondVideoView  : YTPlayerView?
+    @IBOutlet weak var thirdVideoView   : YTPlayerView?
 
 	// MARK: - Public Methods
 
 	func setCell() {
 		self.videosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_VIDEOS", comment: "")
         self.firstVideoView?.loadWithVideoId("Rcn6tue26PQ")
-        self.secondVideoView?.loadWithVideoId("Rcn6tue26PQ")
-        self.thirdVideoView.loadWithVideoId("Rcn6tue26PQ")
+        self.secondVideoView?.loadWithVideoId("SgtCCQqbfCs")
+        self.thirdVideoView?.loadWithVideoId("6Djh6Rzm8pY")
 	}
 }
