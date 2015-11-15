@@ -63,6 +63,8 @@ enum ARCellReuseIdentifier				 				{
         
         case TextCell                       = "ARTextHomeCell"
         case ImageCell                      = "ARImageHomeCell"
+        case SkatersCell                    = "ARSkatersCell"
+        case SkaterCollectionCell           = "ARSkaterCollectionCell"
     }
 }
 
@@ -78,7 +80,7 @@ enum ARCellHeightConstants {
 		case ProfileImageCell				= 230
 		case InfoCell						= 224
 		case ImagesCell						= 400
-		case VideosCell						= 401
+		case VideosCell						= 1101
 	}
     
 	enum SkaterCells						: CGFloat {
@@ -102,6 +104,7 @@ enum ARCellHeightConstants {
         
         case TextCell                       = 100
         case ImageCell                      = 250
+        case SkatersCell                    = 135
     }
 }
 

@@ -30,6 +30,8 @@
 		28F0B6031BC14D7E006D0A7A /* ARMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */; };
 		28F0B6071BC153CD006D0A7A /* ARExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6061BC153CD006D0A7A /* ARExtensions.swift */; };
 		28F0B60A1BC15742006D0A7A /* ARSkater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F0B6091BC15742006D0A7A /* ARSkater.swift */; };
+		B638AE6B1BF8B5770093F5D5 /* ARSkatersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638AE6A1BF8B5770093F5D5 /* ARSkatersCell.swift */; };
+		B638AE6D1BF8B9560093F5D5 /* ARSkaterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638AE6C1BF8B9560093F5D5 /* ARSkaterCollectionCell.swift */; };
 		B64B61C01BE6C89A0074E029 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61BF1BE6C89A0074E029 /* Accounts.framework */; };
 		B64B61C21BE6C8A00074E029 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C11BE6C8A00074E029 /* Twitter.framework */; };
 		B64B61C41BE6C8A70074E029 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64B61C31BE6C8A70074E029 /* Social.framework */; };
@@ -105,6 +107,8 @@
 		28F0B6091BC15742006D0A7A /* ARSkater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkater.swift; path = Models/ARSkater.swift; sourceTree = "<group>"; };
 		5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 		7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		B638AE6A1BF8B5770093F5D5 /* ARSkatersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkatersCell.swift; path = AdditionalViews/HomeCells/ARSkatersCell.swift; sourceTree = "<group>"; };
+		B638AE6C1BF8B9560093F5D5 /* ARSkaterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkaterCollectionCell.swift; path = AdditionalViews/HomeCells/ARSkaterCollectionCell.swift; sourceTree = "<group>"; };
 		B64B61BF1BE6C89A0074E029 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B64B61C11BE6C8A00074E029 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		B64B61C31BE6C8A70074E029 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -362,6 +366,8 @@
 			children = (
 				B66E62821BF3F91C00D5EDFA /* ARTextHomeCell.swift */,
 				B66E62851BF3F95200D5EDFA /* ARImageHomeCell.swift */,
+				B638AE6A1BF8B5770093F5D5 /* ARSkatersCell.swift */,
+				B638AE6C1BF8B9560093F5D5 /* ARSkaterCollectionCell.swift */,
 			);
 			name = HomeCells;
 			sourceTree = "<group>";
@@ -543,7 +549,9 @@
 				28F0B6011BC08740006D0A7A /* ARListBiographiesViewController.swift in Sources */,
 				28AAF3101BA399DD0079A936 /* ARImagesViewController.swift in Sources */,
 				B64B62161BE94D860074E029 /* ARVideoCell.swift in Sources */,
+				B638AE6B1BF8B5770093F5D5 /* ARSkatersCell.swift in Sources */,
 				B64B61CC1BE8D6210074E029 /* ARImageCell.swift in Sources */,
+				B638AE6D1BF8B9560093F5D5 /* ARSkaterCollectionCell.swift in Sources */,
 				28F0B5F81BC05A9C006D0A7A /* ARImagesCell.swift in Sources */,
 				28F0B6031BC14D7E006D0A7A /* ARMenuCell.swift in Sources */,
 				28F0B5FC1BC05ACD006D0A7A /* ARVideosCell.swift in Sources */,
