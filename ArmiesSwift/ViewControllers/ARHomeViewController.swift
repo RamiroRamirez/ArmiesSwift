@@ -54,7 +54,7 @@ enum ARHomeCell       : Int {
         case .SecondText    : return "Conoce nuestra app"
         case .SecondImage   : return nil
         case .ThirdImage    : return nil
-        case .ThirdText     : return "Conoce a los Skaters de armies Company"
+        case .ThirdText     : return "Conoce a los Skaters"
         case .Skaters       : return nil
         }
     }
@@ -62,10 +62,10 @@ enum ARHomeCell       : Int {
     func image() -> UIImage? {
         switch self {
         case .FirstText     : return nil
-        case .FirstImage    : return UIImage(named: "ArmiesAll.jpg")
+        case .FirstImage    : return UIImage(named: "ArmiesAll2.jpg")
         case .SecondText    : return nil
-        case .SecondImage   : return UIImage(named: "ArmiesAll2.jpg")
-        case .ThirdImage    : return UIImage(named: "ArmiesAll3.jpg")
+        case .SecondImage   : return UIImage(named: "ArmiesAll3.jpg")
+        case .ThirdImage    : return UIImage(named: "ArmiesAll4.jpg")
         case .ThirdText     : return nil
         case .Skaters       : return nil
         }
@@ -107,6 +107,16 @@ class ARHomeViewController          : ARViewController {
     
     @IBAction func twitterButtonPressed(sender: AnyObject) {
         self.slidingViewController().anchorTopViewToLeftAnimated(true)
+    }
+    
+    //MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == ARSegues.OpenBiography.rawValue) {
+            let skater = sender as? ARSkater
+            let vc = segue.destinationViewController as? ARBiographyViewController
+            vc?.skater = skater
+        }
     }
 }
 
@@ -156,20 +166,18 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
 extension ARHomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return (ARSkateCreator.skaters?.count ?? 0)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.HomeCells.SkaterCollectionCell.rawValue, forIndexPath: indexPath) as? ARSkaterCollectionCell
-        cell?.backgroundColor = UIColor.blackColor()
+        cell?.skater = ARSkateCreator.skaters?[indexPath.row]
         cell?.setCell()
-        cell?.skaterImageView?.image = UIImage(named: "reniArmies.jpg")
-        cell?.skaterNameLabel?.text = "Rene de la Fuente"
         // Configure the cell
         return (cell ?? UICollectionViewCell())
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: nil)
+        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: ARSkateCreator.skaters?[indexPath.row])
     }
 }
