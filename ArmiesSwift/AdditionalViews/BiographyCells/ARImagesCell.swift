@@ -13,6 +13,8 @@ class ARImagesCell						: UITableViewCell, iCarouselDataSource, iCarouselDelegat
 
 	@IBOutlet var photosTitleLabel		: UILabel?
 	@IBOutlet var carousel				: iCarousel?
+    
+    var skater                          : ARSkater?
 
 	// MARK: - Public Methods
 
@@ -34,14 +36,17 @@ class ARImagesCell						: UITableViewCell, iCarouselDataSource, iCarouselDelegat
 	}
 
 	func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
-		return ARHarcodedConstants.NumberOfImagesBiography
+        return UInt(self.skater?.images?.count ?? 0)
 	}
 
 	func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
 		// if the view is nil, create a new one with the frame of the carousel view
 		var imageView : UIImageView?
 		imageView = ((view == nil) ? UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0))) : view as? UIImageView)
-		imageView?.image = UIImage(named: "MuestraCarousel.jpg")
+        imageView?.contentMode = .ScaleAspectFill
+        if let _image = self.skater?.images?[Int(index)] {
+            imageView?.image = UIImage(named: _image)
+        }
 		return imageView
 	}
 }

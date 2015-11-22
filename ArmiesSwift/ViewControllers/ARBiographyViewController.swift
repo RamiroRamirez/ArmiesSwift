@@ -51,7 +51,9 @@ enum ARBiographyCell : Int {
 
 }
 
-class ARBiographyViewController: UIViewController {
+class ARBiographyViewController : UIViewController {
+    
+    var skater                  : ARSkater?
 
 	//MARK: - View Life Cycle
 
@@ -81,16 +83,24 @@ extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate 
         case .ProfileImagesCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
             cell?.setCell()
+            if let _profileImage = self.skater?.profileImage {
+                cell?.profilPhotoImageView?.image = UIImage(named: _profileImage)
+                cell?.panoramPhotoImageView?.image = UIImage(named: _profileImage)
+            }
             return (cell ?? UITableViewCell())
         case .InfoCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
+            cell?.skater = self.skater
+            cell?.setCell()
             return (cell ?? UITableViewCell())
         case .PhotosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
+            cell?.skater = self.skater
             cell?.setCell()
             return (cell ?? UITableViewCell())
         case .VideosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
+            cell?.skater = self.skater
             cell?.setCell()
             return (cell ?? UITableViewCell())
         }

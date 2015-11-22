@@ -341,7 +341,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
                                                     <animations/>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9yD-xr-lon">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9yD-xr-lon">
                                                     <rect key="frame" x="230" y="40" width="140" height="140"/>
                                                     <animations/>
                                                     <constraints>
@@ -590,7 +590,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-qN-rom">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reniArmies.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="32Q-qN-rom">
                                                     <rect key="frame" x="10" y="5" width="60" height="60"/>
                                                     <animations/>
                                                     <constraints>
@@ -694,16 +694,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BQT-5P-4eD">
-                                                    <rect key="frame" x="15" y="3" width="43" height="43"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BQT-5P-4eD">
+                                                    <rect key="frame" x="15" y="7" width="35" height="35"/>
                                                     <animations/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="43" id="Jej-18-Bah"/>
+                                                        <constraint firstAttribute="width" constant="35" id="Jej-18-Bah"/>
                                                         <constraint firstAttribute="width" secondItem="BQT-5P-4eD" secondAttribute="height" multiplier="1:1" id="fpE-bu-Mqt"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UE-bv-8FU">
-                                                    <rect key="frame" x="66" y="14" width="526" height="21"/>
+                                                    <rect key="frame" x="58" y="14" width="534" height="21"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -723,7 +723,7 @@
                                         <animations/>
                                         <connections>
                                             <outlet property="titleVideoSectionLabel" destination="3UE-bv-8FU" id="UaD-uP-GdJ"/>
-                                            <outlet property="videoSectionImageView" destination="aeg-gq-Av7" id="bbX-6s-20I"/>
+                                            <outlet property="videoSectionImageView" destination="BQT-5P-4eD" id="BNM-Gp-VmB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -988,7 +988,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MenuTitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyG-qL-zru">
-                                                    <rect key="frame" x="51" y="19" width="541" height="21"/>
+                                                    <rect key="frame" x="58" y="19" width="534" height="21"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="gpo-Zm-XSh"/>
@@ -1001,7 +1001,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="DqF-3b-1Z4" secondAttribute="bottom" id="1aM-ls-gBz"/>
                                                 <constraint firstItem="Vwa-Dy-bmz" firstAttribute="leading" secondItem="aaO-Gm-bhD" secondAttribute="leading" constant="8" id="Jgg-6B-wPb"/>
-                                                <constraint firstItem="EyG-qL-zru" firstAttribute="leading" secondItem="Vwa-Dy-bmz" secondAttribute="trailing" constant="8" id="KcR-xe-72T"/>
+                                                <constraint firstItem="EyG-qL-zru" firstAttribute="leading" secondItem="Vwa-Dy-bmz" secondAttribute="trailing" constant="15" id="KcR-xe-72T"/>
                                                 <constraint firstAttribute="trailing" secondItem="DqF-3b-1Z4" secondAttribute="trailing" id="NTu-kN-48Q"/>
                                                 <constraint firstItem="DqF-3b-1Z4" firstAttribute="leading" secondItem="aaO-Gm-bhD" secondAttribute="leading" id="QHN-di-PFi"/>
                                                 <constraint firstAttribute="centerY" secondItem="EyG-qL-zru" secondAttribute="centerY" id="bd1-4U-8IZ"/>
