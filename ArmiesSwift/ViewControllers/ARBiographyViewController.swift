@@ -61,12 +61,36 @@ class ARBiographyViewController : UIViewController {
 		super.viewDidLoad()
 		self.initialConfigurations()
 	}
+    
+    //MARK: - Private Methods
 
+    func openImageViewerFromCarrousel(image: UIImage?) {
+        self.performSegueWithIdentifier(ARSegues.OpenImageViewer.rawValue, sender: image)
+    }
+
+    @IBAction func openImageViewer(sender: AnyObject) {
+        self.performSegueWithIdentifier(ARSegues.OpenImageViewer.rawValue, sender: nil)
+    }
+    
 	//MARK: - Private Methods
 
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Biographies.titleMenu()
 	}
+    
+    //MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == ARSegues.OpenImageViewer.rawValue) {
+            let vc = segue.destinationViewController as? ARImageViewerViewController
+            if (sender == nil) {
+                vc?.armieImage = UIImage(named: (self.skater?.profileImage ?? ""))
+            } else {
+                let image = sender as? UIImage
+                vc?.armieImage = image
+            }
+        }
+    }
 }
 
 extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate {
@@ -96,6 +120,7 @@ extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate 
         case .PhotosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
             cell?.skater = self.skater
+            cell?.imageSelected = self.openImageViewerFromCarrousel
             cell?.setCell()
             return (cell ?? UITableViewCell())
         case .VideosCell:

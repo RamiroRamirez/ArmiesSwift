@@ -13,6 +13,8 @@ class ARSkaterCollectionCell            : UICollectionViewCell {
     @IBOutlet weak var skaterImageView  : UIImageView?
     @IBOutlet weak var skaterNameLabel  : UILabel?
     
+    var skater                          : ARSkater?
+    
     func setCell() {
         self.skaterImageView?.layer.borderWidth = 2.0
         self.skaterImageView?.layer.borderColor = UIColor.whiteColor().CGColor
@@ -20,6 +22,9 @@ class ARSkaterCollectionCell            : UICollectionViewCell {
         
         self.skaterImageView?.layer.cornerRadius = ((self.skaterImageView?.frame.height ?? 0) * 0.5)
         self.skaterImageView?.clipsToBounds = true
+        
+        self.skaterImageView?.image = UIImage(named: (self.skater?.profileImage ?? ""))
+        self.skaterNameLabel?.text = self.skater?.name
     }
 
 }
