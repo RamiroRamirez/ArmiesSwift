@@ -10,6 +10,6 @@ import UIKit
 
 class ARVideoSectionCell                        : UITableViewCell {
 
-    @IBOutlet weak var videoSectionImageView    : UIView?
+    @IBOutlet weak var videoSectionImageView    : UIImageView?
     @IBOutlet weak var titleVideoSectionLabel   : UILabel?
 }

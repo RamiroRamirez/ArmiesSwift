@@ -14,11 +14,16 @@ class ARInfosCell					: UITableViewCell {
 	@IBOutlet var yearsLabel		: UILabel?
 	@IBOutlet var cityLabel			: UILabel?
 	@IBOutlet var yearsSkating		: UILabel?
+    
+    var skater                      : ARSkater?
 
 	//MARK: - Public Methods
 
 	func setCell() {
-
+        self.nameLabel?.text = self.skater?.name
+        self.cityLabel?.text = self.skater?.city
+        self.yearsLabel?.text = self.skater?.occupation
+        self.yearsSkating?.text = self.skater?.favoriteMovie
 	}
 
 	//MARK: - Private Methods

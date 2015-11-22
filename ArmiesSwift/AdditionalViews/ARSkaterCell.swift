@@ -13,6 +13,8 @@ class ARSkaterCell							: UITableViewCell {
 	@IBOutlet var profileImageView			: UIImageView?
 	@IBOutlet var nameLabel					: UILabel?
 	@IBOutlet var cityLabel					: UILabel?
+    
+    var skater                              : ARSkater?
 
 	//MARK: - Public Methods
 
@@ -25,6 +27,10 @@ class ARSkaterCell							: UITableViewCell {
 		self.profileImageView?.layer.borderColor = UIColor.whiteColor().CGColor
 		self.profileImageView?.layer.cornerRadius = ((self.profileImageView?.frame.size.height ?? 0) * 0.5)
 		self.profileImageView?.clipsToBounds = true
+        
+        self.profileImageView?.image = UIImage(named: (self.skater?.profileImage ?? ""))
+        self.nameLabel?.text = self.skater?.name
+        self.cityLabel?.text = self.skater?.city
 	}
 	
 }

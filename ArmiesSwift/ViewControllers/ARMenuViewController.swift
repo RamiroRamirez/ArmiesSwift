@@ -29,10 +29,10 @@ enum ARMenuOption 		: Int {
 
 	func iconMenu() -> String? {
 		switch (self) {
-		case .Home			: return "MuestraCarousel.jpg"
-		case .Biographies	: return "MuestraCarousel.jpg"
-		case .Videos 		: return "MuestraCarousel.jpg"
-		case .Images		: return "MuestraCarousel.jpg"
+		case .Home			: return "ic_home.png"
+		case .Biographies	: return "ic_skaters.png"
+		case .Videos 		: return "ic_videos.png"
+		case .Images		: return "ic_imagenes.png"
 		}
 	}
 

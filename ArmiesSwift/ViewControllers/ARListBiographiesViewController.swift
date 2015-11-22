@@ -10,8 +10,6 @@ import UIKit
 
 class ARListBiographiesViewController	: ARViewController {
 
-	var skaters							: [ARSkater] = []
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
         self.initialConfigurations()
@@ -22,12 +20,16 @@ class ARListBiographiesViewController	: ARViewController {
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Biographies.titleMenu()
 	}
-
-    // TODO: remove this function and create a skater generator (singleton or something)
-	private func temporalSkaterCreator() {
-		let skater1 = ARSkater()
-		skater1.createSkater("Rene de la Fuente", city: "Monterrey, Nvo. León", yearsOld: "17", yearsSkating: "10")
-	}
+    
+    // MARK: - Navigation
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == ARSegues.OpenBiography.rawValue) {
+            let sender = sender as? ARSkater
+            let vc = segue.destinationViewController as? ARBiographyViewController
+            vc?.skater = sender
+        }
+    }
 }
 
 extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataSource {
@@ -35,8 +37,7 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
     // MARK: - Implementation UITableViewDataSource Protocol
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO: Remove this magic number, it is just temporal
-        return 5
+        return (ARSkateCreator.skaters?.count ?? 0)
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -44,6 +45,7 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SkaterCells.SkaterCell.rawValue) as? ARSkaterCell
         }
+        cell?.skater = ARSkateCreator.skaters?[indexPath.row]
         cell?.setCell()
         return (cell ?? UITableViewCell())
     }
@@ -52,7 +54,7 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: nil)
+        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: ARSkateCreator.skaters?[indexPath.row])
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

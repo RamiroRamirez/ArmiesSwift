@@ -28,6 +28,16 @@ enum ARVideoSection : Int {
         }
     }
     
+    func iconImage() -> String {
+        switch(self) {
+        case .BestTricks:       return "ic_best_trick.png"
+        case .TrickTips:        return "ic_trick_tip.png"
+        case .Translation:      return "ic_traducciones.png"
+        case .Film:             return "ic_la_pelicula.png"
+        }
+
+    }
+    
     func videosId() -> [String]? {
         switch(self) {
         case .BestTricks:       return ["FR2tKIzevQQ", "4eblKX2YP40", "OsoaGtFv900", "D63n2j-luUg", "b6NyHHpKC7Q", "Ok9CdVAJlR8"]
@@ -81,6 +91,7 @@ extension ARVideosViewController: UITableViewDelegate, UITableViewDataSource {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SectionVideoCells.SectionVideoCell.rawValue) as? ARVideoSectionCell
         }
         cell?.titleVideoSectionLabel?.text = ARVideoSection.allValues()[indexPath.row].title()
+        cell?.videoSectionImageView?.image = UIImage(named: ARVideoSection.allValues()[indexPath.row].iconImage())
         return (cell ?? UITableViewCell())
     }
     
