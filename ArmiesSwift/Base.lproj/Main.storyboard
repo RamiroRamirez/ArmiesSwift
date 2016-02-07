@@ -184,11 +184,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-RB-OdG">
-                                <rect key="frame" x="0.0" y="123" width="600" height="355"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWx-RB-OdG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6O7-iC-7c0">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="355"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6O7-iC-7c0">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -203,8 +203,8 @@
                                     <outlet property="delegate" destination="hxo-IR-yZg" id="Dmb-0C-lgJ"/>
                                 </connections>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9c-Gm-gD6">
-                                <rect key="frame" x="498" y="72" width="82" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9c-Gm-gD6">
+                                <rect key="frame" x="498" y="28" width="82" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="dMR-Wd-Bsw"/>
                                     <constraint firstAttribute="width" constant="82" id="m7F-dH-Can"/>
@@ -219,9 +219,9 @@
                         <constraints>
                             <constraint firstItem="AWx-RB-OdG" firstAttribute="centerY" secondItem="2BD-t6-YiG" secondAttribute="centerY" id="2iU-Vo-UR2"/>
                             <constraint firstAttribute="trailing" secondItem="a9c-Gm-gD6" secondAttribute="trailing" constant="20" id="9oV-YF-gaN"/>
-                            <constraint firstItem="AWx-RB-OdG" firstAttribute="top" secondItem="elP-lM-s4Q" secondAttribute="bottom" constant="59" id="Ezg-iK-gMC"/>
                             <constraint firstAttribute="trailing" secondItem="AWx-RB-OdG" secondAttribute="trailing" id="IXC-0a-teh"/>
                             <constraint firstItem="AWx-RB-OdG" firstAttribute="leading" secondItem="2BD-t6-YiG" secondAttribute="leading" id="R7O-0e-YWA"/>
+                            <constraint firstItem="AWx-RB-OdG" firstAttribute="height" secondItem="2BD-t6-YiG" secondAttribute="height" id="Ust-xk-EMv"/>
                             <constraint firstItem="AWx-RB-OdG" firstAttribute="centerX" secondItem="2BD-t6-YiG" secondAttribute="centerX" id="byS-Pt-U4P"/>
                             <constraint firstItem="a9c-Gm-gD6" firstAttribute="top" secondItem="elP-lM-s4Q" secondAttribute="bottom" constant="8" id="xhd-aS-PIr"/>
                         </constraints>
