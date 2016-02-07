@@ -15,6 +15,10 @@ class ARImageViewerViewController           : UIViewController {
     @IBOutlet weak var closeButton          : UIButton?
     
     var armieImage                          : UIImage?
+	var centerImageView						: CGPoint?
+
+	var distanceX							: CGFloat = 0
+	var distanceY							: CGFloat = 0
     
     //MARK: - View Life cycle
     
@@ -22,6 +26,11 @@ class ARImageViewerViewController           : UIViewController {
         super.viewDidLoad()
         self.initialConfigurations()
     }
+
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		self.centerImageView = self.imageView?.center
+	}
     
     //MARK: - Private methods
     
@@ -30,6 +39,7 @@ class ARImageViewerViewController           : UIViewController {
         
         self.configurateCloseButton()
         self.configurateScrollView()
+		self.configurateGestureRecognizer()
     }
     
     private func configurateCloseButton() {
@@ -47,6 +57,49 @@ class ARImageViewerViewController           : UIViewController {
         self.scrollImageView?.minimumZoomScale = ARHarcodedConstants.MinZommImageScrollView
         self.scrollImageView?.clipsToBounds = true
     }
+
+	private func configurateGestureRecognizer() {
+		let gestureRecognizer = UIPanGestureRecognizer(target: self, action: "hazAlgo:")
+		self.view.addGestureRecognizer(gestureRecognizer)
+	}
+
+	private func closeWithAnimation() {
+		UIView.animateWithDuration(0.3, animations: {
+
+				self.imageView?.alpha = 0.2
+			}) { (succeeded: Bool) in
+				self.dismissViewControllerAnimated(true, completion: nil)
+		}
+	}
+
+	private func imageViewChangePositionAndAlpha(viewLocation: CGPoint) {
+		UIView.animateWithDuration(0.3) {
+			self.imageView?.center = CGPointMake(viewLocation.x + self.distanceX, viewLocation.y + self.distanceY)
+		}
+	}
+
+	func hazAlgo(sender: UIPanGestureRecognizer)  {
+		if (sender.state == .Began) {
+			print("DISTANCIA EN X: \(sender.locationInView(self.view).x - self.view.center.x)")
+			print("DISTANCIA EN Y: \(sender.locationInView(self.view).y - self.view.center.y)")
+			self.distanceX = sender.locationInView(self.view).x - (self.imageView?.center.x ?? 0)
+			self.distanceY = sender.locationInView(self.view).y - (self.imageView?.center.y ?? 0)
+		}
+
+		if ((sender.state == UIGestureRecognizerState.Began) || (sender.state == UIGestureRecognizerState.Changed)) {
+			self.imageViewChangePositionAndAlpha(sender.locationInView(self.view))
+		} else {
+			if (sender.state == .Ended) {
+				if (sender.locationInView(self.view).y < self.view.center.y) {
+					self.closeWithAnimation()
+				} else {
+					UIView.animateWithDuration(0.3) {
+						self.imageView?.center = (self.centerImageView ?? self.view.center)
+					}
+				}
+			}
+		}
+	}
     
     @IBAction func dismissViewPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
