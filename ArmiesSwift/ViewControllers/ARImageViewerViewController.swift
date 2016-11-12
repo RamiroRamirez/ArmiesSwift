@@ -82,19 +82,13 @@ class ARImageViewerViewController           : UIViewController {
 
 	func closePreviewIfNeeded(sender: UIPanGestureRecognizer)  {
 		if (sender.state == .Began) {
-			print("CENTRO: X:\(self.imageView?.center.x)   Y:\(self.imageView?.center.y)")
-			print("-------------")
-			print("DISTANCIA EN X: \(sender.locationInView(self.view).x - self.view.center.x)")
-			print("DISTANCIA EN Y: \(sender.locationInView(self.view).y - self.view.center.y)")
-//			self.distanceX = sender.locationInView(self.view).x - (self.imageView?.center.x ?? 0)
-//			self.distanceY = sender.locationInView(self.view).y - (self.imageView?.center.y ?? 0)
 			self.distanceX = sender.locationInView(self.view).x - (self.view.center.x ?? 0)
 			self.distanceY = sender.locationInView(self.view).y - (self.view.center.y ?? 0)
 		}
 
 		if (sender.state == UIGestureRecognizerState.Changed) {
 			self.imageViewChangePositionAndAlpha(sender.locationInView(self.view))
-			
+
 		} else {
 			if (sender.state == .Ended) {
 				if (sender.locationInView(self.view).y < self.view.center.y) {
