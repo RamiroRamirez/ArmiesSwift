@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ArmiesSwift/ViewControllers/ARImageViewerViewController.swift"
-            timestampString = "476572127.47786"
+            timestampString = "500682923.979632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "96"
-            endingLineNumber = "96"
-            landmarkName = "hazAlgo(_:)"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "closePreviewIfNeeded(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -24,24 +24,26 @@ class ARImageViewerViewController           : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         self.initialConfigurations()
     }
 
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
+
 		self.centerImageView = self.imageView?.center
 	}
     
     //MARK: - Private methods
     
     private func initialConfigurations() {
-        self.imageView?.image = self.armieImage
-        
-        self.configurateCloseButton()
-        self.configurateScrollView()
+		self.imageView?.image = self.armieImage
+
+		self.configurateCloseButton()
+		self.configurateScrollView()
 		self.configurateGestureRecognizer()
     }
-    
+
     private func configurateCloseButton() {
         
         self.closeButton?.layer.borderWidth = ARHarcodedConstants.BorderWidthCloseButton
@@ -59,7 +61,7 @@ class ARImageViewerViewController           : UIViewController {
     }
 
 	private func configurateGestureRecognizer() {
-		let gestureRecognizer = UIPanGestureRecognizer(target: self, action: "hazAlgo:")
+		let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ARImageViewerViewController.closePreviewIfNeeded(_:)))
 		self.view.addGestureRecognizer(gestureRecognizer)
 	}
 
@@ -78,7 +80,7 @@ class ARImageViewerViewController           : UIViewController {
 		}
 	}
 
-	func hazAlgo(sender: UIPanGestureRecognizer)  {
+	func closePreviewIfNeeded(sender: UIPanGestureRecognizer)  {
 		if (sender.state == .Began) {
 			print("CENTRO: X:\(self.imageView?.center.x)   Y:\(self.imageView?.center.y)")
 			print("-------------")
@@ -92,6 +94,7 @@ class ARImageViewerViewController           : UIViewController {
 
 		if (sender.state == UIGestureRecognizerState.Changed) {
 			self.imageViewChangePositionAndAlpha(sender.locationInView(self.view))
+			
 		} else {
 			if (sender.state == .Ended) {
 				if (sender.locationInView(self.view).y < self.view.center.y) {
