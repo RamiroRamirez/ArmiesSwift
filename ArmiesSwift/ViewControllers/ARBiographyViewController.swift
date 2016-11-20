@@ -59,6 +59,7 @@ class ARBiographyViewController : UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
     

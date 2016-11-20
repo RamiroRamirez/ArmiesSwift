@@ -9,19 +9,20 @@
 import UIKit
 import STTwitter
 
-class ARTwitterViewController       : UIViewController {
+class ARTwitterViewController               : UIViewController {
     
-    var twitters                    : [ARTwitter]? = []
-    var image                       : UIImage?
+    var twitters                            : [ARTwitter]? = []
+    var image                               : UIImage?
     
     // Oultlets
     
-    @IBOutlet weak var tableView    : UITableView?
+    @IBOutlet private weak var tableView    : UITableView?
 
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 

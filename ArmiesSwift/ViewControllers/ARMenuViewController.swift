@@ -46,11 +46,11 @@ enum ARMenuOption 		: Int {
 	}
 }
 
-class ARMenuViewController: UIViewController {
+class ARMenuViewController                  : UIViewController {
     
     //MARK: - IBOutlets
 
-	@IBOutlet var tableView: UITableView?
+	@IBOutlet private weak var tableView    : UITableView?
 
 	//MARK: - View Life cycle
 

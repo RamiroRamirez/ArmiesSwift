@@ -54,6 +54,7 @@ class ARVideosViewController: ARViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 
@@ -62,8 +63,6 @@ class ARVideosViewController: ARViewController {
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Videos.titleMenu()
 	}
-
-	//MARK: - Actions
     
     //MARK: - Navigation
     

@@ -12,6 +12,7 @@ class ARListBiographiesViewController	: ARViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
         self.initialConfigurations()
 	}
 

@@ -12,12 +12,6 @@ class ARVideoSectionViewController  : UIViewController {
     
     var videosId                    : [String]? = []
     var videoSection                : ARVideoSection?
-    
-    // MARK: - Life cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 extension ARVideoSectionViewController: UITableViewDataSource, UITableViewDelegate {

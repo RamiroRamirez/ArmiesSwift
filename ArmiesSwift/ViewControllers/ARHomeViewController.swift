@@ -84,16 +84,17 @@ enum ARHomeCell       : Int {
     }
 }
 
-class ARHomeViewController          : ARViewController {
+class ARHomeViewController                  : ARViewController {
 
 	//MARK: - Outlets
 
-    @IBOutlet weak var tableView    : UITableView?
+    @IBOutlet private weak var tableView    : UITableView?
     
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 

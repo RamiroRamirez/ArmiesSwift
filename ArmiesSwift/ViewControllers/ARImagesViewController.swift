@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ARImagesViewController            : ARViewController {
+class ARImagesViewController                    : ARViewController {
     
-    var imageArray                      : [UIImage]? = []
+    var imageArray                              : [UIImage]? = []
     
     //MARK: - Outlets
 
-    @IBOutlet weak var collectionView   : UICollectionView?
+    @IBOutlet private weak var collectionView   : UICollectionView?
     
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 
