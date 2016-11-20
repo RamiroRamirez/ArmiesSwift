@@ -12,17 +12,11 @@ class ARVideoSectionViewController  : UIViewController {
     
     var videosId                    : [String]? = []
     var videoSection                : ARVideoSection?
-    
-    //MARK: - Life cycle
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 extension ARVideoSectionViewController: UITableViewDataSource, UITableViewDelegate {
     
-    //MARK: - Implementation UITAbleviewDataSource Implementation
+    // MARK: - Implementation UITAbleviewDataSource Implementation
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.videosId?.count ?? 0)
@@ -34,14 +28,13 @@ extension ARVideoSectionViewController: UITableViewDataSource, UITableViewDelega
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SectionVideoCells.VideoCell.rawValue) as? ARVideoCell
         }
-        cell?.videoYouTubeId = self.videosId?[indexPath.row]
-        cell?.setCell()
+        cell?.setupCell(self.videosId?[indexPath.row])
         // TODO: Remove this print when everything works correctly
 //        print("Guardando \(cell?.videoYouTubeId) en index \(indexPath.row)")
         return (cell ?? UITableViewCell())
     }
     
-    //MARK: - Implementation UITAbleviewDelegate Implementation
+    // MARK: - Implementation UITAbleviewDelegate Implementation
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return ARCellHeightConstants.VideoCells.VideoCell.rawValue

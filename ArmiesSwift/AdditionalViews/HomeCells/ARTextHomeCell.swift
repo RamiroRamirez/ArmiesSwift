@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ARTextHomeCell                        : UITableViewCell {
+class ARTextHomeCell                                : UITableViewCell {
 
-    @IBOutlet weak var armiesTextLabel      : UILabel?
+    // MARK: - Outlets
+    
+    @IBOutlet private weak var armiesTextLabel      : UILabel?
+    
+    // MARK: - Configurate Methods
+    
+    func setupCell(text: String?) {
+        self.armiesTextLabel?.text = text
+    }
 }

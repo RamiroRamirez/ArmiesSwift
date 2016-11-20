@@ -54,6 +54,7 @@ class ARVideosViewController: ARViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 
@@ -62,8 +63,6 @@ class ARVideosViewController: ARViewController {
 	private func initialConfigurations() {
 		self.title = ARMenuOption.Videos.titleMenu()
 	}
-
-	//MARK: - Actions
     
     //MARK: - Navigation
     
@@ -90,8 +89,7 @@ extension ARVideosViewController: UITableViewDelegate, UITableViewDataSource {
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SectionVideoCells.SectionVideoCell.rawValue) as? ARVideoSectionCell
         }
-        cell?.titleVideoSectionLabel?.text = ARVideoSection.allValues()[indexPath.row].title()
-        cell?.videoSectionImageView?.image = UIImage(named: ARVideoSection.allValues()[indexPath.row].iconImage())
+        cell?.setupCell(ARVideoSection.allValues()[indexPath.row].title(), image: UIImage(named: ARVideoSection.allValues()[indexPath.row].iconImage()))
         return (cell ?? UITableViewCell())
     }
     

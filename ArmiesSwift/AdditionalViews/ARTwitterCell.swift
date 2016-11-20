@@ -8,9 +8,18 @@
 
 import UIKit
 
-class ARTwitterCell                         : UITableViewCell {
+class ARTwitterCell                                 : UITableViewCell {
     
-    @IBOutlet weak var armieImageView       : UIImageView?
-    @IBOutlet weak var twitterTextField     : UITextView?
+    // MARK: - IBOutlets
+    
+    @IBOutlet private weak var armieImageView       : UIImageView?
+    @IBOutlet private weak var twitterTextField     : UITextView?
+    
+    // MARK: - Cell Configuration Methods
+    
+    func setupCell(twitterText: String?, image: UIImage?) {
+        self.twitterTextField?.text = twitterText
+        self.armieImageView?.image = image
+    }
     
 }

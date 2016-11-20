@@ -8,8 +8,17 @@
 
 import UIKit
 
-class ARVideoSectionCell                        : UITableViewCell {
+class ARVideoSectionCell                                : UITableViewCell {
+    
+    // MARK: - IBOutlets
 
-    @IBOutlet weak var videoSectionImageView    : UIImageView?
-    @IBOutlet weak var titleVideoSectionLabel   : UILabel?
+    @IBOutlet private weak var videoSectionImageView    : UIImageView?
+    @IBOutlet private weak var titleVideoSectionLabel   : UILabel?
+    
+    // MARK: - Configurate Methods
+    
+    func setupCell(title: String?, image: UIImage?) {
+        self.titleVideoSectionLabel?.text = title
+        self.videoSectionImageView?.image = image
+    }
 }

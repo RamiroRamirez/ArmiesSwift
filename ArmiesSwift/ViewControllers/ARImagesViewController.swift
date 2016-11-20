@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ARImagesViewController            : ARViewController {
+class ARImagesViewController                    : ARViewController {
     
-    var imageArray                      : [UIImage]? = []
+    var imageArray                              : [UIImage]? = []
     
     //MARK: - Outlets
 
-    @IBOutlet weak var collectionView   : UICollectionView?
+    @IBOutlet private weak var collectionView   : UICollectionView?
     
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 
@@ -62,8 +63,7 @@ extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.ImageCells.ImageCell.rawValue, forIndexPath: indexPath) as? ARImageCell
-        cell?.backgroundColor = UIColor.blackColor()
-        cell?.instagramImageView?.image = self.imageArray?[indexPath.row]
+        cell?.setupCell(self.imageArray?[indexPath.row])
         // Configure the cell
         return (cell ?? UICollectionViewCell())
     }

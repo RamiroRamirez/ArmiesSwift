@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ARViewController: UIViewController {
+class ARViewController                      : UIViewController {
 
-	@IBOutlet weak var menuButton: UIBarButtonItem?
+	@IBOutlet private weak var menuButton   : UIBarButtonItem?
 
 	//MARK: - View Life cycle
 

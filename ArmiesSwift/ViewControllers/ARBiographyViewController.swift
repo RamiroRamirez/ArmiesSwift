@@ -59,6 +59,7 @@ class ARBiographyViewController : UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
     
@@ -106,27 +107,21 @@ extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate 
         switch cellType {
         case .ProfileImagesCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
-            cell?.setCell()
             if let _profileImage = self.skater?.profileImage {
-                cell?.profilPhotoImageView?.image = UIImage(named: _profileImage)
-                cell?.panoramPhotoImageView?.image = UIImage(named: _profileImage)
+                cell?.setupCell(UIImage(named: _profileImage), panoramaPhoto: UIImage(named: _profileImage))
             }
             return (cell ?? UITableViewCell())
         case .InfoCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
-            cell?.skater = self.skater
-            cell?.setCell()
+            cell?.setupCell(self.skater)
             return (cell ?? UITableViewCell())
         case .PhotosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
-            cell?.skater = self.skater
-            cell?.imageSelected = self.openImageViewerFromCarrousel
-            cell?.setCell()
+            cell?.setupCell(self.skater, imageSelectedBlock: self.openImageViewerFromCarrousel)
             return (cell ?? UITableViewCell())
         case .VideosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
-            cell?.skater = self.skater
-            cell?.setCell()
+            cell?.setupCell(skater: self.skater)
             return (cell ?? UITableViewCell())
         }
     }

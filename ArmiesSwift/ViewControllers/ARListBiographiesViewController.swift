@@ -12,6 +12,7 @@ class ARListBiographiesViewController	: ARViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
         self.initialConfigurations()
 	}
 
@@ -45,8 +46,7 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SkaterCells.SkaterCell.rawValue) as? ARSkaterCell
         }
-        cell?.skater = ARSkateCreator.skaters?[indexPath.row]
-        cell?.setCell()
+        cell?.setupCell(skater: ARSkateCreator.skaters?[indexPath.row])
         return (cell ?? UITableViewCell())
     }
     

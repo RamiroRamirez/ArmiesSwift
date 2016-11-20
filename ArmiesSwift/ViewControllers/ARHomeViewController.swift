@@ -84,16 +84,17 @@ enum ARHomeCell       : Int {
     }
 }
 
-class ARHomeViewController          : ARViewController {
+class ARHomeViewController                  : ARViewController {
 
 	//MARK: - Outlets
 
-    @IBOutlet weak var tableView    : UITableView?
+    @IBOutlet private weak var tableView    : UITableView?
     
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 
@@ -135,21 +136,24 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARTextHomeCell
             }
-            cell?.armiesTextLabel?.text = cellType.text()
+            cell?.setupCell(cellType.text())
             return (cell ?? UITableViewCell())
+            
         } else if (cellType == .FirstImage || cellType == .SecondImage || cellType == .ThirdImage) {
             var cell = cellType.cell(tableView) as? ARImageHomeCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARImageHomeCell
             }
-            cell?.armiesImageView?.image = cellType.image()
+            cell?.setupCell(cellType.image())
             return (cell ?? UITableViewCell())
+            
         } else if (cellType == .Skaters) {
             var cell = cellType.cell(tableView) as? ARSkatersCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARSkatersCell
             }
             return (cell ?? UITableViewCell())
+            
         } else {
             return UITableViewCell()
         }
@@ -171,8 +175,7 @@ extension ARHomeViewController: UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.HomeCells.SkaterCollectionCell.rawValue, forIndexPath: indexPath) as? ARSkaterCollectionCell
-        cell?.skater = ARSkateCreator.skaters?[indexPath.row]
-        cell?.setCell()
+        cell?.setupCell(skater: ARSkateCreator.skaters?[indexPath.row])
         // Configure the cell
         return (cell ?? UICollectionViewCell())
     }

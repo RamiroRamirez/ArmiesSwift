@@ -9,21 +9,22 @@
 import UIKit
 import youtube_ios_player_helper
 
-class ARVideosCell						: UITableViewCell {
-
-	@IBOutlet var videosTitleLabel		: UILabel?
-    @IBOutlet weak var firstVideoView   : YTPlayerView?
-    @IBOutlet weak var secondVideoView  : YTPlayerView?
-    @IBOutlet weak var thirdVideoView   : YTPlayerView?
+class ARVideosCell                                  : UITableViewCell {
     
-    var skater                          : ARSkater?
+    // MARK: - IBOutlets
 
+	@IBOutlet private weak var videosTitleLabel		: UILabel?
+    @IBOutlet private weak var firstVideoView       : YTPlayerView?
+    @IBOutlet private weak var secondVideoView      : YTPlayerView?
+    @IBOutlet private weak var thirdVideoView       : YTPlayerView?
+    
 	// MARK: - Public Methods
 
-	func setCell() {
+    func setupCell(skater skater: ARSkater?) {
+        
 		self.videosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_VIDEOS", comment: "")
-        self.firstVideoView?.loadWithVideoId(self.skater?.videos?.first)
-        self.secondVideoView?.loadWithVideoId(self.skater?.videos?[1])
-        self.thirdVideoView?.loadWithVideoId(self.skater?.videos?[2])
+        self.firstVideoView?.loadWithVideoId(skater?.videos?.first)
+        self.secondVideoView?.loadWithVideoId(skater?.videos?[1])
+        self.thirdVideoView?.loadWithVideoId(skater?.videos?[2])
 	}
 }

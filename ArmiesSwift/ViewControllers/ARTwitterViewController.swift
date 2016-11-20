@@ -9,19 +9,20 @@
 import UIKit
 import STTwitter
 
-class ARTwitterViewController       : UIViewController {
+class ARTwitterViewController               : UIViewController {
     
-    var twitters                    : [ARTwitter]? = []
-    var image                       : UIImage?
+    var twitters                            : [ARTwitter]? = []
+    var image                               : UIImage?
     
     // Oultlets
     
-    @IBOutlet weak var tableView    : UITableView?
+    @IBOutlet private weak var tableView    : UITableView?
 
 	//MARK: - View Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
 		self.initialConfigurations()
 	}
 
@@ -104,8 +105,7 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
         }
-        cell?.twitterTextField?.text = self.twitters?[indexPath.row].text
-        cell?.armieImageView?.image = self.image
+        cell?.setupCell(self.twitters?[indexPath.row].text, image: self.image)
         return (cell ?? UITableViewCell())
     }
     

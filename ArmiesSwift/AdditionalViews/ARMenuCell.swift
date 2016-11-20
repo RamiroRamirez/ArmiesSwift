@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ARMenuCell					: UITableViewCell {
+class ARMenuCell                                : UITableViewCell {
+    
+    // MARK: - IBOutlets
 
-	@IBOutlet var menuImageView		: UIImageView?
-	@IBOutlet var menuTitleLabel	: UILabel?
+	@IBOutlet private weak var menuImageView	: UIImageView?
+	@IBOutlet private weak var menuTitleLabel	: UILabel?
+    
+    // MARK: - Cell Configuration Methods
 
-	var typeMenu					: ARMenuOption?
-
-	func setCell() {
-		if let _iconMenu = self.typeMenu?.iconMenu() {
+    func setupCell(typeMenu: ARMenuOption?) {
+		if let _iconMenu = typeMenu?.iconMenu() {
 			self.menuImageView?.image = UIImage(named: _iconMenu)
-			self.menuTitleLabel?.text = self.typeMenu?.titleMenu()
+			self.menuTitleLabel?.text = typeMenu?.titleMenu()
 		}
 	}
 }

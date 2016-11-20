@@ -46,11 +46,11 @@ enum ARMenuOption 		: Int {
 	}
 }
 
-class ARMenuViewController: UIViewController {
+class ARMenuViewController                  : UIViewController {
     
     //MARK: - IBOutlets
 
-	@IBOutlet var tableView: UITableView?
+	@IBOutlet private weak var tableView    : UITableView?
 
 	//MARK: - View Life cycle
 
@@ -85,8 +85,7 @@ extension ARMenuViewController : UITableViewDelegate, UITableViewDataSource {
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as? ARMenuCell
         }
-        cell?.typeMenu = ARMenuOption.allValues()[indexPath.row]
-        cell?.setCell()
+        cell?.setupCell(ARMenuOption.allValues()[indexPath.row])
         return (cell ?? UITableViewCell())
     }
     
