@@ -8,7 +8,16 @@
 
 import UIKit
 
-class ARImageCell                           : UICollectionViewCell {
+class ARImageCell                                   : UICollectionViewCell {
 
-    @IBOutlet weak var instagramImageView   : UIImageView?
+    // MARK: - IBOultets
+    
+    @IBOutlet private weak var instagramImageView   : UIImageView?
+    
+    // MARK: - Configurate Methods
+    
+    func setupCell(image: UIImage?) {
+        self.backgroundColor = UIColor.blackColor()
+        self.instagramImageView?.image = image
+    }
 }

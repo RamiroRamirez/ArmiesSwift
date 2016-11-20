@@ -9,18 +9,17 @@
 import UIKit
 import youtube_ios_player_helper
 
-class ARVideoCell                   : UITableViewCell {
+class ARVideoCell                           : UITableViewCell {
     
-    var videoYouTubeId              : String?
     
     // MARK: - Outlets
 
-    @IBOutlet weak var playerView   : YTPlayerView?
+    @IBOutlet private weak var playerView   : YTPlayerView?
     
     // MARK: - Public Methods
     
-    func setCell() {
-        if let videoId = self.videoYouTubeId {
+    func setupCell(videoYouTubeId: String?) {
+        if let videoId = videoYouTubeId {
             self.playerView?.loadWithVideoId(videoId)
         }
     }

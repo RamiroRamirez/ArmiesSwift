@@ -8,29 +8,29 @@
 
 import UIKit
 
-class ARSkaterCell							: UITableViewCell {
-
-	@IBOutlet var profileImageView			: UIImageView?
-	@IBOutlet var nameLabel					: UILabel?
-	@IBOutlet var cityLabel					: UILabel?
+class ARSkaterCell                                  : UITableViewCell {
     
-    var skater                              : ARSkater?
+    // MARK: - IBOutlets
 
-	//MARK: - Public Methods
+	@IBOutlet private var profileImageView			: UIImageView?
+	@IBOutlet private var nameLabel					: UILabel?
+	@IBOutlet private var cityLabel					: UILabel?
+    
+	// MARK: - Configuration Methods
 
-	func setCell() {
-		self.configurateProfileImage()
+    func setupCell(skater skater: ARSkater?) {
+        self.configurateProfileImage(skater: skater)
 	}
 
-	private func configurateProfileImage() {
+    private func configurateProfileImage(skater skater: ARSkater?) {
 		self.profileImageView?.layer.borderWidth = 2.0
 		self.profileImageView?.layer.borderColor = UIColor.whiteColor().CGColor
 		self.profileImageView?.layer.cornerRadius = ((self.profileImageView?.frame.size.height ?? 0) * 0.5)
 		self.profileImageView?.clipsToBounds = true
         
-        self.profileImageView?.image = UIImage(named: (self.skater?.profileImage ?? ""))
-        self.nameLabel?.text = self.skater?.name
-        self.cityLabel?.text = self.skater?.city
+        self.profileImageView?.image = UIImage(named: (skater?.profileImage ?? ""))
+        self.nameLabel?.text = skater?.name
+        self.cityLabel?.text = skater?.city
 	}
 	
 }

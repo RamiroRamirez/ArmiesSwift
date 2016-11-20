@@ -8,24 +8,19 @@
 
 import UIKit
 
-class ARInfosCell					: UITableViewCell {
+class ARInfosCell                               : UITableViewCell {
 
-	@IBOutlet var nameLabel			: UILabel?
-	@IBOutlet var yearsLabel		: UILabel?
-	@IBOutlet var cityLabel			: UILabel?
-	@IBOutlet var yearsSkating		: UILabel?
+	@IBOutlet private weak var nameLabel		: UILabel?
+	@IBOutlet private weak var yearsLabel		: UILabel?
+	@IBOutlet private weak var cityLabel		: UILabel?
+	@IBOutlet private weak var yearsSkating		: UILabel?
     
-    var skater                      : ARSkater?
+	// MARK: - Public Methods
 
-	//MARK: - Public Methods
-
-	func setCell() {
-        self.nameLabel?.text = self.skater?.name
-        self.cityLabel?.text = self.skater?.city
-        self.yearsLabel?.text = self.skater?.occupation
-        self.yearsSkating?.text = self.skater?.favoriteMovie
+    func setupCell(skater: ARSkater?) {
+        self.nameLabel?.text = skater?.name
+        self.cityLabel?.text = skater?.city
+        self.yearsLabel?.text = skater?.occupation
+        self.yearsSkating?.text = skater?.favoriteMovie
 	}
-
-	//MARK: - Private Methods
-
 }

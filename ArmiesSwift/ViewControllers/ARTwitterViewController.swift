@@ -104,8 +104,7 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
         }
-        cell?.twitterTextField?.text = self.twitters?[indexPath.row].text
-        cell?.armieImageView?.image = self.image
+        cell?.setupCell(self.twitters?[indexPath.row].text, image: self.image)
         return (cell ?? UITableViewCell())
     }
     

@@ -62,8 +62,7 @@ extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDe
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.ImageCells.ImageCell.rawValue, forIndexPath: indexPath) as? ARImageCell
-        cell?.backgroundColor = UIColor.blackColor()
-        cell?.instagramImageView?.image = self.imageArray?[indexPath.row]
+        cell?.setupCell(self.imageArray?[indexPath.row])
         // Configure the cell
         return (cell ?? UICollectionViewCell())
     }

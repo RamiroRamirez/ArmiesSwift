@@ -9,23 +9,25 @@
 import UIKit
 import iCarousel
 
-class ARImageButton                     : UIButton {
+class ARImageButton                             : UIButton {
     
-    var image                           : UIImage?
+    var image                                   : UIImage?
 }
 
-class ARImagesCell						: UITableViewCell {
+class ARImagesCell                              : UITableViewCell {
 
-	@IBOutlet weak var photosTitleLabel	: UILabel?
-	@IBOutlet weak var carousel			: iCarousel?
-    @IBOutlet weak var pageControl      : UIPageControl?
+	@IBOutlet private weak var photosTitleLabel	: UILabel?
+	@IBOutlet private weak var carousel			: iCarousel?
+    @IBOutlet private weak var pageControl      : UIPageControl?
     
-    var skater                          : ARSkater?
-    var imageSelected                   :((image: UIImage?) -> Void)? = nil
+    private var skater                          : ARSkater?
+    private var imageSelected                   :((image: UIImage?) -> Void)? = nil
 
 	// MARK: - Public Methods
 
-	func setCell() {
+    func setupCell(skater: ARSkater?, imageSelectedBlock: ((image: UIImage?) -> Void)?) {
+        self.skater = skater
+        self.imageSelected = imageSelectedBlock
 		self.photosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_PHOTOS", comment: "")
 		self.setupCarousel()
 		self.carousel?.reloadData()
@@ -73,10 +75,9 @@ extension ARImagesCell: iCarouselDataSource, iCarouselDelegate {
         imageButton.frame = (imageView?.frame ?? CGRectZero)
         imageButton.backgroundColor = UIColor.clearColor()
         imageButton.addTarget(self, action: #selector(ARImagesCell.imagePressed(_:)), forControlEvents: .TouchDown)
-        if let
-            _image = self.skater?.images?[Int(index)] {
-                imageView?.addSubview(imageButton)
-                imageButton.image = UIImage(named: _image)
+        if let _image = self.skater?.images?[Int(index)] {
+            imageView?.addSubview(imageButton)
+            imageButton.image = UIImage(named: _image)
         }
         return imageView
     }

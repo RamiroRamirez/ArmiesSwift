@@ -8,7 +8,15 @@
 
 import UIKit
 
-class ARImageHomeCell                   : UITableViewCell {
+class ARImageHomeCell                           : UITableViewCell {
 
-    @IBOutlet weak var armiesImageView  : UIImageView?
+    // MARK: - IBOutlets
+    
+    @IBOutlet private weak var armiesImageView  : UIImageView?
+    
+    // MARK: - Setup Methods
+    
+    func setupCell(armiesImage: UIImage?) {
+        self.armiesImageView?.image = armiesImage
+    }
 }

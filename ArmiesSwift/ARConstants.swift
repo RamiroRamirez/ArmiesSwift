@@ -110,14 +110,14 @@ enum ARCellHeightConstants {
 
 struct ARHarcodedConstants {
 	
-	static let NumberOfImagesHomeView           : UInt	= 5
-	static let NumberOfImagesBiography          : UInt  = 10
-    static let NumberOfImagesCollectionInstagram: CGFloat  = 3
-    static let NumberOfImagesInstagram          : Int   = 23
-    static let MaxZoomImageScrollView           : CGFloat = 4
-    static let MinZommImageScrollView           : CGFloat = 1
-    static let CornerRadiusCloseButton          : CGFloat = 4
-    static let BorderWidthCloseButton           : CGFloat = 2
+	static let NumberOfImagesHomeView           : UInt      = 5
+	static let NumberOfImagesBiography          : UInt      = 10
+    static let NumberOfImagesCollectionInstagram: CGFloat   = 3
+    static let NumberOfImagesInstagram          : Int       = 23
+    static let MaxZoomImageScrollView           : CGFloat   = 4
+    static let MinZommImageScrollView           : CGFloat   = 1
+    static let CornerRadiusCloseButton          : CGFloat   = 4
+    static let BorderWidthCloseButton           : CGFloat   = 2
     static let StandardAnimation                : NSTimeInterval = 0.3
 }
 
@@ -126,7 +126,7 @@ struct ARTwitterKeys {
     static let ConsumerKey                  : String = "5i97w3KY8DpmMW9lfMmtj5iBx"
     static let ConsumerSecret               : String = "cfOwwSLE3Zy9Oo2p7cQcX5tPdDit7ZvfTlsmYJFN5bh3RCKcSA"
     static let ArmiesScreenName             : String = "Armiescompany"
-    static let NumberOfTwitters             : UInt    = 20
+    static let NumberOfTwitters             : UInt   = 20
     
     struct JSonKey {
         static let TwitterText              : String = "text"

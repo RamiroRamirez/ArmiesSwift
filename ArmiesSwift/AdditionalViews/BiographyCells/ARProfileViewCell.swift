@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ARProfileViewCell						: UITableViewCell {
+class ARProfileViewCell                             : UITableViewCell {
 
-	@IBOutlet var panoramPhotoImageView		: UIImageView?
-	@IBOutlet var profilPhotoImageView		: UIImageView?
+	@IBOutlet private var panoramPhotoImageView		: UIImageView?
+	@IBOutlet private var profilPhotoImageView		: UIImageView?
 
-	func setCell() {
+    func setupCell(profilePhoto: UIImage?, panoramaPhoto: UIImage?) {
 		self.configurateProfileImage()
+        self.profilPhotoImageView?.image = profilePhoto
+        self.panoramPhotoImageView?.image = panoramaPhoto
 	}
 
 	//MARK: - Private methods

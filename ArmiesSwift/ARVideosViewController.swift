@@ -90,8 +90,7 @@ extension ARVideosViewController: UITableViewDelegate, UITableViewDataSource {
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SectionVideoCells.SectionVideoCell.rawValue) as? ARVideoSectionCell
         }
-        cell?.titleVideoSectionLabel?.text = ARVideoSection.allValues()[indexPath.row].title()
-        cell?.videoSectionImageView?.image = UIImage(named: ARVideoSection.allValues()[indexPath.row].iconImage())
+        cell?.setupCell(ARVideoSection.allValues()[indexPath.row].title(), image: UIImage(named: ARVideoSection.allValues()[indexPath.row].iconImage()))
         return (cell ?? UITableViewCell())
     }
     
