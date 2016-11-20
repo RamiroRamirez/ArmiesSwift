@@ -32,7 +32,7 @@ class ARImagesViewController            : ARViewController {
     
     private func createImageArray() {
         let basicString = "InstagramArmies"
-        for var i = 1; i < ARHarcodedConstants.NumberOfImagesInstagram; i++ {
+        for i in 1 ..< ARHarcodedConstants.NumberOfImagesInstagram {
             let imageName = basicString + String(i) + ".jpg"
             if let _image = UIImage(named: imageName) {
                 self.imageArray?.append(_image)

@@ -59,7 +59,7 @@ class ARImageViewerViewController           : UIViewController {
     }
 
 	private func configurateGestureRecognizer() {
-		let gestureRecognizer = UIPanGestureRecognizer(target: self, action: "hazAlgo:")
+		let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ARImageViewerViewController.hazAlgo(_:)))
 		self.view.addGestureRecognizer(gestureRecognizer)
 	}
 
