@@ -72,7 +72,7 @@ extension ARImagesCell: iCarouselDataSource, iCarouselDelegate {
         let imageButton = ARImageButton()
         imageButton.frame = (imageView?.frame ?? CGRectZero)
         imageButton.backgroundColor = UIColor.clearColor()
-        imageButton.addTarget(self, action: "imagePressed:", forControlEvents: .TouchDown)
+        imageButton.addTarget(self, action: #selector(ARImagesCell.imagePressed(_:)), forControlEvents: .TouchDown)
         if let
             _image = self.skater?.images?[Int(index)] {
                 imageView?.addSubview(imageButton)

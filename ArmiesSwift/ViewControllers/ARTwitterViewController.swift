@@ -58,7 +58,7 @@ class ARTwitterViewController       : UIViewController {
     
     private func configurateRefreshControl() {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(ARTwitterViewController.refresh(_:)), forControlEvents: .ValueChanged)
         self.tableView?.addSubview(refreshControl)
     }
     
