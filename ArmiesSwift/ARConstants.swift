@@ -118,6 +118,7 @@ struct ARHarcodedConstants {
     static let MinZommImageScrollView           : CGFloat = 1
     static let CornerRadiusCloseButton          : CGFloat = 4
     static let BorderWidthCloseButton           : CGFloat = 2
+    static let StandardAnimation                : NSTimeInterval = 0.3
 }
 
 struct ARTwitterKeys {

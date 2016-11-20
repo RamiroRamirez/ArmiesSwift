@@ -8,17 +8,16 @@
 
 import UIKit
 
-class ARImageViewerViewController           : UIViewController {
+class ARImageViewerViewController                   : UIViewController {
     
-    @IBOutlet weak var scrollImageView      : UIScrollView?
-    @IBOutlet weak var imageView            : UIImageView?
-    @IBOutlet weak var closeButton          : UIButton?
+    @IBOutlet private weak var scrollImageView      : UIScrollView?
+    @IBOutlet private weak var imageView            : UIImageView?
+    @IBOutlet private weak var closeButton          : UIButton?
     
-    var armieImage                          : UIImage?
-	var centerImageView						: CGPoint?
-
-	var distanceX							: CGFloat = 0
-	var distanceY							: CGFloat = 0
+	private var centerImageView                     : CGPoint?
+	private var distanceX                           : CGFloat = 0
+	private var distanceY                           : CGFloat = 0
+    var armieImage                                  : UIImage?
     
     //MARK: - View Life cycle
     
@@ -34,7 +33,7 @@ class ARImageViewerViewController           : UIViewController {
 		self.centerImageView = self.imageView?.center
 	}
     
-    //MARK: - Private methods
+    //MARK: - General Helpers
     
     private func initialConfigurations() {
 		self.imageView?.image = self.armieImage
@@ -66,16 +65,16 @@ class ARImageViewerViewController           : UIViewController {
 	}
 
 	private func closeWithAnimation() {
-		UIView.animateWithDuration(0.3, animations: {
-
-				self.imageView?.alpha = 0.2
-			}) { (succeeded: Bool) in
-				self.dismissViewControllerAnimated(true, completion: nil)
-		}
+        
+		UIView.animateWithDuration(ARHarcodedConstants.StandardAnimation, animations: { [weak self] in
+            self?.imageView?.alpha = 0.2
+        }, completion: { [weak self] (succeeded: Bool) in
+            self?.dismissViewControllerAnimated(true, completion: nil)
+		})
 	}
 
 	private func imageViewChangePositionAndAlpha(viewLocation: CGPoint) {
-		UIView.animateWithDuration(0.3) {
+		UIView.animateWithDuration(ARHarcodedConstants.StandardAnimation) {
 			self.imageView?.center = CGPointMake(viewLocation.x - self.distanceX, viewLocation.y - self.distanceY)
 		}
 	}
@@ -89,16 +88,16 @@ class ARImageViewerViewController           : UIViewController {
 		if (sender.state == UIGestureRecognizerState.Changed) {
 			self.imageViewChangePositionAndAlpha(sender.locationInView(self.view))
 
-		} else {
-			if (sender.state == .Ended) {
-				if (sender.locationInView(self.view).y < self.view.center.y) {
-					self.closeWithAnimation()
-				} else {
-					UIView.animateWithDuration(0.3) {
-						self.imageView?.center = (self.centerImageView ?? self.view.center)
-					}
-				}
-			}
+		} else if (sender.state == .Ended) {
+            if (sender.locationInView(self.view).y < self.view.center.y) {
+                self.closeWithAnimation()
+            } else {
+                UIView.animateWithDuration(ARHarcodedConstants.StandardAnimation) { [weak self] in
+                    if let _view = self?.view {
+                        self?.imageView?.center = (self?.centerImageView ?? _view.center)
+                    }
+                }
+            }
 		}
 	}
     
