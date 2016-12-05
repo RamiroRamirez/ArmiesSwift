@@ -12,9 +12,9 @@ class ARSkaterCell                                  : UITableViewCell {
     
     // MARK: - IBOutlets
 
-	@IBOutlet private var profileImageView			: UIImageView?
-	@IBOutlet private var nameLabel					: UILabel?
-	@IBOutlet private var cityLabel					: UILabel?
+	@IBOutlet private weak var profileImageView		: UIImageView?
+	@IBOutlet private weak var nameLabel			: UILabel?
+	@IBOutlet private weak var cityLabel			: UILabel?
     
 	// MARK: - Configuration Methods
 
