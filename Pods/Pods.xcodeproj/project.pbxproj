@@ -678,6 +678,20 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					3634ABA74A6F41DB3C7516A583373EE8 = {
+						DevelopmentTeam = WEUMM3X4MB;
+					};
+					595F9D5C8BA8E5BE4CE97FB33A2F1907 = {
+						DevelopmentTeam = WEUMM3X4MB;
+					};
+					B5C24522E47039D05E9D792F5AA893BA = {
+						DevelopmentTeam = WEUMM3X4MB;
+					};
+					C3AAC7026505AA67E5E48DC98F926D26 = {
+						DevelopmentTeam = WEUMM3X4MB;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -829,6 +843,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CB84825184FA075E48A17B7B4AB68F7 /* STTwitter.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -844,6 +859,7 @@
 				MODULEMAP_FILE = "Target Support Files/STTwitter/STTwitter.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = STTwitter;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -856,6 +872,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -871,6 +888,7 @@
 				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = youtube_ios_player_helper;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -913,6 +931,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56A5BC26AC87A6D9B63605C2A4654EAA /* ECSlidingViewController.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -928,6 +947,7 @@
 				MODULEMAP_FILE = "Target Support Files/ECSlidingViewController/ECSlidingViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = ECSlidingViewController;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -940,6 +960,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -955,6 +976,7 @@
 				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = youtube_ios_player_helper;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -967,6 +989,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A00CBC6CF5E815065C28E88F48B0EDEB /* iCarousel.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -982,6 +1005,7 @@
 				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = iCarousel;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1057,6 +1081,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56A5BC26AC87A6D9B63605C2A4654EAA /* ECSlidingViewController.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1072,6 +1097,7 @@
 				MODULEMAP_FILE = "Target Support Files/ECSlidingViewController/ECSlidingViewController.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = ECSlidingViewController;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1114,6 +1140,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CB84825184FA075E48A17B7B4AB68F7 /* STTwitter.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1129,6 +1156,7 @@
 				MODULEMAP_FILE = "Target Support Files/STTwitter/STTwitter.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = STTwitter;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1141,6 +1169,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A00CBC6CF5E815065C28E88F48B0EDEB /* iCarousel.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1156,6 +1185,7 @@
 				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = iCarousel;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
