@@ -70,7 +70,7 @@ extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //get the width of the screen device
-        let widthOfImage = (self.view.frame.width ?? 0) / ARHarcodedConstants.NumberOfImagesCollectionInstagram
+        let widthOfImage = (self.view.frame.width) / ARHarcodedConstants.NumberOfImagesCollectionInstagram
         return CGSize(width: widthOfImage, height: widthOfImage)
     }
     
