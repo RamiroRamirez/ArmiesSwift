@@ -16,16 +16,16 @@ class ARImageButton                             : UIButton {
 
 class ARImagesCell                              : UITableViewCell {
 
-	@IBOutlet private weak var photosTitleLabel	: UILabel?
-	@IBOutlet private weak var carousel			: iCarousel?
-    @IBOutlet private weak var pageControl      : UIPageControl?
+	@IBOutlet fileprivate weak var photosTitleLabel	: UILabel?
+	@IBOutlet fileprivate weak var carousel			: iCarousel?
+    @IBOutlet fileprivate weak var pageControl      : UIPageControl?
     
-    private var skater                          : ARSkater?
-    private var imageSelected                   :((image: UIImage?) -> Void)? = nil
+    fileprivate var skater                          : ARSkater?
+    fileprivate var imageSelected                   :((_ image: UIImage?) -> Void)? = nil
 
 	// MARK: - Public Methods
 
-    func setupCell(skater: ARSkater?, imageSelectedBlock: ((image: UIImage?) -> Void)?) {
+    func setupCell(_ skater: ARSkater?, imageSelectedBlock: ((_ image: UIImage?) -> Void)?) {
         self.skater = skater
         self.imageSelected = imageSelectedBlock
 		self.photosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_PHOTOS", comment: "")
@@ -36,13 +36,13 @@ class ARImagesCell                              : UITableViewCell {
     
     // MARK: - Public Methods
     
-    func imagePressed(sender: ARImageButton?) {
-        self.imageSelected?(image: sender?.image)
+    func imagePressed(_ sender: ARImageButton?) {
+        self.imageSelected?(sender?.image)
     }
 
 	// MARK: - Private Methods
 
-	private func setupCarousel() {
+	fileprivate func setupCarousel() {
 		self.carousel?.type = iCarouselTypeRotary
 		self.carousel?.bounces = false
 		self.carousel?.clipsToBounds = true
@@ -57,24 +57,24 @@ extension ARImagesCell: iCarouselDataSource, iCarouselDelegate {
     
     //MARK: - Implementation iCarouselDataSource Protocol
     
-    func numberOfItemsInCarousel(carousel: iCarousel!) -> UInt {
+    func numberOfItems(in carousel: iCarousel!) -> UInt {
         return UInt(self.skater?.images?.count ?? 0)
     }
     
-    func carousel(carousel: iCarousel!, viewForItemAtIndex index: UInt, reusingView view: UIView!) -> UIView! {
+    func carousel(_ carousel: iCarousel!, viewForItemAt index: UInt, reusing view: UIView!) -> UIView! {
         // if the view is nil, create a new one with the frame of the carousel view
         var imageView : UIImageView?
-        imageView = ((view == nil) ? UIImageView(frame: CGRectMake(0, 0, (self.carousel?.frame.size.width ?? 0), (self.carousel?.frame.size.height ?? 0))) : view as? UIImageView)
-        imageView?.contentMode = .ScaleAspectFill
+        imageView = ((view == nil) ? UIImageView(frame: CGRect(x: 0, y: 0, width: (self.carousel?.frame.size.width ?? 0), height: (self.carousel?.frame.size.height ?? 0))) : view as? UIImageView)
+        imageView?.contentMode = .scaleAspectFill
         if let _image = self.skater?.images?[Int(index)] {
             imageView?.image = UIImage(named: _image)
         }
         
         // create button
         let imageButton = ARImageButton()
-        imageButton.frame = (imageView?.frame ?? CGRectZero)
-        imageButton.backgroundColor = UIColor.clearColor()
-        imageButton.addTarget(self, action: #selector(ARImagesCell.imagePressed(_:)), forControlEvents: .TouchDown)
+        imageButton.frame = (imageView?.frame ?? CGRect.zero)
+        imageButton.backgroundColor = UIColor.clear
+        imageButton.addTarget(self, action: #selector(ARImagesCell.imagePressed(_:)), for: .touchDown)
         if let _image = self.skater?.images?[Int(index)] {
             imageView?.addSubview(imageButton)
             imageButton.image = UIImage(named: _image)
@@ -84,7 +84,7 @@ extension ARImagesCell: iCarouselDataSource, iCarouselDelegate {
 
     //MARK: - Implementation iCarouselDelegate Protocol
     
-    func carouselDidEndScrollingAnimation(carousel: iCarousel!) {
+    func carouselDidEndScrollingAnimation(_ carousel: iCarousel!) {
         self.pageControl?.currentPage = carousel.currentItemIndex
     }
 }

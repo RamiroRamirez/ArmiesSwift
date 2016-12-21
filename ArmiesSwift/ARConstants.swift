@@ -72,39 +72,39 @@ enum ARCellHeightConstants {
 
 	enum MenuCells 							: CGFloat {
 
-		case MenuCell						= 60
+		case menuCell						= 60
 	}
 
 	enum BiographyCells						: CGFloat {
 
-		case ProfileImageCell				= 230
-		case InfoCell						= 224
-		case ImagesCell						= 400
-		case VideosCell						= 1101
+		case profileImageCell				= 230
+		case infoCell						= 224
+		case imagesCell						= 400
+		case videosCell						= 1101
 	}
     
 	enum SkaterCells						: CGFloat {
 
-		case SkaterCell						= 70
+		case skaterCell						= 70
 	}
     
     enum VideoCells                         : CGFloat {
         
-        case TitleCell                      = 70
-        case VideoCell                      = 350
+        case titleCell                      = 70
+        case videoCell                      = 350
     }
     
     enum TwitterCells                       : CGFloat {
         
-        case TwitterCellSmallDevice         = 120
-        case TwitterCellBigDevice           = 85
+        case twitterCellSmallDevice         = 120
+        case twitterCellBigDevice           = 85
     }
     
     enum HomeCells                          : CGFloat {
         
-        case TextCell                       = 100
-        case ImageCell                      = 250
-        case SkatersCell                    = 135
+        case textCell                       = 100
+        case imageCell                      = 250
+        case skatersCell                    = 135
     }
 }
 
@@ -118,7 +118,7 @@ struct ARHarcodedConstants {
     static let MinZommImageScrollView           : CGFloat   = 1
     static let CornerRadiusCloseButton          : CGFloat   = 4
     static let BorderWidthCloseButton           : CGFloat   = 2
-    static let StandardAnimation                : NSTimeInterval = 0.3
+    static let StandardAnimation                : TimeInterval = 0.3
 }
 
 struct ARTwitterKeys {

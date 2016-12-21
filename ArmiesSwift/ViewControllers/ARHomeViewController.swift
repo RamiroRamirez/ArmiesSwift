@@ -10,76 +10,76 @@ import UIKit
 import iCarousel
 
 enum ARHomeCell       : Int {
-    case FirstText = 0
-    case FirstImage
-    case SecondText
-    case SecondImage
-    case ThirdImage
-    case ThirdText
-    case Skaters
+    case firstText = 0
+    case firstImage
+    case secondText
+    case secondImage
+    case thirdImage
+    case thirdText
+    case skaters
     
     static func allValues() -> [ARHomeCell] {
-        return [.FirstText, .FirstImage, .SecondText, .SecondImage, .ThirdImage, .ThirdText, .Skaters]
+        return [.firstText, .firstImage, .secondText, .secondImage, .thirdImage, .thirdText, .skaters]
     }
     
-    func cell(tableView: UITableView?) -> UITableViewCell? {
+    func cell(_ tableView: UITableView?) -> UITableViewCell? {
         switch self {
-        case .FirstText     : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
-        case .FirstImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
-        case .SecondText    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
-        case .SecondImage   : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
-        case .ThirdImage    : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
-        case .ThirdText     : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
-        case .Skaters       : return tableView?.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.HomeCells.SkatersCell.rawValue)
+        case .firstText     : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .firstImage    : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .secondText    : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .secondImage   : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .thirdImage    : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .thirdText     : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .skaters       : return tableView?.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.HomeCells.SkatersCell.rawValue)
         }
     }
     
     func reuseCell() -> UITableViewCell? {
         switch self {
-        case .FirstText     : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
-        case .FirstImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
-        case .SecondText    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
-        case .SecondImage   : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
-        case .ThirdImage    : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
-        case .ThirdText     : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
-        case .Skaters       : return UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.SkatersCell.rawValue)
+        case .firstText     : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .firstImage    : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .secondText    : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .secondImage   : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .thirdImage    : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.ImageCell.rawValue)
+        case .thirdText     : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.TextCell.rawValue)
+        case .skaters       : return UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.HomeCells.SkatersCell.rawValue)
         }
     }
     
     func text() -> String? {
         // TODO: Needs to be localised!!! This is just temporal
         switch self {
-        case .FirstText     : return "Armies es un grupo de patinadores mexicano radicando en la ciudad de Monterrey"
-        case .FirstImage    : return nil
-        case .SecondText    : return "Conoce nuestra app"
-        case .SecondImage   : return nil
-        case .ThirdImage    : return nil
-        case .ThirdText     : return "Conoce a los Skaters"
-        case .Skaters       : return nil
+        case .firstText     : return "Armies es un grupo de patinadores mexicano radicando en la ciudad de Monterrey"
+        case .firstImage    : return nil
+        case .secondText    : return "Conoce nuestra app"
+        case .secondImage   : return nil
+        case .thirdImage    : return nil
+        case .thirdText     : return "Conoce a los Skaters"
+        case .skaters       : return nil
         }
     }
     
     func image() -> UIImage? {
         switch self {
-        case .FirstText     : return nil
-        case .FirstImage    : return UIImage(named: "ArmiesAll2.jpg")
-        case .SecondText    : return nil
-        case .SecondImage   : return UIImage(named: "ArmiesAll3.jpg")
-        case .ThirdImage    : return UIImage(named: "ArmiesAll4.jpg")
-        case .ThirdText     : return nil
-        case .Skaters       : return nil
+        case .firstText     : return nil
+        case .firstImage    : return UIImage(named: "ArmiesAll2.jpg")
+        case .secondText    : return nil
+        case .secondImage   : return UIImage(named: "ArmiesAll3.jpg")
+        case .thirdImage    : return UIImage(named: "ArmiesAll4.jpg")
+        case .thirdText     : return nil
+        case .skaters       : return nil
         }
     }
     
     func heighCell() -> CGFloat {
         switch self {
-        case .FirstText     : return ARCellHeightConstants.HomeCells.TextCell.rawValue
-        case .FirstImage    : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
-        case .SecondText    : return ARCellHeightConstants.HomeCells.TextCell.rawValue
-        case .SecondImage   : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
-        case .ThirdImage    : return ARCellHeightConstants.HomeCells.ImageCell.rawValue
-        case .ThirdText     : return ARCellHeightConstants.HomeCells.TextCell.rawValue
-        case .Skaters       : return ARCellHeightConstants.HomeCells.SkatersCell.rawValue
+        case .firstText     : return ARCellHeightConstants.HomeCells.textCell.rawValue
+        case .firstImage    : return ARCellHeightConstants.HomeCells.imageCell.rawValue
+        case .secondText    : return ARCellHeightConstants.HomeCells.textCell.rawValue
+        case .secondImage   : return ARCellHeightConstants.HomeCells.imageCell.rawValue
+        case .thirdImage    : return ARCellHeightConstants.HomeCells.imageCell.rawValue
+        case .thirdText     : return ARCellHeightConstants.HomeCells.textCell.rawValue
+        case .skaters       : return ARCellHeightConstants.HomeCells.skatersCell.rawValue
         }
     }
 }
@@ -88,7 +88,7 @@ class ARHomeViewController                  : ARViewController {
 
 	//MARK: - Outlets
 
-    @IBOutlet private weak var tableView    : UITableView?
+    @IBOutlet fileprivate weak var tableView    : UITableView?
     
 	//MARK: - View Life Cycle
 
@@ -100,22 +100,22 @@ class ARHomeViewController                  : ARViewController {
 
 	//MARK: - Private Methods
 
-	private func initialConfigurations() {
-		self.title = ARMenuOption.Home.titleMenu()
+	fileprivate func initialConfigurations() {
+		self.title = ARMenuOption.home.titleMenu()
 	}
     
     //MARK: - Actions
     
-    @IBAction func twitterButtonPressed(sender: AnyObject) {
-        self.slidingViewController().anchorTopViewToLeftAnimated(true)
+    @IBAction func twitterButtonPressed(_ sender: AnyObject) {
+        self.slidingViewController().anchorTopViewToLeft(animated: true)
     }
     
     //MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == ARSegues.OpenBiography.rawValue) {
             let skater = sender as? ARSkater
-            let vc = segue.destinationViewController as? ARBiographyViewController
+            let vc = segue.destination as? ARBiographyViewController
             vc?.skater = skater
         }
     }
@@ -125,13 +125,13 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - Implementation UITableViewDataSource Protocol
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ARHomeCell.allValues().count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = ARHomeCell.allValues()[indexPath.row]
-        if (cellType == .FirstText || cellType == .SecondText || cellType == .ThirdText) {
+        if (cellType == .firstText || cellType == .secondText || cellType == .thirdText) {
             var cell = cellType.cell(tableView) as? ARTextHomeCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARTextHomeCell
@@ -139,7 +139,7 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
             cell?.setupCell(cellType.text())
             return (cell ?? UITableViewCell())
             
-        } else if (cellType == .FirstImage || cellType == .SecondImage || cellType == .ThirdImage) {
+        } else if (cellType == .firstImage || cellType == .secondImage || cellType == .thirdImage) {
             var cell = cellType.cell(tableView) as? ARImageHomeCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARImageHomeCell
@@ -147,7 +147,7 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
             cell?.setupCell(cellType.image())
             return (cell ?? UITableViewCell())
             
-        } else if (cellType == .Skaters) {
+        } else if (cellType == .skaters) {
             var cell = cellType.cell(tableView) as? ARSkatersCell
             if (cell == nil) {
                 cell = cellType.reuseCell() as? ARSkatersCell
@@ -161,7 +161,7 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     // MARK: - Implementation UITableViewDelegate Protocol
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let cellType = ARHomeCell.allValues()[indexPath.row]
         return cellType.heighCell()
     }
@@ -169,18 +169,18 @@ extension ARHomeViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ARHomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (ARSkateCreator.skaters?.count ?? 0)
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.HomeCells.SkaterCollectionCell.rawValue, forIndexPath: indexPath) as? ARSkaterCollectionCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ARCellReuseIdentifier.HomeCells.SkaterCollectionCell.rawValue, for: indexPath) as? ARSkaterCollectionCell
         cell?.setupCell(skater: ARSkateCreator.skaters?[indexPath.row])
         // Configure the cell
         return (cell ?? UICollectionViewCell())
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: ARSkateCreator.skaters?[indexPath.row])
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: ARSegues.OpenBiography.rawValue, sender: ARSkateCreator.skaters?[indexPath.row])
     }
 }

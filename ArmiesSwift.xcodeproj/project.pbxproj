@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		200E9C9150BC84C498AF07E2 /* Pods_ArmiesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */; };
 		28614F5F1BA60B780095FC87 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28614F5E1BA60B780095FC87 /* ARViewController.swift */; };
 		28AAF2E41BA38BF00079A936 /* ARAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AAF2E31BA38BF00079A936 /* ARAppDelegate.swift */; };
 		28AAF2E91BA38BF00079A936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AAF2E71BA38BF00079A936 /* Main.storyboard */; };
@@ -107,9 +106,12 @@
 		B6C35B941BF90A8800EF5DDB /* selim4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C35B881BF90A8800EF5DDB /* selim4.png */; };
 		B6C35B971BF90E7F00EF5DDB /* splashScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C35B961BF90E7F00EF5DDB /* splashScreen.jpg */; };
 		B6C35B991BF90FCD00EF5DDB /* ARSkateCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C35B981BF90FCD00EF5DDB /* ARSkateCreator.swift */; };
+		C3BC5152349F2FE600C7D903 /* Pods_ArmiesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1355244D177A7F5B934CC6EF /* Pods_ArmiesSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1355244D177A7F5B934CC6EF /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E658369A5ADA010362FD503 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		28614F5E1BA60B780095FC87 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARViewController.swift; path = ViewControllers/ARViewController.swift; sourceTree = "<group>"; };
 		28AAF2DE1BA38BF00079A936 /* ArmiesSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmiesSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28AAF2E21BA38BF00079A936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,8 +139,6 @@
 		28F0B6021BC14D7E006D0A7A /* ARMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARMenuCell.swift; path = AdditionalViews/ARMenuCell.swift; sourceTree = "<group>"; };
 		28F0B6061BC153CD006D0A7A /* ARExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARExtensions.swift; sourceTree = "<group>"; };
 		28F0B6091BC15742006D0A7A /* ARSkater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkater.swift; path = Models/ARSkater.swift; sourceTree = "<group>"; };
-		5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
-		7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B638AE6A1BF8B5770093F5D5 /* ARSkatersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkatersCell.swift; path = AdditionalViews/HomeCells/ARSkatersCell.swift; sourceTree = "<group>"; };
 		B638AE6C1BF8B9560093F5D5 /* ARSkaterCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkaterCollectionCell.swift; path = AdditionalViews/HomeCells/ARSkaterCollectionCell.swift; sourceTree = "<group>"; };
 		B64B61BF1BE6C89A0074E029 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -216,7 +216,7 @@
 		B6C35B881BF90A8800EF5DDB /* selim4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selim4.png; sourceTree = "<group>"; };
 		B6C35B961BF90E7F00EF5DDB /* splashScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splashScreen.jpg; sourceTree = "<group>"; };
 		B6C35B981BF90FCD00EF5DDB /* ARSkateCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkateCreator.swift; path = Helper/ARSkateCreator.swift; sourceTree = "<group>"; };
-		DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C63655ED8D080751326035 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +228,7 @@
 				B64B61C41BE6C8A70074E029 /* Social.framework in Frameworks */,
 				B64B61C21BE6C8A00074E029 /* Twitter.framework in Frameworks */,
 				B64B61C01BE6C89A0074E029 /* Accounts.framework in Frameworks */,
-				200E9C9150BC84C498AF07E2 /* Pods_ArmiesSwift.framework in Frameworks */,
+				C3BC5152349F2FE600C7D903 /* Pods_ArmiesSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +242,7 @@
 				B64B61C31BE6C8A70074E029 /* Social.framework */,
 				B64B61C11BE6C8A00074E029 /* Twitter.framework */,
 				B64B61BF1BE6C89A0074E029 /* Accounts.framework */,
-				DB29731A17BBA11E8B7061D7 /* Pods_ArmiesSwift.framework */,
+				1355244D177A7F5B934CC6EF /* Pods_ArmiesSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,8 +252,8 @@
 			children = (
 				28AAF2E01BA38BF00079A936 /* ArmiesSwift */,
 				28AAF2DF1BA38BF00079A936 /* Products */,
-				66E3A84C9E3375E68F4FC5AE /* Pods */,
 				0CCF9FA5C3465A55B1EE5757 /* Frameworks */,
+				683BE1FDBB9C17E7D0ACDCD2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -353,11 +353,11 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		66E3A84C9E3375E68F4FC5AE /* Pods */ = {
+		683BE1FDBB9C17E7D0ACDCD2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */,
-				5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */,
+				1E658369A5ADA010362FD503 /* Pods-ArmiesSwift.debug.xcconfig */,
+				E9C63655ED8D080751326035 /* Pods-ArmiesSwift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -534,12 +534,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28AAF2FD1BA38BF10079A936 /* Build configuration list for PBXNativeTarget "ArmiesSwift" */;
 			buildPhases = (
-				052129C4604CEC8B95FC2392 /* Check Pods Manifest.lock */,
+				BBC5BEF0791746EF067D9932 /* [CP] Check Pods Manifest.lock */,
 				28AAF2DA1BA38BF00079A936 /* Sources */,
 				28AAF2DB1BA38BF00079A936 /* Frameworks */,
 				28AAF2DC1BA38BF00079A936 /* Resources */,
-				599F5DEC7F9ED541BE3A12F1 /* Copy Pods Resources */,
-				876CE412ACE60D7DCA06A97F /* Embed Pods Frameworks */,
+				77895753702344318038DA14 /* [CP] Embed Pods Frameworks */,
+				FAE4A94B488F9DA05E326A41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -563,6 +563,7 @@
 					28AAF2DD1BA38BF00079A936 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = WEUMM3X4MB;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -661,49 +662,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		052129C4604CEC8B95FC2392 /* Check Pods Manifest.lock */ = {
+		77895753702344318038DA14 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		599F5DEC7F9ED541BE3A12F1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		876CE412ACE60D7DCA06A97F /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC5BEF0791746EF067D9932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE4A94B488F9DA05E326A41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -865,7 +866,7 @@
 		};
 		28AAF2FE1BA38BF10079A936 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F10A7B40B51B9BE46C1E157 /* Pods-ArmiesSwift.debug.xcconfig */;
+			baseConfigurationReference = 1E658369A5ADA010362FD503 /* Pods-ArmiesSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -876,12 +877,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "43f1d21a-3c00-49f2-8793-821cb38c1e8e";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArmiesSwift/Headers/Armies-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		28AAF2FF1BA38BF10079A936 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D0128AFB5D4F6E9805A3160 /* Pods-ArmiesSwift.release.xcconfig */;
+			baseConfigurationReference = E9C63655ED8D080751326035 /* Pods-ArmiesSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
@@ -892,6 +894,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "43f1d21a-3c00-49f2-8793-821cb38c1e8e";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArmiesSwift/Headers/Armies-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

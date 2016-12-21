@@ -6,7 +6,7 @@ target 'ArmiesSwift' do
     pod 'STTwitter', '~> 0.2.2'
     pod 'iCarousel', '~> 1.7.6'
     use_frameworks!
-    pod 'youtube-ios-player-helper', '~> 0.1.4'
+    pod 'youtube-ios-player-helper', '~> 0.1.6'
 end
 
 

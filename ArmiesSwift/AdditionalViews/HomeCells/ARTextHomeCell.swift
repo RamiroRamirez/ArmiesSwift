@@ -12,11 +12,11 @@ class ARTextHomeCell                                : UITableViewCell {
 
     // MARK: - Outlets
     
-    @IBOutlet private weak var armiesTextLabel      : UILabel?
+    @IBOutlet fileprivate weak var armiesTextLabel      : UILabel?
     
     // MARK: - Configurate Methods
     
-    func setupCell(text: String?) {
+    func setupCell(_ text: String?) {
         self.armiesTextLabel?.text = text
     }
 }

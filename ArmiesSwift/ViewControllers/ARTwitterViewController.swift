@@ -16,7 +16,7 @@ class ARTwitterViewController               : UIViewController {
     
     // Oultlets
     
-    @IBOutlet private weak var tableView    : UITableView?
+    @IBOutlet fileprivate weak var tableView    : UITableView?
 
 	//MARK: - View Life Cycle
 
@@ -28,17 +28,17 @@ class ARTwitterViewController               : UIViewController {
 
 	//MARK: - Private Methods
 
-	private func initialConfigurations() {
+	fileprivate func initialConfigurations() {
         self.configurateTwitter(nil)
         self.configurateRefreshControl()
 	}
     
-    private func configurateTwitter(refreshControl: UIRefreshControl?) {
+    fileprivate func configurateTwitter(_ refreshControl: UIRefreshControl?) {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.ConsumerKey, consumerSecret: ARTwitterKeys.ConsumerSecret)
         // Verify credentials
-        twitter.verifyCredentialsWithSuccessBlock({ [weak self] (bearerToken) in
-            twitter.getUserTimelineWithScreenName(ARTwitterKeys.ArmiesScreenName, count: ARTwitterKeys.NumberOfTwitters, successBlock: { (statuses) in
+        twitter?.verifyCredentials(successBlock: { [weak self] (bearerToken) in
+            twitter?.getUserTimeline(withScreenName: ARTwitterKeys.ArmiesScreenName, count: ARTwitterKeys.NumberOfTwitters, successBlock: { (statuses) in
                 // reset twitters array
                 self?.twitters?.removeAll()
                 // the information was received from twitter endpoint
@@ -57,13 +57,13 @@ class ARTwitterViewController               : UIViewController {
         })
     }
     
-    private func configurateRefreshControl() {
+    fileprivate func configurateRefreshControl() {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(ARTwitterViewController.refresh(_:)), forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(ARTwitterViewController.refresh(_:)), for: .valueChanged)
         self.tableView?.addSubview(refreshControl)
     }
     
-    private func fetchInfosFromTwitter(twitterInfos: [[String: AnyObject]]?) {
+    fileprivate func fetchInfosFromTwitter(_ twitterInfos: [[String: AnyObject]]?) {
         for dictionary in twitterInfos ?? [] {
             
             // fetch text to dislay
@@ -79,7 +79,7 @@ class ARTwitterViewController               : UIViewController {
     
     // MARK: - Public methods
     
-    func refresh(refreshControl: UIRefreshControl) {
+    func refresh(_ refreshControl: UIRefreshControl) {
         // Do your job, when done:
         self.configurateTwitter(refreshControl)
         refreshControl.endRefreshing()
@@ -90,20 +90,20 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
     
     //MARK: - Implementation UITableViewDataSource Protocol
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.twitters?.count ?? 0)
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (self.image == nil),
             let _urlImage = self.twitters?[indexPath.row].urlImage,
-            let _url = NSURL(string: _urlImage),
-            let _imageData = NSData(contentsOfURL: _url) {
+            let _url = URL(string: _urlImage),
+            let _imageData = try? Data(contentsOf: _url) {
                 self.image = UIImage(data: _imageData)
         }
-        var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
+            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: ARCellReuseIdentifier.TwitterCells.TwitterCell.rawValue) as? ARTwitterCell
         }
         cell?.setupCell(self.twitters?[indexPath.row].text, image: self.image)
         return (cell ?? UITableViewCell())
@@ -111,11 +111,11 @@ extension ARTwitterViewController   : UITableViewDataSource, UITableViewDelegate
     
     //MARK: - Implementation UITableViewDelegate Protocol
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (UIDevice.isBigDevice() == true) {
-            return ARCellHeightConstants.TwitterCells.TwitterCellBigDevice.rawValue
+            return ARCellHeightConstants.TwitterCells.twitterCellBigDevice.rawValue
         } else {
-            return ARCellHeightConstants.TwitterCells.TwitterCellSmallDevice.rawValue
+            return ARCellHeightConstants.TwitterCells.twitterCellSmallDevice.rawValue
         }
         
     }

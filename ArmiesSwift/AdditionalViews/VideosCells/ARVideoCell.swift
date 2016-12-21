@@ -14,13 +14,13 @@ class ARVideoCell                           : UITableViewCell {
     
     // MARK: - Outlets
 
-    @IBOutlet private weak var playerView   : YTPlayerView?
+    @IBOutlet fileprivate weak var playerView   : YTPlayerView?
     
     // MARK: - Public Methods
     
-    func setupCell(videoYouTubeId: String?) {
+    func setupCell(_ videoYouTubeId: String?) {
         if let videoId = videoYouTubeId {
-            self.playerView?.loadWithVideoId(videoId)
+            self.playerView?.load(withVideoId: videoId)
         }
     }
 }

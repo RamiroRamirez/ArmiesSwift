@@ -7,279 +7,261 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		079715EC2874549562FD4DEE6C5453B5 /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3D9C74FE3948795B1AFBC3D4F2976F /* NSString+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		0A9BFC5FC97E6BB57C3CDE7747D93896 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 69534DEBF0CA0DA2319D7B03989AB6F1 /* Assets */; };
-		0CEFA52D89DD1876FEDC5EE4E361EFEE /* STHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A898E354FC38CAE6AFCB6434172B8F3F /* STHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E48BBC341D153A3B2350992F13E268F /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C850A928CC65FE56FB2EDCE84C403952 /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11D74B913CEADD643A98EFA5471862E9 /* ECSlidingAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE213B481D0374DD25B6B82B8021447 /* ECSlidingAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11E5C78D6450FAF7B7EA388831C13AFC /* STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C73CAB8A35BBC61A869AC5FD244286 /* STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DD52F3BB00DDC121960AFCDC8899B37 /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E21984B6B1D0F4487564E9C12BFEE /* STHTTPRequest+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2323FBAFBD658269F9A0F9E70973065B /* ECSlidingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB66D0175DE612F5BA768127B4140DE /* ECSlidingConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2877BCD5DDBD38095E8046B1D460ABAC /* STTwitterOSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E226F33810425927864D56DAE60FE8D2 /* STTwitterOSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		299603F8B1ED3E70BB01BB1EDC793CB6 /* ECSlidingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FD652CD3B7B4A7811296F0164E956CDB /* ECSlidingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B69D1079DF5F79CCB4DF26C5C17B4B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */; };
-		2CE0AC41492F2B9568A7927E9BC29702 /* STTwitterHTML.h in Headers */ = {isa = PBXBuildFile; fileRef = FD699AB3D9CA54C75B9ECC8EDAAB5ED0 /* STTwitterHTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E8D975029F4668DD71AFD5B1CAE0FB4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E558656AFCB7DF4310F8BA077DD165 /* QuartzCore.framework */; };
-		31F8F8532D09402C2D177B4868A0E441 /* Pods-ArmiesSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A6F55F8E7E84250813B0980F8DB2AE /* Pods-ArmiesSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36912EEEEB2DD4C53784371E03B01E00 /* NSError+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = D2ECA751A9E66F905FAA83F1859397F8 /* NSError+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37C48F730C1B60AC174029EFA2CA72E1 /* STTwitter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD3638A96159E206271A38065C7EFD5B /* STTwitter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DDA1DAA9F628443E294BD44718C1B3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */; };
-		3F34463DA6AE11FB1812C967ACF79E95 /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1D247922EF282BC825E2D550590EF /* NSDateFormatter+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		45EB7C33BF27047C79739C48A105280B /* BAVPlistNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 784EE74C7071759F773447038E9D2D99 /* BAVPlistNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		461949B833C00795DDB4C84FE8FAD721 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA0CD8D1A40438A88C70099EA54ED1F /* ECPercentDrivenInteractiveTransition.m */; };
-		489F62EE4B13496CD653B4C9BFAEB751 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 71930A009C10677D774B28EAE4CC7C8A /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4D6E7596B0D384469F5D2F63D12F6921 /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A79642A708F63BAA42819DB7C23E2C /* STTwitterOS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4F8FD43741B3E0453625E6EEAF34FB37 /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6A8D44804392E20638A180CCD903B5 /* STTwitterAppOnly.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		50577F308183BF20209620B3BC9D3641 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A8B60B841B349E28232366CAF7B59B /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		537C78C11A7017B7172B45B657EEA5DC /* ECSlidingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D54A1369EBF09DFE6B9124AD6DC525A /* ECSlidingViewController-dummy.m */; };
-		5E22510FA977E4031DB03B02C57ED2F1 /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7817446D4C856B5E42373B550984C4FE /* NSError+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5E3A4A4794B330BE08D844BACE3CF1D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E558656AFCB7DF4310F8BA077DD165 /* QuartzCore.framework */; };
-		72D92147317FEF240C13A0E1AE5D4A1E /* STTwitter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E8644D7CDFB03FAB8F5FA6F069228E /* STTwitter-dummy.m */; };
-		7ACCEDE9432CB3FBA152E9300F3623E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */; };
-		7C6F324CC79F447580AAB556C761961E /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB60F8803EAFF9F75768869E988C21A /* YTPlayerView.m */; };
-		7E469297D13BDF4295A3D5BB9ACF782F /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = CD40E62A7610753B84A81D4922530EB0 /* STTwitterAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8610DEFA57CDE12B45DEA6F39A0FFECE /* STTwitterOSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DB8D763F38F473C62BA20A40614675B1 /* STTwitterOSRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1F3F92EFD12D50F2F0FD53960DD89B /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B48D42F31AF0DAE3428D32F3D89C5E9 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB76E1E182B553EFF70163A6D5F95A /* ECSlidingAnimationController.m */; };
-		94277B231667D6AE5A775A7D5B31F3AC /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = C465CAD072F644AEAF7DA902507080C6 /* JSONSyntaxHighlight.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9F59F5E4C31345BE00FDBDE081619B18 /* NSString+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 04CFA5425252E8C86BB20EA0541B288D /* NSString+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9FD351EBB432E7BCEED11C085D326C73 /* STTwitterOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 8339D2A2DF6C8D566488A51B4BD5405B /* STTwitterOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0770AC312F997C104BA0FA135835330 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AF8E38E4E102A7BA9A534546C98EA0 /* CoreGraphics.framework */; };
-		A25A491A3A23C10F6824C6AD3D5529E3 /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E461B991E848D59EC94A92D5150B7E /* STTwitterOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A29730F8F4D0516B47866436BF68876B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E2806A819E0408B677AFF1CEE9D96D /* UIKit.framework */; };
-		A47943DF505255D311462579D02AD92F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E49025524B420C4CA10BFED95BB5100 /* Accounts.framework */; };
-		A4F5EF8A9CF95D16F825525838C6E934 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F317352FA902C7BB380E1CB80FC00D /* UIViewController+ECSlidingViewController.m */; };
-		B0E6E85C58D942AB26B9DBA39DDF2837 /* Pods-ArmiesSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7365957695E9277B059F8A1A825D5DBD /* Pods-ArmiesSwift-dummy.m */; };
-		B11324685A0DA7649F54D35C5E83813D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */; };
-		B6668B981744AB928A436117E0EBC957 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D964B6F76C0463A62271E948B5DB87E8 /* Twitter.framework */; };
-		B8469E0A2E7D95523714EFA3F22D1A11 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A4AA728ED68F42B462345F714B98C6 /* ECSlidingViewController.m */; };
-		B85728BC2FA68C60DE8B97A10963CA23 /* STTwitterAppOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = 97D7D8C412059E03E71F03F2777044DD /* STTwitterAppOnly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBD2B0CFA4D7D158E4911613547F343B /* ECSlidingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA5AB07E7DF8A65CB70F3AFCBA21C67 /* ECSlidingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE13E34B70738CE4DEF3A9EE913A86A6 /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E1A1B0B5719AF93B67A3E9BBC8CA03 /* STTwitterHTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4DED5E940544A7D4348B748D3952E8 /* iCarousel-dummy.m */; };
-		C5BDD855457511ED35185DD7F691D205 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E8AB7173A45A8A075B9D4A861B460F3D /* Assets.bundle */; };
-		CDBC1CBD50B2E7BD4FEC2917EB56D9E0 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3033664117A8184373D6AEBDC5D16B /* ECSlidingSegue.m */; };
-		CF31C7BDC0046F1BCFB81E68B0C4C7CB /* STTwitterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D9601A5BCE0C18515B78D40AADEF1F /* STTwitterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D13599D26AF5EBE370DFC4CC170DC1F5 /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2058F3AD4E80C8D0F24513EB854DC /* BAVPlistNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D5C7774525E0366054CA8BDF3096D5A0 /* STHTTPRequest+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = F8BDF2A6180CA08C4E7C7DF71AE0AD04 /* STHTTPRequest+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB2A7CF7946796711BCB86863CE873A9 /* ECSlidingInteractiveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F86BB6E75FF4742125889616F3507D /* ECSlidingInteractiveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE42831D31EF322C58576E18D14149FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */; };
-		E3B756EA4C29ECE2DF8C704A59FDE9A7 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 45011032EDE6D0B30B13172DF308AC65 /* ECSlidingInteractiveTransition.m */; };
-		E3CE5492E6AF5B60C722C13E2A2DE492 /* ECSlidingSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 391ECD74A869CDDBB89280927C9FFC61 /* ECSlidingSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E75302171595B3E46016FB59552D8B46 /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 674D67632D2B27BDFD273EF4B6773A10 /* STHTTPRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		EA3ACA1880C50368912823168F647DFA /* STTwitterAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 152A264D264640124C0442973E971F73 /* STTwitterAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED49E745C2A2A2487B68C7922CE1AC7F /* JSONSyntaxHighlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 1711595E31A07AC11F18B7C558758EFE /* JSONSyntaxHighlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D70B5E737A3FE5B9F8274175E6C5096 /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F296384FF00425D2E07A00F722BA6932 /* NSDateFormatter+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F97CF030B51CD58490008AC7DA5AB3 /* NSDateFormatter+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F465B50B54EE9955FF860724F5E7B554 /* ECPercentDrivenInteractiveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 158662107BBFF90D3D066F40ECFBAAB6 /* ECPercentDrivenInteractiveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD6F91514F1CA3F17EEFE1FD0CD86ED5 /* STTwitterOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C61B6086F2579941510A076045C09317 /* STTwitterOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDFDFE865FA24BE76204F50D05374465 /* UIViewController+ECSlidingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E7816B7BF257C4AE328B7C253375AE /* UIViewController+ECSlidingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFFB7405E136DBC737F1ED96885922DB /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57950BE92203DB4CA11245CFE5EEC722 /* youtube-ios-player-helper-dummy.m */; };
+		02E7E5182489D61C3C88D56EE87D8907 /* Pods-ArmiesSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7365957695E9277B059F8A1A825D5DBD /* Pods-ArmiesSwift-dummy.m */; };
+		032E7B8E1C7BB0F8962CAE110D6FE48E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971DC1AC5E634647F67ACA330E9E6B2F /* QuartzCore.framework */; };
+		047C59F993A0F3F7EF938E424A36F048 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCA82881384BBDD7684FD0FFA8EDD3 /* Twitter.framework */; };
+		0F8F5EB550B7E50377B427D1E71E5E78 /* JSONSyntaxHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6BE845C03B203C39AC8AB95ABE237C /* JSONSyntaxHighlight.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		147ACC3AFB3139285D9FB1EBDB69DB1F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA21FF9E83E8C09868561DF40F21E0D /* CoreGraphics.framework */; };
+		14A4438DEEC2F6982075DF41955A1E7E /* STTwitterStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8111745C70C55903A824673273CDCE71 /* STTwitterStreamParser.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		17616180B4FA05D9AFE43B5F2362E977 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA9E09D6AB45B72714B0F4B3966695 /* ECSlidingSegue.m */; };
+		186CCEE63639380AF54219B047FECBC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0913202D1026AE948141A6CC995754EC /* Foundation.framework */; };
+		201FD74FC215A9CCC2B76281C1E3246C /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 964412AC438A002591BF56752C02E149 /* YTPlayerView.m */; };
+		208E871A651F903D900B0010E4DE829F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971DC1AC5E634647F67ACA330E9E6B2F /* QuartzCore.framework */; };
+		21D73299581075FB7368DA9FDAD8DAA6 /* iCarousel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1480DC9E073966CF5E5412F239DFBED6 /* iCarousel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2309C45CAFB9C18C83E82474EFA17C1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0913202D1026AE948141A6CC995754EC /* Foundation.framework */; };
+		255BC51027C579DF60DE6F689463B71E /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6C4DD1EED21A690962CFC85F0A468 /* youtube-ios-player-helper-dummy.m */; };
+		2E1A9B92AEA97279024AA103EDC765D7 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71AEAD50E049AF1390BDB298ADC466BA /* Assets.bundle */; };
+		3344F0C6074FD05F005A0E69EA8282F1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388E131020F3472F9B332EFD01869365 /* Accounts.framework */; };
+		379A080D463D5D7F67A02BA41CC880CD /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BB819339D98F1E8FFAEF01A60466A7EC /* STHTTPRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		38003688EAD8344D74DCC00074F8CE18 /* STTwitterOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 93DB046558551DD0311251AC74B5926A /* STTwitterOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A81D039FED8BE2E5141C58AF9C8572E /* ECSlidingInteractiveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 299024BBCB447D3DFC40BAC73883380B /* ECSlidingInteractiveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BD7DBD01E9C970E19C7622CE910BCA3 /* ECSlidingSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECE235AABD3E707F4F2094AED64F48C /* ECSlidingSegue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F53B366F763E1D02DDD1C187C67C08F /* STTwitterOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA98E2505D948B921961506B612235 /* STTwitterOS.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		42AB1FECEA05D010E88AE7DAE2BF44B4 /* STTwitterOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB707FED7FCB03AEC3C81D13372263D /* STTwitterOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46B4CA45BAB4A37E6D40193F06A1FBA2 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4E12A9B3FB4D4313BC9DEB9EEBDC95 /* ECSlidingViewController.m */; };
+		4C702F737C9D4B62A2F6AF4B3976628A /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63D61B4CEA7EAA3B112FE5174CDF29D /* ECSlidingAnimationController.m */; };
+		57813CCC2C92D3B4D0811BB3907CB3B4 /* ECSlidingAnimationController.h in Headers */ = {isa = PBXBuildFile; fileRef = A8B960253D5B11623E6FFAEAC2DEE154 /* ECSlidingAnimationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A5D535FE36BE272C935946FEBBFD9F /* STTwitter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2174EF41368FC67B728C25BC9F82D9 /* STTwitter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67B7847487C3FE21AB42AAA536F2DCFB /* NSString+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B9B6A763782F8B206185C6DA2E96E8 /* NSString+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		69AED18AC680EB5EA4D8C103B82E77DE /* STTwitterStreamParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB074BE36C0C27C6482373D72227894 /* STTwitterStreamParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A90F76465D995ABA7697769CDC26601 /* STTwitterAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E11BE185348A1056C25E28E58E5836 /* STTwitterAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C4986A33EE0D75E3B19E605E185E998 /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF9F93F341BE1ACEF4E2B5F55576F6 /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76D63E5C44A439A773EE01CC730E1F2E /* STTwitterHTML.h in Headers */ = {isa = PBXBuildFile; fileRef = A6581EB07E0E074C5D588F3B66B2E211 /* STTwitterHTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A2838A5081146FF89FB98329376F2FE /* STTwitterOSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 888D40768482C5F0FE50B35E864D1816 /* STTwitterOSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DC05E062369A69C27BD4141446876D7 /* STHTTPRequest+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E1970C2DF4E9932E63B52F72A98CC5 /* STHTTPRequest+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		819B4A190ED16D841702DE5B79CD1715 /* BAVPlistNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAAC42A497B95C19ACEBFFC0FCAFFFC /* BAVPlistNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		820ADABF3278A67DC71CBD75DFB2AE6F /* iCarousel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 494FD185FF7E6481FCF6BAB7FFB6D3F7 /* iCarousel-dummy.m */; };
+		822E8BDF4DAF6F6CE1D0E832441B9468 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0913202D1026AE948141A6CC995754EC /* Foundation.framework */; };
+		84393DA8742F3F24277DF7F61F4AF6CD /* ECSlidingViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD787086B5B6AD59B8D205B3406356B /* ECSlidingViewController-dummy.m */; };
+		861B7669212AAE5E3FC5CF1CBD20E504 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 546E24179F1911458A7F56F29334FB15 /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		883DB31376DE7C038B01E40448AD6920 /* ECSlidingViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 545C2891008CE3399D6CBDEFACDDB400 /* ECSlidingViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A70F288E7B09AFC6BBE5C9A2558BF66 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F535EBBCCB4758D51002C7FF84811 /* iCarousel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F1DDA4CB4E383DC3B7C396ECC75F0DC /* BAVPlistNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8091B9670410A20E9DFCFA469833D1 /* BAVPlistNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94C51BB91C5E593CA598C78BEBCB6849 /* STTwitterOSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F3FE03AEF91B5BCD66E7C01A9FF3FC /* STTwitterOSRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		956CD156A2D8F58FEBCC65D161D349C2 /* STTwitterRequestProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6F4396A169204BA7EF381715FB9F9B /* STTwitterRequestProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B2CFB4CFA9E9219D3571C562AC145E2 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CD32398BE000CEAF8F1F8D4A3C8024A3 /* ECSlidingInteractiveTransition.m */; };
+		A12B8AF9ACDAC8C445915070D9AF0BF5 /* STTwitterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB095FD9118A4E9F239F8BB1B7E1F8D /* STTwitterAPI.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A235B543B3F6C66A146C631917248607 /* NSString+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D6DFD7AE5ADF3BFAB0C8F43ADAFD8DC /* NSString+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A72C70CBF5E98A63940C4285AE992320 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F656102C5347F04BCE32107A994D64CE /* ECPercentDrivenInteractiveTransition.m */; };
+		ACD2DB3B79F8DF1D10B19D8723853719 /* STTwitterOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 563C6F1023AE6FBBC59CF129ECE53338 /* STTwitterOAuth.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD63C637F7F0B8F13E72F061645F18DE /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B5DDC59A9A0DA77B1D71176BD692CB /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF581A6DC46DBE5CC86CCC2F41FCF69F /* Pods-ArmiesSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A6F55F8E7E84250813B0980F8DB2AE /* Pods-ArmiesSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B162DABAC4AC75DD84AE5D18BB8E20A0 /* STHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A56B9840670D1CF0FEC0552BC792F58 /* STHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA41F1B1922EEE2F761D8572BD5DB053 /* ECSlidingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32CBCF1A071AF497D89B49D9E678BD4E /* ECSlidingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1477BE698EEF81DC46951DAFB488BF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0913202D1026AE948141A6CC995754EC /* Foundation.framework */; };
+		C2FE065C15D7A1A53122F1B748D1490F /* ECPercentDrivenInteractiveTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = C90966D136A9999CE4A9A1FBE0CBAC68 /* ECPercentDrivenInteractiveTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8A971C6BB8B4EF78B1F88F3F56E1FF3 /* NSDateFormatter+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2506913C151D65A5F1563CAA0A3D0358 /* NSDateFormatter+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9BC6044951EE8F79F22070E0D1933F8 /* ECSlidingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B176F39D8B898A43F2ED0D3CE2160DE /* ECSlidingConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB08386CFE537D955FA990A3B98A69DD /* UIViewController+ECSlidingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A51CCE69EA88DE81F6F7D9F5A2F91949 /* UIViewController+ECSlidingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD42274EB5659248732D7D98190AE281 /* STTwitterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5AABDA477692381663116CB689DE99 /* STTwitterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D09DF1C49573B4F681E2242B922C8718 /* STTwitterAppOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = 135887640873F0F9C9591139339D6F39 /* STTwitterAppOnly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E712BC1E0E60DB8DA406293EE0F04F /* JSONSyntaxHighlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 098F9505D1709E7D22F83FC8DACA3737 /* JSONSyntaxHighlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3A490A6B1A39702BCD635CCE54E9A99 /* STTwitter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF0797B1579149AD3E9DDDA3359A12 /* STTwitter-dummy.m */; };
+		D6CCC7BAE3F6F2A529522EE8EE5E6B1B /* STTwitterHTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 946EF8089D24AF419028B98946BD1A15 /* STTwitterHTML.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DAC17E9F658C2D9A2479C9C26D8A0605 /* NSError+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC791F0A06D814A5E51992150D395D6 /* NSError+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DEDB45E6C4FD400C3A70C01FABC98B81 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE364EA89D43A2C6D608D4DF5622D5B /* UIViewController+ECSlidingViewController.m */; };
+		E1BFE331F38A87558887B9E4CBEC72CB /* NSDateFormatter+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1008682D631206A61E2934ECA1442DB3 /* NSDateFormatter+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E3FCAAC73DC1C47754AD488CF998F05E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EBD4FB0A823E1A62532B6BD904619F /* UIKit.framework */; };
+		F0B292D7CD9BE85130AB9C20C5EEBBA7 /* STHTTPRequest+STTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8331C61ED567BDE3105F91662ED314 /* STHTTPRequest+STTwitter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		FA3E7D1A3D261A31AE12189886A97751 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0913202D1026AE948141A6CC995754EC /* Foundation.framework */; };
+		FDE42FBC7CF008982CCFD0DA86F33F75 /* NSError+STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = E800DC38081A62386CF3B80F18FA8C9B /* NSError+STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFCDEA66383D6518E8F7413C39C89210 /* STTwitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F78C98776DB80A91A4BCFD1E1975066 /* STTwitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFDB378ADF89E903BC9628AA2BA11022 /* STTwitterAppOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C83DB32AAB81B97C6442042232DF2AD /* STTwitterAppOnly.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		09E35214966B698F045447DC186EB4FE /* PBXContainerItemProxy */ = {
+		C290396091EBFABC0DDBFB64D7AE184E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C3AAC7026505AA67E5E48DC98F926D26;
-			remoteInfo = ECSlidingViewController;
-		};
-		825AA8B64092AC2731927CFCDD861291 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5C24522E47039D05E9D792F5AA893BA;
-			remoteInfo = STTwitter;
-		};
-		E252FBF544AA861D4C97470C5104CA77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6B38E4A8929DFBCCEAE97D537A5FC885;
-			remoteInfo = "youtube-ios-player-helper-Assets";
-		};
-		E94E0D9C3011B215362221CF5761EE13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 595F9D5C8BA8E5BE4CE97FB33A2F1907;
+			remoteGlobalIDString = C562DE3540AD855948C79BB5DDF1C72A;
 			remoteInfo = "youtube-ios-player-helper";
 		};
-		F73DAD2E8AA432D5B460FB2566CDF372 /* PBXContainerItemProxy */ = {
+		CAFB8624A1B0E506E7940F3B70701D4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3634ABA74A6F41DB3C7516A583373EE8;
+			remoteGlobalIDString = 0CCEE450DEF32E835082B7243D5EBFF4;
+			remoteInfo = ECSlidingViewController;
+		};
+		CC57F90D690D4F21538E347693F31367 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8D8C363B343A0778AE6633D70E11749;
 			remoteInfo = iCarousel;
+		};
+		F2404CF6ECE277040B31B68B07D2F88B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D22CF3AF96A19B672E022861D1D308B6;
+			remoteInfo = STTwitter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00825644C463B76694FB1D02AA50F46D /* ECSlidingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECSlidingViewController-prefix.pch"; sourceTree = "<group>"; };
 		00A6B0F53210366E40D8E610A02268C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01E2806A819E0408B677AFF1CEE9D96D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		030C0C7156F9D0B81EBAB3E3C2AB3BB4 /* iCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = iCarousel.modulemap; sourceTree = "<group>"; };
-		04CFA5425252E8C86BB20EA0541B288D /* NSString+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+STTwitter.h"; path = "STTwitter/NSString+STTwitter.h"; sourceTree = "<group>"; };
+		04EBD4FB0A823E1A62532B6BD904619F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0913202D1026AE948141A6CC995754EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		098F9505D1709E7D22F83FC8DACA3737 /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = STTwitter/Vendor/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
 		0992D961317BE184205D719E49BACAE7 /* Pods-ArmiesSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArmiesSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		0AA5AB07E7DF8A65CB70F3AFCBA21C67 /* ECSlidingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECSlidingViewController-umbrella.h"; sourceTree = "<group>"; };
-		0C3033664117A8184373D6AEBDC5D16B /* ECSlidingSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingSegue.m; path = ECSlidingViewController/ECSlidingSegue.m; sourceTree = "<group>"; };
-		0D3D9C74FE3948795B1AFBC3D4F2976F /* NSString+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+STTwitter.m"; path = "STTwitter/NSString+STTwitter.m"; sourceTree = "<group>"; };
-		0FF1D247922EF282BC825E2D550590EF /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+STTwitter.m"; path = "STTwitter/NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
-		152A264D264640124C0442973E971F73 /* STTwitterAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAPI.h; path = STTwitter/STTwitterAPI.h; sourceTree = "<group>"; };
-		158662107BBFF90D3D066F40ECFBAAB6 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECPercentDrivenInteractiveTransition.h; path = ECSlidingViewController/ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
-		15A79642A708F63BAA42819DB7C23E2C /* STTwitterOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOS.m; path = STTwitter/STTwitterOS.m; sourceTree = "<group>"; };
-		15F317352FA902C7BB380E1CB80FC00D /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ECSlidingViewController.m"; path = "ECSlidingViewController/UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
-		1711595E31A07AC11F18B7C558758EFE /* JSONSyntaxHighlight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONSyntaxHighlight.h; path = STTwitter/Vendor/JSONSyntaxHighlight.h; sourceTree = "<group>"; };
+		09CA98E2505D948B921961506B612235 /* STTwitterOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOS.m; path = STTwitter/STTwitterOS.m; sourceTree = "<group>"; };
+		0BE1B737B8DEFC30394453227D42E664 /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iCarousel.framework; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FB707FED7FCB03AEC3C81D13372263D /* STTwitterOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOAuth.h; path = STTwitter/STTwitterOAuth.h; sourceTree = "<group>"; };
+		1008682D631206A61E2934ECA1442DB3 /* NSDateFormatter+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDateFormatter+STTwitter.m"; path = "STTwitter/NSDateFormatter+STTwitter.m"; sourceTree = "<group>"; };
+		135887640873F0F9C9591139339D6F39 /* STTwitterAppOnly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAppOnly.h; path = STTwitter/STTwitterAppOnly.h; sourceTree = "<group>"; };
+		1480DC9E073966CF5E5412F239DFBED6 /* iCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-umbrella.h"; sourceTree = "<group>"; };
 		1A13B86A2F57BB632E2F4A0B57B430EF /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
-		1D54A1369EBF09DFE6B9124AD6DC525A /* ECSlidingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ECSlidingViewController-dummy.m"; sourceTree = "<group>"; };
-		24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		26F97CF030B51CD58490008AC7DA5AB3 /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+STTwitter.h"; path = "STTwitter/NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
-		29A8B60B841B349E28232366CAF7B59B /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
-		2D988F3924BB2218C0AB25C8534197AB /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
-		2EA0CD8D1A40438A88C70099EA54ED1F /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECPercentDrivenInteractiveTransition.m; path = ECSlidingViewController/ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
-		30AF8E38E4E102A7BA9A534546C98EA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.xcconfig"; sourceTree = "<group>"; };
-		391ECD74A869CDDBB89280927C9FFC61 /* ECSlidingSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingSegue.h; path = ECSlidingViewController/ECSlidingSegue.h; sourceTree = "<group>"; };
-		41E461B991E848D59EC94A92D5150B7E /* STTwitterOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOAuth.m; path = STTwitter/STTwitterOAuth.m; sourceTree = "<group>"; };
-		43A4AA728ED68F42B462345F714B98C6 /* ECSlidingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingViewController.m; path = ECSlidingViewController/ECSlidingViewController.m; sourceTree = "<group>"; };
-		45011032EDE6D0B30B13172DF308AC65 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingInteractiveTransition.m; path = ECSlidingViewController/ECSlidingInteractiveTransition.m; sourceTree = "<group>"; };
-		4BD6F9BA75828E35D7C45EF8C8AE923D /* ECSlidingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ECSlidingViewController.modulemap; sourceTree = "<group>"; };
+		1A56B9840670D1CF0FEC0552BC792F58 /* STHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHTTPRequest.h; path = STTwitter/Vendor/STHTTPRequest.h; sourceTree = "<group>"; };
+		1D5AABDA477692381663116CB689DE99 /* STTwitterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterProtocol.h; path = STTwitter/STTwitterProtocol.h; sourceTree = "<group>"; };
+		1E8091B9670410A20E9DFCFA469833D1 /* BAVPlistNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAVPlistNode.h; path = STTwitter/Vendor/BAVPlistNode.h; sourceTree = "<group>"; };
+		230A1DE960283840E723A55CC8BA65C5 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = youtube_ios_player_helper.framework; path = "youtube-ios-player-helper.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2506913C151D65A5F1563CAA0A3D0358 /* NSDateFormatter+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDateFormatter+STTwitter.h"; path = "STTwitter/NSDateFormatter+STTwitter.h"; sourceTree = "<group>"; };
+		25DD9B5277A75EEF0959F1B41300349E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25E22ED7EABB387DD89492895CD72CEB /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ArmiesSwift.framework; path = "Pods-ArmiesSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		299024BBCB447D3DFC40BAC73883380B /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingInteractiveTransition.h; path = ECSlidingViewController/ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
+		2B6BE845C03B203C39AC8AB95ABE237C /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = STTwitter/Vendor/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
+		2EC791F0A06D814A5E51992150D395D6 /* NSError+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+STTwitter.m"; path = "STTwitter/NSError+STTwitter.m"; sourceTree = "<group>"; };
+		328BFF9EA66E21B23CBFC67EE5907269 /* STTwitter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-prefix.pch"; sourceTree = "<group>"; };
+		32CBCF1A071AF497D89B49D9E678BD4E /* ECSlidingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingViewController.h; path = ECSlidingViewController/ECSlidingViewController.h; sourceTree = "<group>"; };
+		35EDDDCE6451251A7EDAC8CD83D7DCDE /* STTwitter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STTwitter.xcconfig; sourceTree = "<group>"; };
+		388E131020F3472F9B332EFD01869365 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
+		44BC10539A429712BC2E2A407A5C3F6A /* ECSlidingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ECSlidingViewController.framework; path = ECSlidingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		494FD185FF7E6481FCF6BAB7FFB6D3F7 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
+		4CFCA82881384BBDD7684FD0FFA8EDD3 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Twitter.framework; sourceTree = DEVELOPER_DIR; };
+		4D6DFD7AE5ADF3BFAB0C8F43ADAFD8DC /* NSString+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+STTwitter.h"; path = "STTwitter/NSString+STTwitter.h"; sourceTree = "<group>"; };
+		4DA21FF9E83E8C09868561DF40F21E0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		507609EC24C46838ACB86F92144D6C43 /* ECSlidingViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ECSlidingViewController.modulemap; sourceTree = "<group>"; };
 		5078AF407538F2151BCC7E03F0B2DBE8 /* Pods-ArmiesSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArmiesSwift-frameworks.sh"; sourceTree = "<group>"; };
-		56A5BC26AC87A6D9B63605C2A4654EAA /* ECSlidingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECSlidingViewController.xcconfig; sourceTree = "<group>"; };
-		57950BE92203DB4CA11245CFE5EEC722 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
-		5940A3B2F23BCC97DE41D1BE5DBF290D /* Pods_ArmiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62E558656AFCB7DF4310F8BA077DD165 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		630D207A324478E4B3BC2A08B8A4C778 /* STTwitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STTwitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		674D67632D2B27BDFD273EF4B6773A10 /* STHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STHTTPRequest.m; path = STTwitter/Vendor/STHTTPRequest.m; sourceTree = "<group>"; };
+		545C2891008CE3399D6CBDEFACDDB400 /* ECSlidingViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECSlidingViewController-umbrella.h"; sourceTree = "<group>"; };
+		546E24179F1911458A7F56F29334FB15 /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
+		558E3C45D1C14665738E8177D94EDF67 /* ECSlidingViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ECSlidingViewController-prefix.pch"; sourceTree = "<group>"; };
+		563C6F1023AE6FBBC59CF129ECE53338 /* STTwitterOAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOAuth.m; path = STTwitter/STTwitterOAuth.m; sourceTree = "<group>"; };
+		5C6F4396A169204BA7EF381715FB9F9B /* STTwitterRequestProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterRequestProtocol.h; path = STTwitter/STTwitterRequestProtocol.h; sourceTree = "<group>"; };
+		5CD787086B5B6AD59B8D205B3406356B /* ECSlidingViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ECSlidingViewController-dummy.m"; sourceTree = "<group>"; };
+		5CE8BB6CEEE97DD30EBEA0AEDCEFFB65 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6022A47642D95A60FF5E256D9F034A37 /* STTwitter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = STTwitter.modulemap; sourceTree = "<group>"; };
+		60BF0797B1579149AD3E9DDDA3359A12 /* STTwitter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STTwitter-dummy.m"; sourceTree = "<group>"; };
 		6910CABB894FB27986BA2ABA6291F1CD /* Pods-ArmiesSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ArmiesSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		69534DEBF0CA0DA2319D7B03989AB6F1 /* Assets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		69FEC338D80A9FA0AA6AF8905D2D6EBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		71930A009C10677D774B28EAE4CC7C8A /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		6CB095FD9118A4E9F239F8BB1B7E1F8D /* STTwitterAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAPI.m; path = STTwitter/STTwitterAPI.m; sourceTree = "<group>"; };
+		6F78C98776DB80A91A4BCFD1E1975066 /* STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitter.h; path = STTwitter/STTwitter.h; sourceTree = "<group>"; };
+		6FE364EA89D43A2C6D608D4DF5622D5B /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ECSlidingViewController.m"; path = "ECSlidingViewController/UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		71AEAD50E049AF1390BDB298ADC466BA /* Assets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Assets.bundle; path = "youtube-ios-player-helper/Assets.bundle"; sourceTree = "<group>"; };
+		72954055A365EA6318117A5175468126 /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
 		72A6F55F8E7E84250813B0980F8DB2AE /* Pods-ArmiesSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ArmiesSwift-umbrella.h"; sourceTree = "<group>"; };
 		7365957695E9277B059F8A1A825D5DBD /* Pods-ArmiesSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ArmiesSwift-dummy.m"; sourceTree = "<group>"; };
-		7418B2AE86E2F746BB51AAA50222E40E /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
-		7817446D4C856B5E42373B550984C4FE /* NSError+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+STTwitter.m"; path = "STTwitter/NSError+STTwitter.m"; sourceTree = "<group>"; };
-		784EE74C7071759F773447038E9D2D99 /* BAVPlistNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BAVPlistNode.h; path = STTwitter/Vendor/BAVPlistNode.h; sourceTree = "<group>"; };
+		7B176F39D8B898A43F2ED0D3CE2160DE /* ECSlidingConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingConstants.h; path = ECSlidingViewController/ECSlidingConstants.h; sourceTree = "<group>"; };
 		7B461E8B39685F25A6046A13332D129F /* Pods-ArmiesSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ArmiesSwift-acknowledgements.plist"; sourceTree = "<group>"; };
-		7CB84825184FA075E48A17B7B4AB68F7 /* STTwitter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STTwitter.xcconfig; sourceTree = "<group>"; };
-		8339D2A2DF6C8D566488A51B4BD5405B /* STTwitterOAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOAuth.h; path = STTwitter/STTwitterOAuth.h; sourceTree = "<group>"; };
-		8CB60F8803EAFF9F75768869E988C21A /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
-		8D4E21984B6B1D0F4487564E9C12BFEE /* STHTTPRequest+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "STHTTPRequest+STTwitter.m"; path = "STTwitter/STHTTPRequest+STTwitter.m"; sourceTree = "<group>"; };
-		8DE213B481D0374DD25B6B82B8021447 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingAnimationController.h; path = ECSlidingViewController/ECSlidingAnimationController.h; sourceTree = "<group>"; };
-		90E8644D7CDFB03FAB8F5FA6F069228E /* STTwitter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STTwitter-dummy.m"; sourceTree = "<group>"; };
-		97D7D8C412059E03E71F03F2777044DD /* STTwitterAppOnly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAppOnly.h; path = STTwitter/STTwitterAppOnly.h; sourceTree = "<group>"; };
-		99F86BB6E75FF4742125889616F3507D /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingInteractiveTransition.h; path = ECSlidingViewController/ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
-		9B707ED821EC79213386DC075453969D /* ECSlidingViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ECSlidingViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D70B5E737A3FE5B9F8274175E6C5096 /* iCarousel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-umbrella.h"; sourceTree = "<group>"; };
-		9E49025524B420C4CA10BFED95BB5100 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
-		9FEB76E1E182B553EFF70163A6D5F95A /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingAnimationController.m; path = ECSlidingViewController/ECSlidingAnimationController.m; sourceTree = "<group>"; };
-		A00CBC6CF5E815065C28E88F48B0EDEB /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
-		A757C38D7FBEDED4A7F1F98960B69E04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A898E354FC38CAE6AFCB6434172B8F3F /* STHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STHTTPRequest.h; path = STTwitter/Vendor/STHTTPRequest.h; sourceTree = "<group>"; };
-		A8C73CAB8A35BBC61A869AC5FD244286 /* STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitter.h; path = STTwitter/STTwitter.h; sourceTree = "<group>"; };
+		7ECE235AABD3E707F4F2094AED64F48C /* ECSlidingSegue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingSegue.h; path = ECSlidingViewController/ECSlidingSegue.h; sourceTree = "<group>"; };
+		8111745C70C55903A824673273CDCE71 /* STTwitterStreamParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterStreamParser.m; path = STTwitter/STTwitterStreamParser.m; sourceTree = "<group>"; };
+		888D40768482C5F0FE50B35E864D1816 /* STTwitterOSRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOSRequest.h; path = STTwitter/STTwitterOSRequest.h; sourceTree = "<group>"; };
+		8AB6C4DD1EED21A690962CFC85F0A468 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
+		8AEA9E09D6AB45B72714B0F4B3966695 /* ECSlidingSegue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingSegue.m; path = ECSlidingViewController/ECSlidingSegue.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93DB046558551DD0311251AC74B5926A /* STTwitterOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOS.h; path = STTwitter/STTwitterOS.h; sourceTree = "<group>"; };
+		946EF8089D24AF419028B98946BD1A15 /* STTwitterHTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterHTML.m; path = STTwitter/STTwitterHTML.m; sourceTree = "<group>"; };
+		9535E08339F2DCDA3985A34B1281B5A4 /* iCarousel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iCarousel.xcconfig; sourceTree = "<group>"; };
+		961473619DB225653525890E91257A8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964412AC438A002591BF56752C02E149 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Classes/YTPlayerView.m; sourceTree = "<group>"; };
+		96BF9F93F341BE1ACEF4E2B5F55576F6 /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		971DC1AC5E634647F67ACA330E9E6B2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9A66811410864C339CCAA07A2223C9A0 /* ECSlidingViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ECSlidingViewController.xcconfig; sourceTree = "<group>"; };
+		9C83DB32AAB81B97C6442042232DF2AD /* STTwitterAppOnly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAppOnly.m; path = STTwitter/STTwitterAppOnly.m; sourceTree = "<group>"; };
+		9EEAD37B0D855DADA28AF1EFC2E81719 /* youtube-ios-player-helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.xcconfig"; sourceTree = "<group>"; };
+		A21F535EBBCCB4758D51002C7FF84811 /* iCarousel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		A3521295891C8995D3E0D2E9E4966FBC /* iCarousel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = iCarousel.modulemap; sourceTree = "<group>"; };
+		A51CCE69EA88DE81F6F7D9F5A2F91949 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ECSlidingViewController.h"; path = "ECSlidingViewController/UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
+		A6581EB07E0E074C5D588F3B66B2E211 /* STTwitterHTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterHTML.h; path = STTwitter/STTwitterHTML.h; sourceTree = "<group>"; };
+		A8B960253D5B11623E6FFAEAC2DEE154 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingAnimationController.h; path = ECSlidingViewController/ECSlidingAnimationController.h; sourceTree = "<group>"; };
+		A9E11BE185348A1056C25E28E58E5836 /* STTwitterAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterAPI.h; path = STTwitter/STTwitterAPI.h; sourceTree = "<group>"; };
+		ABAAC42A497B95C19ACEBFFC0FCAFFFC /* BAVPlistNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAVPlistNode.m; path = STTwitter/Vendor/BAVPlistNode.m; sourceTree = "<group>"; };
 		ABB1FB19D314A89F1F8E9AAF8C97E0E3 /* Pods-ArmiesSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ArmiesSwift-resources.sh"; sourceTree = "<group>"; };
-		AD3638A96159E206271A38065C7EFD5B /* STTwitter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-umbrella.h"; sourceTree = "<group>"; };
-		AE6F9E5BB98B88AEF06B52942B68334A /* iCarousel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iCarousel-prefix.pch"; sourceTree = "<group>"; };
-		B02EAEE5F67429AE713CB3E9F9516C70 /* Pods-ArmiesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ArmiesSwift.modulemap"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BDB66D0175DE612F5BA768127B4140DE /* ECSlidingConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingConstants.h; path = ECSlidingViewController/ECSlidingConstants.h; sourceTree = "<group>"; };
-		C465CAD072F644AEAF7DA902507080C6 /* JSONSyntaxHighlight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONSyntaxHighlight.m; path = STTwitter/Vendor/JSONSyntaxHighlight.m; sourceTree = "<group>"; };
-		C61B6086F2579941510A076045C09317 /* STTwitterOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOS.h; path = STTwitter/STTwitterOS.h; sourceTree = "<group>"; };
-		C850A928CC65FE56FB2EDCE84C403952 /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
-		CA1F3F92EFD12D50F2F0FD53960DD89B /* iCarousel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
-		CBAD5C889B889981CF08FEA280EFFB72 /* youtube_ios_player_helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD40E62A7610753B84A81D4922530EB0 /* STTwitterAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAPI.m; path = STTwitter/STTwitterAPI.m; sourceTree = "<group>"; };
-		CDC2058F3AD4E80C8D0F24513EB854DC /* BAVPlistNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BAVPlistNode.m; path = STTwitter/Vendor/BAVPlistNode.m; sourceTree = "<group>"; };
-		D2ECA751A9E66F905FAA83F1859397F8 /* NSError+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+STTwitter.h"; path = "STTwitter/NSError+STTwitter.h"; sourceTree = "<group>"; };
-		D5E7816B7BF257C4AE328B7C253375AE /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ECSlidingViewController.h"; path = "ECSlidingViewController/UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
-		D964B6F76C0463A62271E948B5DB87E8 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Twitter.framework; sourceTree = DEVELOPER_DIR; };
-		DB8D763F38F473C62BA20A40614675B1 /* STTwitterOSRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOSRequest.m; path = STTwitter/STTwitterOSRequest.m; sourceTree = "<group>"; };
-		DCAFBD7B5B46C36CE051F0A05F68D574 /* STTwitter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = STTwitter.modulemap; sourceTree = "<group>"; };
-		DD4DED5E940544A7D4348B748D3952E8 /* iCarousel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iCarousel-dummy.m"; sourceTree = "<group>"; };
-		E226F33810425927864D56DAE60FE8D2 /* STTwitterOSRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterOSRequest.h; path = STTwitter/STTwitterOSRequest.h; sourceTree = "<group>"; };
-		E5E1A1B0B5719AF93B67A3E9BBC8CA03 /* STTwitterHTML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterHTML.m; path = STTwitter/STTwitterHTML.m; sourceTree = "<group>"; };
-		E883031B79EFDFEBCF8BF3FFA9830670 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8AB7173A45A8A075B9D4A861B460F3D /* Assets.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC0B234C7C2B041BB44F9F52F379B4ED /* STTwitter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-prefix.pch"; sourceTree = "<group>"; };
-		EE5F0FD58046314B25377988020EA547 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5D9601A5BCE0C18515B78D40AADEF1F /* STTwitterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterProtocol.h; path = STTwitter/STTwitterProtocol.h; sourceTree = "<group>"; };
-		F8BDF2A6180CA08C4E7C7DF71AE0AD04 /* STHTTPRequest+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STHTTPRequest+STTwitter.h"; path = "STTwitter/STHTTPRequest+STTwitter.h"; sourceTree = "<group>"; };
-		F915707FF6E9E63F9B8C5EE534024E6F /* iCarousel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iCarousel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD652CD3B7B4A7811296F0164E956CDB /* ECSlidingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECSlidingViewController.h; path = ECSlidingViewController/ECSlidingViewController.h; sourceTree = "<group>"; };
-		FD699AB3D9CA54C75B9ECC8EDAAB5ED0 /* STTwitterHTML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterHTML.h; path = STTwitter/STTwitterHTML.h; sourceTree = "<group>"; };
-		FE6A8D44804392E20638A180CCD903B5 /* STTwitterAppOnly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterAppOnly.m; path = STTwitter/STTwitterAppOnly.m; sourceTree = "<group>"; };
+		B02EAEE5F67429AE713CB3E9F9516C70 /* Pods-ArmiesSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ArmiesSwift.modulemap"; sourceTree = "<group>"; };
+		B435415DC1B71A590DA62F7EB4BBCF3A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F3FE03AEF91B5BCD66E7C01A9FF3FC /* STTwitterOSRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STTwitterOSRequest.m; path = STTwitter/STTwitterOSRequest.m; sourceTree = "<group>"; };
+		BB819339D98F1E8FFAEF01A60466A7EC /* STHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STHTTPRequest.m; path = STTwitter/Vendor/STHTTPRequest.m; sourceTree = "<group>"; };
+		BDB074BE36C0C27C6482373D72227894 /* STTwitterStreamParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STTwitterStreamParser.h; path = STTwitter/STTwitterStreamParser.h; sourceTree = "<group>"; };
+		C63D61B4CEA7EAA3B112FE5174CDF29D /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingAnimationController.m; path = ECSlidingViewController/ECSlidingAnimationController.m; sourceTree = "<group>"; };
+		C7E1970C2DF4E9932E63B52F72A98CC5 /* STHTTPRequest+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "STHTTPRequest+STTwitter.h"; path = "STTwitter/STHTTPRequest+STTwitter.h"; sourceTree = "<group>"; };
+		C90966D136A9999CE4A9A1FBE0CBAC68 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECPercentDrivenInteractiveTransition.h; path = ECSlidingViewController/ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		CD32398BE000CEAF8F1F8D4A3C8024A3 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingInteractiveTransition.m; path = ECSlidingViewController/ECSlidingInteractiveTransition.m; sourceTree = "<group>"; };
+		D7B5DDC59A9A0DA77B1D71176BD692CB /* YTPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YTPlayerView.h; path = Classes/YTPlayerView.h; sourceTree = "<group>"; };
+		D91D734FB2A00A84CD1184827597A944 /* STTwitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STTwitter.framework; path = STTwitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4E12A9B3FB4D4313BC9DEB9EEBDC95 /* ECSlidingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECSlidingViewController.m; path = ECSlidingViewController/ECSlidingViewController.m; sourceTree = "<group>"; };
+		E0B9B6A763782F8B206185C6DA2E96E8 /* NSString+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+STTwitter.m"; path = "STTwitter/NSString+STTwitter.m"; sourceTree = "<group>"; };
+		E800DC38081A62386CF3B80F18FA8C9B /* NSError+STTwitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+STTwitter.h"; path = "STTwitter/NSError+STTwitter.h"; sourceTree = "<group>"; };
+		EB2174EF41368FC67B728C25BC9F82D9 /* STTwitter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STTwitter-umbrella.h"; sourceTree = "<group>"; };
+		F27FE724E2103D97D1BD5F1DCFF72F32 /* youtube-ios-player-helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "youtube-ios-player-helper.modulemap"; sourceTree = "<group>"; };
+		F656102C5347F04BCE32107A994D64CE /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECPercentDrivenInteractiveTransition.m; path = ECSlidingViewController/ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		F7CAD16D9911FE3FF8EBA876B4256AF3 /* youtube-ios-player-helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-prefix.pch"; sourceTree = "<group>"; };
+		FB8331C61ED567BDE3105F91662ED314 /* STHTTPRequest+STTwitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "STHTTPRequest+STTwitter.m"; path = "STTwitter/STHTTPRequest+STTwitter.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28493DD5D3B648EAAFEA5B9499D097F7 /* Frameworks */ = {
+		35CB9C099332F5D3ACC6A4B62AE1CFA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B69D1079DF5F79CCB4DF26C5C17B4B3 /* Foundation.framework in Frameworks */,
+				C1477BE698EEF81DC46951DAFB488BF8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DEA6DBB5EF2E16F2F5D6232A63C51F0 /* Frameworks */ = {
+		79A935E6E463EE27E08F65C86E76E3CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DDA1DAA9F628443E294BD44718C1B3A /* Foundation.framework in Frameworks */,
+				3344F0C6074FD05F005A0E69EA8282F1 /* Accounts.framework in Frameworks */,
+				147ACC3AFB3139285D9FB1EBDB69DB1F /* CoreGraphics.framework in Frameworks */,
+				FA3E7D1A3D261A31AE12189886A97751 /* Foundation.framework in Frameworks */,
+				032E7B8E1C7BB0F8962CAE110D6FE48E /* QuartzCore.framework in Frameworks */,
+				047C59F993A0F3F7EF938E424A36F048 /* Twitter.framework in Frameworks */,
+				E3FCAAC73DC1C47754AD488CF998F05E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2D32DD2168137C9C50ECCB9FE24BE94 /* Frameworks */ = {
+		84F9C017C72A218611C058BABCAA5CD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE42831D31EF322C58576E18D14149FE /* Foundation.framework in Frameworks */,
-				2E8D975029F4668DD71AFD5B1CAE0FB4 /* QuartzCore.framework in Frameworks */,
+				2309C45CAFB9C18C83E82474EFA17C1A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1B6796C0B0C74FAF83C031D9735AF2B /* Frameworks */ = {
+		EFC77C679BC0DA842ED5E44C9F5F4309 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822E8BDF4DAF6F6CE1D0E832441B9468 /* Foundation.framework in Frameworks */,
+				208E871A651F903D900B0010E4DE829F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8669C9688576E7BA75C20F3DB631CB5 /* Frameworks */ = {
+		F5DD1688DE54D76C36A199B20AA26B27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B11324685A0DA7649F54D35C5E83813D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD6A26A24384649896F544FB48FECB34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A47943DF505255D311462579D02AD92F /* Accounts.framework in Frameworks */,
-				A0770AC312F997C104BA0FA135835330 /* CoreGraphics.framework in Frameworks */,
-				7ACCEDE9432CB3FBA152E9300F3623E7 /* Foundation.framework in Frameworks */,
-				5E3A4A4794B330BE08D844BACE3CF1D4 /* QuartzCore.framework in Frameworks */,
-				B6668B981744AB928A436117E0EBC957 /* Twitter.framework in Frameworks */,
-				A29730F8F4D0516B47866436BF68876B /* UIKit.framework in Frameworks */,
+				186CCEE63639380AF54219B047FECBC4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0104F51F84D791A823FC22F8AD441172 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				69534DEBF0CA0DA2319D7B03989AB6F1 /* Assets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6DAB607C116CCDA6010B851775CA3336 /* iOS */,
+				C60E66BE84236BD078FA6DF3571876AF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,110 +274,127 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		23AE78CE5A9546F0467F023D2014D583 /* Products */ = {
+		1A4708ACCD70DFB6B0A879604FDBE551 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8AB7173A45A8A075B9D4A861B460F3D /* Assets.bundle */,
-				9B707ED821EC79213386DC075453969D /* ECSlidingViewController.framework */,
-				F915707FF6E9E63F9B8C5EE534024E6F /* iCarousel.framework */,
-				5940A3B2F23BCC97DE41D1BE5DBF290D /* Pods_ArmiesSwift.framework */,
-				630D207A324478E4B3BC2A08B8A4C778 /* STTwitter.framework */,
-				CBAD5C889B889981CF08FEA280EFFB72 /* youtube_ios_player_helper.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2FDB322C113A05495B91DB08D61E8275 /* ECSlidingViewController */ = {
-			isa = PBXGroup;
-			children = (
-				158662107BBFF90D3D066F40ECFBAAB6 /* ECPercentDrivenInteractiveTransition.h */,
-				2EA0CD8D1A40438A88C70099EA54ED1F /* ECPercentDrivenInteractiveTransition.m */,
-				8DE213B481D0374DD25B6B82B8021447 /* ECSlidingAnimationController.h */,
-				9FEB76E1E182B553EFF70163A6D5F95A /* ECSlidingAnimationController.m */,
-				BDB66D0175DE612F5BA768127B4140DE /* ECSlidingConstants.h */,
-				99F86BB6E75FF4742125889616F3507D /* ECSlidingInteractiveTransition.h */,
-				45011032EDE6D0B30B13172DF308AC65 /* ECSlidingInteractiveTransition.m */,
-				391ECD74A869CDDBB89280927C9FFC61 /* ECSlidingSegue.h */,
-				0C3033664117A8184373D6AEBDC5D16B /* ECSlidingSegue.m */,
-				FD652CD3B7B4A7811296F0164E956CDB /* ECSlidingViewController.h */,
-				43A4AA728ED68F42B462345F714B98C6 /* ECSlidingViewController.m */,
-				D5E7816B7BF257C4AE328B7C253375AE /* UIViewController+ECSlidingViewController.h */,
-				15F317352FA902C7BB380E1CB80FC00D /* UIViewController+ECSlidingViewController.m */,
-				E8F7142E75AEC86B9BB9B7AB2A072CAD /* Support Files */,
-			);
-			path = ECSlidingViewController;
-			sourceTree = "<group>";
-		};
-		3DB5DD01E81C90CD413359462228271C /* youtube-ios-player-helper */ = {
-			isa = PBXGroup;
-			children = (
-				C850A928CC65FE56FB2EDCE84C403952 /* YTPlayerView.h */,
-				8CB60F8803EAFF9F75768869E988C21A /* YTPlayerView.m */,
-				0104F51F84D791A823FC22F8AD441172 /* Resources */,
-				E154704EB3628B9BDD5C4B7C8E5E2B26 /* Support Files */,
-			);
-			path = "youtube-ios-player-helper";
-			sourceTree = "<group>";
-		};
-		5AB337CC81EE1AEA276B5E8C7A97693A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				69FEC338D80A9FA0AA6AF8905D2D6EBB /* Info.plist */,
-				DCAFBD7B5B46C36CE051F0A05F68D574 /* STTwitter.modulemap */,
-				7CB84825184FA075E48A17B7B4AB68F7 /* STTwitter.xcconfig */,
-				90E8644D7CDFB03FAB8F5FA6F069228E /* STTwitter-dummy.m */,
-				EC0B234C7C2B041BB44F9F52F379B4ED /* STTwitter-prefix.pch */,
-				AD3638A96159E206271A38065C7EFD5B /* STTwitter-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/STTwitter";
-			sourceTree = "<group>";
-		};
-		6BA4F36A2FF488CC8B0E3D58C1A67424 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				030C0C7156F9D0B81EBAB3E3C2AB3BB4 /* iCarousel.modulemap */,
-				A00CBC6CF5E815065C28E88F48B0EDEB /* iCarousel.xcconfig */,
-				DD4DED5E940544A7D4348B748D3952E8 /* iCarousel-dummy.m */,
-				AE6F9E5BB98B88AEF06B52942B68334A /* iCarousel-prefix.pch */,
-				9D70B5E737A3FE5B9F8274175E6C5096 /* iCarousel-umbrella.h */,
-				EE5F0FD58046314B25377988020EA547 /* Info.plist */,
+				A3521295891C8995D3E0D2E9E4966FBC /* iCarousel.modulemap */,
+				9535E08339F2DCDA3985A34B1281B5A4 /* iCarousel.xcconfig */,
+				494FD185FF7E6481FCF6BAB7FFB6D3F7 /* iCarousel-dummy.m */,
+				72954055A365EA6318117A5175468126 /* iCarousel-prefix.pch */,
+				1480DC9E073966CF5E5412F239DFBED6 /* iCarousel-umbrella.h */,
+				B435415DC1B71A590DA62F7EB4BBCF3A /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/iCarousel";
 			sourceTree = "<group>";
 		};
-		6DAB607C116CCDA6010B851775CA3336 /* iOS */ = {
+		32272DD28D3350FD5EE0C3C2C6A35792 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E49025524B420C4CA10BFED95BB5100 /* Accounts.framework */,
-				30AF8E38E4E102A7BA9A534546C98EA0 /* CoreGraphics.framework */,
-				24E2078CFA7E6DB0B34411E2CA99A0BD /* Foundation.framework */,
-				62E558656AFCB7DF4310F8BA077DD165 /* QuartzCore.framework */,
-				D964B6F76C0463A62271E948B5DB87E8 /* Twitter.framework */,
-				01E2806A819E0408B677AFF1CEE9D96D /* UIKit.framework */,
+				44BC10539A429712BC2E2A407A5C3F6A /* ECSlidingViewController.framework */,
+				0BE1B737B8DEFC30394453227D42E664 /* iCarousel.framework */,
+				25E22ED7EABB387DD89492895CD72CEB /* Pods_ArmiesSwift.framework */,
+				D91D734FB2A00A84CD1184827597A944 /* STTwitter.framework */,
+				230A1DE960283840E723A55CC8BA65C5 /* youtube_ios_player_helper.framework */,
 			);
-			name = iOS;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E5EFE8119B1DEC5E8A628C4A777976 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				96BF9F93F341BE1ACEF4E2B5F55576F6 /* iCarousel.h */,
+				A21F535EBBCCB4758D51002C7FF84811 /* iCarousel.m */,
+				1A4708ACCD70DFB6B0A879604FDBE551 /* Support Files */,
+			);
+			name = iCarousel;
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		420EFC35C9759D00C397E81853A63EE0 /* STTwitter */ = {
+			isa = PBXGroup;
+			children = (
+				1E8091B9670410A20E9DFCFA469833D1 /* BAVPlistNode.h */,
+				ABAAC42A497B95C19ACEBFFC0FCAFFFC /* BAVPlistNode.m */,
+				098F9505D1709E7D22F83FC8DACA3737 /* JSONSyntaxHighlight.h */,
+				2B6BE845C03B203C39AC8AB95ABE237C /* JSONSyntaxHighlight.m */,
+				2506913C151D65A5F1563CAA0A3D0358 /* NSDateFormatter+STTwitter.h */,
+				1008682D631206A61E2934ECA1442DB3 /* NSDateFormatter+STTwitter.m */,
+				E800DC38081A62386CF3B80F18FA8C9B /* NSError+STTwitter.h */,
+				2EC791F0A06D814A5E51992150D395D6 /* NSError+STTwitter.m */,
+				4D6DFD7AE5ADF3BFAB0C8F43ADAFD8DC /* NSString+STTwitter.h */,
+				E0B9B6A763782F8B206185C6DA2E96E8 /* NSString+STTwitter.m */,
+				1A56B9840670D1CF0FEC0552BC792F58 /* STHTTPRequest.h */,
+				BB819339D98F1E8FFAEF01A60466A7EC /* STHTTPRequest.m */,
+				C7E1970C2DF4E9932E63B52F72A98CC5 /* STHTTPRequest+STTwitter.h */,
+				FB8331C61ED567BDE3105F91662ED314 /* STHTTPRequest+STTwitter.m */,
+				6F78C98776DB80A91A4BCFD1E1975066 /* STTwitter.h */,
+				A9E11BE185348A1056C25E28E58E5836 /* STTwitterAPI.h */,
+				6CB095FD9118A4E9F239F8BB1B7E1F8D /* STTwitterAPI.m */,
+				135887640873F0F9C9591139339D6F39 /* STTwitterAppOnly.h */,
+				9C83DB32AAB81B97C6442042232DF2AD /* STTwitterAppOnly.m */,
+				A6581EB07E0E074C5D588F3B66B2E211 /* STTwitterHTML.h */,
+				946EF8089D24AF419028B98946BD1A15 /* STTwitterHTML.m */,
+				0FB707FED7FCB03AEC3C81D13372263D /* STTwitterOAuth.h */,
+				563C6F1023AE6FBBC59CF129ECE53338 /* STTwitterOAuth.m */,
+				93DB046558551DD0311251AC74B5926A /* STTwitterOS.h */,
+				09CA98E2505D948B921961506B612235 /* STTwitterOS.m */,
+				888D40768482C5F0FE50B35E864D1816 /* STTwitterOSRequest.h */,
+				B4F3FE03AEF91B5BCD66E7C01A9FF3FC /* STTwitterOSRequest.m */,
+				1D5AABDA477692381663116CB689DE99 /* STTwitterProtocol.h */,
+				5C6F4396A169204BA7EF381715FB9F9B /* STTwitterRequestProtocol.h */,
+				BDB074BE36C0C27C6482373D72227894 /* STTwitterStreamParser.h */,
+				8111745C70C55903A824673273CDCE71 /* STTwitterStreamParser.m */,
+				EDC617A225B71F2D59A830F97D82BC5E /* Support Files */,
+			);
+			name = STTwitter;
+			path = STTwitter;
+			sourceTree = "<group>";
+		};
+		56BAED471CF37EF0F7AA84C582F8E0C7 /* youtube-ios-player-helper */ = {
+			isa = PBXGroup;
+			children = (
+				D7B5DDC59A9A0DA77B1D71176BD692CB /* YTPlayerView.h */,
+				964412AC438A002591BF56752C02E149 /* YTPlayerView.m */,
+				D716679CE6FD4450DCA63A8E977B5BFB /* Resources */,
+				D46C7D12044B7E49F60010094822E260 /* Support Files */,
+			);
+			name = "youtube-ios-player-helper";
+			path = "youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
-				874E3A1F4B1EADADD09F5F38557329AD /* Pods */,
-				23AE78CE5A9546F0467F023D2014D583 /* Products */,
+				98EDF61A0FD59F516BDA27F479147156 /* Pods */,
+				32272DD28D3350FD5EE0C3C2C6A35792 /* Products */,
 				14D5EC6231F3484D18F2DB706EE362A2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		874E3A1F4B1EADADD09F5F38557329AD /* Pods */ = {
+		8ACB6B25FC76AD72EC9B436AF70D85C3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2FDB322C113A05495B91DB08D61E8275 /* ECSlidingViewController */,
-				E61E9F8008EE93F4EC90A80A45C9DB3B /* iCarousel */,
-				F3D257D3E589CE081A6EE54B73D3F45F /* STTwitter */,
-				3DB5DD01E81C90CD413359462228271C /* youtube-ios-player-helper */,
+				507609EC24C46838ACB86F92144D6C43 /* ECSlidingViewController.modulemap */,
+				9A66811410864C339CCAA07A2223C9A0 /* ECSlidingViewController.xcconfig */,
+				5CD787086B5B6AD59B8D205B3406356B /* ECSlidingViewController-dummy.m */,
+				558E3C45D1C14665738E8177D94EDF67 /* ECSlidingViewController-prefix.pch */,
+				545C2891008CE3399D6CBDEFACDDB400 /* ECSlidingViewController-umbrella.h */,
+				25DD9B5277A75EEF0959F1B41300349E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ECSlidingViewController";
+			sourceTree = "<group>";
+		};
+		98EDF61A0FD59F516BDA27F479147156 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD263AF9F23D59B4A644C6B3527A3FC9 /* ECSlidingViewController */,
+				35E5EFE8119B1DEC5E8A628C4A777976 /* iCarousel */,
+				420EFC35C9759D00C397E81853A63EE0 /* STTwitter */,
+				56BAED471CF37EF0F7AA84C582F8E0C7 /* youtube-ios-player-helper */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -418,248 +417,156 @@
 			path = "Target Support Files/Pods-ArmiesSwift";
 			sourceTree = "<group>";
 		};
-		E154704EB3628B9BDD5C4B7C8E5E2B26 /* Support Files */ = {
+		C60E66BE84236BD078FA6DF3571876AF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				E883031B79EFDFEBCF8BF3FFA9830670 /* Info.plist */,
-				2D988F3924BB2218C0AB25C8534197AB /* youtube-ios-player-helper.modulemap */,
-				3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */,
-				57950BE92203DB4CA11245CFE5EEC722 /* youtube-ios-player-helper-dummy.m */,
-				7418B2AE86E2F746BB51AAA50222E40E /* youtube-ios-player-helper-prefix.pch */,
-				29A8B60B841B349E28232366CAF7B59B /* youtube-ios-player-helper-umbrella.h */,
+				388E131020F3472F9B332EFD01869365 /* Accounts.framework */,
+				4DA21FF9E83E8C09868561DF40F21E0D /* CoreGraphics.framework */,
+				0913202D1026AE948141A6CC995754EC /* Foundation.framework */,
+				971DC1AC5E634647F67ACA330E9E6B2F /* QuartzCore.framework */,
+				4CFCA82881384BBDD7684FD0FFA8EDD3 /* Twitter.framework */,
+				04EBD4FB0A823E1A62532B6BD904619F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D46C7D12044B7E49F60010094822E260 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CE8BB6CEEE97DD30EBEA0AEDCEFFB65 /* Info.plist */,
+				F27FE724E2103D97D1BD5F1DCFF72F32 /* youtube-ios-player-helper.modulemap */,
+				9EEAD37B0D855DADA28AF1EFC2E81719 /* youtube-ios-player-helper.xcconfig */,
+				8AB6C4DD1EED21A690962CFC85F0A468 /* youtube-ios-player-helper-dummy.m */,
+				F7CAD16D9911FE3FF8EBA876B4256AF3 /* youtube-ios-player-helper-prefix.pch */,
+				546E24179F1911458A7F56F29334FB15 /* youtube-ios-player-helper-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/youtube-ios-player-helper";
 			sourceTree = "<group>";
 		};
-		E61E9F8008EE93F4EC90A80A45C9DB3B /* iCarousel */ = {
+		D716679CE6FD4450DCA63A8E977B5BFB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CA1F3F92EFD12D50F2F0FD53960DD89B /* iCarousel.h */,
-				71930A009C10677D774B28EAE4CC7C8A /* iCarousel.m */,
-				6BA4F36A2FF488CC8B0E3D58C1A67424 /* Support Files */,
+				71AEAD50E049AF1390BDB298ADC466BA /* Assets.bundle */,
 			);
-			path = iCarousel;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		E8F7142E75AEC86B9BB9B7AB2A072CAD /* Support Files */ = {
+		DD263AF9F23D59B4A644C6B3527A3FC9 /* ECSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4BD6F9BA75828E35D7C45EF8C8AE923D /* ECSlidingViewController.modulemap */,
-				56A5BC26AC87A6D9B63605C2A4654EAA /* ECSlidingViewController.xcconfig */,
-				1D54A1369EBF09DFE6B9124AD6DC525A /* ECSlidingViewController-dummy.m */,
-				00825644C463B76694FB1D02AA50F46D /* ECSlidingViewController-prefix.pch */,
-				0AA5AB07E7DF8A65CB70F3AFCBA21C67 /* ECSlidingViewController-umbrella.h */,
-				A757C38D7FBEDED4A7F1F98960B69E04 /* Info.plist */,
+				C90966D136A9999CE4A9A1FBE0CBAC68 /* ECPercentDrivenInteractiveTransition.h */,
+				F656102C5347F04BCE32107A994D64CE /* ECPercentDrivenInteractiveTransition.m */,
+				A8B960253D5B11623E6FFAEAC2DEE154 /* ECSlidingAnimationController.h */,
+				C63D61B4CEA7EAA3B112FE5174CDF29D /* ECSlidingAnimationController.m */,
+				7B176F39D8B898A43F2ED0D3CE2160DE /* ECSlidingConstants.h */,
+				299024BBCB447D3DFC40BAC73883380B /* ECSlidingInteractiveTransition.h */,
+				CD32398BE000CEAF8F1F8D4A3C8024A3 /* ECSlidingInteractiveTransition.m */,
+				7ECE235AABD3E707F4F2094AED64F48C /* ECSlidingSegue.h */,
+				8AEA9E09D6AB45B72714B0F4B3966695 /* ECSlidingSegue.m */,
+				32CBCF1A071AF497D89B49D9E678BD4E /* ECSlidingViewController.h */,
+				DC4E12A9B3FB4D4313BC9DEB9EEBDC95 /* ECSlidingViewController.m */,
+				A51CCE69EA88DE81F6F7D9F5A2F91949 /* UIViewController+ECSlidingViewController.h */,
+				6FE364EA89D43A2C6D608D4DF5622D5B /* UIViewController+ECSlidingViewController.m */,
+				8ACB6B25FC76AD72EC9B436AF70D85C3 /* Support Files */,
+			);
+			name = ECSlidingViewController;
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		EDC617A225B71F2D59A830F97D82BC5E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				961473619DB225653525890E91257A8F /* Info.plist */,
+				6022A47642D95A60FF5E256D9F034A37 /* STTwitter.modulemap */,
+				35EDDDCE6451251A7EDAC8CD83D7DCDE /* STTwitter.xcconfig */,
+				60BF0797B1579149AD3E9DDDA3359A12 /* STTwitter-dummy.m */,
+				328BFF9EA66E21B23CBFC67EE5907269 /* STTwitter-prefix.pch */,
+				EB2174EF41368FC67B728C25BC9F82D9 /* STTwitter-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/ECSlidingViewController";
-			sourceTree = "<group>";
-		};
-		F3D257D3E589CE081A6EE54B73D3F45F /* STTwitter */ = {
-			isa = PBXGroup;
-			children = (
-				784EE74C7071759F773447038E9D2D99 /* BAVPlistNode.h */,
-				CDC2058F3AD4E80C8D0F24513EB854DC /* BAVPlistNode.m */,
-				1711595E31A07AC11F18B7C558758EFE /* JSONSyntaxHighlight.h */,
-				C465CAD072F644AEAF7DA902507080C6 /* JSONSyntaxHighlight.m */,
-				26F97CF030B51CD58490008AC7DA5AB3 /* NSDateFormatter+STTwitter.h */,
-				0FF1D247922EF282BC825E2D550590EF /* NSDateFormatter+STTwitter.m */,
-				D2ECA751A9E66F905FAA83F1859397F8 /* NSError+STTwitter.h */,
-				7817446D4C856B5E42373B550984C4FE /* NSError+STTwitter.m */,
-				04CFA5425252E8C86BB20EA0541B288D /* NSString+STTwitter.h */,
-				0D3D9C74FE3948795B1AFBC3D4F2976F /* NSString+STTwitter.m */,
-				A898E354FC38CAE6AFCB6434172B8F3F /* STHTTPRequest.h */,
-				674D67632D2B27BDFD273EF4B6773A10 /* STHTTPRequest.m */,
-				F8BDF2A6180CA08C4E7C7DF71AE0AD04 /* STHTTPRequest+STTwitter.h */,
-				8D4E21984B6B1D0F4487564E9C12BFEE /* STHTTPRequest+STTwitter.m */,
-				A8C73CAB8A35BBC61A869AC5FD244286 /* STTwitter.h */,
-				152A264D264640124C0442973E971F73 /* STTwitterAPI.h */,
-				CD40E62A7610753B84A81D4922530EB0 /* STTwitterAPI.m */,
-				97D7D8C412059E03E71F03F2777044DD /* STTwitterAppOnly.h */,
-				FE6A8D44804392E20638A180CCD903B5 /* STTwitterAppOnly.m */,
-				FD699AB3D9CA54C75B9ECC8EDAAB5ED0 /* STTwitterHTML.h */,
-				E5E1A1B0B5719AF93B67A3E9BBC8CA03 /* STTwitterHTML.m */,
-				8339D2A2DF6C8D566488A51B4BD5405B /* STTwitterOAuth.h */,
-				41E461B991E848D59EC94A92D5150B7E /* STTwitterOAuth.m */,
-				C61B6086F2579941510A076045C09317 /* STTwitterOS.h */,
-				15A79642A708F63BAA42819DB7C23E2C /* STTwitterOS.m */,
-				E226F33810425927864D56DAE60FE8D2 /* STTwitterOSRequest.h */,
-				DB8D763F38F473C62BA20A40614675B1 /* STTwitterOSRequest.m */,
-				F5D9601A5BCE0C18515B78D40AADEF1F /* STTwitterProtocol.h */,
-				5AB337CC81EE1AEA276B5E8C7A97693A /* Support Files */,
-			);
-			path = STTwitter;
+			path = "../Target Support Files/STTwitter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		40EEEBC304853684165654A97A671DEC /* Headers */ = {
+		3AD6895CB4120A24CA63935030B0B1E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0A4075E8EC62F3C9C05E6CB951D5AF9 /* iCarousel-umbrella.h in Headers */,
-				88D2980E7DDCE7BECD28FF1E9074D2AE /* iCarousel.h in Headers */,
+				C2FE065C15D7A1A53122F1B748D1490F /* ECPercentDrivenInteractiveTransition.h in Headers */,
+				57813CCC2C92D3B4D0811BB3907CB3B4 /* ECSlidingAnimationController.h in Headers */,
+				C9BC6044951EE8F79F22070E0D1933F8 /* ECSlidingConstants.h in Headers */,
+				3A81D039FED8BE2E5141C58AF9C8572E /* ECSlidingInteractiveTransition.h in Headers */,
+				3BD7DBD01E9C970E19C7622CE910BCA3 /* ECSlidingSegue.h in Headers */,
+				883DB31376DE7C038B01E40448AD6920 /* ECSlidingViewController-umbrella.h in Headers */,
+				BA41F1B1922EEE2F761D8572BD5DB053 /* ECSlidingViewController.h in Headers */,
+				CB08386CFE537D955FA990A3B98A69DD /* UIViewController+ECSlidingViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BE861E8161DC1C8D4D0A2F9F905AE81 /* Headers */ = {
+		51FA5A2C756C2D986BAF662A77D85AF2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F8F8532D09402C2D177B4868A0E441 /* Pods-ArmiesSwift-umbrella.h in Headers */,
+				AF581A6DC46DBE5CC86CCC2F41FCF69F /* Pods-ArmiesSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F6F31E9932D2BE4D17AE887A1D3639B /* Headers */ = {
+		7C884A1D9E6FF2D31777373412A38827 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45EB7C33BF27047C79739C48A105280B /* BAVPlistNode.h in Headers */,
-				ED49E745C2A2A2487B68C7922CE1AC7F /* JSONSyntaxHighlight.h in Headers */,
-				F296384FF00425D2E07A00F722BA6932 /* NSDateFormatter+STTwitter.h in Headers */,
-				36912EEEEB2DD4C53784371E03B01E00 /* NSError+STTwitter.h in Headers */,
-				9F59F5E4C31345BE00FDBDE081619B18 /* NSString+STTwitter.h in Headers */,
-				D5C7774525E0366054CA8BDF3096D5A0 /* STHTTPRequest+STTwitter.h in Headers */,
-				0CEFA52D89DD1876FEDC5EE4E361EFEE /* STHTTPRequest.h in Headers */,
-				37C48F730C1B60AC174029EFA2CA72E1 /* STTwitter-umbrella.h in Headers */,
-				11E5C78D6450FAF7B7EA388831C13AFC /* STTwitter.h in Headers */,
-				EA3ACA1880C50368912823168F647DFA /* STTwitterAPI.h in Headers */,
-				B85728BC2FA68C60DE8B97A10963CA23 /* STTwitterAppOnly.h in Headers */,
-				2CE0AC41492F2B9568A7927E9BC29702 /* STTwitterHTML.h in Headers */,
-				9FD351EBB432E7BCEED11C085D326C73 /* STTwitterOAuth.h in Headers */,
-				FD6F91514F1CA3F17EEFE1FD0CD86ED5 /* STTwitterOS.h in Headers */,
-				2877BCD5DDBD38095E8046B1D460ABAC /* STTwitterOSRequest.h in Headers */,
-				CF31C7BDC0046F1BCFB81E68B0C4C7CB /* STTwitterProtocol.h in Headers */,
+				861B7669212AAE5E3FC5CF1CBD20E504 /* youtube-ios-player-helper-umbrella.h in Headers */,
+				AD63C637F7F0B8F13E72F061645F18DE /* YTPlayerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CCBA7C6A85DFA45BA51EE4655F1D7B89 /* Headers */ = {
+		8337EBAB27E6D68330EBB38E73BE7863 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F465B50B54EE9955FF860724F5E7B554 /* ECPercentDrivenInteractiveTransition.h in Headers */,
-				11D74B913CEADD643A98EFA5471862E9 /* ECSlidingAnimationController.h in Headers */,
-				2323FBAFBD658269F9A0F9E70973065B /* ECSlidingConstants.h in Headers */,
-				DB2A7CF7946796711BCB86863CE873A9 /* ECSlidingInteractiveTransition.h in Headers */,
-				E3CE5492E6AF5B60C722C13E2A2DE492 /* ECSlidingSegue.h in Headers */,
-				BBD2B0CFA4D7D158E4911613547F343B /* ECSlidingViewController-umbrella.h in Headers */,
-				299603F8B1ED3E70BB01BB1EDC793CB6 /* ECSlidingViewController.h in Headers */,
-				FDFDFE865FA24BE76204F50D05374465 /* UIViewController+ECSlidingViewController.h in Headers */,
+				21D73299581075FB7368DA9FDAD8DAA6 /* iCarousel-umbrella.h in Headers */,
+				6C4986A33EE0D75E3B19E605E185E998 /* iCarousel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F23ECCECA76FBF41E321FDB31D21BED8 /* Headers */ = {
+		92378C85B50AC0FF7ADABF8689867D10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50577F308183BF20209620B3BC9D3641 /* youtube-ios-player-helper-umbrella.h in Headers */,
-				0E48BBC341D153A3B2350992F13E268F /* YTPlayerView.h in Headers */,
+				8F1DDA4CB4E383DC3B7C396ECC75F0DC /* BAVPlistNode.h in Headers */,
+				D2E712BC1E0E60DB8DA406293EE0F04F /* JSONSyntaxHighlight.h in Headers */,
+				C8A971C6BB8B4EF78B1F88F3F56E1FF3 /* NSDateFormatter+STTwitter.h in Headers */,
+				FDE42FBC7CF008982CCFD0DA86F33F75 /* NSError+STTwitter.h in Headers */,
+				A235B543B3F6C66A146C631917248607 /* NSString+STTwitter.h in Headers */,
+				7DC05E062369A69C27BD4141446876D7 /* STHTTPRequest+STTwitter.h in Headers */,
+				B162DABAC4AC75DD84AE5D18BB8E20A0 /* STHTTPRequest.h in Headers */,
+				67A5D535FE36BE272C935946FEBBFD9F /* STTwitter-umbrella.h in Headers */,
+				FFCDEA66383D6518E8F7413C39C89210 /* STTwitter.h in Headers */,
+				6A90F76465D995ABA7697769CDC26601 /* STTwitterAPI.h in Headers */,
+				D09DF1C49573B4F681E2242B922C8718 /* STTwitterAppOnly.h in Headers */,
+				76D63E5C44A439A773EE01CC730E1F2E /* STTwitterHTML.h in Headers */,
+				42AB1FECEA05D010E88AE7DAE2BF44B4 /* STTwitterOAuth.h in Headers */,
+				38003688EAD8344D74DCC00074F8CE18 /* STTwitterOS.h in Headers */,
+				7A2838A5081146FF89FB98329376F2FE /* STTwitterOSRequest.h in Headers */,
+				CD42274EB5659248732D7D98190AE281 /* STTwitterProtocol.h in Headers */,
+				956CD156A2D8F58FEBCC65D161D349C2 /* STTwitterRequestProtocol.h in Headers */,
+				69AED18AC680EB5EA4D8C103B82E77DE /* STTwitterStreamParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */ = {
+		0CCEE450DEF32E835082B7243D5EBFF4 /* ECSlidingViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FD84838098E65920773FE786596F03E /* Build configuration list for PBXNativeTarget "iCarousel" */;
+			buildConfigurationList = E4F28FC4F90FAF3C96E0242B3766FA19 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */;
 			buildPhases = (
-				B5A1DBA438165C92401162C362D91E3E /* Sources */,
-				C2D32DD2168137C9C50ECCB9FE24BE94 /* Frameworks */,
-				40EEEBC304853684165654A97A671DEC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iCarousel;
-			productName = iCarousel;
-			productReference = F915707FF6E9E63F9B8C5EE534024E6F /* iCarousel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		37FAFB803DCB792E707F547367C9C45B /* Pods-ArmiesSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9924F1A63B43F147E9E4D6EA0BF240E3 /* Build configuration list for PBXNativeTarget "Pods-ArmiesSwift" */;
-			buildPhases = (
-				18241223817DC2117BA075FF9D00C629 /* Sources */,
-				7DEA6DBB5EF2E16F2F5D6232A63C51F0 /* Frameworks */,
-				4BE861E8161DC1C8D4D0A2F9F905AE81 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE9F34C40C9A8B326D7B55F39BF553B6 /* PBXTargetDependency */,
-				39FE81B9963AB9B44D8B5D132AB80F9A /* PBXTargetDependency */,
-				3422057D4B3620D42F6107F00A489F89 /* PBXTargetDependency */,
-				D732DBDF5E053C217D666A3E48CF787E /* PBXTargetDependency */,
-			);
-			name = "Pods-ArmiesSwift";
-			productName = "Pods-ArmiesSwift";
-			productReference = 5940A3B2F23BCC97DE41D1BE5DBF290D /* Pods_ArmiesSwift.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		595F9D5C8BA8E5BE4CE97FB33A2F1907 /* youtube-ios-player-helper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64E1AA96FEFE145EE462D459C5A3EA12 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */;
-			buildPhases = (
-				75C431992C1470EF3407F5276E9E26B1 /* Sources */,
-				F8669C9688576E7BA75C20F3DB631CB5 /* Frameworks */,
-				3B42045A32910C6DC0C6C394F286E233 /* Resources */,
-				F23ECCECA76FBF41E321FDB31D21BED8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EA2EC0A9B91E74D867418454592F1C9B /* PBXTargetDependency */,
-			);
-			name = "youtube-ios-player-helper";
-			productName = "youtube-ios-player-helper";
-			productReference = CBAD5C889B889981CF08FEA280EFFB72 /* youtube_ios_player_helper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6B38E4A8929DFBCCEAE97D537A5FC885 /* youtube-ios-player-helper-Assets */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7027BA15CC34C172BDC3A234106C3347 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */;
-			buildPhases = (
-				B881C771352602ECC6A13A895756ADCF /* Sources */,
-				E1B6796C0B0C74FAF83C031D9735AF2B /* Frameworks */,
-				448AC7C7DF3B6BB4E635DCD594F8AF8B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "youtube-ios-player-helper-Assets";
-			productName = "youtube-ios-player-helper-Assets";
-			productReference = E8AB7173A45A8A075B9D4A861B460F3D /* Assets.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		B5C24522E47039D05E9D792F5AA893BA /* STTwitter */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3136EF8614F1FC6F9A3C4A9807A09AB0 /* Build configuration list for PBXNativeTarget "STTwitter" */;
-			buildPhases = (
-				8739E54F170333B712DBCF0A58DEADB6 /* Sources */,
-				FD6A26A24384649896F544FB48FECB34 /* Frameworks */,
-				9F6F31E9932D2BE4D17AE887A1D3639B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = STTwitter;
-			productName = STTwitter;
-			productReference = 630D207A324478E4B3BC2A08B8A4C778 /* STTwitter.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C3AAC7026505AA67E5E48DC98F926D26 /* ECSlidingViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7155956A7E660CF27CE8DAA1BC57B91D /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */;
-			buildPhases = (
-				5CA789BA1E8E0282BF78F2965A87164C /* Sources */,
-				28493DD5D3B648EAAFEA5B9499D097F7 /* Frameworks */,
-				CCBA7C6A85DFA45BA51EE4655F1D7B89 /* Headers */,
+				65590FB1B904420809A199C28952E37C /* Sources */,
+				84F9C017C72A218611C058BABCAA5CD5 /* Frameworks */,
+				3AD6895CB4120A24CA63935030B0B1E8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -667,7 +574,80 @@
 			);
 			name = ECSlidingViewController;
 			productName = ECSlidingViewController;
-			productReference = 9B707ED821EC79213386DC075453969D /* ECSlidingViewController.framework */;
+			productReference = 44BC10539A429712BC2E2A407A5C3F6A /* ECSlidingViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B09596A6E3BED3B8843752D97E812F8C /* Pods-ArmiesSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9846FFE572D2F77F2F5E6EA657C53BC5 /* Build configuration list for PBXNativeTarget "Pods-ArmiesSwift" */;
+			buildPhases = (
+				7458CE093A098F89DB7A0522C96D98A7 /* Sources */,
+				35CB9C099332F5D3ACC6A4B62AE1CFA6 /* Frameworks */,
+				51FA5A2C756C2D986BAF662A77D85AF2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00BCB39E57DEF1386D5AB8BDA30752CB /* PBXTargetDependency */,
+				83EA5ED312D8CBFC17DA3F9BED56EC33 /* PBXTargetDependency */,
+				0A7943E011F6A0C75C2B77E058C8A1EE /* PBXTargetDependency */,
+				1E9F46BF2A0D174B88572667C2D38B4E /* PBXTargetDependency */,
+			);
+			name = "Pods-ArmiesSwift";
+			productName = "Pods-ArmiesSwift";
+			productReference = 25E22ED7EABB387DD89492895CD72CEB /* Pods_ArmiesSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8D8C363B343A0778AE6633D70E11749 /* iCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC0E4E27715C58E6999DD991FAE23F5 /* Build configuration list for PBXNativeTarget "iCarousel" */;
+			buildPhases = (
+				53D5F91CD7B3A622448775A99188C684 /* Sources */,
+				EFC77C679BC0DA842ED5E44C9F5F4309 /* Frameworks */,
+				8337EBAB27E6D68330EBB38E73BE7863 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCarousel;
+			productName = iCarousel;
+			productReference = 0BE1B737B8DEFC30394453227D42E664 /* iCarousel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C562DE3540AD855948C79BB5DDF1C72A /* youtube-ios-player-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DDA76E27083B44B17491547B57CF6E6 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */;
+			buildPhases = (
+				508B1EF0FA053135B90FD870A6FDE152 /* Sources */,
+				F5DD1688DE54D76C36A199B20AA26B27 /* Frameworks */,
+				7C884A1D9E6FF2D31777373412A38827 /* Headers */,
+				4E1088860185E4558B68D14FF9EE7694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "youtube-ios-player-helper";
+			productName = "youtube-ios-player-helper";
+			productReference = 230A1DE960283840E723A55CC8BA65C5 /* youtube_ios_player_helper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D22CF3AF96A19B672E022861D1D308B6 /* STTwitter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 199179C262032C8E8E38787957D3C77F /* Build configuration list for PBXNativeTarget "STTwitter" */;
+			buildPhases = (
+				382064ED962E531668D8E8AB34DFE0A5 /* Sources */,
+				79A935E6E463EE27E08F65C86E76E3CA /* Frameworks */,
+				92378C85B50AC0FF7ADABF8689867D10 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STTwitter;
+			productName = STTwitter;
+			productReference = D91D734FB2A00A84CD1184827597A944 /* STTwitter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -676,22 +656,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					3634ABA74A6F41DB3C7516A583373EE8 = {
-						DevelopmentTeam = WEUMM3X4MB;
-					};
-					595F9D5C8BA8E5BE4CE97FB33A2F1907 = {
-						DevelopmentTeam = WEUMM3X4MB;
-					};
-					B5C24522E47039D05E9D792F5AA893BA = {
-						DevelopmentTeam = WEUMM3X4MB;
-					};
-					C3AAC7026505AA67E5E48DC98F926D26 = {
-						DevelopmentTeam = WEUMM3X4MB;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -701,335 +667,128 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 23AE78CE5A9546F0467F023D2014D583 /* Products */;
+			productRefGroup = 32272DD28D3350FD5EE0C3C2C6A35792 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C3AAC7026505AA67E5E48DC98F926D26 /* ECSlidingViewController */,
-				3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */,
-				37FAFB803DCB792E707F547367C9C45B /* Pods-ArmiesSwift */,
-				B5C24522E47039D05E9D792F5AA893BA /* STTwitter */,
-				595F9D5C8BA8E5BE4CE97FB33A2F1907 /* youtube-ios-player-helper */,
-				6B38E4A8929DFBCCEAE97D537A5FC885 /* youtube-ios-player-helper-Assets */,
+				0CCEE450DEF32E835082B7243D5EBFF4 /* ECSlidingViewController */,
+				B8D8C363B343A0778AE6633D70E11749 /* iCarousel */,
+				B09596A6E3BED3B8843752D97E812F8C /* Pods-ArmiesSwift */,
+				D22CF3AF96A19B672E022861D1D308B6 /* STTwitter */,
+				C562DE3540AD855948C79BB5DDF1C72A /* youtube-ios-player-helper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3B42045A32910C6DC0C6C394F286E233 /* Resources */ = {
+		4E1088860185E4558B68D14FF9EE7694 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5BDD855457511ED35185DD7F691D205 /* Assets.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		448AC7C7DF3B6BB4E635DCD594F8AF8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0A9BFC5FC97E6BB57C3CDE7747D93896 /* Assets in Resources */,
+				2E1A9B92AEA97279024AA103EDC765D7 /* Assets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18241223817DC2117BA075FF9D00C629 /* Sources */ = {
+		382064ED962E531668D8E8AB34DFE0A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0E6E85C58D942AB26B9DBA39DDF2837 /* Pods-ArmiesSwift-dummy.m in Sources */,
+				819B4A190ED16D841702DE5B79CD1715 /* BAVPlistNode.m in Sources */,
+				0F8F5EB550B7E50377B427D1E71E5E78 /* JSONSyntaxHighlight.m in Sources */,
+				E1BFE331F38A87558887B9E4CBEC72CB /* NSDateFormatter+STTwitter.m in Sources */,
+				DAC17E9F658C2D9A2479C9C26D8A0605 /* NSError+STTwitter.m in Sources */,
+				67B7847487C3FE21AB42AAA536F2DCFB /* NSString+STTwitter.m in Sources */,
+				F0B292D7CD9BE85130AB9C20C5EEBBA7 /* STHTTPRequest+STTwitter.m in Sources */,
+				379A080D463D5D7F67A02BA41CC880CD /* STHTTPRequest.m in Sources */,
+				D3A490A6B1A39702BCD635CCE54E9A99 /* STTwitter-dummy.m in Sources */,
+				A12B8AF9ACDAC8C445915070D9AF0BF5 /* STTwitterAPI.m in Sources */,
+				FFDB378ADF89E903BC9628AA2BA11022 /* STTwitterAppOnly.m in Sources */,
+				D6CCC7BAE3F6F2A529522EE8EE5E6B1B /* STTwitterHTML.m in Sources */,
+				ACD2DB3B79F8DF1D10B19D8723853719 /* STTwitterOAuth.m in Sources */,
+				3F53B366F763E1D02DDD1C187C67C08F /* STTwitterOS.m in Sources */,
+				94C51BB91C5E593CA598C78BEBCB6849 /* STTwitterOSRequest.m in Sources */,
+				14A4438DEEC2F6982075DF41955A1E7E /* STTwitterStreamParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CA789BA1E8E0282BF78F2965A87164C /* Sources */ = {
+		508B1EF0FA053135B90FD870A6FDE152 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				461949B833C00795DDB4C84FE8FAD721 /* ECPercentDrivenInteractiveTransition.m in Sources */,
-				8B48D42F31AF0DAE3428D32F3D89C5E9 /* ECSlidingAnimationController.m in Sources */,
-				E3B756EA4C29ECE2DF8C704A59FDE9A7 /* ECSlidingInteractiveTransition.m in Sources */,
-				CDBC1CBD50B2E7BD4FEC2917EB56D9E0 /* ECSlidingSegue.m in Sources */,
-				537C78C11A7017B7172B45B657EEA5DC /* ECSlidingViewController-dummy.m in Sources */,
-				B8469E0A2E7D95523714EFA3F22D1A11 /* ECSlidingViewController.m in Sources */,
-				A4F5EF8A9CF95D16F825525838C6E934 /* UIViewController+ECSlidingViewController.m in Sources */,
+				255BC51027C579DF60DE6F689463B71E /* youtube-ios-player-helper-dummy.m in Sources */,
+				201FD74FC215A9CCC2B76281C1E3246C /* YTPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75C431992C1470EF3407F5276E9E26B1 /* Sources */ = {
+		53D5F91CD7B3A622448775A99188C684 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFFB7405E136DBC737F1ED96885922DB /* youtube-ios-player-helper-dummy.m in Sources */,
-				7C6F324CC79F447580AAB556C761961E /* YTPlayerView.m in Sources */,
+				820ADABF3278A67DC71CBD75DFB2AE6F /* iCarousel-dummy.m in Sources */,
+				8A70F288E7B09AFC6BBE5C9A2558BF66 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8739E54F170333B712DBCF0A58DEADB6 /* Sources */ = {
+		65590FB1B904420809A199C28952E37C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13599D26AF5EBE370DFC4CC170DC1F5 /* BAVPlistNode.m in Sources */,
-				94277B231667D6AE5A775A7D5B31F3AC /* JSONSyntaxHighlight.m in Sources */,
-				3F34463DA6AE11FB1812C967ACF79E95 /* NSDateFormatter+STTwitter.m in Sources */,
-				5E22510FA977E4031DB03B02C57ED2F1 /* NSError+STTwitter.m in Sources */,
-				079715EC2874549562FD4DEE6C5453B5 /* NSString+STTwitter.m in Sources */,
-				1DD52F3BB00DDC121960AFCDC8899B37 /* STHTTPRequest+STTwitter.m in Sources */,
-				E75302171595B3E46016FB59552D8B46 /* STHTTPRequest.m in Sources */,
-				72D92147317FEF240C13A0E1AE5D4A1E /* STTwitter-dummy.m in Sources */,
-				7E469297D13BDF4295A3D5BB9ACF782F /* STTwitterAPI.m in Sources */,
-				4F8FD43741B3E0453625E6EEAF34FB37 /* STTwitterAppOnly.m in Sources */,
-				BE13E34B70738CE4DEF3A9EE913A86A6 /* STTwitterHTML.m in Sources */,
-				A25A491A3A23C10F6824C6AD3D5529E3 /* STTwitterOAuth.m in Sources */,
-				4D6E7596B0D384469F5D2F63D12F6921 /* STTwitterOS.m in Sources */,
-				8610DEFA57CDE12B45DEA6F39A0FFECE /* STTwitterOSRequest.m in Sources */,
+				A72C70CBF5E98A63940C4285AE992320 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				4C702F737C9D4B62A2F6AF4B3976628A /* ECSlidingAnimationController.m in Sources */,
+				9B2CFB4CFA9E9219D3571C562AC145E2 /* ECSlidingInteractiveTransition.m in Sources */,
+				17616180B4FA05D9AFE43B5F2362E977 /* ECSlidingSegue.m in Sources */,
+				84393DA8742F3F24277DF7F61F4AF6CD /* ECSlidingViewController-dummy.m in Sources */,
+				46B4CA45BAB4A37E6D40193F06A1FBA2 /* ECSlidingViewController.m in Sources */,
+				DEDB45E6C4FD400C3A70C01FABC98B81 /* UIViewController+ECSlidingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5A1DBA438165C92401162C362D91E3E /* Sources */ = {
+		7458CE093A098F89DB7A0522C96D98A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C28337DD2E94B98F7AEE739EF3674F02 /* iCarousel-dummy.m in Sources */,
-				489F62EE4B13496CD653B4C9BFAEB751 /* iCarousel.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B881C771352602ECC6A13A895756ADCF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				02E7E5182489D61C3C88D56EE87D8907 /* Pods-ArmiesSwift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3422057D4B3620D42F6107F00A489F89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = iCarousel;
-			target = 3634ABA74A6F41DB3C7516A583373EE8 /* iCarousel */;
-			targetProxy = F73DAD2E8AA432D5B460FB2566CDF372 /* PBXContainerItemProxy */;
-		};
-		39FE81B9963AB9B44D8B5D132AB80F9A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = STTwitter;
-			target = B5C24522E47039D05E9D792F5AA893BA /* STTwitter */;
-			targetProxy = 825AA8B64092AC2731927CFCDD861291 /* PBXContainerItemProxy */;
-		};
-		CE9F34C40C9A8B326D7B55F39BF553B6 /* PBXTargetDependency */ = {
+		00BCB39E57DEF1386D5AB8BDA30752CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ECSlidingViewController;
-			target = C3AAC7026505AA67E5E48DC98F926D26 /* ECSlidingViewController */;
-			targetProxy = 09E35214966B698F045447DC186EB4FE /* PBXContainerItemProxy */;
+			target = 0CCEE450DEF32E835082B7243D5EBFF4 /* ECSlidingViewController */;
+			targetProxy = CAFB8624A1B0E506E7940F3B70701D4B /* PBXContainerItemProxy */;
 		};
-		D732DBDF5E053C217D666A3E48CF787E /* PBXTargetDependency */ = {
+		0A7943E011F6A0C75C2B77E058C8A1EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iCarousel;
+			target = B8D8C363B343A0778AE6633D70E11749 /* iCarousel */;
+			targetProxy = CC57F90D690D4F21538E347693F31367 /* PBXContainerItemProxy */;
+		};
+		1E9F46BF2A0D174B88572667C2D38B4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "youtube-ios-player-helper";
-			target = 595F9D5C8BA8E5BE4CE97FB33A2F1907 /* youtube-ios-player-helper */;
-			targetProxy = E94E0D9C3011B215362221CF5761EE13 /* PBXContainerItemProxy */;
+			target = C562DE3540AD855948C79BB5DDF1C72A /* youtube-ios-player-helper */;
+			targetProxy = C290396091EBFABC0DDBFB64D7AE184E /* PBXContainerItemProxy */;
 		};
-		EA2EC0A9B91E74D867418454592F1C9B /* PBXTargetDependency */ = {
+		83EA5ED312D8CBFC17DA3F9BED56EC33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "youtube-ios-player-helper-Assets";
-			target = 6B38E4A8929DFBCCEAE97D537A5FC885 /* youtube-ios-player-helper-Assets */;
-			targetProxy = E252FBF544AA861D4C97470C5104CA77 /* PBXContainerItemProxy */;
+			name = STTwitter;
+			target = D22CF3AF96A19B672E022861D1D308B6 /* STTwitter */;
+			targetProxy = F2404CF6ECE277040B31B68B07D2F88B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2C697F5D60381A3A91CDF27254EF7138 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CB84825184FA075E48A17B7B4AB68F7 /* STTwitter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/STTwitter/STTwitter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/STTwitter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/STTwitter/STTwitter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = STTwitter;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3F2BB0F2744B81ED3EE5017F11978AFC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = youtube_ios_player_helper;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		59E4B3733D34A27EDD429ECE6C1D900A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A13B86A2F57BB632E2F4A0B57B430EF /* Pods-ArmiesSwift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ArmiesSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ArmiesSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		742F84C0E5421F385D652E94C59EC00E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A5BC26AC87A6D9B63605C2A4654EAA /* ECSlidingViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ECSlidingViewController/ECSlidingViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ECSlidingViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ECSlidingViewController/ECSlidingViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ECSlidingViewController;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7FDA6EAD3DF107F0772613C59DE33A53 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = youtube_ios_player_helper;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8A493BB39ECE2377EA5656E755B1091D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A00CBC6CF5E815065C28E88F48B0EDEB /* iCarousel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = iCarousel;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8CF285949B35496AD2ACEAFDABD69295 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Assets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1043,11 +802,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -1060,123 +822,27 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B5EC43B509DF024D74AED450685858A9 /* Debug */ = {
+		037DFDE5F9F9781B43DBCDAB49653FD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3915C31BBA61B99ED15FBD6D5E2197B3 /* youtube-ios-player-helper.xcconfig */;
+			baseConfigurationReference = 9535E08339F2DCDA3985A34B1281B5A4 /* iCarousel.xcconfig */;
 			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = Assets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		BEFF15098D75E03817402B61C6AFA759 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56A5BC26AC87A6D9B63605C2A4654EAA /* ECSlidingViewController.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ECSlidingViewController/ECSlidingViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ECSlidingViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ECSlidingViewController/ECSlidingViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ECSlidingViewController;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DC5CA468ED75480DC4AA6307EEECB984 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0992D961317BE184205D719E49BACAE7 /* Pods-ArmiesSwift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ArmiesSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ArmiesSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DEF2EE3D6EC790F86A873C9C71C3E6EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CB84825184FA075E48A17B7B4AB68F7 /* STTwitter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/STTwitter/STTwitter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/STTwitter/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/STTwitter/STTwitter.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = STTwitter;
-				PROVISIONING_PROFILE = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F4F520C2BE79EF6DD101DA44F1157729 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A00CBC6CF5E815065C28E88F48B0EDEB /* iCarousel.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1185,19 +851,52 @@
 				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = iCarousel;
-				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+		0A690FDA97975C059B0BEEBD74B1A062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEAD37B0D855DADA28AF1EFC2E81719 /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1211,10 +910,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1222,74 +925,328 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
+		566E3DB4E98E67AB0ACDA49976BCE89B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A13B86A2F57BB632E2F4A0B57B430EF /* Pods-ArmiesSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ArmiesSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ArmiesSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A4612EF0A387BAF11EABEB938DADC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EDDDCE6451251A7EDAC8CD83D7DCDE /* STTwitter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STTwitter/STTwitter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STTwitter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/STTwitter/STTwitter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = STTwitter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		758B8E864B48829D856D3FEE23430739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EDDDCE6451251A7EDAC8CD83D7DCDE /* STTwitter.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STTwitter/STTwitter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STTwitter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/STTwitter/STTwitter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = STTwitter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89D407842BDAABF4B9B3B24961E8700F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9535E08339F2DCDA3985A34B1281B5A4 /* iCarousel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/iCarousel/iCarousel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iCarousel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iCarousel/iCarousel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = iCarousel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C72362A573D4E548CEBF3CD4F9118635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEAD37B0D855DADA28AF1EFC2E81719 /* youtube-ios-player-helper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/youtube-ios-player-helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/youtube-ios-player-helper/youtube-ios-player-helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = youtube_ios_player_helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D9BCFFBE24E061FBD037955CA49937C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0992D961317BE184205D719E49BACAE7 /* Pods-ArmiesSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ArmiesSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ArmiesSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7E7455BA74A46ED7CCDEEA5C95FE5DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A66811410864C339CCAA07A2223C9A0 /* ECSlidingViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ECSlidingViewController/ECSlidingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ECSlidingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ECSlidingViewController/ECSlidingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ECSlidingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F236F9C7D70F8B531E4743E881BA0536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A66811410864C339CCAA07A2223C9A0 /* ECSlidingViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ECSlidingViewController/ECSlidingViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ECSlidingViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ECSlidingViewController/ECSlidingViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ECSlidingViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0DDA76E27083B44B17491547B57CF6E6 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C72362A573D4E548CEBF3CD4F9118635 /* Debug */,
+				0A690FDA97975C059B0BEEBD74B1A062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		199179C262032C8E8E38787957D3C77F /* Build configuration list for PBXNativeTarget "STTwitter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4612EF0A387BAF11EABEB938DADC41 /* Debug */,
+				758B8E864B48829D856D3FEE23430739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
-				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3136EF8614F1FC6F9A3C4A9807A09AB0 /* Build configuration list for PBXNativeTarget "STTwitter" */ = {
+		9846FFE572D2F77F2F5E6EA657C53BC5 /* Build configuration list for PBXNativeTarget "Pods-ArmiesSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEF2EE3D6EC790F86A873C9C71C3E6EF /* Debug */,
-				2C697F5D60381A3A91CDF27254EF7138 /* Release */,
+				D9BCFFBE24E061FBD037955CA49937C2 /* Debug */,
+				566E3DB4E98E67AB0ACDA49976BCE89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FD84838098E65920773FE786596F03E /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
+		E4F28FC4F90FAF3C96E0242B3766FA19 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F4F520C2BE79EF6DD101DA44F1157729 /* Debug */,
-				8A493BB39ECE2377EA5656E755B1091D /* Release */,
+				E7E7455BA74A46ED7CCDEEA5C95FE5DA /* Debug */,
+				F236F9C7D70F8B531E4743E881BA0536 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64E1AA96FEFE145EE462D459C5A3EA12 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper" */ = {
+		FAC0E4E27715C58E6999DD991FAE23F5 /* Build configuration list for PBXNativeTarget "iCarousel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F2BB0F2744B81ED3EE5017F11978AFC /* Debug */,
-				7FDA6EAD3DF107F0772613C59DE33A53 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7027BA15CC34C172BDC3A234106C3347 /* Build configuration list for PBXNativeTarget "youtube-ios-player-helper-Assets" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5EC43B509DF024D74AED450685858A9 /* Debug */,
-				8CF285949B35496AD2ACEAFDABD69295 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7155956A7E660CF27CE8DAA1BC57B91D /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BEFF15098D75E03817402B61C6AFA759 /* Debug */,
-				742F84C0E5421F385D652E94C59EC00E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9924F1A63B43F147E9E4D6EA0BF240E3 /* Build configuration list for PBXNativeTarget "Pods-ArmiesSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC5CA468ED75480DC4AA6307EEECB984 /* Debug */,
-				59E4B3733D34A27EDD429ECE6C1D900A /* Release */,
+				037DFDE5F9F9781B43DBCDAB49653FD5 /* Debug */,
+				89D407842BDAABF4B9B3B24961E8700F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

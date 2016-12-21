@@ -1,4 +1,6 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#endif
 
 #import "NSDateFormatter+STTwitter.h"
 #import "NSError+STTwitter.h"
@@ -12,6 +14,8 @@
 #import "STTwitterOS.h"
 #import "STTwitterOSRequest.h"
 #import "STTwitterProtocol.h"
+#import "STTwitterRequestProtocol.h"
+#import "STTwitterStreamParser.h"
 #import "BAVPlistNode.h"
 #import "JSONSyntaxHighlight.h"
 #import "STHTTPRequest.h"
