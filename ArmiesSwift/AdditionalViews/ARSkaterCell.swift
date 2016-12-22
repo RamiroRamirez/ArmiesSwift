@@ -12,19 +12,19 @@ class ARSkaterCell                                  : UITableViewCell {
     
     // MARK: - IBOutlets
 
-	@IBOutlet private weak var profileImageView		: UIImageView?
-	@IBOutlet private weak var nameLabel			: UILabel?
-	@IBOutlet private weak var cityLabel			: UILabel?
+	@IBOutlet fileprivate weak var profileImageView		: UIImageView?
+	@IBOutlet fileprivate weak var nameLabel			: UILabel?
+	@IBOutlet fileprivate weak var cityLabel			: UILabel?
     
 	// MARK: - Configuration Methods
 
-    func setupCell(skater skater: ARSkater?) {
+    func setupCell(skater: ARSkater?) {
         self.configurateProfileImage(skater: skater)
 	}
 
-    private func configurateProfileImage(skater skater: ARSkater?) {
+    fileprivate func configurateProfileImage(skater: ARSkater?) {
 		self.profileImageView?.layer.borderWidth = 2.0
-		self.profileImageView?.layer.borderColor = UIColor.whiteColor().CGColor
+		self.profileImageView?.layer.borderColor = UIColor.white.cgColor
 		self.profileImageView?.layer.cornerRadius = ((self.profileImageView?.frame.size.height ?? 0) * 0.5)
 		self.profileImageView?.clipsToBounds = true
         

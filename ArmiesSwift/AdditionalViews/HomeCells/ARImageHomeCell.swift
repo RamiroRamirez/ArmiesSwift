@@ -12,11 +12,11 @@ class ARImageHomeCell                           : UITableViewCell {
 
     // MARK: - IBOutlets
     
-    @IBOutlet private weak var armiesImageView  : UIImageView?
+    @IBOutlet fileprivate weak var armiesImageView  : UIImageView?
     
     // MARK: - Setup Methods
     
-    func setupCell(armiesImage: UIImage?) {
+    func setupCell(_ armiesImage: UIImage?) {
         self.armiesImageView?.image = armiesImage
     }
 }

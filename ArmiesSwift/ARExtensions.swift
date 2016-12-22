@@ -22,12 +22,12 @@ extension UIDevice {
     
         var size: Int = 0
         sysctlbyname("hw.machine", nil, &size, nil, 0)
-        var machine = [CChar](count: Int(size), repeatedValue: 0)
+        var machine = [CChar](repeating: 0, count: Int(size))
         sysctlbyname("hw.machine", &machine, &size, nil, 0)
-        return UIDevice.platformType(String.fromCString(machine))
+        return UIDevice.platformType(String(cString: machine))
     }
     
-    class func platformType(platform: String?) -> String? {
+    class func platformType(_ platform: String?) -> String? {
         if (platform == "iPhone1,1") {  return "iPhone 1G"              }
         if (platform == "iPhone1,2") {  return "iPhone 3G"              }
         if (platform == "iPhone2,1") {  return "iPhone 3GS"             }
@@ -84,7 +84,7 @@ extension UIDevice {
     
     class func isBigDevice() -> Bool? {
         if let platform = UIDevice.getPlatform() {
-            return (platform.containsString("iPhone 6") || platform.containsString("Simulator") || platform.containsString("iPad"))
+            return (platform.contains("iPhone 6") || platform.contains("Simulator") || platform.contains("iPad"))
         }
         return false
     }

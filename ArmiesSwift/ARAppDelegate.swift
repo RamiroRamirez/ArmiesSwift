@@ -13,7 +13,7 @@ class ARAppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
 		self.setAppearance()
         ARSkateCreator.createSkaters()
@@ -24,9 +24,9 @@ class ARAppDelegate: UIResponder, UIApplicationDelegate {
 
 	func setAppearance() {
 		UINavigationBar.appearance().barTintColor = UIColor.defaultColor()
-		UINavigationBar.appearance().tintColor = UIColor.whiteColor()
-		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-		UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+		UINavigationBar.appearance().tintColor = UIColor.white
+		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+		UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
 	}
 }
 
