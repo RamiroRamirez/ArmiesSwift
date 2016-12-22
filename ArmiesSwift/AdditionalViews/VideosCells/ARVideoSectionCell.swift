@@ -12,12 +12,12 @@ class ARVideoSectionCell                                : UITableViewCell {
     
     // MARK: - IBOutlets
 
-    @IBOutlet private weak var videoSectionImageView    : UIImageView?
-    @IBOutlet private weak var titleVideoSectionLabel   : UILabel?
+    @IBOutlet fileprivate weak var videoSectionImageView    : UIImageView?
+    @IBOutlet fileprivate weak var titleVideoSectionLabel   : UILabel?
     
     // MARK: - Configurate Methods
     
-    func setupCell(title: String?, image: UIImage?) {
+    func setupCell(_ title: String?, image: UIImage?) {
         self.titleVideoSectionLabel?.text = title
         self.videoSectionImageView?.image = image
     }

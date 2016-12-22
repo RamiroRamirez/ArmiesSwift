@@ -12,12 +12,12 @@ class ARTwitterCell                                 : UITableViewCell {
     
     // MARK: - IBOutlets
     
-    @IBOutlet private weak var armieImageView       : UIImageView?
-    @IBOutlet private weak var twitterTextField     : UITextView?
+    @IBOutlet fileprivate weak var armieImageView       : UIImageView?
+    @IBOutlet fileprivate weak var twitterTextField     : UITextView?
     
     // MARK: - Cell Configuration Methods
     
-    func setupCell(twitterText: String?, image: UIImage?) {
+    func setupCell(_ twitterText: String?, image: UIImage?) {
         self.twitterTextField?.text = twitterText
         self.armieImageView?.image = image
     }

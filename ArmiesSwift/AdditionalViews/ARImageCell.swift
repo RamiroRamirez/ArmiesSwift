@@ -12,12 +12,12 @@ class ARImageCell                                   : UICollectionViewCell {
 
     // MARK: - IBOultets
     
-    @IBOutlet private weak var instagramImageView   : UIImageView?
+    @IBOutlet fileprivate weak var instagramImageView   : UIImageView?
     
     // MARK: - Configurate Methods
     
-    func setupCell(image: UIImage?) {
-        self.backgroundColor = UIColor.blackColor()
+    func setupCell(_ image: UIImage?) {
+        self.backgroundColor = UIColor.black
         self.instagramImageView?.image = image
     }
 }

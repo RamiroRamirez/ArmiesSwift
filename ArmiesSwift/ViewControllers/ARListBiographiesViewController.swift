@@ -18,16 +18,16 @@ class ARListBiographiesViewController	: ARViewController {
 
 	// MARK: - Private Methods
 
-	private func initialConfigurations() {
-		self.title = ARMenuOption.Biographies.titleMenu()
+	fileprivate func initialConfigurations() {
+		self.title = ARMenuOption.biographies.titleMenu()
 	}
     
     // MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == ARSegues.OpenBiography.rawValue) {
             let sender = sender as? ARSkater
-            let vc = segue.destinationViewController as? ARBiographyViewController
+            let vc = segue.destination as? ARBiographyViewController
             vc?.skater = sender
         }
     }
@@ -37,14 +37,14 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
     
     // MARK: - Implementation UITableViewDataSource Protocol
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (ARSkateCreator.skaters?.count ?? 0)
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.SkaterCells.SkaterCell.rawValue) as? ARSkaterCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.SkaterCells.SkaterCell.rawValue) as? ARSkaterCell
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SkaterCells.SkaterCell.rawValue) as? ARSkaterCell
+            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: ARCellReuseIdentifier.SkaterCells.SkaterCell.rawValue) as? ARSkaterCell
         }
         cell?.setupCell(skater: ARSkateCreator.skaters?[indexPath.row])
         return (cell ?? UITableViewCell())
@@ -52,12 +52,12 @@ extension ARListBiographiesViewController: UITableViewDelegate, UITableViewDataS
     
     // MARK: - Implementation UITableViewDelegate Protocol
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.performSegueWithIdentifier(ARSegues.OpenBiography.rawValue, sender: ARSkateCreator.skaters?[indexPath.row])
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.performSegue(withIdentifier: ARSegues.OpenBiography.rawValue, sender: ARSkateCreator.skaters?[indexPath.row])
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return ARCellHeightConstants.SkaterCells.SkaterCell.rawValue
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return ARCellHeightConstants.SkaterCells.skaterCell.rawValue
     }
 }

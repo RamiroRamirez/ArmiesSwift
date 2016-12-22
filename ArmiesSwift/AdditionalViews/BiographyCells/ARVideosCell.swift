@@ -13,18 +13,23 @@ class ARVideosCell                                  : UITableViewCell {
     
     // MARK: - IBOutlets
 
-	@IBOutlet private weak var videosTitleLabel		: UILabel?
-    @IBOutlet private weak var firstVideoView       : YTPlayerView?
-    @IBOutlet private weak var secondVideoView      : YTPlayerView?
-    @IBOutlet private weak var thirdVideoView       : YTPlayerView?
+	@IBOutlet fileprivate weak var videosTitleLabel		: UILabel?
+    @IBOutlet fileprivate weak var firstVideoView       : YTPlayerView?
+    @IBOutlet fileprivate weak var secondVideoView      : YTPlayerView?
+    @IBOutlet fileprivate weak var thirdVideoView       : YTPlayerView?
     
 	// MARK: - Public Methods
 
-    func setupCell(skater skater: ARSkater?) {
+    func setupCell(skater: ARSkater?) {
         
 		self.videosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_VIDEOS", comment: "")
-        self.firstVideoView?.loadWithVideoId(skater?.videos?.first)
-        self.secondVideoView?.loadWithVideoId(skater?.videos?[1])
-        self.thirdVideoView?.loadWithVideoId(skater?.videos?[2])
+		if
+			let firstVideo = skater?.videos?.first,
+			let secondVideo = skater?.videos?[1],
+			let thirdVideo = skater?.videos?[2] {
+				self.firstVideoView?.load(withVideoId: firstVideo)
+				self.secondVideoView?.load(withVideoId: secondVideo)
+				self.thirdVideoView?.load(withVideoId: thirdVideo)
+		}
 	}
 }

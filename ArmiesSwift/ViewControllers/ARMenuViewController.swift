@@ -9,39 +9,39 @@
 import UIKit
 
 enum ARMenuOption 		: Int {
-	case Home = 0
-	case Biographies
-	case Videos
-	case Images
+	case home = 0
+	case biographies
+	case videos
+	case images
 
 	static func allValues() -> [ARMenuOption] {
-		return [.Home, .Biographies, .Videos, .Images]
+		return [.home, .biographies, .videos, .images]
 	}
 
 	func titleMenu() -> String? {
 		switch self {
-		case .Home			: return NSLocalizedString("MENU_HOME", comment: "")
-		case .Biographies	: return NSLocalizedString("MENU_BIOGRAPHY", comment: "")
-		case .Videos 		: return NSLocalizedString("MENU_VIDEOS", comment: "")
-		case .Images		: return NSLocalizedString("MENU_IMAGES", comment: "")
+		case .home			: return NSLocalizedString("MENU_HOME", comment: "")
+		case .biographies	: return NSLocalizedString("MENU_BIOGRAPHY", comment: "")
+		case .videos 		: return NSLocalizedString("MENU_VIDEOS", comment: "")
+		case .images		: return NSLocalizedString("MENU_IMAGES", comment: "")
 		}
 	}
 
 	func iconMenu() -> String? {
 		switch (self) {
-		case .Home			: return "ic_home.png"
-		case .Biographies	: return "ic_skaters.png"
-		case .Videos 		: return "ic_videos.png"
-		case .Images		: return "ic_imagenes.png"
+		case .home			: return "ic_home.png"
+		case .biographies	: return "ic_skaters.png"
+		case .videos 		: return "ic_videos.png"
+		case .images		: return "ic_imagenes.png"
 		}
 	}
 
 	func topViewToShow() -> String {
 		switch self {
-		case .Home 			: return ARStoryboardIds.HomeViewController.rawValue
-		case .Biographies	: return ARStoryboardIds.BiographiesViewController.rawValue
-		case .Videos		: return ARStoryboardIds.VideosViewController.rawValue
-		case .Images		: return ARStoryboardIds.ImagesViewController.rawValue
+		case .home 			: return ARStoryboardIds.HomeViewController.rawValue
+		case .biographies	: return ARStoryboardIds.BiographiesViewController.rawValue
+		case .videos		: return ARStoryboardIds.VideosViewController.rawValue
+		case .images		: return ARStoryboardIds.ImagesViewController.rawValue
 		}
 	}
 }
@@ -50,7 +50,7 @@ class ARMenuViewController                  : UIViewController {
     
     //MARK: - IBOutlets
 
-	@IBOutlet private weak var tableView    : UITableView?
+	@IBOutlet fileprivate weak var tableView    : UITableView?
 
 	//MARK: - View Life cycle
 
@@ -61,13 +61,13 @@ class ARMenuViewController                  : UIViewController {
 
 	//MARK: - Private methods
 
-	private func initialConfigurations() {
-        self.slidingViewController().topViewAnchoredGesture = [.Tapping, .Custom]
+	fileprivate func initialConfigurations() {
+        self.slidingViewController().topViewAnchoredGesture = [.tapping, .custom]
     }
 
-	private func showTopView(menuOption: ARMenuOption?) {
+	fileprivate func showTopView(_ menuOption: ARMenuOption?) {
 		if let _topViewToShow = menuOption?.topViewToShow() {
-			self.slidingViewController().topViewController = self.storyboard?.instantiateViewControllerWithIdentifier(_topViewToShow) as? UINavigationController
+			self.slidingViewController().topViewController = self.storyboard?.instantiateViewController(withIdentifier: _topViewToShow) as? UINavigationController
 		}
 	}
 }
@@ -76,14 +76,14 @@ extension ARMenuViewController : UITableViewDelegate, UITableViewDataSource {
     
     //MARK: -Implementation UITableViewDataSource Protocol
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ARMenuOption.allValues().count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  ARMenuCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as?  ARMenuCell
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as? ARMenuCell
+            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: ARCellReuseIdentifier.MenuCells.MenuCell.rawValue) as? ARMenuCell
         }
         cell?.setupCell(ARMenuOption.allValues()[indexPath.row])
         return (cell ?? UITableViewCell())
@@ -91,13 +91,13 @@ extension ARMenuViewController : UITableViewDelegate, UITableViewDataSource {
     
     //MARK: -Implementation UITableViewDelegate Protocol
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         self.showTopView(ARMenuOption.allValues()[indexPath.row])
-        self.slidingViewController().resetTopViewAnimated(true)
+        self.slidingViewController().resetTopView(animated: true)
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return ARCellHeightConstants.MenuCells.MenuCell.rawValue
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return ARCellHeightConstants.MenuCells.menuCell.rawValue
     }
 }

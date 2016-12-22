@@ -10,14 +10,14 @@ import UIKit
 
 class ARInfosCell                               : UITableViewCell {
 
-	@IBOutlet private weak var nameLabel		: UILabel?
-	@IBOutlet private weak var yearsLabel		: UILabel?
-	@IBOutlet private weak var cityLabel		: UILabel?
-	@IBOutlet private weak var yearsSkating		: UILabel?
+	@IBOutlet fileprivate weak var nameLabel		: UILabel?
+	@IBOutlet fileprivate weak var yearsLabel		: UILabel?
+	@IBOutlet fileprivate weak var cityLabel		: UILabel?
+	@IBOutlet fileprivate weak var yearsSkating		: UILabel?
     
 	// MARK: - Public Methods
 
-    func setupCell(skater: ARSkater?) {
+    func setupCell(_ skater: ARSkater?) {
         self.nameLabel?.text = skater?.name
         self.cityLabel?.text = skater?.city
         self.yearsLabel?.text = skater?.occupation

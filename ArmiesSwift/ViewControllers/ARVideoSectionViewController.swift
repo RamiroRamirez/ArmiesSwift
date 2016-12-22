@@ -18,15 +18,15 @@ extension ARVideoSectionViewController: UITableViewDataSource, UITableViewDelega
     
     // MARK: - Implementation UITAbleviewDataSource Implementation
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.videosId?.count ?? 0)
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(ARCellReuseIdentifier.SectionVideoCells.VideoCell.rawValue) as?  ARVideoCell
+        var cell = tableView.dequeueReusableCell(withIdentifier: ARCellReuseIdentifier.SectionVideoCells.VideoCell.rawValue) as?  ARVideoCell
         if (cell == nil) {
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: ARCellReuseIdentifier.SectionVideoCells.VideoCell.rawValue) as? ARVideoCell
+            cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: ARCellReuseIdentifier.SectionVideoCells.VideoCell.rawValue) as? ARVideoCell
         }
         cell?.setupCell(self.videosId?[indexPath.row])
         // TODO: Remove this print when everything works correctly
@@ -36,7 +36,7 @@ extension ARVideoSectionViewController: UITableViewDataSource, UITableViewDelega
     
     // MARK: - Implementation UITAbleviewDelegate Implementation
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return ARCellHeightConstants.VideoCells.VideoCell.rawValue
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return ARCellHeightConstants.VideoCells.videoCell.rawValue
     }
 }

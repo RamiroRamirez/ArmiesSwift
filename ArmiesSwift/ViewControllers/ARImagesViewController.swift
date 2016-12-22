@@ -14,7 +14,7 @@ class ARImagesViewController                    : ARViewController {
     
     //MARK: - Outlets
 
-    @IBOutlet private weak var collectionView   : UICollectionView?
+    @IBOutlet fileprivate weak var collectionView   : UICollectionView?
     
 	//MARK: - View Life Cycle
 
@@ -26,12 +26,12 @@ class ARImagesViewController                    : ARViewController {
 
 	//MARK: - Private Methods
 
-	private func initialConfigurations() {
-		self.title = ARMenuOption.Images.titleMenu()
+	fileprivate func initialConfigurations() {
+		self.title = ARMenuOption.images.titleMenu()
         self.createImageArray()
 	}
     
-    private func createImageArray() {
+    fileprivate func createImageArray() {
         let basicString = "InstagramArmies"
         for i in 1 ..< ARHarcodedConstants.NumberOfImagesInstagram {
             let imageName = basicString + String(i) + ".jpg"
@@ -44,9 +44,9 @@ class ARImagesViewController                    : ARViewController {
 	
 	//MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == ARSegues.OpenImageViewer.rawValue) {
-            let vc = segue.destinationViewController as? ARImageViewerViewController
+            let vc = segue.destination as? ARImageViewerViewController
             let armiesImage = sender as? UIImage
             vc?.armieImage = armiesImage
         }
@@ -56,25 +56,25 @@ class ARImagesViewController                    : ARViewController {
 
 extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (self.imageArray?.count ?? 0)
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(ARCellReuseIdentifier.ImageCells.ImageCell.rawValue, forIndexPath: indexPath) as? ARImageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ARCellReuseIdentifier.ImageCells.ImageCell.rawValue, for: indexPath) as? ARImageCell
         cell?.setupCell(self.imageArray?[indexPath.row])
         // Configure the cell
         return (cell ?? UICollectionViewCell())
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //get the width of the screen device
-        let widthOfImage = (self.view.frame.width ?? 0) / ARHarcodedConstants.NumberOfImagesCollectionInstagram
-        return CGSizeMake(widthOfImage, widthOfImage)
+        let widthOfImage = (self.view.frame.width) / ARHarcodedConstants.NumberOfImagesCollectionInstagram
+        return CGSize(width: widthOfImage, height: widthOfImage)
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        self.performSegueWithIdentifier(ARSegues.OpenImageViewer.rawValue, sender: self.imageArray?[indexPath.row])
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: ARSegues.OpenImageViewer.rawValue, sender: self.imageArray?[indexPath.row])
     }
 }

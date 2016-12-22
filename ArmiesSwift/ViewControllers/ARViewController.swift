@@ -10,7 +10,7 @@ import UIKit
 
 class ARViewController                      : UIViewController {
 
-	@IBOutlet private weak var menuButton   : UIBarButtonItem?
+	@IBOutlet fileprivate weak var menuButton   : UIBarButtonItem?
 
 	//MARK: - View Life cycle
 
@@ -21,13 +21,13 @@ class ARViewController                      : UIViewController {
 
 	//MARK: - Private Methods
 
-	private func initialConfigurations() {
+	fileprivate func initialConfigurations() {
 		self.menuButton?.title = NSLocalizedString("MENU", comment: "")
 	}
 
 	//MARK: - Actions
 
-	@IBAction func menuButtonPressed(sender: AnyObject) {
-		self.slidingViewController().anchorTopViewToRightAnimated(true)
+	@IBAction func menuButtonPressed(_ sender: AnyObject) {
+		self.slidingViewController().anchorTopViewToRight(animated: true)
 	}
 }

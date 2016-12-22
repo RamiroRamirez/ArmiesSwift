@@ -10,31 +10,31 @@ import UIKit
 
 enum ARBiographyCell : Int {
 
-	case ProfileImagesCell = 0
-	case InfoCell
-	case PhotosCell
-	case VideosCell
+	case profileImagesCell = 0
+	case infoCell
+	case photosCell
+	case videosCell
 
 	static func allValues() -> [ARBiographyCell] {
-		return [.ProfileImagesCell, .InfoCell, .PhotosCell, .VideosCell]
+		return [.profileImagesCell, .infoCell, .photosCell, .videosCell]
 	}
 
 	func returnReuseId() -> String? {
 		switch self {
-		case .ProfileImagesCell     	: return ARCellReuseIdentifier.BiographyCells.ProfileImageCell.rawValue
-		case .InfoCell      			: return ARCellReuseIdentifier.BiographyCells.InfoCell.rawValue
-		case .PhotosCell        		: return ARCellReuseIdentifier.BiographyCells.PhotosCell.rawValue
-		case .VideosCell                : return ARCellReuseIdentifier.BiographyCells.VideosCell.rawValue
+		case .profileImagesCell     	: return ARCellReuseIdentifier.BiographyCells.ProfileImageCell.rawValue
+		case .infoCell      			: return ARCellReuseIdentifier.BiographyCells.InfoCell.rawValue
+		case .photosCell        		: return ARCellReuseIdentifier.BiographyCells.PhotosCell.rawValue
+		case .videosCell                : return ARCellReuseIdentifier.BiographyCells.VideosCell.rawValue
 		}
 	}
 
-	func returnBiographyCell(tableView: UITableView?) -> AnyObject? {
+	func returnBiographyCell(_ tableView: UITableView?) -> AnyObject? {
 		if let _reuseId = self.returnReuseId() {
 			switch self {
-			case .ProfileImagesCell 	: return tableView?.dequeueReusableCellWithIdentifier(_reuseId) as? ARProfileViewCell
-			case .InfoCell      		: return tableView?.dequeueReusableCellWithIdentifier(_reuseId) as? ARInfosCell
-			case .PhotosCell       		: return tableView?.dequeueReusableCellWithIdentifier(_reuseId) as? ARImagesCell
-			case .VideosCell         	: return tableView?.dequeueReusableCellWithIdentifier(_reuseId) as? ARVideosCell
+			case .profileImagesCell 	: return tableView?.dequeueReusableCell(withIdentifier: _reuseId) as? ARProfileViewCell
+			case .infoCell      		: return tableView?.dequeueReusableCell(withIdentifier: _reuseId) as? ARInfosCell
+			case .photosCell       		: return tableView?.dequeueReusableCell(withIdentifier: _reuseId) as? ARImagesCell
+			case .videosCell         	: return tableView?.dequeueReusableCell(withIdentifier: _reuseId) as? ARVideosCell
 			}
 		}
 		return nil
@@ -42,10 +42,10 @@ enum ARBiographyCell : Int {
 
 	func cellHeight() -> CGFloat {
 		switch self {
-		case .ProfileImagesCell     	: return ARCellHeightConstants.BiographyCells.ProfileImageCell.rawValue
-		case .InfoCell          		: return ARCellHeightConstants.BiographyCells.InfoCell.rawValue
-		case .PhotosCell            	: return ARCellHeightConstants.BiographyCells.ImagesCell.rawValue
-		case .VideosCell            	: return ARCellHeightConstants.BiographyCells.VideosCell.rawValue
+		case .profileImagesCell     	: return ARCellHeightConstants.BiographyCells.profileImageCell.rawValue
+		case .infoCell          		: return ARCellHeightConstants.BiographyCells.infoCell.rawValue
+		case .photosCell            	: return ARCellHeightConstants.BiographyCells.imagesCell.rawValue
+		case .videosCell            	: return ARCellHeightConstants.BiographyCells.videosCell.rawValue
 		}
 	}
 
@@ -65,25 +65,25 @@ class ARBiographyViewController : UIViewController {
     
     //MARK: - Private Methods
 
-    func openImageViewerFromCarrousel(image: UIImage?) {
-        self.performSegueWithIdentifier(ARSegues.OpenImageViewer.rawValue, sender: image)
+    func openImageViewerFromCarrousel(_ image: UIImage?) {
+        self.performSegue(withIdentifier: ARSegues.OpenImageViewer.rawValue, sender: image)
     }
 
-    @IBAction func openImageViewer(sender: AnyObject) {
-        self.performSegueWithIdentifier(ARSegues.OpenImageViewer.rawValue, sender: nil)
+    @IBAction func openImageViewer(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: ARSegues.OpenImageViewer.rawValue, sender: nil)
     }
     
 	//MARK: - Private Methods
 
-	private func initialConfigurations() {
-		self.title = ARMenuOption.Biographies.titleMenu()
+	fileprivate func initialConfigurations() {
+		self.title = ARMenuOption.biographies.titleMenu()
 	}
     
     //MARK: - Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == ARSegues.OpenImageViewer.rawValue) {
-            let vc = segue.destinationViewController as? ARImageViewerViewController
+            let vc = segue.destination as? ARImageViewerViewController
             if (sender == nil) {
                 vc?.armieImage = UIImage(named: (self.skater?.profileImage ?? ""))
             } else {
@@ -98,35 +98,35 @@ extension ARBiographyViewController: UITableViewDataSource, UITableViewDelegate 
     
     //MARK: - Implementation UITableViewDataSource Protocol
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ARBiographyCell.allValues().count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellType = ARBiographyCell.allValues()[indexPath.row]
         switch cellType {
-        case .ProfileImagesCell:
+        case .profileImagesCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARProfileViewCell
             if let _profileImage = self.skater?.profileImage {
                 cell?.setupCell(UIImage(named: _profileImage), panoramaPhoto: UIImage(named: _profileImage))
             }
             return (cell ?? UITableViewCell())
-        case .InfoCell:
+        case .infoCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARInfosCell
             cell?.setupCell(self.skater)
             return (cell ?? UITableViewCell())
-        case .PhotosCell:
+        case .photosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARImagesCell
             cell?.setupCell(self.skater, imageSelectedBlock: self.openImageViewerFromCarrousel)
             return (cell ?? UITableViewCell())
-        case .VideosCell:
+        case .videosCell:
             let cell = cellType.returnBiographyCell(tableView) as? ARVideosCell
             cell?.setupCell(skater: self.skater)
             return (cell ?? UITableViewCell())
         }
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let cellType = ARBiographyCell.allValues()[indexPath.row]
         return cellType.cellHeight()
     }

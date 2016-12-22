@@ -10,10 +10,10 @@ import UIKit
 
 class ARProfileViewCell                             : UITableViewCell {
 
-	@IBOutlet private var panoramPhotoImageView		: UIImageView?
-	@IBOutlet private var profilPhotoImageView		: UIImageView?
+	@IBOutlet fileprivate var panoramPhotoImageView		: UIImageView?
+	@IBOutlet fileprivate var profilPhotoImageView		: UIImageView?
 
-    func setupCell(profilePhoto: UIImage?, panoramaPhoto: UIImage?) {
+    func setupCell(_ profilePhoto: UIImage?, panoramaPhoto: UIImage?) {
 		self.configurateProfileImage()
         self.profilPhotoImageView?.image = profilePhoto
         self.panoramPhotoImageView?.image = panoramaPhoto
@@ -21,9 +21,9 @@ class ARProfileViewCell                             : UITableViewCell {
 
 	//MARK: - Private methods
 
-	private func configurateProfileImage() {
+	fileprivate func configurateProfileImage() {
 		self.profilPhotoImageView?.layer.borderWidth = 2.0
-		self.profilPhotoImageView?.layer.borderColor = UIColor.whiteColor().CGColor
+		self.profilPhotoImageView?.layer.borderColor = UIColor.white.cgColor
 		self.profilPhotoImageView?.layer.cornerRadius = ((self.profilPhotoImageView?.frame.size.height ?? 0) * 0.5)
 		self.profilPhotoImageView?.clipsToBounds = true
 	}

@@ -10,13 +10,13 @@ import UIKit
 
 class ARSkaterCollectionCell                    : UICollectionViewCell {
     
-    @IBOutlet private weak var skaterImageView  : UIImageView?
-    @IBOutlet private weak var skaterNameLabel  : UILabel?
+    @IBOutlet fileprivate weak var skaterImageView  : UIImageView?
+    @IBOutlet fileprivate weak var skaterNameLabel  : UILabel?
     
-    func setupCell(skater skater: ARSkater?) {
+    func setupCell(skater: ARSkater?) {
         self.skaterImageView?.layer.borderWidth = 2.0
-        self.skaterImageView?.layer.borderColor = UIColor.whiteColor().CGColor
-        self.backgroundColor = UIColor.clearColor()
+        self.skaterImageView?.layer.borderColor = UIColor.white.cgColor
+        self.backgroundColor = UIColor.clear
         
         self.skaterImageView?.layer.cornerRadius = ((self.skaterImageView?.frame.height ?? 0) * 0.5)
         self.skaterImageView?.clipsToBounds = true

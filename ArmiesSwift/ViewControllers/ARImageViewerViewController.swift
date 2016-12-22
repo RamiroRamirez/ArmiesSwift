@@ -10,13 +10,13 @@ import UIKit
 
 class ARImageViewerViewController                   : UIViewController {
     
-    @IBOutlet private weak var scrollImageView      : UIScrollView?
-    @IBOutlet private weak var imageView            : UIImageView?
-    @IBOutlet private weak var closeButton          : UIButton?
+    @IBOutlet fileprivate weak var scrollImageView      : UIScrollView?
+    @IBOutlet fileprivate weak var imageView            : UIImageView?
+    @IBOutlet fileprivate weak var closeButton          : UIButton?
     
-	private var centerImageView                     : CGPoint?
-	private var distanceX                           : CGFloat = 0
-	private var distanceY                           : CGFloat = 0
+	fileprivate var centerImageView                     : CGPoint?
+	fileprivate var distanceX                           : CGFloat = 0
+	fileprivate var distanceY                           : CGFloat = 0
     var armieImage                                  : UIImage?
     
     //MARK: - View Life cycle
@@ -27,7 +27,7 @@ class ARImageViewerViewController                   : UIViewController {
         self.initialConfigurations()
     }
 
-	override func viewDidAppear(animated: Bool) {
+	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 
 		self.centerImageView = self.imageView?.center
@@ -35,7 +35,7 @@ class ARImageViewerViewController                   : UIViewController {
     
     //MARK: - General Helpers
     
-    private func initialConfigurations() {
+    fileprivate func initialConfigurations() {
 		self.imageView?.image = self.armieImage
 
 		self.configurateCloseButton()
@@ -43,72 +43,72 @@ class ARImageViewerViewController                   : UIViewController {
 		self.configurateGestureRecognizer()
     }
 
-    private func configurateCloseButton() {
+    fileprivate func configurateCloseButton() {
         
         self.closeButton?.layer.borderWidth = ARHarcodedConstants.BorderWidthCloseButton
-        self.closeButton?.layer.borderColor = UIColor.whiteColor().CGColor
+        self.closeButton?.layer.borderColor = UIColor.white.cgColor
         self.closeButton?.layer.cornerRadius = ARHarcodedConstants.CornerRadiusCloseButton
         self.closeButton?.clipsToBounds = true
-        self.closeButton?.setTitle(NSLocalizedString("CLOSE_BUTTON", comment: ""), forState: .Normal)
+        self.closeButton?.setTitle(NSLocalizedString("CLOSE_BUTTON", comment: ""), for: UIControlState())
     }
     
-    private func configurateScrollView() {
+    fileprivate func configurateScrollView() {
         
         self.scrollImageView?.maximumZoomScale = ARHarcodedConstants.MaxZoomImageScrollView
         self.scrollImageView?.minimumZoomScale = ARHarcodedConstants.MinZommImageScrollView
         self.scrollImageView?.clipsToBounds = true
     }
 
-	private func configurateGestureRecognizer() {
+	fileprivate func configurateGestureRecognizer() {
 		let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(ARImageViewerViewController.closePreviewIfNeeded(_:)))
 		self.view.addGestureRecognizer(gestureRecognizer)
 	}
 
-	private func closeWithAnimation() {
+	fileprivate func closeWithAnimation() {
         
-		UIView.animateWithDuration(ARHarcodedConstants.StandardAnimation, animations: { [weak self] in
+		UIView.animate(withDuration: ARHarcodedConstants.StandardAnimation, animations: { [weak self] in
             self?.imageView?.alpha = 0.2
         }, completion: { [weak self] (succeeded: Bool) in
-            self?.dismissViewControllerAnimated(true, completion: nil)
+            self?.dismiss(animated: true, completion: nil)
 		})
 	}
 
-	private func imageViewChangePositionAndAlpha(viewLocation: CGPoint) {
-		UIView.animateWithDuration(ARHarcodedConstants.StandardAnimation) {
-			self.imageView?.center = CGPointMake(viewLocation.x - self.distanceX, viewLocation.y - self.distanceY)
-		}
+	fileprivate func imageViewChangePositionAndAlpha(_ viewLocation: CGPoint) {
+		UIView.animate(withDuration: ARHarcodedConstants.StandardAnimation, animations: {
+			self.imageView?.center = CGPoint(x: viewLocation.x - self.distanceX, y: viewLocation.y - self.distanceY)
+		}) 
 	}
 
-	func closePreviewIfNeeded(sender: UIPanGestureRecognizer)  {
-		if (sender.state == .Began) {
-			self.distanceX = sender.locationInView(self.view).x - (self.view.center.x ?? 0)
-			self.distanceY = sender.locationInView(self.view).y - (self.view.center.y ?? 0)
+	func closePreviewIfNeeded(_ sender: UIPanGestureRecognizer)  {
+		if (sender.state == .began) {
+			self.distanceX = sender.location(in: self.view).x - (self.view.center.x)
+			self.distanceY = sender.location(in: self.view).y - (self.view.center.y)
 		}
 
-		if (sender.state == UIGestureRecognizerState.Changed) {
-			self.imageViewChangePositionAndAlpha(sender.locationInView(self.view))
+		if (sender.state == UIGestureRecognizerState.changed) {
+			self.imageViewChangePositionAndAlpha(sender.location(in: self.view))
 
-		} else if (sender.state == .Ended) {
-            if (sender.locationInView(self.view).y < self.view.center.y) {
+		} else if (sender.state == .ended) {
+            if (sender.location(in: self.view).y < self.view.center.y) {
                 self.closeWithAnimation()
             } else {
-                UIView.animateWithDuration(ARHarcodedConstants.StandardAnimation) { [weak self] in
+                UIView.animate(withDuration: ARHarcodedConstants.StandardAnimation, animations: { [weak self] in
                     if let _view = self?.view {
                         self?.imageView?.center = (self?.centerImageView ?? _view.center)
                     }
-                }
+                }) 
             }
 		}
 	}
     
-    @IBAction func dismissViewPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func dismissViewPressed(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
 extension ARImageViewerViewController: UIScrollViewDelegate {
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
 }

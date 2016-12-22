@@ -22,17 +22,16 @@ class ARSkateCreator: NSObject {
         
         // create Martin
         let martinSkater = ARSkateCreator.createSkater("Martin Serrano", occupation: "Editor y Camarógrafo", birthplace: "Monterrey, Nuevo León", favoriteMovie: "Made", favoriteFood: "Pizza", videos: ["1M-XALIGJss", "v6OJjQfEN28", "m5b9EGE4dVk", "uYfb8DtW8no", "ftVQgsyrYT8"], profileImage: "martin1.jpg", images: ["martin2.jpg", "martin3.jpg", "martin4.jpg"])
-        if let
-            _rene = reneSkater,
-            _selim = selimSkater,
-            _martin = martinSkater {
+        if let _rene = reneSkater,
+		   let _selim = selimSkater,
+		   let _martin = martinSkater {
                 self.skaters?.append(_rene)
                 self.skaters?.append(_selim)
                 self.skaters?.append(_martin)
         }
     }
     
-    class func createSkater(name: String?, occupation: String?, birthplace: String?, favoriteMovie: String?, favoriteFood: String?, videos: [String]?, profileImage: String?, images: [String]?) -> ARSkater? {
+    class func createSkater(_ name: String?, occupation: String?, birthplace: String?, favoriteMovie: String?, favoriteFood: String?, videos: [String]?, profileImage: String?, images: [String]?) -> ARSkater? {
         
         let skater = ARSkater()
         skater.name = name
