@@ -1,7 +1,7 @@
 PODS:
   - ECSlidingViewController (2.0.3)
   - iCarousel (1.7.6)
-  - STTwitter (0.2.2)
+  - STTwitter (0.2.5)
   - youtube-ios-player-helper (0.1.6)
 
 DEPENDENCIES:
@@ -13,9 +13,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
   iCarousel: ddd7f142c7c2f3429b0ce5fb8ea37f4a059394cd
-  STTwitter: eb85d8770ddb0f8989f341cf41ea875e90ac6e7f
+  STTwitter: 5c157e8dcb4f0e4cf5b4374393021b7d7b7fd497
   youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
 
-PODFILE CHECKSUM: ed83a7c8710a4094ddbd4d9f8467ce5f543e4f62
+PODFILE CHECKSUM: c035018fff629fa85f3591e44fa0c256d3afd98d
 
 COCOAPODS: 1.1.1
