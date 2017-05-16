@@ -37,7 +37,7 @@ class ARTwitterViewController               : UIViewController {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.ConsumerKey, consumerSecret: ARTwitterKeys.ConsumerSecret)
         // Verify credentials
-		twitter?.verifyCredentials(userSuccessBlock: { [weak self] (userName: String?, userId: String?) in
+		twitter?.verifyCredentials(successBlock: { [weak self] (userName: String?) in
 			twitter?.getUserTimeline(withScreenName: ARTwitterKeys.ArmiesScreenName, count: ARTwitterKeys.NumberOfTwitters, successBlock: { (statuses) in
 				// reset twitters array
 				self?.twitters?.removeAll()
