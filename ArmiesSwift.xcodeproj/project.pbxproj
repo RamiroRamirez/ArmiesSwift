@@ -564,6 +564,7 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = WEUMM3X4MB;
 						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -689,7 +690,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FAE4A94B488F9DA05E326A41 /* [CP] Copy Pods Resources */ = {
@@ -877,12 +878,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = WEUMM3X4MB;
 				INFOPLIST_FILE = ArmiesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "43f1d21a-3c00-49f2-8793-821cb38c1e8e";
+				PROVISIONING_PROFILE = "9f325d19-b731-431c-b4b3-c8e2651c5631";
+				PROVISIONING_PROFILE_SPECIFIER = Armies.Adhoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "ArmiesSwift/Headers/Armies-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -894,12 +897,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ramiro Ramirez Hernandez (WEUMM3X4MB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = WEUMM3X4MB;
 				INFOPLIST_FILE = ArmiesSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ram.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "43f1d21a-3c00-49f2-8793-821cb38c1e8e";
+				PROVISIONING_PROFILE = "9f325d19-b731-431c-b4b3-c8e2651c5631";
+				PROVISIONING_PROFILE_SPECIFIER = Armies.Adhoc;
 				SWIFT_OBJC_BRIDGING_HEADER = "ArmiesSwift/Headers/Armies-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
