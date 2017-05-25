@@ -37,23 +37,23 @@ class ARTwitterViewController               : UIViewController {
         // intit twitter api
         let twitter = STTwitterAPI(appOnlyWithConsumerKey: ARTwitterKeys.ConsumerKey, consumerSecret: ARTwitterKeys.ConsumerSecret)
         // Verify credentials
-		twitter?.verifyCredentials(successBlock: { [weak self] (userName: String?) in
-			twitter?.getUserTimeline(withScreenName: ARTwitterKeys.ArmiesScreenName, count: ARTwitterKeys.NumberOfTwitters, successBlock: { (statuses) in
-				// reset twitters array
-				self?.twitters?.removeAll()
-				// the information was received from twitter endpoint
-				// get the useful infos and display them in table view
-				self?.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
-				refreshControl?.endRefreshing()
-				self?.tableView?.reloadData()
+        twitter?.verifyCredentials(userSuccessBlock: { [weak self] (algo, algo2) in
+            let _ = twitter?.getUserTimeline(withScreenName: ARTwitterKeys.ArmiesScreenName, count: ARTwitterKeys.NumberOfTwitters, successBlock: { (statuses) in
+                // reset twitters array
+                self?.twitters?.removeAll()
+                // the information was received from twitter endpoint
+                // get the useful infos and display them in table view
+                self?.fetchInfosFromTwitter(statuses as? [[String: AnyObject]])
+                refreshControl?.endRefreshing()
+                self?.tableView?.reloadData()
+            }, errorBlock: { (error) in
+                // TODO: Handle error
+                print(error.debugDescription)
 
-			}, errorBlock: { (error) in
-				// TODO: Handle error
-				print(error.debugDescription)
-			})
-		}, errorBlock: { (error) in
-			print(error.debugDescription)
-		})
+            })
+        }, errorBlock: { (error) in
+            print(error.debugDescription)
+        })
 	}
     
     fileprivate func configurateRefreshControl() {
