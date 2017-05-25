@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ARImageViewerViewController                   : UIViewController {
+class ARImageViewerViewController                       : UIViewController {
     
     @IBOutlet fileprivate weak var scrollImageView      : UIScrollView?
     @IBOutlet fileprivate weak var imageView            : UIImageView?
