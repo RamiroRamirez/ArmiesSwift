@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ARViewController                      : UIViewController {
+class ARViewController                          : UIViewController {
 
 	@IBOutlet fileprivate weak var menuButton   : UIBarButtonItem?
 

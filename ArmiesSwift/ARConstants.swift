@@ -14,6 +14,13 @@ enum ARStoryboardIds	                 	: String 	{
 	case BiographiesViewController 	   		= "ARBiographiesListViewController"
 	case VideosViewController      	 		= "ARVideosViewController"
 	case ImagesViewController          	 	= "ARImagesViewController"
+    case VideoIntroViewController           = "ARVideoIntroViewController"
+    case MotivationalViewController         = "ARMotivationalViewController"
+}
+
+enum ARStoryboardNames                      : String    {
+    
+    case Main                               = "Main"
 }
 
 enum ARSegues								: String	{
