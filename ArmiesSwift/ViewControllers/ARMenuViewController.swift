@@ -46,7 +46,7 @@ enum ARMenuOption 		: Int {
 	}
 }
 
-class ARMenuViewController                  : UIViewController {
+class ARMenuViewController                      : UIViewController {
     
     //MARK: - IBOutlets
 

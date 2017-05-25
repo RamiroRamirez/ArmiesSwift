@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ARImagesViewController                    : ARViewController {
+class ARImagesViewController                        : ARViewController {
     
-    var imageArray                              : [UIImage]? = []
+    var imageArray                                  : [UIImage]? = []
     
     //MARK: - Outlets
 

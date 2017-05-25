@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ARViewController                      : UIViewController {
+class ARViewController                          : UIViewController {
 
 	@IBOutlet fileprivate weak var menuButton   : UIBarButtonItem?
 
@@ -16,6 +16,7 @@ class ARViewController                      : UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
 		self.initialConfigurations()
 	}
 
