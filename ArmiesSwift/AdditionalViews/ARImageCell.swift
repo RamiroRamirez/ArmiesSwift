@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ARImageCell                                   : UICollectionViewCell {
+class ARImageCell                                       : UICollectionViewCell {
 
     // MARK: - IBOultets
     

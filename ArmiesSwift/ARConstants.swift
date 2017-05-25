@@ -120,7 +120,9 @@ struct ARHarcodedConstants {
 	static let NumberOfImagesHomeView           : UInt      = 5
 	static let NumberOfImagesBiography          : UInt      = 10
     static let NumberOfImagesCollectionInstagram: CGFloat   = 3
+    static let NUmberOfImagesCollectionMotivation: CGFloat  = 2
     static let NumberOfImagesInstagram          : Int       = 23
+    static let NumberOfMotivationalImages       : Int       = 31
     static let MaxZoomImageScrollView           : CGFloat   = 4
     static let MinZommImageScrollView           : CGFloat   = 1
     static let CornerRadiusCloseButton          : CGFloat   = 4

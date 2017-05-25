@@ -1,39 +1,32 @@
 //
-//  ARImagesViewController.swift
+//  ARMotivationalViewController.swift
 //  ArmiesSwift
 //
-//  Created by Ramiro Ramirez on 12/09/15.
-//  Copyright (c) 2015 RAM. All rights reserved.
+//  Created by Ramiro Ramirez on 25/05/17.
+//  Copyright © 2017 RAM. All rights reserved.
 //
 
 import UIKit
 
-class ARImagesViewController                        : ARViewController {
-    
-    var imageArray                                  : [UIImage]? = []
-    
-    //MARK: - Outlets
+class ARMotivationalViewController              : UIViewController {
 
-    @IBOutlet fileprivate weak var collectionView   : UICollectionView?
-    
-	//MARK: - View Life Cycle
+    // MARK: - IBOutlets
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
+    @IBOutlet private weak var collectionView   : UICollectionView?
+    
+     var imageArray                             : [UIImage]? = []
+    
+    // MARK: - View Life Cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-		self.initialConfigurations()
-	}
-
-	//MARK: - Private Methods
-
-	fileprivate func initialConfigurations() {
-		self.title = ARMenuOption.images.titleMenu()
         self.createImageArray()
-	}
+    }
     
     fileprivate func createImageArray() {
-        let basicString = "InstagramArmies"
-        for i in 1 ..< ARHarcodedConstants.NumberOfImagesInstagram {
+        let basicString = "Motivacion"
+        for i in 1 ..< ARHarcodedConstants.NumberOfMotivationalImages {
             let imageName = basicString + String(i) + ".jpg"
             if let _image = UIImage(named: imageName) {
                 self.imageArray?.append(_image)
@@ -41,8 +34,8 @@ class ARImagesViewController                        : ARViewController {
         }
         self.collectionView?.reloadData()
     }
-	
-	//MARK: - Navigation
+    
+    //MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == ARSegues.OpenImageViewer.rawValue) {
@@ -51,10 +44,11 @@ class ARImagesViewController                        : ARViewController {
             vc?.armieImage = armiesImage
         }
     }
-
 }
 
-extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+// MARK: - Collection View Methods
+
+extension ARMotivationalViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return (self.imageArray?.count ?? 0)
@@ -70,11 +64,12 @@ extension ARImagesViewController: UICollectionViewDataSource, UICollectionViewDe
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //get the width of the screen device
-        let widthOfImage = (self.view.frame.width) / ARHarcodedConstants.NumberOfImagesCollectionInstagram
+        let widthOfImage = (self.view.frame.width) / ARHarcodedConstants.NUmberOfImagesCollectionMotivation
         return CGSize(width: widthOfImage, height: widthOfImage)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: ARSegues.OpenImageViewer.rawValue, sender: self.imageArray?[indexPath.row])
     }
+
 }

@@ -70,6 +70,7 @@
 		B64B62141BE94D2C0074E029 /* ARVideoSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62121BE94D2C0074E029 /* ARVideoSectionCell.swift */; };
 		B64B62161BE94D860074E029 /* ARVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62151BE94D860074E029 /* ARVideoCell.swift */; };
 		B64B62181BE953C90074E029 /* ARVideoSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */; };
+		B652466F1ED783E800C90561 /* ArmiesLadrillos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B652466E1ED783E800C90561 /* ArmiesLadrillos.jpg */; };
 		B661D7FA1ED23D67003AF4A1 /* Italia.mov in Resources */ = {isa = PBXBuildFile; fileRef = B661D7F91ED23D67003AF4A1 /* Italia.mov */; };
 		B66E62A61BF7CCFF00D5EDFA /* ARImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E62A51BF7CCFF00D5EDFA /* ARImageViewerViewController.swift */; };
 		B6C35B671BF90A7C00EF5DDB /* ic_best_trick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C35B551BF90A7C00EF5DDB /* ic_best_trick@2x.png */; };
@@ -104,6 +105,37 @@
 		B6C35B941BF90A8800EF5DDB /* selim4.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C35B881BF90A8800EF5DDB /* selim4.png */; };
 		B6C35B971BF90E7F00EF5DDB /* splashScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C35B961BF90E7F00EF5DDB /* splashScreen.jpg */; };
 		B6C35B991BF90FCD00EF5DDB /* ARSkateCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C35B981BF90FCD00EF5DDB /* ARSkateCreator.swift */; };
+		B6C553D91ED73DBD00AFAEE3 /* ARMotivationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C553D81ED73DBD00AFAEE3 /* ARMotivationalViewController.swift */; };
+		B6C553F91ED7404500AFAEE3 /* Motivacion1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553DB1ED7404500AFAEE3 /* Motivacion1.jpg */; };
+		B6C553FA1ED7404500AFAEE3 /* Motivacion10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553DC1ED7404500AFAEE3 /* Motivacion10.jpg */; };
+		B6C553FB1ED7404500AFAEE3 /* Motivacion11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553DD1ED7404500AFAEE3 /* Motivacion11.jpg */; };
+		B6C553FC1ED7404500AFAEE3 /* Motivacion12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553DE1ED7404500AFAEE3 /* Motivacion12.jpg */; };
+		B6C553FD1ED7404500AFAEE3 /* Motivacion13.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553DF1ED7404500AFAEE3 /* Motivacion13.jpg */; };
+		B6C553FE1ED7404500AFAEE3 /* Motivacion14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E01ED7404500AFAEE3 /* Motivacion14.jpg */; };
+		B6C553FF1ED7404500AFAEE3 /* Motivacion15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E11ED7404500AFAEE3 /* Motivacion15.jpg */; };
+		B6C554001ED7404500AFAEE3 /* Motivacion16.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E21ED7404500AFAEE3 /* Motivacion16.jpg */; };
+		B6C554011ED7404500AFAEE3 /* Motivacion17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E31ED7404500AFAEE3 /* Motivacion17.jpg */; };
+		B6C554021ED7404500AFAEE3 /* Motivacion18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E41ED7404500AFAEE3 /* Motivacion18.jpg */; };
+		B6C554031ED7404500AFAEE3 /* Motivacion19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E51ED7404500AFAEE3 /* Motivacion19.jpg */; };
+		B6C554041ED7404500AFAEE3 /* Motivacion2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E61ED7404500AFAEE3 /* Motivacion2.jpg */; };
+		B6C554051ED7404500AFAEE3 /* Motivacion20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E71ED7404500AFAEE3 /* Motivacion20.jpg */; };
+		B6C554061ED7404500AFAEE3 /* Motivacion21.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E81ED7404500AFAEE3 /* Motivacion21.jpg */; };
+		B6C554071ED7404500AFAEE3 /* Motivacion22.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553E91ED7404500AFAEE3 /* Motivacion22.jpg */; };
+		B6C554081ED7404500AFAEE3 /* Motivacion23.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553EA1ED7404500AFAEE3 /* Motivacion23.jpg */; };
+		B6C554091ED7404500AFAEE3 /* Motivacion24.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553EB1ED7404500AFAEE3 /* Motivacion24.jpg */; };
+		B6C5540A1ED7404500AFAEE3 /* Motivacion25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553EC1ED7404500AFAEE3 /* Motivacion25.jpg */; };
+		B6C5540B1ED7404500AFAEE3 /* Motivacion26.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553ED1ED7404500AFAEE3 /* Motivacion26.jpg */; };
+		B6C5540C1ED7404500AFAEE3 /* Motivacion27.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553EE1ED7404500AFAEE3 /* Motivacion27.jpg */; };
+		B6C5540D1ED7404500AFAEE3 /* Motivacion28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553EF1ED7404500AFAEE3 /* Motivacion28.jpg */; };
+		B6C5540E1ED7404500AFAEE3 /* Motivacion29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F01ED7404500AFAEE3 /* Motivacion29.jpg */; };
+		B6C5540F1ED7404500AFAEE3 /* Motivacion3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F11ED7404500AFAEE3 /* Motivacion3.jpg */; };
+		B6C554101ED7404500AFAEE3 /* Motivacion30.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F21ED7404500AFAEE3 /* Motivacion30.jpg */; };
+		B6C554111ED7404500AFAEE3 /* Motivacion4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F31ED7404500AFAEE3 /* Motivacion4.jpg */; };
+		B6C554121ED7404500AFAEE3 /* Motivacion5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F41ED7404500AFAEE3 /* Motivacion5.jpg */; };
+		B6C554131ED7404500AFAEE3 /* Motivacion6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F51ED7404500AFAEE3 /* Motivacion6.jpg */; };
+		B6C554141ED7404500AFAEE3 /* Motivacion7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F61ED7404500AFAEE3 /* Motivacion7.jpg */; };
+		B6C554151ED7404500AFAEE3 /* Motivacion8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F71ED7404500AFAEE3 /* Motivacion8.jpg */; };
+		B6C554161ED7404500AFAEE3 /* Motivacion9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6C553F81ED7404500AFAEE3 /* Motivacion9.jpg */; };
 		C3BC5152349F2FE600C7D903 /* Pods_ArmiesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1355244D177A7F5B934CC6EF /* Pods_ArmiesSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +210,7 @@
 		B64B62121BE94D2C0074E029 /* ARVideoSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoSectionCell.swift; path = AdditionalViews/VideosCells/ARVideoSectionCell.swift; sourceTree = "<group>"; };
 		B64B62151BE94D860074E029 /* ARVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoCell.swift; path = AdditionalViews/VideosCells/ARVideoCell.swift; sourceTree = "<group>"; };
 		B64B62171BE953C90074E029 /* ARVideoSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARVideoSectionViewController.swift; path = ViewControllers/ARVideoSectionViewController.swift; sourceTree = "<group>"; };
+		B652466E1ED783E800C90561 /* ArmiesLadrillos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ArmiesLadrillos.jpg; path = Images/ArmiesLadrillos.jpg; sourceTree = "<group>"; };
 		B661D7F91ED23D67003AF4A1 /* Italia.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Italia.mov; sourceTree = "<group>"; };
 		B66E62A51BF7CCFF00D5EDFA /* ARImageViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARImageViewerViewController.swift; path = ViewControllers/ARImageViewerViewController.swift; sourceTree = "<group>"; };
 		B6C35B551BF90A7C00EF5DDB /* ic_best_trick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_best_trick@2x.png"; sourceTree = "<group>"; };
@@ -212,6 +245,37 @@
 		B6C35B881BF90A8800EF5DDB /* selim4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selim4.png; sourceTree = "<group>"; };
 		B6C35B961BF90E7F00EF5DDB /* splashScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splashScreen.jpg; sourceTree = "<group>"; };
 		B6C35B981BF90FCD00EF5DDB /* ARSkateCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ARSkateCreator.swift; path = Helper/ARSkateCreator.swift; sourceTree = "<group>"; };
+		B6C553D81ED73DBD00AFAEE3 /* ARMotivationalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARMotivationalViewController.swift; sourceTree = "<group>"; };
+		B6C553DB1ED7404500AFAEE3 /* Motivacion1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion1.jpg; sourceTree = "<group>"; };
+		B6C553DC1ED7404500AFAEE3 /* Motivacion10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion10.jpg; sourceTree = "<group>"; };
+		B6C553DD1ED7404500AFAEE3 /* Motivacion11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion11.jpg; sourceTree = "<group>"; };
+		B6C553DE1ED7404500AFAEE3 /* Motivacion12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion12.jpg; sourceTree = "<group>"; };
+		B6C553DF1ED7404500AFAEE3 /* Motivacion13.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion13.jpg; sourceTree = "<group>"; };
+		B6C553E01ED7404500AFAEE3 /* Motivacion14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion14.jpg; sourceTree = "<group>"; };
+		B6C553E11ED7404500AFAEE3 /* Motivacion15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion15.jpg; sourceTree = "<group>"; };
+		B6C553E21ED7404500AFAEE3 /* Motivacion16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion16.jpg; sourceTree = "<group>"; };
+		B6C553E31ED7404500AFAEE3 /* Motivacion17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion17.jpg; sourceTree = "<group>"; };
+		B6C553E41ED7404500AFAEE3 /* Motivacion18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion18.jpg; sourceTree = "<group>"; };
+		B6C553E51ED7404500AFAEE3 /* Motivacion19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion19.jpg; sourceTree = "<group>"; };
+		B6C553E61ED7404500AFAEE3 /* Motivacion2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion2.jpg; sourceTree = "<group>"; };
+		B6C553E71ED7404500AFAEE3 /* Motivacion20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion20.jpg; sourceTree = "<group>"; };
+		B6C553E81ED7404500AFAEE3 /* Motivacion21.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion21.jpg; sourceTree = "<group>"; };
+		B6C553E91ED7404500AFAEE3 /* Motivacion22.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion22.jpg; sourceTree = "<group>"; };
+		B6C553EA1ED7404500AFAEE3 /* Motivacion23.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion23.jpg; sourceTree = "<group>"; };
+		B6C553EB1ED7404500AFAEE3 /* Motivacion24.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion24.jpg; sourceTree = "<group>"; };
+		B6C553EC1ED7404500AFAEE3 /* Motivacion25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion25.jpg; sourceTree = "<group>"; };
+		B6C553ED1ED7404500AFAEE3 /* Motivacion26.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion26.jpg; sourceTree = "<group>"; };
+		B6C553EE1ED7404500AFAEE3 /* Motivacion27.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion27.jpg; sourceTree = "<group>"; };
+		B6C553EF1ED7404500AFAEE3 /* Motivacion28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion28.jpg; sourceTree = "<group>"; };
+		B6C553F01ED7404500AFAEE3 /* Motivacion29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion29.jpg; sourceTree = "<group>"; };
+		B6C553F11ED7404500AFAEE3 /* Motivacion3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion3.jpg; sourceTree = "<group>"; };
+		B6C553F21ED7404500AFAEE3 /* Motivacion30.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion30.jpg; sourceTree = "<group>"; };
+		B6C553F31ED7404500AFAEE3 /* Motivacion4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion4.jpg; sourceTree = "<group>"; };
+		B6C553F41ED7404500AFAEE3 /* Motivacion5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion5.jpg; sourceTree = "<group>"; };
+		B6C553F51ED7404500AFAEE3 /* Motivacion6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion6.jpg; sourceTree = "<group>"; };
+		B6C553F61ED7404500AFAEE3 /* Motivacion7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion7.jpg; sourceTree = "<group>"; };
+		B6C553F71ED7404500AFAEE3 /* Motivacion8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion8.jpg; sourceTree = "<group>"; };
+		B6C553F81ED7404500AFAEE3 /* Motivacion9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Motivacion9.jpg; sourceTree = "<group>"; };
 		E9C63655ED8D080751326035 /* Pods-ArmiesSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmiesSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArmiesSwift/Pods-ArmiesSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -362,6 +426,7 @@
 			children = (
 				B60E49FE1ED735FF004F783A /* ARHomePageViewController.swift */,
 				B60E49FF1ED735FF004F783A /* ARVideoIntroViewController.swift */,
+				B6C553D81ED73DBD00AFAEE3 /* ARMotivationalViewController.swift */,
 			);
 			name = HomePageViewController;
 			path = ViewControllers/HomePageViewController;
@@ -380,12 +445,14 @@
 		B64B61CD1BE8E29C0074E029 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B6C553DA1ED7404500AFAEE3 /* Motivation */,
 				B6C35B951BF90E7F00EF5DDB /* SplashScreen */,
 				B6C35B791BF90A8800EF5DDB /* Skaters */,
 				B6C35B541BF90A7C00EF5DDB /* Icons */,
 				B64B61DF1BE8E3430074E029 /* ImagesInstagram */,
 				B64B61D41BE8E33A0074E029 /* ImagesAll */,
 				B64B61CE1BE8E2D10074E029 /* MuestraCarousel.jpg */,
+				B652466E1ED783E800C90561 /* ArmiesLadrillos.jpg */,
 				B64B61CF1BE8E2D10074E029 /* photo.jpg */,
 				B64B61D01BE8E2D10074E029 /* reniArmies.jpg */,
 			);
@@ -539,6 +606,44 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		B6C553DA1ED7404500AFAEE3 /* Motivation */ = {
+			isa = PBXGroup;
+			children = (
+				B6C553DB1ED7404500AFAEE3 /* Motivacion1.jpg */,
+				B6C553DC1ED7404500AFAEE3 /* Motivacion10.jpg */,
+				B6C553DD1ED7404500AFAEE3 /* Motivacion11.jpg */,
+				B6C553DE1ED7404500AFAEE3 /* Motivacion12.jpg */,
+				B6C553DF1ED7404500AFAEE3 /* Motivacion13.jpg */,
+				B6C553E01ED7404500AFAEE3 /* Motivacion14.jpg */,
+				B6C553E11ED7404500AFAEE3 /* Motivacion15.jpg */,
+				B6C553E21ED7404500AFAEE3 /* Motivacion16.jpg */,
+				B6C553E31ED7404500AFAEE3 /* Motivacion17.jpg */,
+				B6C553E41ED7404500AFAEE3 /* Motivacion18.jpg */,
+				B6C553E51ED7404500AFAEE3 /* Motivacion19.jpg */,
+				B6C553E61ED7404500AFAEE3 /* Motivacion2.jpg */,
+				B6C553E71ED7404500AFAEE3 /* Motivacion20.jpg */,
+				B6C553E81ED7404500AFAEE3 /* Motivacion21.jpg */,
+				B6C553E91ED7404500AFAEE3 /* Motivacion22.jpg */,
+				B6C553EA1ED7404500AFAEE3 /* Motivacion23.jpg */,
+				B6C553EB1ED7404500AFAEE3 /* Motivacion24.jpg */,
+				B6C553EC1ED7404500AFAEE3 /* Motivacion25.jpg */,
+				B6C553ED1ED7404500AFAEE3 /* Motivacion26.jpg */,
+				B6C553EE1ED7404500AFAEE3 /* Motivacion27.jpg */,
+				B6C553EF1ED7404500AFAEE3 /* Motivacion28.jpg */,
+				B6C553F01ED7404500AFAEE3 /* Motivacion29.jpg */,
+				B6C553F11ED7404500AFAEE3 /* Motivacion3.jpg */,
+				B6C553F21ED7404500AFAEE3 /* Motivacion30.jpg */,
+				B6C553F31ED7404500AFAEE3 /* Motivacion4.jpg */,
+				B6C553F41ED7404500AFAEE3 /* Motivacion5.jpg */,
+				B6C553F51ED7404500AFAEE3 /* Motivacion6.jpg */,
+				B6C553F61ED7404500AFAEE3 /* Motivacion7.jpg */,
+				B6C553F71ED7404500AFAEE3 /* Motivacion8.jpg */,
+				B6C553F81ED7404500AFAEE3 /* Motivacion9.jpg */,
+			);
+			name = Motivation;
+			path = Images/Motivation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -604,19 +709,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C554031ED7404500AFAEE3 /* Motivacion19.jpg in Resources */,
 				B6C35B6B1BF90A7C00EF5DDB /* ic_home@2x.png in Resources */,
+				B6C554141ED7404500AFAEE3 /* Motivacion7.jpg in Resources */,
+				B6C553FA1ED7404500AFAEE3 /* Motivacion10.jpg in Resources */,
 				B6C35B701BF90A7C00EF5DDB /* ic_la_pelicula@3x.png in Resources */,
 				28AAF2E91BA38BF00079A936 /* Main.storyboard in Resources */,
 				B64B62091BE8E3430074E029 /* InstagramArmies7.jpg in Resources */,
 				B6C35B731BF90A7C00EF5DDB /* ic_traducciones@2x.png in Resources */,
 				B64B62001BE8E3430074E029 /* InstagramArmies19.jpg in Resources */,
+				B6C553FC1ED7404500AFAEE3 /* Motivacion12.jpg in Resources */,
+				B6C554081ED7404500AFAEE3 /* Motivacion23.jpg in Resources */,
 				B6C35B671BF90A7C00EF5DDB /* ic_best_trick@2x.png in Resources */,
 				B6C35B8D1BF90A8800EF5DDB /* rene1.png in Resources */,
 				B6C35B781BF90A7C00EF5DDB /* ic_videos@3x.png in Resources */,
 				B6C35B711BF90A7C00EF5DDB /* ic_skaters@2x.png in Resources */,
 				B64B620A1BE8E3430074E029 /* InstagramArmies8.jpg in Resources */,
+				B6C553FF1ED7404500AFAEE3 /* Motivacion15.jpg in Resources */,
 				B6C35B941BF90A8800EF5DDB /* selim4.png in Resources */,
+				B6C554101ED7404500AFAEE3 /* Motivacion30.jpg in Resources */,
 				B6C35B921BF90A8800EF5DDB /* selim2.jpg in Resources */,
+				B6C553FB1ED7404500AFAEE3 /* Motivacion11.jpg in Resources */,
 				B64B62041BE8E3430074E029 /* InstagramArmies22.jpg in Resources */,
 				B64B61F61BE8E3430074E029 /* InstagramArmies1.jpg in Resources */,
 				B64B61FB1BE8E3430074E029 /* InstagramArmies14.jpg in Resources */,
@@ -624,8 +737,10 @@
 				28AAF31F1BA39CFB0079A936 /* Localizable.strings in Resources */,
 				B64B61D21BE8E2D10074E029 /* photo.jpg in Resources */,
 				B6C35B8B1BF90A8800EF5DDB /* martin3.jpg in Resources */,
+				B652466F1ED783E800C90561 /* ArmiesLadrillos.jpg in Resources */,
 				B64B61DD1BE8E33A0074E029 /* ArmiesAll3.jpg in Resources */,
 				B6C35B931BF90A8800EF5DDB /* selim3.jpg in Resources */,
+				B6C554061ED7404500AFAEE3 /* Motivacion21.jpg in Resources */,
 				B6C35B6F1BF90A7C00EF5DDB /* ic_la_pelicula@2x.png in Resources */,
 				B6C35B6A1BF90A7C00EF5DDB /* ic_contacto@3x.png in Resources */,
 				B64B61FC1BE8E3430074E029 /* InstagramArmies15.jpg in Resources */,
@@ -634,18 +749,31 @@
 				B6C35B761BF90A7C00EF5DDB /* ic_trick_tip@3x.png in Resources */,
 				B64B61D11BE8E2D10074E029 /* MuestraCarousel.jpg in Resources */,
 				B64B61DB1BE8E33A0074E029 /* ArmiesAll1.jpg in Resources */,
+				B6C5540B1ED7404500AFAEE3 /* Motivacion26.jpg in Resources */,
 				B64B620B1BE8E3430074E029 /* InstagramArmies9.jpg in Resources */,
 				B6C35B8F1BF90A8800EF5DDB /* rene3.jpg in Resources */,
 				B64B62011BE8E3430074E029 /* InstagramArmies2.jpg in Resources */,
 				B6C35B971BF90E7F00EF5DDB /* splashScreen.jpg in Resources */,
 				B6C35B721BF90A7C00EF5DDB /* ic_skaters@3.png in Resources */,
 				B64B61F81BE8E3430074E029 /* InstagramArmies11.jpg in Resources */,
+				B6C554041ED7404500AFAEE3 /* Motivacion2.jpg in Resources */,
+				B6C5540C1ED7404500AFAEE3 /* Motivacion27.jpg in Resources */,
 				B64B61D31BE8E2D10074E029 /* reniArmies.jpg in Resources */,
+				B6C554091ED7404500AFAEE3 /* Motivacion24.jpg in Resources */,
 				B64B61DC1BE8E33A0074E029 /* ArmiesAll2.jpg in Resources */,
+				B6C553FD1ED7404500AFAEE3 /* Motivacion13.jpg in Resources */,
+				B6C554051ED7404500AFAEE3 /* Motivacion20.jpg in Resources */,
+				B6C554121ED7404500AFAEE3 /* Motivacion5.jpg in Resources */,
 				B6C35B901BF90A8800EF5DDB /* rene4.jpg in Resources */,
 				B64B62031BE8E3430074E029 /* InstagramArmies21.jpg in Resources */,
+				B6C554001ED7404500AFAEE3 /* Motivacion16.jpg in Resources */,
 				B64B61F71BE8E3430074E029 /* InstagramArmies10.jpg in Resources */,
+				B6C554111ED7404500AFAEE3 /* Motivacion4.jpg in Resources */,
+				B6C554011ED7404500AFAEE3 /* Motivacion17.jpg in Resources */,
+				B6C5540D1ED7404500AFAEE3 /* Motivacion28.jpg in Resources */,
 				B64B61DA1BE8E33A0074E029 /* ArmiesAll.jpg in Resources */,
+				B6C554071ED7404500AFAEE3 /* Motivacion22.jpg in Resources */,
+				B6C5540E1ED7404500AFAEE3 /* Motivacion29.jpg in Resources */,
 				B64B61FF1BE8E3430074E029 /* InstagramArmies18.jpg in Resources */,
 				B6C35B6E1BF90A7C00EF5DDB /* ic_imagenes@3x.png in Resources */,
 				B661D7FA1ED23D67003AF4A1 /* Italia.mov in Resources */,
@@ -653,13 +781,21 @@
 				B6C35B741BF90A7C00EF5DDB /* ic_traducciones@3x.png in Resources */,
 				B64B62051BE8E3430074E029 /* InstagramArmies3.jpg in Resources */,
 				B6C35B911BF90A8800EF5DDB /* selim1.png in Resources */,
+				B6C553FE1ED7404500AFAEE3 /* Motivacion14.jpg in Resources */,
+				B6C554021ED7404500AFAEE3 /* Motivacion18.jpg in Resources */,
 				B6C35B681BF90A7C00EF5DDB /* ic_best_trick@3x.png in Resources */,
 				B6C35B8C1BF90A8800EF5DDB /* martin4.jpg in Resources */,
 				B64B62081BE8E3430074E029 /* InstagramArmies6.jpg in Resources */,
+				B6C5540F1ED7404500AFAEE3 /* Motivacion3.jpg in Resources */,
 				28AAF2EB1BA38BF00079A936 /* Images.xcassets in Resources */,
+				B6C554131ED7404500AFAEE3 /* Motivacion6.jpg in Resources */,
 				B6C35B6C1BF90A7C00EF5DDB /* ic_home@3x.png in Resources */,
+				B6C554161ED7404500AFAEE3 /* Motivacion9.jpg in Resources */,
+				B6C554151ED7404500AFAEE3 /* Motivacion8.jpg in Resources */,
 				B64B62021BE8E3430074E029 /* InstagramArmies20.jpg in Resources */,
+				B6C5540A1ED7404500AFAEE3 /* Motivacion25.jpg in Resources */,
 				B64B61FE1BE8E3430074E029 /* InstagramArmies17.jpg in Resources */,
+				B6C553F91ED7404500AFAEE3 /* Motivacion1.jpg in Resources */,
 				B64B61F91BE8E3430074E029 /* InstagramArmies12.jpg in Resources */,
 				B64B62071BE8E3430074E029 /* InstagramArmies5.jpg in Resources */,
 				B6C35B8E1BF90A8800EF5DDB /* rene2.png in Resources */,
@@ -730,6 +866,7 @@
 			files = (
 				B60E4A011ED735FF004F783A /* ARVideoIntroViewController.swift in Sources */,
 				28F0B6071BC153CD006D0A7A /* ARExtensions.swift in Sources */,
+				B6C553D91ED73DBD00AFAEE3 /* ARMotivationalViewController.swift in Sources */,
 				28AAF3161BA39A510079A936 /* ARTwitterViewController.swift in Sources */,
 				B64B62181BE953C90074E029 /* ARVideoSectionViewController.swift in Sources */,
 				28AAF3071BA3992F0079A936 /* ARMenuViewController.swift in Sources */,
