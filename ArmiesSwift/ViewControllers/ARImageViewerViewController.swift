@@ -17,7 +17,7 @@ class ARImageViewerViewController                   : UIViewController {
 	fileprivate var centerImageView                     : CGPoint?
 	fileprivate var distanceX                           : CGFloat = 0
 	fileprivate var distanceY                           : CGFloat = 0
-    var armieImage                                  : UIImage?
+    var armieImage                                      : UIImage?
     
     //MARK: - View Life cycle
     
