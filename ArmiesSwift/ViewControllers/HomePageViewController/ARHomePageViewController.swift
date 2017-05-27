@@ -45,11 +45,11 @@ class ARHomePageViewController: UIPageViewController {
 
 extension ARHomePageViewController {
     
-    @IBAction func twitterButtonPressed(_ sender: AnyObject) {
+    @IBAction private func twitterButtonPressed(_ sender: AnyObject) {
         self.slidingViewController().anchorTopViewToLeft(animated: true)
     }
     
-    @IBAction func menuButtonPressed(_ sender: AnyObject) {
+    @IBAction private func menuButtonPressed(_ sender: AnyObject) {
         self.slidingViewController().anchorTopViewToRight(animated: true)
     }
 }

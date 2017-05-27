@@ -14,7 +14,9 @@ class ARMotivationalViewController              : UIViewController {
 
     @IBOutlet private weak var collectionView   : UICollectionView?
     
-     var imageArray                             : [UIImage]? = []
+    // MARK: - Properties
+
+    var imageArray                             : [UIImage]? = []
     
     // MARK: - View Life Cycle
 

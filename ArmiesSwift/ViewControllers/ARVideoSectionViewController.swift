@@ -10,6 +10,8 @@ import UIKit
 
 class ARVideoSectionViewController  : UIViewController {
     
+    // MARK: - Properties
+    
     var videosId                    : [String]? = []
     var videoSection                : ARVideoSection?
 }

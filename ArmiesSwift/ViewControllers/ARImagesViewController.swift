@@ -10,6 +10,8 @@ import UIKit
 
 class ARImagesViewController                        : ARViewController {
     
+    // MARK: - Properties
+    
     var imageArray                                  : [UIImage]? = []
     
     //MARK: - Outlets

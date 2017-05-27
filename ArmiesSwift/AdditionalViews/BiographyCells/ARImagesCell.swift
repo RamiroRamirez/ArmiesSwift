@@ -9,12 +9,12 @@
 import UIKit
 import iCarousel
 
-class ARImageButton                             : UIButton {
+class ARImageButton                                 : UIButton {
     
-    var image                                   : UIImage?
+    var image                                       : UIImage?
 }
 
-class ARImagesCell                              : UITableViewCell {
+class ARImagesCell                                  : UITableViewCell {
 
 	@IBOutlet fileprivate weak var photosTitleLabel	: UILabel?
 	@IBOutlet fileprivate weak var carousel			: iCarousel?
@@ -33,9 +33,7 @@ class ARImagesCell                              : UITableViewCell {
 		self.carousel?.reloadData()
         self.pageControl?.numberOfPages = (self.skater?.images?.count ?? 0)
 	}
-    
-    // MARK: - Public Methods
-    
+
     func imagePressed(_ sender: ARImageButton?) {
         self.imageSelected?(sender?.image)
     }
