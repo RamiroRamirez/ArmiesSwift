@@ -9,7 +9,7 @@
 import UIKit
 import youtube_ios_player_helper
 
-class ARVideosCell                                  : UITableViewCell {
+class ARVideosCell                                      : UITableViewCell {
     
     // MARK: - IBOutlets
 
@@ -23,13 +23,15 @@ class ARVideosCell                                  : UITableViewCell {
     func setupCell(skater: ARSkater?) {
         
 		self.videosTitleLabel?.text = NSLocalizedString("BIOGRAPHY_VIDEOS", comment: "")
-		if
+		guard
 			let firstVideo = skater?.videos?.first,
 			let secondVideo = skater?.videos?[1],
-			let thirdVideo = skater?.videos?[2] {
-				self.firstVideoView?.load(withVideoId: firstVideo)
-				self.secondVideoView?.load(withVideoId: secondVideo)
-				self.thirdVideoView?.load(withVideoId: thirdVideo)
-		}
+			let thirdVideo = skater?.videos?[2] else {
+                return
+        }
+				
+        self.firstVideoView?.load(withVideoId: firstVideo)
+        self.secondVideoView?.load(withVideoId: secondVideo)
+        self.thirdVideoView?.load(withVideoId: thirdVideo)
 	}
 }

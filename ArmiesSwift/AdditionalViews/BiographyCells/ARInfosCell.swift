@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ARInfosCell                               : UITableViewCell {
+class ARInfosCell                                   : UITableViewCell {
 
 	@IBOutlet fileprivate weak var nameLabel		: UILabel?
 	@IBOutlet fileprivate weak var yearsLabel		: UILabel?

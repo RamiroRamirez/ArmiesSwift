@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ARProfileViewCell                             : UITableViewCell {
+class ARProfileViewCell                                 : UITableViewCell {
 
 	@IBOutlet fileprivate var panoramPhotoImageView		: UIImageView?
 	@IBOutlet fileprivate var profilPhotoImageView		: UIImageView?

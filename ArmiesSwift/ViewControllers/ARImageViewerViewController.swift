@@ -8,16 +8,21 @@
 
 import UIKit
 
-class ARImageViewerViewController                   : UIViewController {
+class ARImageViewerViewController                       : UIViewController {
+    
+    // MARK: - Outlets
     
     @IBOutlet fileprivate weak var scrollImageView      : UIScrollView?
     @IBOutlet fileprivate weak var imageView            : UIImageView?
     @IBOutlet fileprivate weak var closeButton          : UIButton?
     
+    // MARK: - Properties
+
 	fileprivate var centerImageView                     : CGPoint?
 	fileprivate var distanceX                           : CGFloat = 0
 	fileprivate var distanceY                           : CGFloat = 0
-    var armieImage                                  : UIImage?
+
+    var armieImage                                      : UIImage?
     
     //MARK: - View Life cycle
     
@@ -84,21 +89,26 @@ class ARImageViewerViewController                   : UIViewController {
 			self.distanceX = sender.location(in: self.view).x - (self.view.center.x)
 			self.distanceY = sender.location(in: self.view).y - (self.view.center.y)
 		}
+        
+        guard (sender.state != .changed) else {
+            self.imageViewChangePositionAndAlpha(sender.location(in: self.view))
+            return
+        }
 
-		if (sender.state == UIGestureRecognizerState.changed) {
-			self.imageViewChangePositionAndAlpha(sender.location(in: self.view))
+        guard (sender.state != .ended) else {
+            return
+        }
+        
+        guard (sender.location(in: self.view).y < self.view.center.y) else {
+            UIView.animate(withDuration: ARHarcodedConstants.StandardAnimation, animations: { [weak self] in
+                if let _view = self?.view {
+                    self?.imageView?.center = (self?.centerImageView ?? _view.center)
+                }
+            })
+            return
+        }
 
-		} else if (sender.state == .ended) {
-            if (sender.location(in: self.view).y < self.view.center.y) {
-                self.closeWithAnimation()
-            } else {
-                UIView.animate(withDuration: ARHarcodedConstants.StandardAnimation, animations: { [weak self] in
-                    if let _view = self?.view {
-                        self?.imageView?.center = (self?.centerImageView ?? _view.center)
-                    }
-                }) 
-            }
-		}
+        self.closeWithAnimation()
 	}
     
     @IBAction func dismissViewPressed(_ sender: AnyObject) {

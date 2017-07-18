@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ARMenuOption 		: Int {
+enum ARMenuOption           : Int {
 	case home = 0
 	case biographies
 	case videos
@@ -46,7 +46,7 @@ enum ARMenuOption 		: Int {
 	}
 }
 
-class ARMenuViewController                  : UIViewController {
+class ARMenuViewController                      : UIViewController {
     
     //MARK: - IBOutlets
 
@@ -56,6 +56,7 @@ class ARMenuViewController                  : UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
 		self.initialConfigurations()
 	}
 

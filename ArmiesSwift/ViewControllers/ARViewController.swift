@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ARViewController                      : UIViewController {
+class ARViewController                          : UIViewController {
+    
+    // MARK: - Outlets
 
 	@IBOutlet fileprivate weak var menuButton   : UIBarButtonItem?
 
@@ -16,6 +18,7 @@ class ARViewController                      : UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
 		self.initialConfigurations()
 	}
 
@@ -27,7 +30,7 @@ class ARViewController                      : UIViewController {
 
 	//MARK: - Actions
 
-	@IBAction func menuButtonPressed(_ sender: AnyObject) {
+	@IBAction private func menuButtonPressed(_ sender: AnyObject) {
 		self.slidingViewController().anchorTopViewToRight(animated: true)
 	}
 }
